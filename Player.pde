@@ -25,7 +25,7 @@ public class Player
   private float barColorPercent;
   private color barColor;
   
-  // mouse event
+  // mouse event  
   private float mouseAngle;
   private float newX;
   private float newY;

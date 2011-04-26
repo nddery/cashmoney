@@ -23,8 +23,9 @@ PApplet app = this;
 
 // project window size, to make bigger, lower number
 // to make small, raise number
-static final int zoom = 4;
+static final int zoom = 10;
 
+PFont projectTitle;
 PFont teamFont;
 PFont titleFont;
 PFont creaditsFont;
@@ -125,10 +126,11 @@ public void loadfont()
 {
   
   // assign fonts
-  teamFont = createFont("Georgia", 160/zoom);
-  titleFont = createFont("Georgia", 140/zoom);
+  projectTitle = createFont("Arial Black", 440/zoom);
+  teamFont     = createFont("Georgia", 160/zoom);
+  titleFont    = createFont("Georgia", 140/zoom);
   creaditsFont = createFont("Georgia", 56/zoom);
-  pFont = createFont("Georgia", 56/zoom);
+  pFont        = createFont("Georgia", 56/zoom);
   
 } // end loadfont()
 
