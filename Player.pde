@@ -126,9 +126,9 @@ public class Player
         newX       = mouseX * cos(mouseAngle) - mouseY * sin(mouseAngle);
         newY       = mouseX * sin(mouseAngle) + mouseY * cos(mouseAngle);
         
-        float radius = (height - (MAX_BAR_HEIGHT*2));
+        float radius = (MAX_BAR_HEIGHT*2);
         newX -= radius;
-        println(newX + "\t   " + this.team + "\t" + this.player);
+        println(newX-radius + "\t   " + this.team + "\t" + this.player);
       // end MOUSE_PRESSED
     } // end switch()
     

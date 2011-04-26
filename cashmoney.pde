@@ -23,7 +23,7 @@ PApplet app = this;
 
 // project window size, to make bigger, lower number
 // to make small, raise number
-static final int zoom = 10;
+static final int zoom = 10; // 4
 
 PFont projectTitle;
 PFont teamFont;
