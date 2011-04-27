@@ -73,9 +73,47 @@ public class Player
     
     fill(this.barColor);
     
-    int radius = MAX_BAR_HEIGHT*2;
+    float radius = MAX_BAR_HEIGHT*2;
     //rect(0,-radius,BAR_WIDTH,-this.barHeight);
+    pushMatrix();
     rect(0,radius,BAR_WIDTH,this.barHeight);
+    popMatrix();
+    
+    /*pushMatrix();
+    //fill(COLORS[2]);
+    fill(#000000);
+    textFont(playerFont);
+    
+    
+    if(PRINT){
+      if(this.nth <= rowCount/2){
+        textAlign(RIGHT);
+        rotate(radians(90));
+        text(this.plusminus + " | " + this.player, radius+barHeight+10/ZOOM, -2);
+      }else{
+        textAlign(LEFT);
+        rotate(radians(90));
+        text(this.plusminus + " | " + this.player, radius+barHeight+10/ZOOM, -2);
+      }
+    }
+    popMatrix();*/
+    
+    pushMatrix();
+      if(PRINT){
+        translate(0,radius);
+        fill(#000000);
+        textFont(playerFont);
+        if(this.nth <= rowCount/2){
+          textAlign(RIGHT,CENTER);
+          rotate(radians(270));
+          text(this.plusminus + " | " + this.player, -this.barHeight-10/ZOOM, 2/ZOOM);
+        }else{
+          textAlign(LEFT);
+          rotate(radians(90));
+          text(this.plusminus + " | " + this.player, this.barHeight+10/ZOOM, -2/ZOOM);
+        }
+      }
+    popMatrix();
     
     rotate(angle);
 

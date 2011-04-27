@@ -21,15 +21,18 @@ nhlstats2010.txt
 // use for registering mouse event
 PApplet app = this;
 
+// DISPLAY OPTIONS
 // project window size, to make bigger, lower number
 // to make small, raise number
-static final int zoom = 10; // 4
+static final int     ZOOM  = 4; // 4
+// if set to true, will print player's name
+// and add more margin around
+static final boolean PRINT = true;
 
 PFont projectTitle;
 PFont teamFont;
-PFont titleFont;
-PFont creaditsFont;
 PFont pFont;
+PFont playerFont;
 
 // MIN_FLOAT and MAX_FLOAT ensure we get actual min and max value
 float maxPlusMinus = MIN_FLOAT;
@@ -52,9 +55,9 @@ Player[] Players;
 Team[] Teams;
 
 // constant
-static final int   BAR_WIDTH      = 12/zoom;
-static final int   MAX_BAR_HEIGHT = 920/zoom;
-static final int   GUTTERS        = 400/zoom;
+static final int   BAR_WIDTH      = 12/ZOOM;
+static final int   MAX_BAR_HEIGHT = 920/ZOOM;
+static final int   GUTTERS        = 400/ZOOM;
 // yellow, red, grey, beige
 static final color COLORS[]       = {#fdbe55, #98012e, #bab4be, #efe1c6};
 
@@ -73,8 +76,11 @@ void setup()
   noStroke();
   frameRate(60); // good practice to set the frame rate (for faster computer)
   int wh = (MAX_BAR_HEIGHT*5+(GUTTERS*2));
-  size(wh,wh);
-  
+  if(PRINT){
+    size(wh+GUTTERS,wh+GUTTERS);
+  }else{
+    size(wh,wh);
+  }
   loadfont();
   
   // read file into a data table
@@ -126,11 +132,10 @@ public void loadfont()
 {
   
   // assign fonts
-  projectTitle = createFont("Arial Black", 440/zoom);
-  teamFont     = createFont("Georgia", 160/zoom);
-  titleFont    = createFont("Georgia", 140/zoom);
-  creaditsFont = createFont("Georgia", 56/zoom);
-  pFont        = createFont("Georgia", 56/zoom);
+  projectTitle = createFont("Arial Black", 440/ZOOM);
+  teamFont     = createFont("Georgia", 160/ZOOM);
+  pFont        = createFont("Georgia", 56/ZOOM);
+  playerFont   = createFont("Georgia", BAR_WIDTH);
   
 } // end loadfont()
 

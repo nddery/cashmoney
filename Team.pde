@@ -61,7 +61,7 @@ public class Team
     
     fill(COLORS[2]);
 
-    int radius = MAX_BAR_HEIGHT*2;
+    float radius = MAX_BAR_HEIGHT*2;
     rect(0,0,1,radius);
 
     
@@ -87,7 +87,7 @@ public class Team
       if(this.nth <= (numberOfTeams/2)-1) { // RIGHT SIDE (first side)
         rotate(radians(270));
         textAlign(LEFT);
-        text(this.team,0,112/zoom); // for some reason 28... only thing that was left to chance this time...
+        text(this.team,0,112/ZOOM); // for some reason 28... only thing that was left to chance this time...
       }else{
         rotate(radians(90));
         textAlign(RIGHT);
