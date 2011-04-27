@@ -79,25 +79,6 @@ public class Player
     rect(0,radius,BAR_WIDTH,this.barHeight);
     popMatrix();
     
-    /*pushMatrix();
-    //fill(COLORS[2]);
-    fill(#000000);
-    textFont(playerFont);
-    
-    
-    if(PRINT){
-      if(this.nth <= rowCount/2){
-        textAlign(RIGHT);
-        rotate(radians(90));
-        text(this.plusminus + " | " + this.player, radius+barHeight+10/ZOOM, -2);
-      }else{
-        textAlign(LEFT);
-        rotate(radians(90));
-        text(this.plusminus + " | " + this.player, radius+barHeight+10/ZOOM, -2);
-      }
-    }
-    popMatrix();*/
-    
     pushMatrix();
       if(PRINT){
         translate(0,radius);

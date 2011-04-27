@@ -24,10 +24,10 @@ PApplet app = this;
 // DISPLAY OPTIONS
 // project window size, to make bigger, lower number
 // to make small, raise number
-static final int     ZOOM  = 4; // 4
+static final int     ZOOM  = 5; // 4
 // if set to true, will print player's name
 // and add more margin around
-static final boolean PRINT = true;
+static final boolean PRINT = false;
 
 PFont projectTitle;
 PFont teamFont;
