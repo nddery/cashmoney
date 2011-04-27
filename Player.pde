@@ -147,7 +147,9 @@ public class Player
         
         float radius = (MAX_BAR_HEIGHT*2);
         newX -= radius;
-        println(newX-radius + "\t   " + this.team + "\t" + this.player);
+        if(int(newX) == 0){
+          println(newX + "\t   " + this.team + "\t" + this.player);
+        }
       // end MOUSE_PRESSED
     } // end switch()
     
