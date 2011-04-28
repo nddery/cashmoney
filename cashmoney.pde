@@ -24,12 +24,13 @@ PApplet app = this;
 // DISPLAY OPTIONS
 // project window size, to make bigger, lower number
 // to make small, raise number -- between 1 and 12
-static final int     ZOOM  = 12;
+static final int     ZOOM  = 10;
 // if set to true, will print player's name
 // and add more margin around
 static final boolean PRINT = false;
 // use a dark or a light color scheme
-//static final boolean DARK = true;
+// only for saving name....
+static final boolean DARK = false;
 
 PFont projectTitle;
 PFont teamFont;
@@ -115,8 +116,11 @@ void setup()
   
   // create a puck in the middle
   Puck puck = new Puck();  
-
-  save("cashmoney-zoom"+ZOOM+"-"+PRINT+".jpg");
+  
+  String p, c;
+  if(PRINT){p="t";}else{p="f";}
+  if(DARK){c="d";}else{c="l";}
+  save("cashmoney-"+ZOOM+"-"+p+"-"+c+".jpg");
   
 } // end setup()
 
