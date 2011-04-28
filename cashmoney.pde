@@ -24,13 +24,13 @@ PApplet app = this;
 // DISPLAY OPTIONS
 // project window size, to make bigger, lower number
 // to make small, raise number -- between 1 and 12
-static final int     ZOOM  = 10;
+static final int     ZOOM  = 1;
 // if set to true, will print player's name
 // and add more margin around
-static final boolean PRINT = false;
+static final boolean PRINT = true;
 // use a dark or a light color scheme
 // only for saving name....
-static final boolean DARK = false;
+static final boolean DARK = true;
 
 PFont projectTitle;
 PFont teamFont;
@@ -61,10 +61,10 @@ Team[] Teams;
 static final int   BAR_WIDTH      = 12/ZOOM;
 static final int   MAX_BAR_HEIGHT = 920/ZOOM;
 static final int   GUTTERS        = 400/ZOOM;
-// yellow, red, white, black (dark)
-//static final color COLORS[]       = {#fdbe55, #98012e, #e2e2e2, #000000, #a9a9a9};
-// yellow, red, grey, beige, light red (light)
-static final color COLORS[]     = {#fdbe55, #98012e, #bab4be, #efe1c6, #e7c2b8};
+// yellow, red, light grey, black, dark grey, light grey (dark)
+static final color COLORS[]       = {#fdbe55, #98012e, #e2e2e2, #000000, #a9a9a9, #e2e2e2};
+// yellow, red, grey, beige, light red, black (light)
+//static final color COLORS[]     = {#fdbe55, #98012e, #bab4be, #efe1c6, #e7c2b8, #000000};
 
 /**
  * setup()

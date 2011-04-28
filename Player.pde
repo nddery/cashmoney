@@ -84,7 +84,7 @@ public class Player
     pushMatrix();
       if(PRINT){
         translate(0,radius);
-        fill(#000000);
+        fill(COLORS[5]);
         textFont(playerFont);
         if(this.nth <= rowCount/2){
           textAlign(RIGHT,CENTER);
