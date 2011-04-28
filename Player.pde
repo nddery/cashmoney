@@ -73,6 +73,8 @@ public class Player
     
     fill(this.barColor);
     
+    //println(x)
+    
     float radius = MAX_BAR_HEIGHT*2;
     //rect(0,-radius,BAR_WIDTH,-this.barHeight);
     pushMatrix();
@@ -139,16 +141,30 @@ public class Player
     
     switch(e.getID()){
       case MouseEvent.MOUSE_PRESSED:
+        
         // rotate mouse angle
         mouseAngle = - (TWO_PI / rowCount) * this.nth;
-  
-        newX       = mouseX * cos(mouseAngle) - mouseY * sin(mouseAngle);
-        newY       = mouseX * sin(mouseAngle) + mouseY * cos(mouseAngle);
         
+        // these return the X,Y of where you clicked, where 0,0 == top, left
+        newX = mouseX * cos(mouseAngle) - mouseY * sin(mouseAngle);
+        newY = mouseX * sin(mouseAngle) + mouseY * cos(mouseAngle);
+
         float radius = (MAX_BAR_HEIGHT*2);
         newX -= radius;
-        if(int(newX) == 0){
-          println(newX + "\t   " + this.team + "\t" + this.player);
+    
+        //println(mouseX + " | " + mouseY);
+        //println(newX + " | " + newY);
+    
+        //if(int(newX) == 0){println(this.team + " | " + this.player);}    
+        
+        // when clicking on thefirst player, newX and width/2 matched.
+        if(this.nth == 0){ // first player to be drawn
+          //println(this.player + " \t" + this.team + " \t" + newX + " | " + newY);
+          //println(width/2 + "\t" + newX);
+        }
+        
+        if(newX == width/2){ // work for first player (anywhere on where X = widtth/2)
+        //  println(this.player + "\t" + this.team + "\t" + newX + " \t" + width/2);
         }
       // end MOUSE_PRESSED
     } // end switch()

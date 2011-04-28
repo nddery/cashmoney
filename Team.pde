@@ -83,14 +83,14 @@ public class Team
 
     pushMatrix();
       // translate to the edge
-      translate(0,  MAX_BAR_HEIGHT*1.9);
+      translate(0,  MAX_BAR_HEIGHT*1.45);
       if(this.nth <= (numberOfTeams/2)-1) { // RIGHT SIDE (first side)
         rotate(radians(270));
-        textAlign(LEFT);
+        textAlign(RIGHT);
         text(this.team,0,112/ZOOM); // for some reason 28... only thing that was left to chance this time...
       }else{
         rotate(radians(90));
-        textAlign(RIGHT);
+        textAlign(LEFT);
         text(this.team,0,0);
       }
     popMatrix();

@@ -23,11 +23,13 @@ PApplet app = this;
 
 // DISPLAY OPTIONS
 // project window size, to make bigger, lower number
-// to make small, raise number
-static final int     ZOOM  = 5; // 4
+// to make small, raise number -- between 1 and 12
+static final int     ZOOM  = 12;
 // if set to true, will print player's name
 // and add more margin around
 static final boolean PRINT = false;
+// use a dark or a light color scheme
+//static final boolean DARK = true;
 
 PFont projectTitle;
 PFont teamFont;
@@ -58,9 +60,10 @@ Team[] Teams;
 static final int   BAR_WIDTH      = 12/ZOOM;
 static final int   MAX_BAR_HEIGHT = 920/ZOOM;
 static final int   GUTTERS        = 400/ZOOM;
-// yellow, red, grey, beige
-static final color COLORS[]       = {#fdbe55, #98012e, #bab4be, #efe1c6};
-
+// yellow, red, white, black (dark)
+//static final color COLORS[]       = {#fdbe55, #98012e, #e2e2e2, #000000, #a9a9a9};
+// yellow, red, grey, beige, light red (light)
+static final color COLORS[]     = {#fdbe55, #98012e, #bab4be, #efe1c6, #e7c2b8};
 
 /**
  * setup()
@@ -113,7 +116,7 @@ void setup()
   // create a puck in the middle
   Puck puck = new Puck();  
 
-  save("nhl.jpg");
+  save("cashmoney-zoom"+ZOOM+"-"+PRINT+".jpg");
   
 } // end setup()
 

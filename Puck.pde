@@ -29,7 +29,7 @@ class Puck
       ellipse(0,0,(MAX_BAR_HEIGHT*2.5)-(120/ZOOM),(MAX_BAR_HEIGHT*2.5)-(120/ZOOM));
       
       // write project name
-      fill(#e7c2b8);
+      fill(COLORS[4]);
       textFont(projectTitle);
       textAlign(CENTER);
       rotate(radians(350));
