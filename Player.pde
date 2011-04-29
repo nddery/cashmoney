@@ -81,8 +81,8 @@ public class Player
     rect(0,radius,BAR_WIDTH,this.barHeight);
     popMatrix();
     
-    pushMatrix();
-      if(PRINT){
+    if(PRINT){
+      pushMatrix();
         translate(0,radius);
         fill(COLORS[5]);
         textFont(playerFont);
@@ -95,8 +95,8 @@ public class Player
           rotate(radians(90));
           text(this.plusminus + " | " + this.player, this.barHeight+10/ZOOM, -2/ZOOM);
         }
-      }
-    popMatrix();
+      popMatrix();
+    }
     
     rotate(angle);
 
