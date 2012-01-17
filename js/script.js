@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 
   // create a rectangle
-  ctx.fillRect(50,50,100,100);
+  // ctx.fillRect(50,50,100,100);
 
   function Cashmoney(ctx)
   {
@@ -48,8 +48,10 @@ $(document).ready(function(){
     this.setup = function()
     {  
     
-      // read the .tsv file into json format
-      //
+      // get the database records
+      $.get('get_records.php', function(data) {
+        this.data = data;
+      });
     
     }; // end setup()  
 
