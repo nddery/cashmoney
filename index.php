@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>cashmoney -&gt; NHL players plus/minus &amp; salary visualization</title>
   <meta name="description" content="">
@@ -17,48 +16,53 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- end CSS-->
 
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
-  <div id="container">
-    <header>
+	<div id="container">
+		<header>
+			<h1>
+				<a href="#" title="cashmoney: visualizing the national hockey league">
+					cashmoney<span class="tagline">visualizing the national hockey league</span>
+				</a>
+			</h1>
+		</header>
 
-    </header>
+		<div id="main" role="main">
+			<canvas id="cashmoney" width="900" height="900">
+				You browser does not support the canvas element, you should consider updating!
+			</canvas>
+		</div>
 
-    <div id="main" role="main">
-      <canvas id="cashmoney" width="900" height="900">
-		You browser does not support the canvas element, you should consider updating!
-      </canvas>
-    </div>
-
-    <footer>
-
-    </footer>
-  </div> <!--! end of #container -->
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <!-- end scripts-->
+		<footer>
+			<ul class="inline">
+				<li class="separator"><a href="about.html" title="About cashmoney">About</a></li>
+				<li><a href="about.html" title="About cashmoney">About</a></li>
+				<li class="attribution">Created by <a class="nobold" href="http://duvieusart.net" title="Nicoals Duvieusart Dery">Nicolas Duvieusart D&eacute;ry</a></li>
+			</ul>
+		</footer>
+	</div> <!--! end of #container -->
 
 
-  <script> // Change UA-XXXXX-X to be your site's ID
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
-  </script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
+	<!-- scripts concatenated and minified via ant build script-->
+	<script defer src="js/plugins.js"></script>
+	<script defer src="js/script.js"></script>
+	<!-- end scripts-->
 
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+	<script> // Change UA-XXXXX-X to be your site's ID
+	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+	Modernizr.load({
+		load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+	});
+	</script>
+
+	<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
 </body>
 </html>

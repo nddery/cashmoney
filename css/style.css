@@ -11,8 +11,8 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #1c62b9; color: #fff; text-shadow: none; }
+::selection { background: #1c62b9; color: #fff; text-shadow: none; }
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
@@ -65,20 +65,98 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
 Author: Nicolas Duvieusart Dery
 ========================================================================== */
+a{
+	color:#666;
+	font-weight:bold;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+	a:hover, a:visited{
+		color:#1c62b9;
+		text-decoration:underline;
+	}
+
+	a.nobold{
+		font-weight:normal;
+	}
+
+
+.inline{
+	display:block;
+}
+
+	.inline li{
+		display:inline-block;
+	}
+
+li.separator::after{
+	content:" | ";
+}
+
+
+body{
+	background:url(../img/background.jpg) repeat;
+}
+
+
+header{
+	text-align:center;
+	margin-bottom:40px;
+}
+
+	h1 a{
+		font-size:48px;
+		color:#1c62b9;
+	}
+
+		h1 a:hover{
+			opacity: .80; /* Standard: FF gt 1.5, Opera, Safari */
+			filter: alpha(opacity=80); /* IE lt 8 */
+			-ms-filter: "alpha(opacity=80)"; /* IE 8 */
+			-khtml-opacity: .80; /* Safari 1.x */
+			-moz-opacity: .80; /* FF lt 1.5, Netscape */
+			text-decoration:none;
+		}
+
+		.tagline{
+			display:block;
+			font-size:14px;
+			line-height:1px;
+			color:#666;
+		}
+
+
 #main{
 	width:900px;
-	/* margin:0 auto; */
+	margin:0 auto;
 }
 
-/* app canvas */
-#cashmoney{
-	/* width:900px; */
-	/* height:900px; */
-	/* margin:0 auto; */
+	/* app canvas */
+	#cashmoney{
+		border:1px solid #000;
+		/* width:900px; */
+		/* height:900px; */
+		margin:0 auto;
+	}
+
+
+
+footer{
+	/* text-align:right; */
+	width:900px;
+	margin:10px auto 0 auto;
 }
+	
+	footer ul{
+		padding-left:0;
+	}
 
-
-
+	footer .attribution{
+		/* padding-left:50px; */
+		float:right;
+		color:#1c62b9;
+	}
 
 
 
