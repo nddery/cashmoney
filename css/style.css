@@ -90,8 +90,8 @@ a{
 		display:inline-block;
 	}
 
-li.separator::after{
-	content:" | ";
+.floatright{
+	float:right;
 }
 
 
@@ -134,9 +134,6 @@ header{
 
 	/* app canvas */
 	#cashmoney{
-		border:1px solid #000;
-		/* width:900px; */
-		/* height:900px; */
 		margin:0 auto;
 	}
 
@@ -153,10 +150,19 @@ footer{
 	}
 
 	footer .attribution{
-		/* padding-left:50px; */
 		float:right;
 		color:#1c62b9;
 	}
+
+	footer p{
+		margin-top:0;
+	}
+
+
+
+li.separator::after{
+	content:" | ";
+}
 
 
 

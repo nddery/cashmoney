@@ -21,4 +21,4 @@ $info = $db->get_results("
   ORDER BY  statistics.team
 ");
 
-print_r($info);
+echo json_encode($info);
