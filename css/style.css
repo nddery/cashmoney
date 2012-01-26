@@ -127,13 +127,18 @@ header{
 		}
 
 
+#playersinfo{
+	position:absolute;
+}
+
+
 #main{
 	width:900px;
 	margin:0 auto;
 }
 
 	/* app canvas */
-	#cashmoney{
+	svg{
 		margin:0 auto;
 	}
 

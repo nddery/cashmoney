@@ -29,10 +29,14 @@
 			</h1>
 		</header>
 
+
 		<div id="main" role="main">
-			<canvas id="cashmoney" width="900" height="900">
-				You browser does not support the canvas element, you should consider updating!
-			</canvas>
+			<div id="cashmoney">
+				<!-- <div id="playersinfo"></div> -->
+			</div>
+			<!-- <canvas id="cashmoney" width="900" height="900"> -->
+			<!-- 	You browser does not support the canvas element, you should consider updating! -->
+			<!-- </canvas> -->
 		</div>
 
 		<footer>
@@ -49,9 +53,10 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
+	<script defer src="js/libs/raphael.min.js"></script>
 	<!-- scripts concatenated and minified via ant build script-->
 	<script defer src="js/plugins.js"></script>
-	<script defer src="js/script.js"></script>
+	<script defer src="js/cashmoney.js"></script>
 	<!-- end scripts-->
 
 	<script> // Change UA-XXXXX-X to be your site's ID

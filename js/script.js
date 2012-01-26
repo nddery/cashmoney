@@ -18,10 +18,11 @@
  */
 
 $(document).ready(function(){
-  // grab a reference to our canvas
+  // // grab a reference to our canvas
   var canvas = document.getElementById('cashmoney');
-  // get the context of our canvas
-  var ctx = canvas.getContext('2d');
+  // // get the context of our canvas
+  // var ctx = canvas.getContext('2d');
+  var ctx = new canvas_events(canvas);
 
   var app;
 
@@ -73,26 +74,25 @@ $(document).ready(function(){
     for(var i = 0; i < this.totalPlayers; i++){
       // plus/minus
       var pm = parseInt(this.data[i].plusminus);
-      if(pm < parseInt(this.minPlusMinus)){
+      if(pm < this.minPlusMinus){
         this.minPlusMinus = pm;
       }
-      if(pm > parseInt(this.maxPlusMinus)){
+      if(pm > this.maxPlusMinus){
         this.maxPlusMinus = pm;
       }
 
       // salary
-      var salary = this.data[i].salary;
-      if(salary < parseFloat(this.minSalary)){
+      var salary = parseFloat(this.data[i].salary);
+      if(salary < this.minSalary){
         this.minSalary = salary;
       }
-      if(salary > parseFloat(this.maxSalary)){
+      if(salary > this.maxSalary){
         this.maxSalary = salary;
       }
-      console.log(this.data[i].salary);
     } // end for
 
     // we set all properties, add them up in an array
-    this.info = [this.maxBarHeight, this.minPlusMinus, this.maxPlusMinus, this.minSalary, this.minSalary];
+    this.info = [this.maxBarHeight, this.minPlusMinus, this.maxPlusMinus, this.minSalary, this.maxSalary];
 
     // first "go" to the center of the "stage"
     this.ctx.translate(canvas.width/2, canvas.height/2);
@@ -124,13 +124,19 @@ $(document).ready(function(){
     this.info = info;
 
     // the colors to use for this player
-    this.ctx.fillStyle = "rgb(200,0,0)";
+    this.barColor = floatmap(this.data.salary, this.info[3], this.info[4], 1, 6);
+    this.red = parseInt(8*this.barColor);
+    this.green = parseInt(185-51*this.barColor);
+    this.ctx.fillStyle = 'rgb('+this.red+','+this.green+',185)';
 
     // calculate the bar height
     this.barHeight = floatmap(this.data.plusminus, this.info[1], this.info[2], 10, 270);
-    console.log(this.info);
     
-    this.ctx.fillRect(0, 175, 5, this.barHeight);
+    var p = this.ctx.fillRect(0, 175, 5, this.barHeight);
+
+    p.addEvent('mouseover', function(e, args){
+      console.log(e);
+    });
 
   } // end Player
 });
