@@ -32,7 +32,7 @@
 
 		<div id="main" role="main">
 			<div id="cashmoney">
-				<!-- <div id="playersinfo"></div> -->
+				<div id="playersinfo"></div>
 			</div>
 			<!-- <canvas id="cashmoney" width="900" height="900"> -->
 			<!-- 	You browser does not support the canvas element, you should consider updating! -->
@@ -59,12 +59,12 @@
 	<script defer src="js/cashmoney.js"></script>
 	<!-- end scripts-->
 
-	<script> // Change UA-XXXXX-X to be your site's ID
-	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-	Modernizr.load({
-		load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-	});
-	</script>
+	<!-- <script> // Change UA-XXXXX-X to be your site's ID -->
+	<!-- window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']]; -->
+	<!-- Modernizr.load({ -->
+	<!-- 	load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js' -->
+	<!-- }); -->
+	<!-- </script> -->
 
 	<!--[if lt IE 7 ]>
 	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>

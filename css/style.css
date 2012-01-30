@@ -130,6 +130,10 @@ header{
 
 #playersinfo{
 	position:absolute;
+	background:#eee;
+	padding:0 10px;
+	top:450px;
+	left:450px;
 }
 
 

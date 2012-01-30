@@ -10,6 +10,16 @@ ini_set('display_errors', True);
 require_once 'db_config.php';
 
 
+// // get the infomration out
+// $info = $db->get_results("
+//   SELECT    statistics.*,
+//             salaries.salary
+//   FROM      statistics,
+//             salaries
+//   WHERE     statistics.player = salaries.player
+//   GROUP BY  statistics.player
+//   ORDER BY  statistics.team
+// ");
 // get the infomration out
 $info = $db->get_results("
   SELECT    statistics.*,
@@ -17,7 +27,6 @@ $info = $db->get_results("
   FROM      statistics,
             salaries
   WHERE     statistics.player = salaries.player
-  GROUP BY  statistics.player
   ORDER BY  statistics.team
 ");
 

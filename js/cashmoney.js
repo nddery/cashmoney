@@ -18,6 +18,12 @@
  */
 
 $(document).ready(function(){
+  // center the players info in the screen
+  $('#playersinfo').css('position', 'absolute');
+  $('#playersinfo').css('top', (($(window).height() - $('#playersinfo').outerHeight()) / 2) + $(window).scrollTop() + 'px');
+  $('#playersinfo').css('left', (($(window).width() - $('#playersinfo').outerWidth()) / 2) + $(window).scrollLeft() + 'px');
+
+
   // get the database records
   $.ajax({
     url: 'get_records.php',
@@ -79,17 +85,16 @@ $(document).ready(function(){
         }
       } // end for
 
-      // // create the box in the middle to display player's data
-      // var info = paper.rect(0,0, 250, 150);
-      // info.translate(size/2 - 125, size/2 - 75);
 
       // and create the players
+	  console.log(data[0]);
       for(var i = 0; i < totalPlayers; i++){
+		// PLAYERS
         // calculate the bar height
         barHeight = floatmap(data[i].plusminus, minPlusMinus, maxPlusMinus, 10, 270);
 
         // create a reference to this element (player)
-        players[i] = paper.rect(0, 0, 5, barHeight);
+        players[i] = paper.rect(0, 0, 3, barHeight);
 
         // the colors to use for this player
         barColor = floatmap(data[i].salary, minSalary, maxSalary, 1, 6);
@@ -106,28 +111,33 @@ $(document).ready(function(){
         players[i].data('data', data[i]);
         players[i].mouseover(function(){
           var d = this.data('data');
-          var html = '<p>'+ d.player +'</p>';
+          var html  = '<p><strong>'+ d.player +'</strong> ('+ d.pos +' - '+ d.team +')</p>';
+          html += '<p>Plus/minus:\t'+ d.plusminus +'</p>';
+          html += '<p>Salary:\t'+ d.salary +'</p>';
+          html += '<p>Goals:\t'+ d.goal +'</p>';
+          html += '<p>Assists:\t'+ d.assists +'</p>';
           $('#playersinfo').html(html);
-          console.log(d.player);
+		  $('#layersinfo').css('display', 'block');
         });
+		players[i].mouseout(function(){
+		  $('#playersinfo').css('display', 'none');
+		});
 
         // apply the transformation (rotate and..)
         players[i].translate(size / 2, size / 2 + 200);
 
         // rotate the appropriate amount
         players[i].rotate(angle * i++, 0,-200);
-      } // end for(players)
 
 
-      // create the teams
-      for(var i = 0; i < totalPlayers; i++){
+		// TEAM
         // store last team and set current team
         lastTeam = currentTeam;
         currentTeam = data[i].team;
         // if we are at a new team
         if(currentTeam != lastTeam){
           // create the team separator (just a rect)
-          teams[i] = paper.rect(0, 0, 1, 250);
+          teams[i] = paper.rect(0, 0, 1, 200);
 
           // apply color and...
           teams[i].attr({
@@ -144,12 +154,56 @@ $(document).ready(function(){
           // add the text
           var t = paper.text(0, 0, data[i].team);
           // go to the middle of the canvas
-          t.translate(size/2, size/2 - 175);
+          t.translate(size/2, size/2 + 175);
 
           // rotate the appropriate amount
-          t.rotate(angle * i++, 0, 175);
+          t.rotate(angle * i++, 0, -175);
+
+		  // rotate the text so it is aligned with the rect
+		  // also, if first half, rotate 270 (so it seems up)
+		  // and translate it so it does not lies straight on the rect
+		  if(i < totalPlayers/2){
+			t.rotate(270, 0,0);
+		  	t.translate(0,-2);
+		  }else{
+			t.rotate(90, 0, 0);
+			t.translate(0,2);
+		  }
         }
-      } // end for(teams)
+      } // end for(players)
+
+
+      // // create the teams
+      // for(var i = 0; i < totalPlayers; i++){
+      //   // store last team and set current team
+      //   lastTeam = currentTeam;
+      //   currentTeam = data[i].team;
+      //   // if we are at a new team
+      //   if(currentTeam != lastTeam){
+      //     // create the team separator (just a rect)
+      //     teams[i] = paper.rect(0, 0, 1, 250);
+
+      //     // apply color and...
+      //     teams[i].attr({
+      //       fill: '#666',
+      //       stroke: 'none'
+      //     });
+
+      //     // go to the middle of the canvas
+      //     teams[i].translate(size/2, size/2);
+
+      //     // rotate the appropriate amount
+      //     teams[i].rotate(angle * i++, 0, 0);
+
+      //     // add the text
+      //     var t = paper.text(0, 0, data[i].team);
+      //     // go to the middle of the canvas
+      //     t.translate(size/2, size/2 - 175);
+
+      //     // rotate the appropriate amount
+      //     t.rotate(angle * i++, 0, 175);
+      //   }
+      // } // end for(teams)
 
       // // WORKING
       // // attach the event listener to each player
