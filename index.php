@@ -42,7 +42,7 @@
 		<footer>
 			<ul class="inline">
 				<li class="separator"><a href="about.html" title="About cashmoney">About</a></li>
-				<li><a href="about.html" title="About cashmoney">About</a></li>
+				<li>Built with <a href="http://raphaeljs.com/" title="Got to Raphaeljs.com">Raphael.js</a></li>
 				<li class="attribution">Created by <a class="nobold" href="http://duvieusart.net" title="Nicoals Duvieusart Dery">Nicolas Duvieusart D&eacute;ry</a></li>
 			</ul>
 			<p class="floatright">Data updated on 01/15/2012</p>

@@ -65,14 +65,15 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
 Author: Nicolas Duvieusart Dery
 ========================================================================== */
-a{
-	color:#666;
+a, a:visited{
+	/* color:#666; */
+		color:#1c62b9;
 	font-weight:bold;
 	text-decoration:none;
 	cursor:pointer;
 }
 
-	a:hover, a:visited{
+	a:hover{
 		color:#1c62b9;
 		text-decoration:underline;
 	}
@@ -137,12 +138,6 @@ header{
 	margin:0 auto;
 }
 
-	/* app canvas */
-	svg{
-		margin:0 auto;
-	}
-
-
 
 footer{
 	/* text-align:right; */
@@ -156,7 +151,7 @@ footer{
 
 	footer .attribution{
 		float:right;
-		color:#1c62b9;
+		/* color:#1c62b9; */
 	}
 
 	footer p{
