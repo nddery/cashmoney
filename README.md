@@ -2,8 +2,6 @@
 
 ## visualizing the national hockey league 
 
-This data visualisation 
-
 This project consists of building a data visualization contrasting the National Hockey League (NHL) players’ plus/minus score against their salary. Wikipedia define the plus/minus statistic as following: “plus-minus statistic is increased by one (“plus”) for each player on the ice for the team scoring the goal; the plus-minus statistic is decreased by one (“minus”) for each player on the ice for the other team on which the goal is scored”.
 
 The idea behind this project is to create a visually compelling method of analyzing players’ performance and to easily spot overpaid players’. I chose to use the plus/minus statistic over the number of goal scored for the reason that a player can add value to his team without himself scoring goals. The use of plus/minus, in my opinion, should result in a more loyal representation.
