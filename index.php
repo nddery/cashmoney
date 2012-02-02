@@ -49,6 +49,8 @@
 		</footer>
 	</div> <!--! end of #container -->
 
+	<div id="tooltip"></div>
+
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
@@ -56,6 +58,8 @@
 	<script defer src="js/libs/raphael.min.js"></script>
 	<!-- scripts concatenated and minified via ant build script-->
 	<script defer src="js/plugins.js"></script>
+	<script defer src="js/libs/jquery.dimensions.js"></script>
+	<script defer src="js/libs/jquery.tooltip.js"></script>
 	<script defer src="js/cashmoney.js"></script>
 	<!-- end scripts-->
 
