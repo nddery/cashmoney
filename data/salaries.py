@@ -21,8 +21,7 @@ tsv = open("salaries.txt", "w")
 base = "http://www.nhlnumbers.com/teams/"
 
 # array of team code to retrieve
-# teams = ["MTL"]
-teams = ["ANA","ATL","BOS","BUF","CGY","CAR","CHI","COL","CLB","DAL","DET","EDM","FLA","LAK","MIN","MTL","NAS","NJD","NYI","NYR","OTT","PHI","PHX","PIT","SJS","STL","TBL","TOR","VAN","WAS"]
+teams = ["ANA","BOS","BUF","CAR","CBJ","CGY","CHI","COL","DAL","DET","EDM","FLA","LAK","MIN","MTL","NJD","NSH","NYI","NYR","OTT","PHI","PHX","PIT","SJS","STL","TBL","TOR","VAN","WPG","WAS"]
 
 # will place acquired data in variables
 fileContent = ''
