@@ -19,9 +19,13 @@
 
 $(document).ready(function(){
   // center the players info in the screen
-  $('#playersinfo').css('position', 'absolute');
-  $('#playersinfo').css('top', (($(window).height() - $('#playersinfo').outerHeight()) / 2) + $(window).scrollTop() + 'px');
-  $('#playersinfo').css('left', (($(window).width() - $('#playersinfo').outerWidth()) / 2) + $(window).scrollLeft() + 'px');
+  // $('#playersinfo').css('position', 'absolute');
+  // $('#playersinfo').css('top', (($(window).height() - $('#playersinfo').outerHeight()) / 2) + $(window).scrollTop() + 'px');
+  // $('#playersinfo').css('left', (($(window).width() - $('#playersinfo').outerWidth()) / 2) + $(window).scrollLeft() + 'px');
+  $('#playersinfo').css('position', 'relative');
+  $('#playersinfo').css('z-index', '0');
+  $('#playersinfo').css('top', '-535px');
+
 
 
   // get the database records

@@ -129,11 +129,12 @@ header{
 
 
 #playersinfo{
-	position:absolute;
 	background:#eee;
-	padding:0 10px;
-	top:450px;
-	left:450px;
+	/* padding:0 10px; */
+	width: 300px;
+	text-align: center;
+	line-height: 10px;
+	padding: 10px;
 }
 
 
