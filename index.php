@@ -32,7 +32,7 @@
 
 		<div id="main" role="main">
 			<div id="cashmoney">
-				<div id="playersinfo"></div>
+				<div id="infobox"></div>
 			</div>
 			<!-- <canvas id="cashmoney" width="900" height="900"> -->
 			<!-- 	You browser does not support the canvas element, you should consider updating! -->
@@ -49,11 +49,12 @@
 		</footer>
 	</div> <!--! end of #container -->
 
-	<div id="tooltip"></div>
+	<!-- <div id="tooltip"></div> -->
 
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+	<!-- <script src="js/libs/jquery-1.6.2.min.js"></script> -->
 
 	<script defer src="js/libs/raphael.min.js"></script>
 	<!-- scripts concatenated and minified via ant build script-->

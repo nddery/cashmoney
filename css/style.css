@@ -128,13 +128,26 @@ header{
 		}
 
 
-#playersinfo{
+#infobox{
+	position:relative;
+	z-index:0;
+	display:none; /* will be changed with JS */
 	background:#eee;
-	/* padding:0 10px; */
-	width: 300px;
+	width: 260px;
+	height:130px;
 	text-align: center;
 	line-height: 10px;
 	padding: 10px;
+
+	color:#1c62b9;
+	opacity: .80; /* Standard: FF gt 1.5, Opera, Safari */
+	filter: alpha(opacity=80); /* IE lt 8 */
+	-ms-filter: "alpha(opacity=80)"; /* IE 8 */
+	-khtml-opacity: .80; /* Safari 1.x */
+	-moz-opacity: .80; /* FF lt 1.5, Netscape */
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-wekbit-border-radius:10px;
 }
 
 
