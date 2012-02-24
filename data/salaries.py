@@ -21,7 +21,17 @@ tsv = open("salaries.txt", "w")
 base = "http://www.nhlnumbers.com/teams/"
 
 # array of team code to retrieve
-teams = ["ANA","BOS","BUF","CAR","CBJ","CGY","CHI","COL","DAL","DET","EDM","FLA","LAK","MIN","MTL","NJD","NSH","NYI","NYR","OTT","PHI","PHX","PIT","SJS","STL","TBL","TOR","VAN","WPG","WAS"]
+# to match team name with nhl.com:
+# CBJ = CLB
+# NSH = NAS
+teams = [
+  "ANA","BOS","BUF","CAR","CLB",
+  "CGY","CHI","COL","DAL","DET",
+  "EDM","FLA","LAK","MIN","MTL",
+  "NJD","NAS","NYI","NYR","OTT",
+  "PHI","PHX","PIT","SJS","STL",
+  "TBL","TOR","VAN","WPG","WAS"
+]
 
 # will place acquired data in variables
 fileContent = ''
@@ -50,34 +60,51 @@ for i in range(0, len(teams)):
   
   rows = soup.findAll('tr')
   for tr in rows:
-    # beautifulsoup treat CSS class attribute as one long string, so regex is use to if specific word (class)
+    # beautifulsoup treat CSS class attribute as one long string, so regex is 
+    # use to if specific word (class)
     # is contained inside the long string returned by beautifulsoup
     # regex looks for either team-cell or caphit class
     cols = tr.findAll('td', {'class': re.compile(r'\b(team-cell|caphit)\b')})
 
     for td in cols:
-      # get text from inside the <td>
-      text = ''.join(td.findAll(text=True))
-      
-      # if players' name
+      # if first row (player's name)
       if(col == 0):
-        # replace all &#39; with '
-        text = ((re.sub('[&#39;]+', '\'', text)))
-        # reverse name (name are 'last, first' - we want 'first last')
-        text = ((re.sub('([A-Za-z\'\.\-]+)(,\s*)([A-Za-z\'\.\-]+)',
-          r'\3 \1',
-          text)))
-      
-      # remove all \t, \n & \r contained in text
-      fileContent += ((re.sub('[\t\n]+', '', text))+'\t')
-      
-      # we got this far, hence this is a good column, set the flag to add a new line
-      valid = 1
-      col += 1
+        # get anchor with a class of 'active' or 'injured'
+        anchor = td.findAll('a', {'class':re.compile(r'\b(active|injured)\b')})
+      # only continue if the player is either 'active' or 'injured'
+      # if we did not find any anchor, anchor will be empty, hence false
+      if anchor:
+        # get text from inside the <td>
+        text = ''.join(td.findAll(text=True))
+        
+        # if players' name
+        if(col == 0):
+          # replace all &#39; with '
+          text = ((re.sub('[&#39;]+', '\'', text)))
+          # reverse name (name are 'last, first' - we want 'first last')
+          text = ((re.sub('([A-Za-z\'\.\-]+)(,\s*)([A-Za-z\'\.\-]+)',
+            r'\3 \1',
+            text)))
+        
+        # remove all \t, \n & \r contained in text
+        fileContent += ((re.sub('[\t\n]+', '', text))+'\t')
+        
+        # we got this far, hence this is a good column, 
+        # set the flag to add a new line
+        valid = 1
+        col += 1
 
     if valid:
-      # add the team to the current row
-      fileContent += teams[i]
+      # if team name is one of the two nhlnumbers.com / nhl.com difference,
+      # apply nhl.com style
+      if teams[i] == 'CLB':
+        fileContent += 'CBJ'
+      elif teams[i] == 'NAS':
+        fileContent += 'NSH'
+      else:
+        # add the team to the current row
+        fileContent += teams[i]
+
       # add a line break after each row
       fileContent += ('\r\n')
 

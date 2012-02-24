@@ -39,13 +39,23 @@
 			<!-- </canvas> -->
 		</div>
 
-		<footer>
-			<ul class="inline">
-				<li class="separator"><a href="about.html" title="About cashmoney">About</a></li>
-				<li>Built with <a href="http://raphaeljs.com/" title="Got to Raphaeljs.com">Raphael.js</a></li>
-				<li class="attribution">Created by <a class="nobold" href="http://duvieusart.net" title="Nicoals Duvieusart Dery">Nicolas Duvieusart D&eacute;ry</a></li>
-			</ul>
-			<p class="floatright">Data updated on 01/15/2012</p>
+		<footer class="clearfix">
+			<div id="footercontent">
+				<ul class="inline">
+					<li class="separator"><a href="about.html" title="About cashmoney">About</a></li>
+					<li>Built with <a href="http://raphaeljs.com/" title="Got to Raphaeljs.com">Raphael.js</a></li>
+					<li class="floatright">Created by <a class="nobold" href="http://duvieusart.net" title="Nicoals Duvieusart Dery">Nicolas Duvieusart D&eacute;ry</a></li>
+				</ul>
+
+				<p class="floatleft box">
+					Data obtained from <a href="http://nhlnumbers.com/" title="NHL Numbers">www.nhlnumbers.com</a> and <a href="http://www.nhl.com/" title="NHL">www.nhl.com</a>
+					<br />
+					<br />
+					As the information displayed on this page is obtained from two different source, in an effort to only display accurate information, only perfect match are merged - not all players are represented on this graph.
+				</p>
+
+				<p class="floatright box textalignright">Data updated on 02/23/2012</p>
+			</div><!-- end #footercontent -->
 		</footer>
 	</div> <!--! end of #container -->
 

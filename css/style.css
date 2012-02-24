@@ -2,7 +2,7 @@
  * ==|== normalize ==========================================================
  */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+article, aside, details, figcaption, figure, #footercontent, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
@@ -91,13 +91,28 @@ a, a:visited{
 		display:inline-block;
 	}
 
+.floatleft{
+	float:left;
+}
+
 .floatright{
 	float:right;
+}
+
+.textalignright{
+	text-align:right;
+}
+
+.box{
+	width:45%;
 }
 
 
 body{
 	background:url(../img/background.jpg) repeat;
+	/* font: 14px/21px Arial, Helvetica, sans-serif; */
+	/* font-family:Helvetica, Arial, sans-serif; */
+	/* font-size:14px; */
 }
 
 
@@ -128,60 +143,110 @@ header{
 		}
 
 
-#infobox{
-	position:relative;
-	z-index:0;
-	display:none; /* will be changed with JS */
-	background:#eee;
-	width: 260px;
-	height:130px;
-	text-align: center;
-	line-height: 10px;
-	padding: 10px;
-
-	color:#1c62b9;
-	opacity: .80; /* Standard: FF gt 1.5, Opera, Safari */
-	filter: alpha(opacity=80); /* IE lt 8 */
-	-ms-filter: "alpha(opacity=80)"; /* IE 8 */
-	-khtml-opacity: .80; /* Safari 1.x */
-	-moz-opacity: .80; /* FF lt 1.5, Netscape */
-	border-radius:10px;
-	-moz-border-radius:10px;
-	-wekbit-border-radius:10px;
-}
-
-
 #main{
 	width:900px;
 	margin:0 auto;
 }
 
+	#cashmoney{
+		position:relative;
+	}
+
+		#infobox{
+			position:absolute;
+			z-index:0;
+			display:none; /* will be changed with JS */
+			background:#eee;
+			background:url(../img/puck.png) center center;
+			width: 260px;
+			/* height:130px; */
+			height:260px;
+			text-align: center;
+			line-height: 10px;
+			padding: 10px;
+
+			color:#1c62b9;
+			/* opacity: .80; /* Standard: FF gt 1.5, Opera, Safari */ */
+			/* filter: alpha(opacity=80); /* IE lt 8 */ */
+			/* -ms-filter: "alpha(opacity=80)"; /* IE 8 */ */
+			/* -khtml-opacity: .80; /* Safari 1.x */ */
+			/* -moz-opacity: .80; /* FF lt 1.5, Netscape */ */
+			border-radius:10px;
+			-moz-border-radius:10px;
+			-wekbit-border-radius:10px;
+		}
+
+			#infobox table{
+				width:90%;
+				margin:35px auto 0 auto;
+				text-align:left;
+				/* line-height:1.5em; */
+				border-collapse:separate;
+				border-spacing:5px;
+				color:#fff;
+			}
+
+				#infobox tr{
+					/* border-bottom:1px solid #99C0F0; */
+					/* line-height:2em; */
+					/* background:#ccc; */
+					/* opacity: .80; /* Standard: FF gt 1.5, Opera, Safari */ */
+					/* filter: alpha(opacity=80); /* IE lt 8 */ */
+					/* -ms-filter: "alpha(opacity=80)"; /* IE 8 */ */
+					/* -khtml-opacity: .80; /* Safari 1.x */ */
+					/* -moz-opacity: .80; /* FF lt 1.5, Netscape */ */
+				}
+				#infobox tr:first-child{
+					/* border-bottom:none; */
+					line-height:1.5em;
+				}
+
+					#infobox th[colspan="2"]{
+						/* padding:5px 0 10px 0; */
+						font-size:1.1em;
+						text-align:center;
+					}
+
+					#infobox th, #infobox td{
+						background-color: transparent;
+						background-color: rgba(17, 59, 111, 0.8);
+						padding:10px;
+					}
+
+					#infobox td{
+						text-align:right;
+						width:50%;
+					}
+
 
 footer{
-	/* text-align:right; */
-	width:900px;
-	margin:10px auto 0 auto;
+	background:url(../img/background-footer.jpg) repeat;
+	min-height:149px;
+	border-top:4px solid #333;
+	font: 14px/21px Arial, Helvetica, sans-serif;
+	padding-bottom:40px;
 }
-	
-	footer ul{
-		padding-left:0;
-	}
 
-	footer .attribution{
-		float:right;
-		/* color:#1c62b9; */
+	#footercontent{
+		/* text-align:right; */
+		width:900px;
+		margin:10px auto 0 auto;
 	}
+		
+		#footercontent ul{
+			padding:0 0 10px 0;
+			border-bottom:1px solid #333;
+		}
 
-	footer p{
-		margin-top:0;
-	}
+		#footercontent p{
+			margin-top:0;
+		}
 
 
 
 li.separator::after{
 	content:" | ";
 }
-
 
 
 

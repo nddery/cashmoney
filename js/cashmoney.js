@@ -80,38 +80,57 @@ $(document).ready(function(){
 			} // end for
 
 
-			// and create the players
-			for(var i = 0; i < totalPlayers; i++){
-				// PLAYERS
-				// calculate the bar height
-				barHeight = floatmap(data[i].plusminus, minPlusMinus, maxPlusMinus, 10, 270);
+          // and create the players
+          for(var i = 0; i < totalPlayers; i++){
+              // PLAYERS
+              // calculate the bar height
+              barHeight = floatmap(data[i].plusminus, minPlusMinus, maxPlusMinus, 10, 270);
 
-				// create a reference to this element (player)
-				players[i] = paper.rect(0, 0, 4, barHeight);
+              // create a reference to this element (player)
+              players[i] = paper.rect(0, 0, 4, barHeight);
 
-				// the colors to use for this player
-				barColor = floatmap(data[i].salary, minSalary, maxSalary, 1, 6);
-				red = parseInt(8 * barColor);
-				green = parseInt(185 - 51 * barColor);
+              // the colors to use for this player
+              barColor = floatmap(data[i].salary, minSalary, maxSalary, 1, 6);
+              red = parseInt(8 * barColor);
+              green = parseInt(185 - 51 * barColor);
 
-				// and apply them colors
-				players[i].attr({
-					fill: 'rgb('+red+','+green+',185)',
-					stroke: 'none'
-				});
+              // and apply them colors
+              players[i].attr({
+                  fill: 'rgb('+red+','+green+',185)',
+                  stroke: 'none'
+              });
 
-				// add data to display on hover
-				players[i].data('data', data[i]);
-				players[i].mouseover(function(){
-					positionInfoBox();
-					$('div#infobox').css('display', 'block');
+              // add data to display on hover
+              players[i].data('data', data[i]);
+              players[i].mouseover(function(){
+                  positionInfoBox();
+                  $('div#infobox').css('display', 'block');
 
-					var d = this.data('data');
-					var html  = '<p><strong>'+ d.player +'</strong> ('+ d.pos +' - '+ d.team +')</p>';
-					html += '<p>Plus/minus:\t'+ d.plusminus +'</p>';
-					html += '<p>Salary:\t'+ d.salary +'</p>';
-					html += '<p>Goals:\t'+ d.goal +'</p>';
-					html += '<p>Assists:\t'+ d.assists +'</p>';
+                  var d = this.data('data');
+                  // var html  = '<p><strong>'+ d.player +'</strong> ('+ d.pos +' - '+ d.team +')</p>';
+                  html = '<table>';
+                    html += '<tr><th colspan="2"><strong>'+ d.player +'</strong> ('+ d.pos +' - '+ d.team +')</th></tr>';
+                    html += '<tr>';
+                      html += '<th>Plus/minus</th>';
+                      html += '<td>'+ d.plusminus +'</td>';
+                    html += '</tr>';
+                    
+                    html += '<tr>';
+                      html += '<th>Salary</th>';
+                      html += '<td>'+ d.salary +'</td>';
+                    html += '</tr>';
+
+                    html += '<tr>';
+                      html += '<th>Goals</th>';
+                      html += '<td>'+ d.goal +'</td>';
+                    html += '</tr>';
+
+                    html += '<tr>';
+                      html += '<th>Assists</th>';
+                      html += '<td>'+ d.assists +'</td>';
+                    html += '</tr>';
+                  html += '</table>';
+
 
 					$('#infobox').html(html);
 				});
@@ -150,6 +169,12 @@ $(document).ready(function(){
 
 					// add the text
 					var t = paper.text(0, 0, data[i].team);
+
+                    // set the font size and family
+                    t.attr({
+                      font: '13px "Verdana"'
+                    });
+
 					// go to the middle of the canvas
 					t.translate(size/2, size/2 + 175);
 
@@ -161,24 +186,13 @@ $(document).ready(function(){
 					// and translate it so it does not lies straight on the rect
 					if(i < totalPlayers/2){
 						t.rotate(270, 0,0);
-						t.translate(0,-2);
+						t.translate(0,-3);
 					}else{
 						t.rotate(90, 0, 0);
-						t.translate(0,2);
+						t.translate(0,3);
 					}
 				}
 			} // end for(players)
-
-			// // WORKING
-			// // attach the event listener to each player
-			// $('rect').each(function(e){
-			//   $(this).mouseover(function(){
-			//     console.log('over: ' + this);
-			//   });
-			//   $(this).mouseout(function(){
-			//     console.log('out : ' + this);
-			//   });
-			// });
 
 		} // end success()
 
@@ -201,9 +215,10 @@ $(document).ready(function(){
 		infoleft -= ($('div#infobox').outerWidth() / 2);
 		// get the vertical position
 		infotop = $('div#cashmoney').outerHeight() / 2;
+		infotop -= ($('div#infobox').outerHeight() / 2);
 
 		$('div#infobox').css('left', infoleft);
-		$('div#infobox').css('top', -infotop);
+		$('div#infobox').css('top', infotop);
 
 	} // end positionInfoBox()
 
