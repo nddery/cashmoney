@@ -24,9 +24,9 @@ require_once 'db_config.php';
 $info = $db->get_results("
   SELECT    statistics.*,
             salaries.salary
-  FROM      statistics,
-            salaries
-  WHERE     statistics.player = salaries.player
+  FROM      statistics
+  LEFT JOIN salaries
+    ON        statistics.player = salaries.player
   ORDER BY  statistics.team
 ");
 

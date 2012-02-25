@@ -115,6 +115,42 @@ body{
 	/* font-size:14px; */
 }
 
+body.zoom100{
+	-webkit-transform: scale(1.00);
+	   -moz-transform: scale(1.00);
+	    -ms-transform: scale(1.00);
+	     -o-transform: scale(1.00);
+	        transform: scale(1.00);
+}
+body.zoom125{
+	-webkit-transform: scale(1.25);
+	   -moz-transform: scale(1.25);
+	    -ms-transform: scale(1.25);
+	     -o-transform: scale(1.25);
+	        transform: scale(1.25);
+}
+body.zoom150{
+	-webkit-transform: scale(1.50);
+	   -moz-transform: scale(1.50);
+	    -ms-transform: scale(1.50);
+	     -o-transform: scale(1.50);
+	        transform: scale(1.50);
+}
+body.zoom175{
+	-webkit-transform: scale(1.75);
+	   -moz-transform: scale(1.75);
+	    -ms-transform: scale(1.75);
+	     -o-transform: scale(1.75);
+	        transform: scale(1.75);
+}
+body.zoom200{
+	-webkit-transform: scale(2.00);
+	   -moz-transform: scale(2.00);
+	    -ms-transform: scale(2.00);
+	     -o-transform: scale(2.00);
+	        transform: scale(2.00);
+}
+
 
 header{
 	text-align:center;
@@ -156,8 +192,8 @@ header{
 			position:absolute;
 			z-index:0;
 			display:none; /* will be changed with JS */
-			background:#eee;
-			background:url(../img/puck.png) center center;
+			/* background:#eee; */
+			/* background:url(../img/puck.png) center center; */
 			width: 260px;
 			/* height:130px; */
 			height:260px;
@@ -184,39 +220,27 @@ header{
 				border-collapse:separate;
 				border-spacing:5px;
 				color:#fff;
+				background:#fff;
+				border:1px solid #cacaca;
+				outline:1px solid #dcdcdc;
+				/* outline:1px solid #fff */
 			}
 
-				#infobox tr{
-					/* border-bottom:1px solid #99C0F0; */
-					/* line-height:2em; */
-					/* background:#ccc; */
-					/* opacity: .80; /* Standard: FF gt 1.5, Opera, Safari */ */
-					/* filter: alpha(opacity=80); /* IE lt 8 */ */
-					/* -ms-filter: "alpha(opacity=80)"; /* IE 8 */ */
-					/* -khtml-opacity: .80; /* Safari 1.x */ */
-					/* -moz-opacity: .80; /* FF lt 1.5, Netscape */ */
-				}
-				#infobox tr:first-child{
-					/* border-bottom:none; */
-					line-height:1.5em;
+				#infobox th[colspan="2"]{
+					text-align:center;
 				}
 
-					#infobox th[colspan="2"]{
-						/* padding:5px 0 10px 0; */
-						font-size:1.1em;
-						text-align:center;
-					}
+				#infobox th, #infobox td{
+					background:#1C62B9;
+					background:rgba(28, 98, 185, 0.9);
+					padding:10px;
+					border:1px solid #dcdcdc;
+				}
 
-					#infobox th, #infobox td{
-						background-color: transparent;
-						background-color: rgba(17, 59, 111, 0.8);
-						padding:10px;
-					}
-
-					#infobox td{
-						text-align:right;
-						width:50%;
-					}
+				#infobox td{
+					text-align:right;
+					width:50%;
+				}
 
 
 footer{
