@@ -252,4 +252,20 @@
 
   } // end floatmap()
 
+
+  
+  /**
+   * Apply the correct zoom class to the body of the page
+   *
+   */
+  // when user click on +
+  // $('#zoonin').on('click', function(){
+  //   
+  // });
+  // 
+  // // when user click on -
+  // $('#zoonin').on('click', function(){
+  //   
+  // });
+
 })();
