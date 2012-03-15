@@ -20,7 +20,7 @@
 (function(){
   // get the database records
   $.ajax({
-    url: 'get_records.php',
+    url: 'http://cashmoney.duvieusart.net/get_records.php',
   asynch: false,
   success: function(data, textStatus, jqXHR){
     // parse the received data to JSON

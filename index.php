@@ -54,7 +54,7 @@
 					As the information displayed on this page is obtained from two different source, in an effort to only display accurate information, only perfect match are merged - not all players are represented on this graph.
 				</p>
 
-				<p class="floatright box textalignright">Data updated on 02/23/2012</p>
+				<p class="floatright box textalignright">Data updated on 03/15/2012</p>
 			</div><!-- end #footercontent -->
 		</footer>
 	</div> <!--! end of #container -->
