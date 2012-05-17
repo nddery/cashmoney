@@ -44,7 +44,7 @@
 				<ul class="inline">
 					<!-- <li class="separator"><a href="about.html" title="About cashmoney">About</a></li> -->
 					<li>Built with <a href="http://raphaeljs.com/" title="Got to Raphaeljs.com">Raphael.js</a></li>
-					<li class="floatright">Created by <a class="nobold" href="http://duvieusart.net" title="Nicoals Duvieusart Dery">Nicolas Duvieusart D&eacute;ry</a></li>
+					<li class="floatright">Created by <a class="nobold" href="http://nddery.ca" title="Nicoals Duvieusart Dery">Nicolas Duvieusart D&eacute;ry</a></li>
 				</ul>
 
 				<p class="floatleft box">

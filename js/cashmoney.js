@@ -20,7 +20,7 @@
 (function(){
   // get the database records
   $.ajax({
-    url: 'http://cashmoney.duvieusart.net/get_records.php',
+    url: 'http://cashmoney.nddery.ca/get_records.php',
   asynch: false,
   success: function(data, textStatus, jqXHR){
     // parse the received data to JSON
@@ -234,10 +234,10 @@
    * added it but with integer... stupid!
    *
    * The Arduino map() function uses integer, not float...
-   * "The map() function uses integer math so will not generate fractions, 
-   * when the math might indicate that it should do so. Fractional remainders 
+   * "The map() function uses integer math so will not generate fractions,
+   * when the math might indicate that it should do so. Fractional remainders
    * are truncated, and are not rounded or averaged."
-   * 
+   *
    * @param   float    value    The number to map
    * @param   float    istart   Lower bound of the value's current range
    * @param   float    istop    Upper bound of the value's current range
@@ -253,19 +253,19 @@
   } // end floatmap()
 
 
-  
+
   /**
    * Apply the correct zoom class to the body of the page
    *
    */
   // when user click on +
   // $('#zoonin').on('click', function(){
-  //   
+  //
   // });
-  // 
+  //
   // // when user click on -
   // $('#zoonin').on('click', function(){
-  //   
+  //
   // });
 
 })();
