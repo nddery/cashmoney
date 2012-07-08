@@ -74,12 +74,10 @@
 	<script defer src="js/cashmoney.js"></script>
 	<!-- end scripts-->
 
-	<!-- <script> // Change UA-XXXXX-X to be your site's ID -->
-	<!-- window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']]; -->
-	<!-- Modernizr.load({ -->
-	<!-- 	load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js' -->
-	<!-- }); -->
-	<!-- </script> -->
+  <script type="text/javascript">
+    var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-31577047-1"]);_gaq.push(["_setDomainName","nddery.ca"]);_gaq.push(["_trackPageview"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})()
+  </script>
+
 
 	<!--[if lt IE 7 ]>
 	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
