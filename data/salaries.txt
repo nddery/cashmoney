@@ -31,31 +31,31 @@ Viktor Fasth	2.900	ANA
 Frederik Andersen	1.493	ANA
 John Gibson	0.446	ANA
 
-John Gibson	0.093	ANA
 
-John Gibson	0.277	ANA
-John Gibson	0.209	ANA
-John Gibson	0.174	ANA
-John Gibson	0.083	ANA
-John Gibson	0.055	ANA
-John Gibson	0.034	ANA
-John Gibson	0.020	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
-John Gibson	0.000	ANA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -95,28 +95,28 @@ Chad Johnson	0.600	BOS
 Niklas Svedberg	0.528	BOS
 
 
-Niklas Svedberg	0.112	BOS
-Niklas Svedberg	0.074	BOS
-Niklas Svedberg	0.049	BOS
-Niklas Svedberg	0.031	BOS
-Niklas Svedberg	0.007	BOS
-Niklas Svedberg	0.005	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
-Niklas Svedberg	0.000	BOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -154,38 +154,38 @@ Alexander Sulzer	0.561	BUF
 Ryan Miller	6.250	BUF
 Jhonas Enroth	1.250	BUF
 
-Jhonas Enroth	1.207	BUF
-Jhonas Enroth	0.952	BUF
-Jhonas Enroth	0.795	BUF
-Jhonas Enroth	0.080	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	-0.092	BUF
 
-Jhonas Enroth	0.619	BUF
-Jhonas Enroth	0.446	BUF
-Jhonas Enroth	0.428	BUF
-Jhonas Enroth	0.281	BUF
-Jhonas Enroth	0.274	BUF
-Jhonas Enroth	0.270	BUF
-Jhonas Enroth	0.212	BUF
-Jhonas Enroth	0.102	BUF
-Jhonas Enroth	0.043	BUF
-Jhonas Enroth	0.030	BUF
-Jhonas Enroth	0.007	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
-Jhonas Enroth	0.000	BUF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -222,38 +222,38 @@ Cam Ward	6.300	CAR
 Anton Khudobin	0.800	CAR
 Justin Peters	0.502	CAR
 
-Justin Peters	1.887	CAR
-Justin Peters	0.900	CAR
-Justin Peters	0.340	CAR
-Justin Peters	0.335	CAR
-Justin Peters	0.125	CAR
 
-Justin Peters	0.132	CAR
-Justin Peters	0.068	CAR
-Justin Peters	0.045	CAR
-Justin Peters	0.040	CAR
-Justin Peters	0.009	CAR
-Justin Peters	0.003	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
-Justin Peters	0.000	CAR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -290,35 +290,35 @@ David Savard	0.709	CBJ
 Sergei Bobrovsky	5.625	CBJ
 Curtis McElhinney	0.600	CBJ
 
-Curtis McElhinney	1.142	CBJ
-Curtis McElhinney	0.000	CBJ
 
-Curtis McElhinney	0.413	CBJ
-Curtis McElhinney	0.359	CBJ
-Curtis McElhinney	0.175	CBJ
-Curtis McElhinney	0.088	CBJ
-Curtis McElhinney	0.086	CBJ
-Curtis McElhinney	0.086	CBJ
-Curtis McElhinney	0.061	CBJ
-Curtis McElhinney	0.011	CBJ
-Curtis McElhinney	0.005	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
-Curtis McElhinney	0.000	CBJ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -356,34 +356,34 @@ Derek Smith	0.703	CGY
 Karri Ramo	2.750	CGY
 Reto Berra	1.155	CGY
 
-Reto Berra	0.160	CGY
-Reto Berra	0.016	CGY
-Reto Berra	0.000	CGY
 
-Reto Berra	0.526	CGY
-Reto Berra	0.275	CGY
-Reto Berra	0.157	CGY
-Reto Berra	0.038	CGY
-Reto Berra	0.032	CGY
-Reto Berra	0.020	CGY
-Reto Berra	0.014	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
-Reto Berra	0.000	CGY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -418,36 +418,36 @@ Corey Crawford	2.667	CHI
 Nikolai Khabibulin	2.000	CHI
 Antti Raanta	1.063	CHI
 
-Antti Raanta	0.049	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
 
-Antti Raanta	0.236	CHI
-Antti Raanta	0.173	CHI
-Antti Raanta	0.085	CHI
-Antti Raanta	0.082	CHI
-Antti Raanta	0.059	CHI
-Antti Raanta	0.046	CHI
-Antti Raanta	0.040	CHI
-Antti Raanta	0.004	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
-Antti Raanta	0.000	CHI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -485,27 +485,27 @@ Semyon Varlamov	2.833	COL
 Jean-Sebastien Giguere	1.500	COL
 Sami Aittokallio	0.420	COL
 
-Sami Aittokallio	0.750	COL
-Sami Aittokallio	0.408	COL
-Sami Aittokallio	0.000	COL
 
-Sami Aittokallio	0.582	COL
-Sami Aittokallio	0.222	COL
-Sami Aittokallio	0.003	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
-Sami Aittokallio	0.000	COL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -540,37 +540,37 @@ Kevin Connauton	0.683	DAL
 Kari Lehtonen	5.900	DAL
 Dan Ellis	0.900	DAL
 
-Dan Ellis	0.233	DAL
-Dan Ellis	0.176	DAL
 
-Dan Ellis	0.119	DAL
-Dan Ellis	0.077	DAL
-Dan Ellis	0.062	DAL
-Dan Ellis	0.062	DAL
-Dan Ellis	0.044	DAL
-Dan Ellis	0.043	DAL
-Dan Ellis	0.037	DAL
-Dan Ellis	0.003	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
-Dan Ellis	0.000	DAL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -611,34 +611,34 @@ Jonas Gustavsson	1.500	DET
 Jared Coreau	0.764	DET
 Petr Mrazek	0.547	DET
 
-Petr Mrazek	0.000	DET
 
-Petr Mrazek	0.730	DET
-Petr Mrazek	0.477	DET
-Petr Mrazek	0.235	DET
-Petr Mrazek	0.067	DET
-Petr Mrazek	0.055	DET
-Petr Mrazek	0.051	DET
-Petr Mrazek	0.041	DET
-Petr Mrazek	0.041	DET
-Petr Mrazek	0.039	DET
-Petr Mrazek	0.017	DET
-Petr Mrazek	0.007	DET
-Petr Mrazek	0.003	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
-Petr Mrazek	0.000	DET
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -674,47 +674,47 @@ Martin Marincin	0.522	EDM
 Ilya Bryzgalov	1.610	EDM
 Ben Scrivens	0.251	EDM
 
-Ben Scrivens	1.903	EDM
-Ben Scrivens	0.799	EDM
-Ben Scrivens	0.682	EDM
-Ben Scrivens	0.313	EDM
-Ben Scrivens	0.076	EDM
-Ben Scrivens	0.006	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
 
-Ben Scrivens	0.466	EDM
-Ben Scrivens	0.285	EDM
-Ben Scrivens	0.226	EDM
-Ben Scrivens	0.223	EDM
-Ben Scrivens	0.167	EDM
-Ben Scrivens	0.158	EDM
-Ben Scrivens	0.152	EDM
-Ben Scrivens	0.141	EDM
-Ben Scrivens	0.107	EDM
-Ben Scrivens	0.095	EDM
-Ben Scrivens	0.041	EDM
-Ben Scrivens	0.031	EDM
-Ben Scrivens	0.025	EDM
-Ben Scrivens	0.017	EDM
-Ben Scrivens	0.017	EDM
-Ben Scrivens	0.014	EDM
-Ben Scrivens	0.009	EDM
-Ben Scrivens	0.006	EDM
-Ben Scrivens	0.005	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
-Ben Scrivens	0.000	EDM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -752,35 +752,35 @@ Alex Petrovic	0.485	FLA
 Tim Thomas	3.750	FLA
 Scott Clemmensen	1.169	FLA
 
-Scott Clemmensen	1.704	FLA
-Scott Clemmensen	1.200	FLA
-Scott Clemmensen	0.993	FLA
-Scott Clemmensen	0.333	FLA
 
-Scott Clemmensen	0.320	FLA
-Scott Clemmensen	0.244	FLA
-Scott Clemmensen	0.202	FLA
-Scott Clemmensen	0.180	FLA
-Scott Clemmensen	0.123	FLA
-Scott Clemmensen	0.031	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
-Scott Clemmensen	0.000	FLA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -814,30 +814,30 @@ Jake Muzzin	1.000	LAK
 Jonathan Quick	5.800	LAK
 Martin Jones	0.401	LAK
 
-Martin Jones	0.402	LAK
-Martin Jones	0.299	LAK
-Martin Jones	0.121	LAK
-Martin Jones	0.000	LAK
 
-Martin Jones	0.326	LAK
-Martin Jones	0.217	LAK
-Martin Jones	0.018	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
-Martin Jones	0.000	LAK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -875,29 +875,29 @@ Niklas Backstrom	3.417	MIN
 Josh Harding	1.900	MIN
 Darcy Kuemper	0.535	MIN
 
-Darcy Kuemper	0.928	MIN
-Darcy Kuemper	0.450	MIN
-Darcy Kuemper	0.446	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
 
-Darcy Kuemper	0.583	MIN
-Darcy Kuemper	0.069	MIN
-Darcy Kuemper	0.040	MIN
-Darcy Kuemper	0.012	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
-Darcy Kuemper	0.000	MIN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -934,35 +934,35 @@ Davis Drewiske	0.637	MTL
 Carey Price	6.500	MTL
 Peter Budaj	1.400	MTL
 
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
 
-Peter Budaj	0.124	MTL
-Peter Budaj	0.122	MTL
-Peter Budaj	0.085	MTL
-Peter Budaj	0.060	MTL
-Peter Budaj	0.037	MTL
-Peter Budaj	0.037	MTL
-Peter Budaj	0.036	MTL
-Peter Budaj	0.012	MTL
-Peter Budaj	0.008	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
-Peter Budaj	0.000	MTL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1000,33 +1000,33 @@ Jon Merrill	0.715	NJD
 Martin Brodeur	4.500	NJD
 Cory Schneider	4.000	NJD
 
-Cory Schneider	0.667	NJD
-Cory Schneider	0.250	NJD
-Cory Schneider	0.250	NJD
-Cory Schneider	0.179	NJD
-Cory Schneider	0.000	NJD
 
-Cory Schneider	0.474	NJD
-Cory Schneider	0.292	NJD
-Cory Schneider	0.078	NJD
-Cory Schneider	0.017	NJD
-Cory Schneider	0.009	NJD
-Cory Schneider	0.006	NJD
-Cory Schneider	0.003	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
-Cory Schneider	0.000	NJD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1061,32 +1061,32 @@ Devan Dubnyk	0.785	NSH
 Carter Hutton	0.550	NSH
 Marek Mazanec	0.501	NSH
 
-Marek Mazanec	1.006	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
 
-Marek Mazanec	0.539	NSH
-Marek Mazanec	0.062	NSH
-Marek Mazanec	0.032	NSH
-Marek Mazanec	0.014	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
-Marek Mazanec	0.000	NSH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1123,29 +1123,29 @@ Evgeni Nabokov	3.250	NYI
 Anders Nilsson	1.086	NYI
 Kevin Poulin	0.578	NYI
 
-Kevin Poulin	2.204	NYI
-Kevin Poulin	0.418	NYI
-Kevin Poulin	0.000	NYI
 
-Kevin Poulin	0.718	NYI
-Kevin Poulin	0.689	NYI
-Kevin Poulin	0.308	NYI
-Kevin Poulin	0.247	NYI
-Kevin Poulin	0.133	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
-Kevin Poulin	0.000	NYI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1179,40 +1179,40 @@ John Moore	0.965	NYR
 Henrik Lundqvist	6.875	NYR
 Cam Talbot	0.513	NYR
 
-Cam Talbot	0.739	NYR
-Cam Talbot	0.093	NYR
-Cam Talbot	0.090	NYR
 
-Cam Talbot	0.524	NYR
-Cam Talbot	0.139	NYR
-Cam Talbot	0.129	NYR
-Cam Talbot	0.123	NYR
-Cam Talbot	0.066	NYR
-Cam Talbot	0.064	NYR
-Cam Talbot	0.062	NYR
-Cam Talbot	0.023	NYR
-Cam Talbot	0.016	NYR
-Cam Talbot	0.010	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
-Cam Talbot	0.000	NYR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1247,33 +1247,33 @@ Eric Gryba	0.562	OTT
 Craig Anderson	3.188	OTT
 Robin Lehner	0.870	OTT
 
-Robin Lehner	0.200	OTT
 
-Robin Lehner	0.201	OTT
-Robin Lehner	0.140	OTT
-Robin Lehner	0.088	OTT
-Robin Lehner	0.072	OTT
-Robin Lehner	0.030	OTT
-Robin Lehner	0.013	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
-Robin Lehner	0.000	OTT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1311,38 +1311,38 @@ Marc-Andre Bourdon	0.613	PHI
 Ray Emery	1.650	PHI
 Steve Mason	1.500	PHI
 
-Steve Mason	0.269	PHI
-Steve Mason	0.183	PHI
-Steve Mason	0.100	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
 
-Steve Mason	0.068	PHI
-Steve Mason	0.012	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
-Steve Mason	0.000	PHI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1378,35 +1378,35 @@ David Rundblad	0.785	PHX
 Mike Smith	5.667	PHX
 Thomas Greiss	0.750	PHX
 
-Thomas Greiss	0.067	PHX
 
-Thomas Greiss	0.259	PHX
-Thomas Greiss	0.200	PHX
-Thomas Greiss	0.074	PHX
-Thomas Greiss	0.038	PHX
-Thomas Greiss	0.037	PHX
-Thomas Greiss	0.031	PHX
-Thomas Greiss	0.028	PHX
-Thomas Greiss	0.020	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
-Thomas Greiss	0.000	PHX
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1450,26 +1450,26 @@ Marc-Andre Fleury	5.000	PIT
 Tomas Vokoun	2.000	PIT
 Jeff Zatkoff	0.525	PIT
 
-Jeff Zatkoff	0.161	PIT
-Jeff Zatkoff	0.151	PIT
 
-Jeff Zatkoff	0.097	PIT
-Jeff Zatkoff	0.065	PIT
-Jeff Zatkoff	0.037	PIT
-Jeff Zatkoff	0.005	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
-Jeff Zatkoff	0.000	PIT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1510,29 +1510,29 @@ Antti Niemi	3.800	SJS
 Alex Stalock	0.625	SJS
 
 
-Alex Stalock	0.120	SJS
-Alex Stalock	0.068	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
-Alex Stalock	0.000	SJS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1569,32 +1569,32 @@ Carlo Colaiacovo	0.588	STL
 Jaroslav Halak	3.750	STL
 Brian Elliott	1.800	STL
 
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
 
-Brian Elliott	0.100	STL
-Brian Elliott	0.008	STL
-Brian Elliott	0.006	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
-Brian Elliott	0.000	STL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1632,33 +1632,33 @@ Jean-Philippe Cote	0.550	TBL
 Ben Bishop	2.300	TBL
 Anders Lindback	1.800	TBL
 
-Anders Lindback	1.167	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
 
-Anders Lindback	0.292	TBL
-Anders Lindback	0.218	TBL
-Anders Lindback	0.073	TBL
-Anders Lindback	0.065	TBL
-Anders Lindback	0.057	TBL
-Anders Lindback	0.027	TBL
-Anders Lindback	0.003	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
-Anders Lindback	0.000	TBL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1695,43 +1695,43 @@ Paul Ranger	1.000	TOR
 Jonathan Bernier	2.900	TOR
 James Reimer	1.800	TOR
 
-James Reimer	1.000	TOR
-James Reimer	1.000	TOR
-James Reimer	0.874	TOR
-James Reimer	0.438	TOR
-James Reimer	0.062	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
 
-James Reimer	0.726	TOR
-James Reimer	0.216	TOR
-James Reimer	0.208	TOR
-James Reimer	0.169	TOR
-James Reimer	0.113	TOR
-James Reimer	0.076	TOR
-James Reimer	0.033	TOR
-James Reimer	0.014	TOR
-James Reimer	0.006	TOR
-James Reimer	0.003	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
-James Reimer	0.000	TOR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1769,38 +1769,38 @@ Roberto Luongo	5.333	VAN
 Eddie Lack	0.750	VAN
 Joacim Eriksson	0.493	VAN
 
-Joacim Eriksson	0.000	VAN
 
-Joacim Eriksson	0.191	VAN
-Joacim Eriksson	0.128	VAN
-Joacim Eriksson	0.088	VAN
-Joacim Eriksson	0.054	VAN
-Joacim Eriksson	0.043	VAN
-Joacim Eriksson	0.008	VAN
-Joacim Eriksson	0.006	VAN
-Joacim Eriksson	0.004	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
-Joacim Eriksson	0.000	VAN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1839,30 +1839,30 @@ Zach Redmond	0.414	WPG
 Ondrej Pavelec	3.900	WPG
 Al Montoya	0.601	WPG
 
-Al Montoya	0.000	WPG
 
-Al Montoya	0.051	WPG
-Al Montoya	0.048	WPG
-Al Montoya	0.038	WPG
-Al Montoya	0.016	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
-Al Montoya	0.000	WPG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1898,31 +1898,31 @@ Michal Neuvirth	2.500	WAS
 Braden Holtby	1.850	WAS
 Philipp Grubauer	0.440	WAS
 
-Philipp Grubauer	0.426	WAS
-Philipp Grubauer	0.000	WAS
 
-Philipp Grubauer	0.450	WAS
-Philipp Grubauer	0.250	WAS
-Philipp Grubauer	0.051	WAS
-Philipp Grubauer	0.023	WAS
-Philipp Grubauer	0.014	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
-Philipp Grubauer	0.000	WAS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

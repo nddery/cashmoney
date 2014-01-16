@@ -97,25 +97,26 @@ for i in range(0, len(teams)):
                     # get text from inside the <td>
                     text = ''.join(td.findAll(text=True))
 
-            # if players' name
-            if(col == 0):
-                # replace all &#39; with '
-                text = ((re.sub('[&#39;]+', '\'', text)))
-                # reverse name (name are 'last, first' - we want 'first last')
-                text = ((re.sub('([A-Za-z\'\.\-]+)(,\s*)([A-Za-z\'\.\-]+)',
-                                r'\3 \1',
-                                text)))
+                    # replace all &#39; with '
+                    text = ((re.sub('[&#39;]+', '\'', text)))
+                    # reverse name (name are 'last, first'
+                    # - we want 'first last')
+                    text = ((re.sub('([A-Za-z\'\.\-]+)(,\s*)([A-Za-z\'\.\-]+)',
+                                    r'\3 \1',
+                                    text)))
 
-                # remove all \t, \n & \r contained in text
-                fileContent += ((re.sub('[\t\n]+', '', text)) + '\t')
+                    # remove all \t, \n & \r contained in text
+                    fileContent += ((re.sub('[\t\n]+', '', text)) + '\t')
+
+                    valid = 1
 
             # if player's salary
-            if(col == 1):
+            if(col == 1 and valid == 1):
                 fileContent += ''.join(td.findAll(text=True)) + '\t'
 
             # we got this far, hence this is a good column,
             # set the flag to add a new line
-            valid = 1
+            # valid = 1
             col += 1
 
         if valid:
