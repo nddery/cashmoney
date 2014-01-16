@@ -11,14 +11,23 @@
 
 from bs4 import BeautifulSoup, SoupStrainer
 import urllib
+import time
 import sys
 import re
+
+print ""
+print "Cash Money - Visualizing the National Hockey League"
+print ""
 
 # create a text file in same directory
 tsv = open("salaries.txt", "w")
 
 # summary, sorted by players last name
-base = "http://www.nhlnumbers.com/teams/"
+base = "http://stats.nhlnumbers.com/teams/"
+
+print "Fetching salaries from nhlnumbers.com."
+print base
+print ""
 
 # array of team code to retrieve
 # to match team name with nhl.com:
@@ -43,11 +52,12 @@ col = 0
 
 # acquire/parse data
 for i in range(0, len(teams)):
-    print "Now retrieving "
-    print teams[i]
-    print " (" + str(i + 1) + " of " + str(len(teams)) + ")"
+    sys.stdout.write("Now retrieving ")
+    sys.stdout.write(teams[i])
+    sys.stdout.write(" (" + str(i + 1) + " of " + str(len(teams)) + ")")
+    print ""
 
-    url = base + teams[i] + "?year=2012"
+    url = base + teams[i] + "?year=" + time.strftime('%Y')
 
     f = urllib.urlopen(url)
 
@@ -55,7 +65,7 @@ for i in range(0, len(teams)):
 
     # do not parse anything outside <div id="stats-left">
     strainer = SoupStrainer('div', {'class': 'content-with-box-ads'})
-    soup = BeautifulSoup(''.join(html), parseOnlyThese=strainer)
+    soup = BeautifulSoup(''.join(html), parse_only=strainer)
 
     table = soup.find('table')
 
@@ -96,8 +106,12 @@ for i in range(0, len(teams)):
                                 r'\3 \1',
                                 text)))
 
-            # remove all \t, \n & \r contained in text
-            fileContent += ((re.sub('[\t\n]+', '', text)) + '\t')
+                # remove all \t, \n & \r contained in text
+                fileContent += ((re.sub('[\t\n]+', '', text)) + '\t')
+
+            # if player's salary
+            if(col == 1):
+                fileContent += ''.join(td.findAll(text=True)) + '\t'
 
             # we got this far, hence this is a good column,
             # set the flag to add a new line
@@ -126,4 +140,4 @@ for i in range(0, len(teams)):
 sys.stdout.write("DONE\r\n")
 
 #write to file
-tsv.write(fileContent)
+tsv.write(fileContent.encode('utf8'))
