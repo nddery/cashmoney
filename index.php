@@ -55,7 +55,7 @@
 
         <p class="floatright box textalignright">
           Data obtained from <a href="http://nhlnumbers.com/" title="NHL Numbers">www.nhlnumbers.com</a> and <a href="http://www.nhl.com/" title="NHL">www.nhl.com</a><br />
-          Data updated on 03/15/2012
+          Data updated on 01/16/2014
           <br />
           <br />
           As the information displayed on this page is obtained from two different source, in an effort to only display accurate information, only perfect match are merged - not all players are represented on this graph.
