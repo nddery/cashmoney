@@ -9,7 +9,7 @@
 # Saves it all to a .tsv file.
 #
 
-from BeautifulSoup import BeautifulSoup, SoupStrainer
+from bs4 import BeautifulSoup, SoupStrainer
 import urllib
 import sys
 import re
@@ -25,12 +25,14 @@ base = "http://www.nhlnumbers.com/teams/"
 # CBJ = CLB
 # NSH = NAS
 teams = [
-  "ANA","BOS","BUF","CAR","CLB",
-  "CGY","CHI","COL","DAL","DET",
-  "EDM","FLA","LAK","MIN","MTL",
-  "NJD","NAS","NYI","NYR","OTT",
-  "PHI","PHX","PIT","SJS","STL",
-  "TBL","TOR","VAN","WPG","WAS"
+    "ANA", "BOS", "BUF", "CAR",
+    "CLB", "CGY", "CHI", "COL",
+    "DAL", "DET", "EDM", "FLA",
+    "LAK", "MIN", "MTL", "NJD",
+    "NAS", "NYI", "NYR", "OTT",
+    "PHI", "PHX", "PIT", "SJS",
+    "STL", "TBL", "TOR", "VAN",
+    "WPG", "WAS"
 ]
 
 # will place acquired data in variables
@@ -41,75 +43,84 @@ col = 0
 
 # acquire/parse data
 for i in range(0, len(teams)):
-  print "Now retrieving "+teams[i]+" ("+str(i+1)+" of "+str(len(teams))+")"
-  url = base+teams[i]+"?year=2012"
+    print "Now retrieving "
+    print teams[i]
+    print " (" + str(i + 1) + " of " + str(len(teams)) + ")"
 
-  f = urllib.urlopen(url)
-  
-  html = f.read()
-  
-  # do not parse anything outside <div id="stats-left">
-  strainer = SoupStrainer('div', {'class': 'content-with-box-ads'})
-  soup = BeautifulSoup(''.join(html), parseOnlyThese=strainer)
-  
-  table = soup.find('table')
-  
-  # if it is a good row (found information), valid = 1 
-  # if valid = 1, add newline after td, else don't
-  valid = 0;
-  
-  rows = soup.findAll('tr')
-  for tr in rows:
-    # beautifulsoup treat CSS class attribute as one long string, so regex is 
-    # use to if specific word (class)
-    # is contained inside the long string returned by beautifulsoup
-    # regex looks for either team-cell or caphit class
-    cols = tr.findAll('td', {'class': re.compile(r'\b(team-cell|caphit)\b')})
+    url = base + teams[i] + "?year=2012"
 
-    for td in cols:
-      # if first row (player's name)
-      if(col == 0):
-        # get anchor with a class of 'active' or 'injured'
-        anchor = td.findAll('a', {'class':re.compile(r'\b(active|injured)\b')})
-      # only continue if the player is either 'active' or 'injured'
-      # if we did not find any anchor, anchor will be empty, hence false
-      if anchor:
-        # get text from inside the <td>
-        text = ''.join(td.findAll(text=True))
-        
-        # if players' name
-        if(col == 0):
-          # replace all &#39; with '
-          text = ((re.sub('[&#39;]+', '\'', text)))
-          # reverse name (name are 'last, first' - we want 'first last')
-          text = ((re.sub('([A-Za-z\'\.\-]+)(,\s*)([A-Za-z\'\.\-]+)',
-            r'\3 \1',
-            text)))
-        
-        # remove all \t, \n & \r contained in text
-        fileContent += ((re.sub('[\t\n]+', '', text))+'\t')
-        
-        # we got this far, hence this is a good column, 
-        # set the flag to add a new line
-        valid = 1
-        col += 1
+    f = urllib.urlopen(url)
 
-    if valid:
-      # if team name is one of the two nhlnumbers.com / nhl.com difference,
-      # apply nhl.com style
-      if teams[i] == 'CLB':
-        fileContent += 'CBJ'
-      elif teams[i] == 'NAS':
-        fileContent += 'NSH'
-      else:
-        # add the team to the current row
-        fileContent += teams[i]
+    html = f.read()
 
-      # add a line break after each row
-      fileContent += ('\r\n')
+    # do not parse anything outside <div id="stats-left">
+    strainer = SoupStrainer('div', {'class': 'content-with-box-ads'})
+    soup = BeautifulSoup(''.join(html), parseOnlyThese=strainer)
 
-      valid = 0
-      col = 0
+    table = soup.find('table')
+
+    # if it is a good row (found information), valid = 1
+    # if valid = 1, add newline after td, else don't
+    valid = 0
+
+    rows = soup.findAll('tr')
+    for tr in rows:
+        # beautifulsoup treat CSS class attribute as one long string,
+        # so regex is use to if specific word (class)
+        # is contained inside the long string returned by beautifulsoup
+        # regex looks for either team-cell or caphit class
+        cols = tr.findAll('td', {
+            'class': re.compile(r'\b(team-cell|caphit)\b')
+        })
+
+        for td in cols:
+            # if first row (player's name)
+            if(col == 0):
+                # get anchor with a class of 'active' or 'injured'
+                anchor = td.findAll('a', {
+                    'class': re.compile(r'\b(active|injured)\b')
+                })
+                # only continue if the player is either 'active' or 'injured'
+                # if we did not find any anchor, anchor will be empty,
+                # hence false
+                if anchor:
+                    # get text from inside the <td>
+                    text = ''.join(td.findAll(text=True))
+
+            # if players' name
+            if(col == 0):
+                # replace all &#39; with '
+                text = ((re.sub('[&#39;]+', '\'', text)))
+                # reverse name (name are 'last, first' - we want 'first last')
+                text = ((re.sub('([A-Za-z\'\.\-]+)(,\s*)([A-Za-z\'\.\-]+)',
+                                r'\3 \1',
+                                text)))
+
+            # remove all \t, \n & \r contained in text
+            fileContent += ((re.sub('[\t\n]+', '', text)) + '\t')
+
+            # we got this far, hence this is a good column,
+            # set the flag to add a new line
+            valid = 1
+            col += 1
+
+        if valid:
+            # if team name is one of the two
+            # nhlnumbers.com / nhl.com difference,
+            # apply nhl.com style
+            if teams[i] == 'CLB':
+                fileContent += 'CBJ'
+            elif teams[i] == 'NAS':
+                fileContent += 'NSH'
+            else:
+                # add the team to the current row
+                fileContent += teams[i]
+
+        # add a line break after each row
+        fileContent += ('\r\n')
+
+        valid = 0
+        col = 0
 
 # print in console
 sys.stdout.write("DONE\r\n")
