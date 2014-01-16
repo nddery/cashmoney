@@ -10,7 +10,7 @@ ini_set('display_errors', True);
 require_once 'db_config.php';
 
 
-// // get the infomration out
+// // get the information out
 // $info = $db->get_results("
 //   SELECT    statistics.*,
 //             salaries.salary
