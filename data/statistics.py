@@ -16,6 +16,10 @@ import urllib
 import sys
 import re
 
+print ""
+print "Cash Money - Visualizing the National Hockey League"
+print ""
+
 # create a text file in same directory
 tsv = open("statistics.txt", "w")
 
@@ -26,6 +30,10 @@ url += "&gameType=2"
 url += "&sort=player.bioFirstNameLastName"
 url += "&viewName=summary&pg="
 
+print "Fetching statistics from nhl.com."
+print url
+print ""
+
 # will place acquired data in variables
 # will sort fileContent by team (hence separating header and content)
 fileHeader = ''
@@ -34,10 +42,9 @@ fileContent = ''
 # used to retrieve only appropriate columns
 col = 0
 
-
 # acquire/parse data
-for i in range(1, 29):
-    print "Now retrieving page " + str(i) + " of " + "28"
+for i in range(1, 28):
+    print "Now retrieving page " + str(i) + " of " + "27"
 
     f = urllib.urlopen(url + str(i))
 
@@ -50,7 +57,7 @@ for i in range(1, 29):
     # inside the long string returned by beautifulsoup
     # cols = tr.findAll('td', {'class': re.compile(r'\bstatBox\b')})
     strainer2 = SoupStrainer('table', {'class': re.compile(r'\bstats\b')})
-    soup = BeautifulSoup(''.join(html), parseOnlyThese=strainer2)
+    soup = BeautifulSoup(''.join(html), parse_only=strainer2)
 
     table = soup.find('tbody')
 
@@ -75,30 +82,30 @@ for i in range(1, 29):
                     or (col == 7) or (col == 8)):
                 text = ''.join(td.findAll(text=True))
 
-            # if row is team, only gets first team
-            if (col == 2):
-                text = ((re.sub('([A-Za-z]+)(,\s*)([A-Za-z]+)',
-                                r'\1',
-                                text)))
+                # if row is team, only gets first team
+                if (col == 2):
+                    text = ((re.sub('([A-Za-z]+)(,\s*)([A-Za-z]+)',
+                                    r'\1',
+                                    text)))
 
-            fileContent += ((re.sub('[\t\n]+', '', text))).encode('utf8')
+                fileContent += ((re.sub('[\t\n]+', '', text))).encode('utf8')
 
-            # only add a tab if not the end of line
-            if(col != 8):
-                fileContent += '\t'
+                # only add a tab if not the end of line
+                if(col != 8):
+                    fileContent += '\t'
 
-            valid = 1
+                valid = 1
             # end if col...
 
-        col += 1
+            col += 1
         # end for td in cols
 
         if valid:
             fileContent += ('\r\n')
             valid = 0
             col = 0
-            # end for tr in rows
-            # end for i in range
+    # end for tr in rows
+# end for i in range
 
 # were done
 sys.stdout.write("DONE\r\n")
