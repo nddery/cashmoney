@@ -20,7 +20,7 @@
 (function(){
   // get the database records
   $.ajax({
-    url: 'http://cashmoney.nddery.ca/get_records.php',
+    url: 'http://proj.nddery.ca/cashmoney/get_records.php',
   asynch: false,
   success: function(data, textStatus, jqXHR){
     // parse the received data to JSON
