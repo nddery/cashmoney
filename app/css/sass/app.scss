@@ -1,0 +1,53 @@
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
+@import "menu";
+
+/* Teams logo */
+.logo {
+  display: inline-block;
+  margin: 10px;
+  width: 84px;
+  height: 56px;
+  background-size: 84px 56px;
+  opacity: 0.25;
+  @include transition(all 0.3s);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.logo-ANA { background-image: url(../img/logos/ANA.svgz); }
+.logo-BOS { background-image: url(../img/logos/BOS.svgz); }
+.logo-BUF { background-image: url(../img/logos/BUF.svgz); }
+.logo-CAR { background-image: url(../img/logos/CAR.svgz); }
+.logo-CGY { background-image: url(../img/logos/CGY.svgz); }
+.logo-CHI { background-image: url(../img/logos/CHI.svgz); }
+.logo-CLB { background-image: url(../img/logos/CLB.svgz); }
+.logo-COL { background-image: url(../img/logos/COL.svgz); }
+.logo-DAL { background-image: url(../img/logos/DAL.svgz); }
+.logo-DET { background-image: url(../img/logos/DET.svgz); }
+.logo-EDM { background-image: url(../img/logos/EDM.svgz); }
+.logo-FLA { background-image: url(../img/logos/FLA.svgz); }
+.logo-LAK { background-image: url(../img/logos/LAK.svgz); }
+.logo-MIN { background-image: url(../img/logos/MIN.svgz); }
+.logo-MTL { background-image: url(../img/logos/MTL.svgz); }
+.logo-NAS { background-image: url(../img/logos/NAS.svgz); }
+.logo-NJD { background-image: url(../img/logos/NJD.svgz); }
+.logo-NYI { background-image: url(../img/logos/NYI.svgz); }
+.logo-NYR { background-image: url(../img/logos/NYR.svgz); }
+.logo-OTT { background-image: url(../img/logos/OTT.svgz); }
+.logo-PHI { background-image: url(../img/logos/PHI.svgz); }
+.logo-PHX { background-image: url(../img/logos/PHX.svgz); }
+.logo-PIT { background-image: url(../img/logos/PIT.svgz); }
+.logo-SJS { background-image: url(../img/logos/SJS.svgz); }
+.logo-STL { background-image: url(../img/logos/STL.svgz); }
+.logo-TBL { background-image: url(../img/logos/TBL.svgz); }
+.logo-TOR { background-image: url(../img/logos/TOR.svgz); }
+.logo-VAN { background-image: url(../img/logos/VAN.svgz); }
+.logo-WAS { background-image: url(../img/logos/WAS.svgz); }
+.logo-WPG { background-image: url(../img/logos/WPG.svgz); }

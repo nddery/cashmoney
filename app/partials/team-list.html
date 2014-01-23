@@ -1,0 +1,8 @@
+<ul ng-controller="TeamListCtrl" ng-click="update()">
+  <li ng-repeat="team in teams"
+      ng-click="team.active=!team.active"
+      ng-class="{'active': team.active}"
+      class="logo logo-{{team.name}}">
+    <span class="backdrop">&nbsp;</span>
+  </li>
+</ul>

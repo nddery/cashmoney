@@ -1,0 +1,13 @@
+<pull-nav></pull-nav>
+
+<div id="cashmoney">
+  <p>CASHMONEY</p>
+  <button ng-click="toggleMenu()">Show/Hide Left Push Menu</button>
+
+  <div ng-controller="CircularVisualisationCtrl">
+    <circular-visualisation
+      on-click="showDetailPane(item)"
+      data="data">
+    </circular-visualisation>
+  </div>
+</div>

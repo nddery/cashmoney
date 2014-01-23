@@ -1,0 +1,271 @@
+/* General styles for all menus */
+/* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+/* line 3, sass/_menu.scss */
+.cbp-spmenu {
+  background: #47a3da;
+  -webkit-box-shadow: #288bc6 -40px 0 50px 0 inset;
+  -moz-box-shadow: #288bc6 -40px 0 50px 0 inset;
+  box-shadow: #288bc6 -40px 0 50px 0 inset;
+  position: fixed;
+  overflow-x: scroll;
+  z-index: 0;
+}
+/* line 10, sass/_menu.scss */
+.cbp-spmenu ul {
+  padding: 1em;
+}
+/* line 14, sass/_menu.scss */
+.cbp-spmenu h3 {
+  color: #afdefa;
+  font-size: 1.9em;
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+  background: #0d77b6;
+}
+/* line 23, sass/_menu.scss */
+.cbp-spmenu a {
+  display: block;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+/* line 29, sass/_menu.scss */
+.cbp-spmenu a:hover {
+  background: #258ecd;
+}
+/* line 33, sass/_menu.scss */
+.cbp-spmenu a:active {
+  background: #afdefa;
+  color: #47a3da;
+}
+
+/* line 40, sass/_menu.scss */
+.cbp-spmenu-vertical {
+  width: 90%;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+}
+/* line 46, sass/_menu.scss */
+.cbp-spmenu-vertical a {
+  border-bottom: 1px solid #258ecd;
+  padding: 1em;
+}
+
+/* line 52, sass/_menu.scss */
+.cbp-spmenu-left {
+  left: -90%;
+}
+/* line 55, sass/_menu.scss */
+.cbp-spmenu-left.cbp-spmenu-open {
+  left: 0px;
+}
+
+/* line 60, sass/_menu.scss */
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+/* line 66, sass/_menu.scss */
+.cbp-spmenu-push-toright {
+  left: 90%;
+  overflow: hidden;
+}
+
+/* line 72, sass/_menu.scss */
+.cbp-spmenu,
+.cbp-spmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-height: 26.375em) {
+  /* line 81, sass/_menu.scss */
+  .cbp-spmenu-vertical {
+    font-size: 90%;
+    width: 190px;
+  }
+
+  /* line 87, sass/_menu.scss */
+  .cbp-spmenu-left,
+  .cbp-spmenu-push-toleft {
+    left: -190px;
+  }
+}
+/* Teams logo */
+/* line 6, sass/app.scss */
+.logo {
+  display: inline-block;
+  margin: 10px;
+  width: 84px;
+  height: 56px;
+  background-size: 84px 56px;
+  opacity: 0.25;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 15, sass/app.scss */
+.logo:hover {
+  cursor: pointer;
+}
+/* line 19, sass/app.scss */
+.logo.active {
+  opacity: 1;
+}
+
+/* line 24, sass/app.scss */
+.logo-ANA {
+  background-image: url(../img/logos/ANA.svgz);
+}
+
+/* line 25, sass/app.scss */
+.logo-BOS {
+  background-image: url(../img/logos/BOS.svgz);
+}
+
+/* line 26, sass/app.scss */
+.logo-BUF {
+  background-image: url(../img/logos/BUF.svgz);
+}
+
+/* line 27, sass/app.scss */
+.logo-CAR {
+  background-image: url(../img/logos/CAR.svgz);
+}
+
+/* line 28, sass/app.scss */
+.logo-CGY {
+  background-image: url(../img/logos/CGY.svgz);
+}
+
+/* line 29, sass/app.scss */
+.logo-CHI {
+  background-image: url(../img/logos/CHI.svgz);
+}
+
+/* line 30, sass/app.scss */
+.logo-CLB {
+  background-image: url(../img/logos/CLB.svgz);
+}
+
+/* line 31, sass/app.scss */
+.logo-COL {
+  background-image: url(../img/logos/COL.svgz);
+}
+
+/* line 32, sass/app.scss */
+.logo-DAL {
+  background-image: url(../img/logos/DAL.svgz);
+}
+
+/* line 33, sass/app.scss */
+.logo-DET {
+  background-image: url(../img/logos/DET.svgz);
+}
+
+/* line 34, sass/app.scss */
+.logo-EDM {
+  background-image: url(../img/logos/EDM.svgz);
+}
+
+/* line 35, sass/app.scss */
+.logo-FLA {
+  background-image: url(../img/logos/FLA.svgz);
+}
+
+/* line 36, sass/app.scss */
+.logo-LAK {
+  background-image: url(../img/logos/LAK.svgz);
+}
+
+/* line 37, sass/app.scss */
+.logo-MIN {
+  background-image: url(../img/logos/MIN.svgz);
+}
+
+/* line 38, sass/app.scss */
+.logo-MTL {
+  background-image: url(../img/logos/MTL.svgz);
+}
+
+/* line 39, sass/app.scss */
+.logo-NAS {
+  background-image: url(../img/logos/NAS.svgz);
+}
+
+/* line 40, sass/app.scss */
+.logo-NJD {
+  background-image: url(../img/logos/NJD.svgz);
+}
+
+/* line 41, sass/app.scss */
+.logo-NYI {
+  background-image: url(../img/logos/NYI.svgz);
+}
+
+/* line 42, sass/app.scss */
+.logo-NYR {
+  background-image: url(../img/logos/NYR.svgz);
+}
+
+/* line 43, sass/app.scss */
+.logo-OTT {
+  background-image: url(../img/logos/OTT.svgz);
+}
+
+/* line 44, sass/app.scss */
+.logo-PHI {
+  background-image: url(../img/logos/PHI.svgz);
+}
+
+/* line 45, sass/app.scss */
+.logo-PHX {
+  background-image: url(../img/logos/PHX.svgz);
+}
+
+/* line 46, sass/app.scss */
+.logo-PIT {
+  background-image: url(../img/logos/PIT.svgz);
+}
+
+/* line 47, sass/app.scss */
+.logo-SJS {
+  background-image: url(../img/logos/SJS.svgz);
+}
+
+/* line 48, sass/app.scss */
+.logo-STL {
+  background-image: url(../img/logos/STL.svgz);
+}
+
+/* line 49, sass/app.scss */
+.logo-TBL {
+  background-image: url(../img/logos/TBL.svgz);
+}
+
+/* line 50, sass/app.scss */
+.logo-TOR {
+  background-image: url(../img/logos/TOR.svgz);
+}
+
+/* line 51, sass/app.scss */
+.logo-VAN {
+  background-image: url(../img/logos/VAN.svgz);
+}
+
+/* line 52, sass/app.scss */
+.logo-WAS {
+  background-image: url(../img/logos/WAS.svgz);
+}
+
+/* line 53, sass/app.scss */
+.logo-WPG {
+  background-image: url(../img/logos/WPG.svgz);
+}

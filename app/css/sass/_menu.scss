@@ -1,0 +1,90 @@
+/* General styles for all menus */
+/* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+.cbp-spmenu {
+  background: #47a3da;
+  @include box-shadow(darken(#47a3da, 10%) -40px 0 50px 0 inset);
+  position: fixed;
+  overflow-x: scroll;
+  z-index: 0;
+
+  ul {
+    padding: 1em;
+  }
+
+  h3 {
+    color: #afdefa;
+    font-size: 1.9em;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    background: #0d77b6;
+  }
+
+  a {
+    display: block;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+
+    &:hover {
+      background: #258ecd;
+    }
+
+    &:active {
+      background: #afdefa;
+      color: #47a3da;
+    }
+  }
+}
+
+.cbp-spmenu-vertical {
+  width: 90%;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+
+  a {
+    border-bottom: 1px solid #258ecd;
+    padding: 1em;
+  }
+}
+
+.cbp-spmenu-left {
+  left: -90%;
+
+  &.cbp-spmenu-open {
+    left: 0px;
+  }
+}
+
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.cbp-spmenu-push-toright {
+  left: 90%;
+  overflow: hidden;
+}
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+  @include transition(all 0.3s ease);
+}
+
+@media screen and (max-width: 55.1875em){
+}
+
+@media screen and (max-height: 26.375em){
+
+  .cbp-spmenu-vertical {
+    font-size: 90%;
+    width: 190px;
+  }
+
+  .cbp-spmenu-left,
+  .cbp-spmenu-push-toleft {
+    left: -190px;
+  }
+}
