@@ -59,25 +59,27 @@
   var teams = new Array();
 
   // find the minimum and maximum plus/minus & salary
-  for(var i = 0; i < totalPlayers; i++){
-    // plus/minus
-    var pm = parseInt(data[i].plusminus);
-    if(pm < minPlusMinus){
-      minPlusMinus = pm;
-    }
-    if(pm > maxPlusMinus){
-      maxPlusMinus = pm;
-    }
+  minPlusMinus = d3.min(data, 'plusminus');
+  console.log(minPlusMinus);
+  // for(var i = 0; i < totalPlayers; i++){
+  //   // plus/minus
+  //   var pm = parseInt(data[i].plusminus);
+  //   if(pm < minPlusMinus){
+  //     minPlusMinus = pm;
+  //   }
+  //   if(pm > maxPlusMinus){
+  //     maxPlusMinus = pm;
+  //   }
 
-    // salary
-    var salary = parseFloat(data[i].salary);
-    if(salary < minSalary){
-      minSalary = salary;
-    }
-    if(salary > maxSalary){
-      maxSalary = salary;
-    }
-  } // end for
+  //   // salary
+  //   var salary = parseFloat(data[i].salary);
+  //   if(salary < minSalary){
+  //     minSalary = salary;
+  //   }
+  //   if(salary > maxSalary){
+  //     maxSalary = salary;
+  //   }
+  // } // end for
 
 
   // and create the players

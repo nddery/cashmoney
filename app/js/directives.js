@@ -20,6 +20,101 @@ angular.module('cm.directives', ['d3'])
     }
   })
 
+  .directive('treeLayout', function(d3Service) {
+    return {
+      restrict: 'E'
+      ,scope: {
+        data: '=' // bi-directional data-binding
+        ,onClick: '&' // parent execution binding
+      }
+      ,link: function(scope, element, attrs) {
+        var margin        = 20
+            ,barPadding   = 5
+
+            // ,width        = angular.element(window)[0].innderWidth
+            // ,height       = angular.element(window)[0].innderHeight
+            ,width        = 900
+            ,height       = 700
+            ,radius       = Math.min(width, height) / 2
+
+            ,minPlusMinus =  Number.MAX_VALUE
+            ,maxPlusMinus = -Number.MAX_VALUE
+            ,minSalary    =  Number.MAX_VALUE
+            ,maxSalary    = -Number.MAX_VALUE
+
+            ,barHeight
+            ,barColor
+            ,red
+            ,green
+
+            ,currentTeam  = 'AAA'
+            ,lastTeam     = 'BBB';
+
+        console.log(width);
+        console.log(height);
+        console.log(radius);
+
+        // D3 is ready for us!
+        d3Service.d3().then(function(d3) {
+          var svg = d3.select(element[0])
+            .append('svg')
+            .style('width', width);
+
+          // Respond to browser onresize events.
+          // @TODO This should be throttled.
+          window.onresize = function() {
+            scope.$apply();
+          };
+
+          // Watch for resize events.
+          scope.$watch(function() {
+            return angular.element(window)[0].innderWidth;
+          }, function() {
+            scope.render(scope.data);
+          });
+
+          // Monitor the bound data.
+          scope.$watch('data', function(newVals, oldVals) {
+            return scope.render(newVals);
+          }, true);
+
+          scope.render = function(data) {
+            // If we didn't pass any data, run.
+            if (!data) return;
+
+            // Remove all previous items before rendering.
+            svg.selectAll('*').remove();
+
+            // total number of records (player's)
+            var totalPlayers = data.length;
+
+            // the angle of rotation
+            // var angle = Math.PI / (totalPlayers / 2);
+            var angle = 360 / totalPlayers;
+
+            // Find the minimum and maximum plus/minus & salary
+            for(var i = 0; i < totalPlayers; i++){
+              // plus/minus
+              var pm = parseInt(data[i].plusminus);
+              if (pm < minPlusMinus) minPlusMinus = pm;
+              if (pm > maxPlusMinus) maxPlusMinus = pm;
+
+              // salary
+              var salary = parseFloat(data[i].salary);
+              if (salary < minSalary) minSalary = salary;
+              if (salary > maxSalary) maxSalary = salary;
+            } // end for
+
+            console.log(minSalary);
+            console.log(maxSalary);
+
+
+          } // end scope.render();
+        });
+      }
+    }
+  })
+
   .directive('circularVisualisation', function(d3Service) {
     return {
       restrict: 'EA'
