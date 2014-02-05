@@ -22,7 +22,6 @@ angular.module('cm.services', [])
       $http.get('data/data.json')
         .success(function(data) {
           dataService.data = data;
-          console.log(dataService.data);
         });
 
         return dataService.data;

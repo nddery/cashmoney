@@ -56,9 +56,25 @@ angular.module('cm.directives', ['d3'])
 
         // D3 is ready for us!
         d3Service.d3().then(function(d3) {
+          var color        = d3.scale.category20c();
+
           var svg = d3.select(element[0])
             .append('svg')
-            .style('width', width);
+              .attr('width', width)
+              .attr('height', height)
+            .append('g')
+              .attr('transform', 'translate(' + width / 2 + ',' + height * .52 + ')');
+
+          var partition = d3.layout.partition()
+            .sort(null)
+            .size([2 * Math.PI, radius * radius])
+            .value(function(d) { return 1; });
+
+          var arc = d3.svg.arc()
+            .startAngle(function(d) { return d.x; })
+            .endAngle(function(d) { return d.x + d.dx; })
+            .innerRadius(function(d) { return Math.sqrt(d.y); })
+            .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
 
           // Respond to browser onresize events.
           // @TODO This should be throttled.
@@ -85,31 +101,51 @@ angular.module('cm.directives', ['d3'])
             // Remove all previous items before rendering.
             svg.selectAll('*').remove();
 
-            // total number of records (player's)
-            var totalPlayers = data.length;
+            var foo = { player: "root", children: data };
+            // data = foo;
+            console.log(foo);
 
-            // the angle of rotation
-            // var angle = Math.PI / (totalPlayers / 2);
-            var angle = 360 / totalPlayers;
+            // // total number of records (player's)
+            // var totalPlayers = data.length;
 
-            // Find the minimum and maximum plus/minus & salary
-            for(var i = 0; i < totalPlayers; i++){
-              // plus/minus
-              var pm = parseInt(data[i].plusminus);
-              if (pm < minPlusMinus) minPlusMinus = pm;
-              if (pm > maxPlusMinus) maxPlusMinus = pm;
+            // // the angle of rotation
+            // // var angle = Math.PI / (totalPlayers / 2);
+            // var angle = 360 / totalPlayers;
 
-              // salary
-              var salary = parseFloat(data[i].salary);
-              if (salary < minSalary) minSalary = salary;
-              if (salary > maxSalary) maxSalary = salary;
-            } // end for
+            // // Find the minimum and maximum plus/minus & salary
+            // for(var i = 0; i < totalPlayers; i++){
+            //   // plus/minus
+            //   var pm = parseInt(data[i].plusminus);
+            //   if (pm < minPlusMinus) minPlusMinus = pm;
+            //   if (pm > maxPlusMinus) maxPlusMinus = pm;
 
-            console.log(minSalary);
-            console.log(maxSalary);
+            //   // salary
+            //   var salary = parseFloat(data[i].salary);
+            //   if (salary < minSalary) minSalary = salary;
+            //   if (salary > maxSalary) maxSalary = salary;
+            // } // end for
+
+            // console.log(minSalary);
+            // console.log(maxSalary);
+
+            var path = svg.datum(foo).selectAll("path")
+              .data(partition.nodes)
+              .enter().append("path")
+                .attr("display", function(d) { return d.depth ? null : "none"; }) // hide inner ring
+                .attr("d", arc)
+                .style("stroke", "#fff")
+                .style("fill", function(d) { return color((d.children ? d : d.parent).player); })
+                .style("fill-rule", "evenodd")
+                .each(stash);
 
 
           } // end scope.render();
+
+          // Stash the old values for transition.
+          function stash(d) {
+            d.x0 = d.x;
+            d.dx0 = d.dx;
+          }
         });
       }
     }
