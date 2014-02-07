@@ -1,6 +1,35 @@
 @import "compass/css3/transition";
 @import "compass/css3/box-shadow";
+@import "normalize";
 @import "menu";
+
+body {
+  background: url(../img/background.jpg) repeat;
+}
+
+#settings {
+  position: absolute;
+  top: 10px;
+
+  background-color: #47a3da;
+  background-image: url(../img/icon-settings.svg);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 6px;
+
+  width: 72px;
+  height: 72px;
+
+  border: 0;
+  -webkit-border-top-right-radius: 1000px;
+  -webkit-border-bottom-right-radius: 1000px;
+  -moz-border-radius-topright: 1000px;
+  -moz-border-radius-bottomright: 1000px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+
+  text-indent: -9999px;
+}
 
 /* Teams logo */
 .logo {

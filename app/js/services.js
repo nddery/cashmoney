@@ -19,7 +19,7 @@ angular.module('cm.services', [])
     dataService.teams = [];
 
     dataService.getData = function() {
-      $http.get('data/data.json')
+      $http.get('data/data.full.json')
         .success(function(data) {
           dataService.data = data;
         });
@@ -38,7 +38,7 @@ angular.module('cm.services', [])
                     {name:"BOS", active:true},
                     {name:"BUF", active:true},
                     {name:"CAR", active:true},
-                    {name:"CLB", active:true},
+                    {name:"CBJ", active:true},
                     {name:"CGY", active:true},
                     {name:"CHI", active:true},
                     {name:"COL", active:true},
@@ -50,7 +50,7 @@ angular.module('cm.services', [])
                     {name:"MIN", active:true},
                     {name:"MTL", active:true},
                     {name:"NJD", active:true},
-                    {name:"NAS", active:true},
+                    {name:"NSH", active:true},
                     {name:"NYI", active:true},
                     {name:"NYR", active:true},
                     {name:"OTT", active:true},
@@ -63,7 +63,7 @@ angular.module('cm.services', [])
                     {name:"TOR", active:true},
                     {name:"VAN", active:true},
                     {name:"WPG", active:true},
-                    {name:"WAS", active:true} ])
+                    {name:"WSH", active:true} ])
 
   .value('metrics', [ "player", "team", "pos", "goal",
                       "assists", "points", "plusminus",

@@ -8,10 +8,11 @@ angular.module('cm.controllers', [])
       $scope.$broadcast('toggleMenu');
     }
 
-    $scope.$on('teamsUpdated', function() {
+    // $scope.$on('teamsUpdated', function() {
+      // $scope.$emit('teamsUpdated');
       // Filter out inactive teams.
-      console.log($filter('filter')(dataService.teams(),{active:true}));
-    });
+      // console.log($filter('filter')(dataService.teams(),{active:true}));
+    // });
   })
 
   .controller('PullNavCtrl', function($scope) {
@@ -36,11 +37,12 @@ angular.module('cm.controllers', [])
     $scope.teams = dataService.getTeams();
 
     $scope.update = function() {
-      $scope.$emit('teamsUpdated');
+      $scope.$broadcast('teamsUpdated');
     }
   })
 
-  .controller('CircularVisualisationCtrl', function($scope, $http) {
+  .controller('CircularVisualisationCtrl', function($scope, $http, $filter, dataService) {
+    var d = {};
     $scope.showDetailPane = function(item) {
       $scope.$apply(function() {
         if (!$scope.showDetailPanel)
@@ -50,9 +52,34 @@ angular.module('cm.controllers', [])
       });
     };
 
-    $http.get('data/data.json')
+    $http.get('data/data.full.json')
       .success(function(data) {
+        // We need a copy for now, until data service is fixed and we can
+        // call dataservice.getData();
+        // We filter on the copy instead of scope.data.
+        d = data;
         $scope.data = data;
+
+        console.log(d);
       });
+
+    $scope.$on('teamsUpdated', function() {
+      // Filter out inactive teams.
+      var activeTeams = $filter('filter')(dataService.getTeams(),{active:true});
+
+      // Get an array of names, not an array of objects.
+      var activeTeamsName = [];
+      activeTeams.forEach(function(team) {
+        activeTeamsName.push(team.name);
+      });
+
+      // Filter out all non-active teams.
+      $scope.data = $filter('filter')(d, function(v) {
+        if (activeTeamsName.indexOf(v.name) !== -1)
+          return true;
+        else
+          return false;
+      });
+    });
   })
 ;

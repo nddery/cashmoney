@@ -29,12 +29,9 @@ angular.module('cm.directives', ['d3'])
       }
       ,link: function(scope, element, attrs) {
         var margin        = 20
-            ,barPadding   = 5
 
-            // ,width        = angular.element(window)[0].innderWidth
-            // ,height       = angular.element(window)[0].innderHeight
-            ,width        = 900
-            ,height       = 700
+            ,width        = angular.element(window)[0].innerWidth - margin
+            ,height       = angular.element(window)[0].innerHeight - margin
             ,radius       = Math.min(width, height) / 2
 
             ,minPlusMinus =  Number.MAX_VALUE
@@ -42,42 +39,29 @@ angular.module('cm.directives', ['d3'])
             ,minSalary    =  Number.MAX_VALUE
             ,maxSalary    = -Number.MAX_VALUE
 
-            ,barHeight
-            ,barColor
-            ,red
-            ,green
-
             ,currentTeam  = 'AAA'
-            ,lastTeam     = 'BBB';
-
-        console.log(width);
-        console.log(height);
-        console.log(radius);
+            ,lastTeam     = 'ZZZ';
 
         // D3 is ready for us!
         d3Service.d3().then(function(d3) {
-          var color        = d3.scale.category20c();
-
+          // var baseColor = d3.hsl(202,0.88,0.21);
+          var baseColor = d3.rgb('#074C75');
+          // hsl(202, 88%, 21%)
           var svg = d3.select(element[0])
-            .append('svg')
-              .attr('width', width)
-              .attr('height', height)
-            .append('g')
-              .attr('transform', 'translate(' + width / 2 + ',' + height * .52 + ')');
+                      .append('svg')
+                        .attr('width', width)
+                        .attr('height', height)
+                        .style('margin-top', margin / 2 + 'px')
+                      .append('g')
+                        .attr('transform', 'translate(' + width / 2 + ',' + height * .52 + ')');
 
           var partition = d3.layout.partition()
-            .sort(null)
-            .size([2 * Math.PI, radius * radius])
-            .value(function(d) { return 1; });
-
-          var arc = d3.svg.arc()
-            .startAngle(function(d) { return d.x; })
-            .endAngle(function(d) { return d.x + d.dx; })
-            .innerRadius(function(d) { return Math.sqrt(d.y); })
-            .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
+                            .sort(null)
+                            .size([2 * Math.PI, radius * radius])
+                            .value(function(d) { return 1; });
 
           // Respond to browser onresize events.
-          // @TODO This should be throttled.
+          // @TODO This should be throttled ?
           window.onresize = function() {
             scope.$apply();
           };
@@ -92,7 +76,7 @@ angular.module('cm.directives', ['d3'])
           // Monitor the bound data.
           scope.$watch('data', function(newVals, oldVals) {
             return scope.render(newVals);
-          }, true);
+          });
 
           scope.render = function(data) {
             // If we didn't pass any data, run.
@@ -101,147 +85,97 @@ angular.module('cm.directives', ['d3'])
             // Remove all previous items before rendering.
             svg.selectAll('*').remove();
 
-            var foo = { player: "root", children: data };
-            // data = foo;
-            console.log(foo);
+            // Find the minimum and maximum plus/minus & salary
+            var pm = 0, salary = 0;
+            data.forEach(function(team) {
+              team.children.forEach(function(player) {
+                // plus/minus
+                pm = parseInt(player.plusminus);
+                if (pm < minPlusMinus) minPlusMinus = pm;
+                if (pm > maxPlusMinus) maxPlusMinus = pm;
 
-            // // total number of records (player's)
-            // var totalPlayers = data.length;
+                // salary
+                salary = parseFloat(player.salary);
+                if (salary < minSalary) minSalary = salary;
+                if (salary > maxSalary) maxSalary = salary;
+              });
+            });
 
-            // // the angle of rotation
-            // // var angle = Math.PI / (totalPlayers / 2);
-            // var angle = 360 / totalPlayers;
+            var color = d3.scale.linear()
+                          .domain([minSalary,maxSalary])
+                          .range([0.25,1]);
 
-            // // Find the minimum and maximum plus/minus & salary
-            // for(var i = 0; i < totalPlayers; i++){
-            //   // plus/minus
-            //   var pm = parseInt(data[i].plusminus);
-            //   if (pm < minPlusMinus) minPlusMinus = pm;
-            //   if (pm > maxPlusMinus) maxPlusMinus = pm;
+            var barHeight = d3.scale.linear()
+                              .domain([minPlusMinus,maxPlusMinus])
+                              .range([0.1,1.25]);
 
-            //   // salary
-            //   var salary = parseFloat(data[i].salary);
-            //   if (salary < minSalary) minSalary = salary;
-            //   if (salary > maxSalary) maxSalary = salary;
-            // } // end for
+            var arc = d3.svg.arc()
+                        .startAngle(function(d) {
+                          return d.x;
+                        })
+                        .endAngle(function(d) {
+                          return d.x + d.dx;
+                        })
+                        .innerRadius(function(d) {
+                          if (d.hasOwnProperty('plusminus'))
+                            return Math.sqrt(d.y - (d.y / 2));
+                          else
+                            return Math.sqrt(d.y - (d.y / 1.5));
+                            // return Math.sqrt(d.y - (d.y / 4));
+                        })
+                        .outerRadius(function(d) {
+                          // console.log(radius + "\t\t" + d.y + "\t\t" + d.dy);
+                          if (d.hasOwnProperty('plusminus'))
+                            return Math.sqrt((d.y + d.dy) * barHeight(parseInt(d.plusminus)));
+                          else
+                            return Math.sqrt(d.y);
+                        });
 
-            // console.log(minSalary);
-            // console.log(maxSalary);
+            data.forEach(function(team) {
+              var defs = svg.append('defs').append('pattern')
+                            .attr('id', function() {
+                              return 'img-' + team.name;
+                            })
+                            .attr('patternUnits', 'userSpaceOnUse')
+                            .attr('width', '15')
+                            .attr('height', '15')
+                            .append('image')
+                              .attr('xlink:href', function() {
+                                return 'img/logos/' + team.name + '.svgz';
+                              })
+                              .attr('x', '0')
+                              .attr('y', '0')
+                              .attr('width', '15')
+                              .attr('height', '15');
+            });
 
-            var path = svg.datum(foo).selectAll("path")
-              .data(partition.nodes)
-              .enter().append("path")
-                .attr("display", function(d) { return d.depth ? null : "none"; }) // hide inner ring
-                .attr("d", arc)
-                .style("stroke", "#fff")
-                .style("fill", function(d) { return color((d.children ? d : d.parent).player); })
-                .style("fill-rule", "evenodd")
-                .each(stash);
-
-
+            var dataWithRoot = { root: "root", children: data };
+            var path = svg.datum(dataWithRoot).selectAll('path')
+                          .data(partition.nodes)
+                          .enter().append('path')
+                            .attr('display', function(d) {
+                              // hide inner ring
+                              return d.depth ? null : "none";
+                            })
+                            .attr('d', arc)
+                            .style('stroke-width', '0')
+                            .style('fill', function(d) {
+                              if (d.hasOwnProperty('plusminus')) {
+                                return baseColor.brighter(
+                                  color(parseFloat(d.salary))
+                                );
+                              }
+                              else {
+                                return 'url(#img-' + d.name + ')';
+                              }
+                            })
+                            .each(stash);
           } // end scope.render();
 
           // Stash the old values for transition.
           function stash(d) {
             d.x0 = d.x;
             d.dx0 = d.dx;
-          }
-        });
-      }
-    }
-  })
-
-  .directive('circularVisualisation', function(d3Service) {
-    return {
-      restrict: 'EA'
-      ,scope: {
-        data: '=' // bi-directional data-binding
-        ,onClick: '&' // parent execution binding
-      }
-      ,link: function(scope, element, attrs) {
-        d3Service.d3().then(function(d3) {
-          // D3 is ready for us!
-          var margin = 20
-              ,barHeight = 20
-              ,barPadding = 5;
-
-          var svg = d3.select(element[0])
-            .append('svg')
-            .style('width', '100%');
-
-          // Respond to browser onresize events.
-          // @TODO This should be throttled.
-          window.onresize = function() {
-            scope.$apply();
-          };
-
-          // Watch for resize events.
-          scope.$watch(function() {
-            return angular.element(window)[0].innderWidth;
-          }, function() {
-            scope.render(scope.data);
-          });
-
-          // scope.data = dataService.getData();
-          // Monitor the bound data.
-          scope.$watch('data', function(newVals, oldVals) {
-            return scope.render(newVals);
-          }, true);
-
-          scope.render = function(data) {
-            // If we didn't pass any data, run.
-            if (!data) return;
-
-            // Remove all previous items before rendering.
-            svg.selectAll('*').remove();
-
-             // setup variables
-            var width = d3.select(element[0]).node().offsetWidth - margin,
-                // calculate the height
-                height = scope.data.length * (barHeight + barPadding),
-                // Use the category20() scale function for multicolor support
-                color = d3.scale.category20(),
-                // our xScale
-                xScale = d3.scale.linear()
-                  .domain([0, d3.max(data, function(d) {
-                    return d.plusminus;
-                  })])
-                  .range([0, width]);
-
-            // set the height based on the calculations above
-            svg.attr('height', height);
-
-            //create the rectangles for the bar chart
-            svg.selectAll('rect')
-              .data(data).enter()
-                .append('rect')
-                .on('click', function(d, i) {
-                  return scope.onClick({item: d});
-                })
-                .attr('height', barHeight)
-                .attr('width', 140)
-                .attr('x', Math.round(margin/2))
-                .attr('y', function(d,i) {
-                  return i * (barHeight + barPadding);
-                })
-                .attr('fill', function(d) { return color(d.plusminus); })
-                .transition()
-                  .duration(1000)
-                  .attr('width', function(d) {
-                    // return xScale(d.plusminus);
-                    var w = xScale(d.plusminus);
-                    if (w < 0) w = 0;
-                    return w;
-                  });
-
-            //create the rectangles for the bar chart
-            svg.selectAll('rect')
-              .data(data).exit()
-                .transition()
-                  .duration(1000)
-                  .attr('width', function(d) {
-                    return 0;
-                  });
           }
         });
       }
