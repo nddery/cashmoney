@@ -1,15 +1,9 @@
 <pull-nav></pull-nav>
 
 <div id="cashmoney">
-  <button ng-click="toggleMenu()" id="settings" class="icon-settings">
-    Show/Hide Settings Pane
-  </button>
+  <button ng-click="toggleMenu()" id="settings">Settings</button>
 
   <div ng-controller="CircularVisualisationCtrl">
-    <!-- <circular&#45;visualisation -->
-    <!--   on&#45;click="showDetailPane(item)" -->
-    <!--   data="data"> -->
-    <!-- </circular&#45;visualisation> -->
     <tree-layout
       on-click="showDetailPane(item)"
       data="data">

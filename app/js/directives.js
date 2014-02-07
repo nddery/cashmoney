@@ -46,7 +46,6 @@ angular.module('cm.directives', ['d3'])
         d3Service.d3().then(function(d3) {
           // var baseColor = d3.hsl(202,0.88,0.21);
           var baseColor = d3.rgb('#074C75');
-          // hsl(202, 88%, 21%)
           var svg = d3.select(element[0])
                       .append('svg')
                         .attr('width', width)
@@ -103,12 +102,14 @@ angular.module('cm.directives', ['d3'])
 
             var color = d3.scale.linear()
                           .domain([minSalary,maxSalary])
-                          .range([0.25,1]);
+                          .range([0.25,2.5]);
 
             var barHeight = d3.scale.linear()
                               .domain([minPlusMinus,maxPlusMinus])
                               .range([0.1,1.25]);
 
+            var currentInnerRadius = .0
+                ,currentOuterRadius = .0;
             var arc = d3.svg.arc()
                         .startAngle(function(d) {
                           return d.x;
@@ -118,38 +119,28 @@ angular.module('cm.directives', ['d3'])
                         })
                         .innerRadius(function(d) {
                           if (d.hasOwnProperty('plusminus'))
-                            return Math.sqrt(d.y - (d.y / 2));
+                            currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
                           else
-                            return Math.sqrt(d.y - (d.y / 1.5));
-                            // return Math.sqrt(d.y - (d.y / 4));
+                            currentInnerRadius = Math.sqrt(d.y - (d.y / 4));
+
+                          return currentInnerRadius;
                         })
                         .outerRadius(function(d) {
-                          // console.log(radius + "\t\t" + d.y + "\t\t" + d.dy);
+                          // Prevent outer radius from being smaller than
+                          // inner radius.
                           if (d.hasOwnProperty('plusminus'))
-                            return Math.sqrt((d.y + d.dy) * barHeight(parseInt(d.plusminus)));
+                            currentOuterRadius = Math.sqrt((d.y + d.dy) * barHeight(d.plusminus));
                           else
-                            return Math.sqrt(d.y);
+                            currentOuterRadius = Math.sqrt(d.y);
+
+                          if (currentInnerRadius > currentOuterRadius)
+                            currentOuterRadius = currentInnerRadius + 5;
+
+                          return currentOuterRadius;
                         });
 
-            data.forEach(function(team) {
-              var defs = svg.append('defs').append('pattern')
-                            .attr('id', function() {
-                              return 'img-' + team.name;
-                            })
-                            .attr('patternUnits', 'userSpaceOnUse')
-                            .attr('width', '15')
-                            .attr('height', '15')
-                            .append('image')
-                              .attr('xlink:href', function() {
-                                return 'img/logos/' + team.name + '.svgz';
-                              })
-                              .attr('x', '0')
-                              .attr('y', '0')
-                              .attr('width', '15')
-                              .attr('height', '15');
-            });
-
             var dataWithRoot = { root: "root", children: data };
+            var odd = 0;
             var path = svg.datum(dataWithRoot).selectAll('path')
                           .data(partition.nodes)
                           .enter().append('path')
@@ -158,18 +149,52 @@ angular.module('cm.directives', ['d3'])
                               return d.depth ? null : "none";
                             })
                             .attr('d', arc)
+                            .attr('id', function(d) {
+                              if (d.hasOwnProperty('name'))
+                                return 'team-' + d.name;
+                              else
+                                return 'player-' + d.player;
+                            })
                             .style('stroke-width', '0')
                             .style('fill', function(d) {
                               if (d.hasOwnProperty('plusminus')) {
-                                return baseColor.brighter(
-                                  color(parseFloat(d.salary))
-                                );
+                                return baseColor.brighter(color(d.salary));
                               }
                               else {
-                                return 'url(#img-' + d.name + ')';
+                                odd = odd === 0 ? 1 : 0;
+                                return odd ? '#e9e9e9' : '#e1e1e1';
                               }
                             })
                             .each(stash);
+
+            // Add text to paths
+            // Can't rely on ANA to be there, user may have unselected it.
+            // Hence, select first that match pattern.
+            var pathDimension = d3.select('path[id^="team-"]')[0][0]
+                                  .getBoundingClientRect();
+            data.forEach(function(team) {
+              var text = svg.append('text')
+                            // .style('font-family', 'Verdana')
+                            .style('font-size', function() {
+                              return radius / 42;
+                            })
+                            .style('fill', '#000')
+                            .attr('text-anchor', 'middle')
+                            .attr('dx', function() {
+                              return pathDimension.width / 2;
+                            })
+                            .attr('dy', function() {
+                              return pathDimension.height / 2;
+                            })
+                            .append('textPath')
+                              .attr('xlink:href', function() {
+                                return '#team-' + team.name;
+                              })
+                              .text(function() {
+                                return team.name;
+                              });
+            });
+
           } // end scope.render();
 
           // Stash the old values for transition.

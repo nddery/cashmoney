@@ -3,32 +3,41 @@
 @import "normalize";
 @import "menu";
 
+@mixin rotate90() {
+  -webkit-transform: rotate(-90deg);
+     -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+       -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
 body {
   background: url(../img/background.jpg) repeat;
+  font-family: 14px/21px Arial, Helvetica, sans-serif;
 }
 
 #settings {
   position: absolute;
-  top: 10px;
+  top: 50px;
+  left: -25px;
+  color: #fff;
+  background-color: #288bc6;
+  padding: 5px 10px;
 
-  background-color: #47a3da;
-  background-image: url(../img/icon-settings.svg);
-  background-repeat: no-repeat;
-  background-size: 60px;
-  background-position: 6px;
+  &:hover {
+    color: darken(#fff, 10%);
+  }
 
-  width: 72px;
-  height: 72px;
+  @include rotate90();
 
   border: 0;
-  -webkit-border-top-right-radius: 1000px;
-  -webkit-border-bottom-right-radius: 1000px;
-  -moz-border-radius-topright: 1000px;
-  -moz-border-radius-bottomright: 1000px;
-  border-top-right-radius: 1000px;
-  border-bottom-right-radius: 1000px;
-
-  text-indent: -9999px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 /* Teams logo */
@@ -56,7 +65,7 @@ body {
 .logo-CAR { background-image: url(../img/logos/CAR.svgz); }
 .logo-CGY { background-image: url(../img/logos/CGY.svgz); }
 .logo-CHI { background-image: url(../img/logos/CHI.svgz); }
-.logo-CLB { background-image: url(../img/logos/CLB.svgz); }
+.logo-CBJ { background-image: url(../img/logos/CBJ.svgz); }
 .logo-COL { background-image: url(../img/logos/COL.svgz); }
 .logo-DAL { background-image: url(../img/logos/DAL.svgz); }
 .logo-DET { background-image: url(../img/logos/DET.svgz); }
@@ -65,7 +74,7 @@ body {
 .logo-LAK { background-image: url(../img/logos/LAK.svgz); }
 .logo-MIN { background-image: url(../img/logos/MIN.svgz); }
 .logo-MTL { background-image: url(../img/logos/MTL.svgz); }
-.logo-NAS { background-image: url(../img/logos/NAS.svgz); }
+.logo-NSH { background-image: url(../img/logos/NSH.svgz); }
 .logo-NJD { background-image: url(../img/logos/NJD.svgz); }
 .logo-NYI { background-image: url(../img/logos/NYI.svgz); }
 .logo-NYR { background-image: url(../img/logos/NYR.svgz); }
@@ -78,5 +87,5 @@ body {
 .logo-TBL { background-image: url(../img/logos/TBL.svgz); }
 .logo-TOR { background-image: url(../img/logos/TOR.svgz); }
 .logo-VAN { background-image: url(../img/logos/VAN.svgz); }
-.logo-WAS { background-image: url(../img/logos/WAS.svgz); }
+.logo-WSH { background-image: url(../img/logos/WSH.svgz); }
 .logo-WPG { background-image: url(../img/logos/WPG.svgz); }

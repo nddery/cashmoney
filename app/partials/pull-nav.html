@@ -1,10 +1,12 @@
 <div ng-controller="PullNavCtrl">
   <nav ng-class="{'cbp-spmenu-open': displayMenu}" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu">
-      <h3>Menu</h3>
-      <button ng-click="update()">UPDATE</button>
+      <h3>Settings</h3>
+
+      <ul class="actions inline">
+        <li><button ng-click="toggleAllTeams()">Toggle All</button></li>
+        <li><button ng-click="update()">UPDATE</button></li>
+      </ul>
 
       <team-list></team-list>
-
-      And you will get the option to search for a player to see his stats.
   </nav>
 </div>

@@ -518,34 +518,41 @@ th {
   transition: all 0.3s ease;
 }
 
-/* line 6, sass/app.scss */
+/* line 15, sass/app.scss */
 body {
   background: url(../img/background.jpg) repeat;
+  font-family: 14px/21px Arial, Helvetica, sans-serif;
 }
 
-/* line 10, sass/app.scss */
+/* line 20, sass/app.scss */
 #settings {
   position: absolute;
-  top: 10px;
-  background-color: #47a3da;
-  background-image: url(../img/icon-settings.svg);
-  background-repeat: no-repeat;
-  background-size: 60px;
-  background-position: 6px;
-  width: 72px;
-  height: 72px;
+  top: 50px;
+  left: -25px;
+  color: #fff;
+  background-color: #288bc6;
+  padding: 5px 10px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   border: 0;
-  -webkit-border-top-right-radius: 1000px;
-  -webkit-border-bottom-right-radius: 1000px;
-  -moz-border-radius-topright: 1000px;
-  -moz-border-radius-bottomright: 1000px;
-  border-top-right-radius: 1000px;
-  border-bottom-right-radius: 1000px;
-  text-indent: -9999px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 28, sass/app.scss */
+#settings:hover {
+  color: #e6e6e6;
 }
 
 /* Teams logo */
-/* line 35, sass/app.scss */
+/* line 44, sass/app.scss */
 .logo {
   display: inline-block;
   margin: 10px;
@@ -558,161 +565,161 @@ body {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 44, sass/app.scss */
+/* line 53, sass/app.scss */
 .logo:hover {
   cursor: pointer;
 }
-/* line 48, sass/app.scss */
+/* line 57, sass/app.scss */
 .logo.active {
   opacity: 1;
 }
 
-/* line 53, sass/app.scss */
+/* line 62, sass/app.scss */
 .logo-ANA {
   background-image: url(../img/logos/ANA.svgz);
 }
 
-/* line 54, sass/app.scss */
+/* line 63, sass/app.scss */
 .logo-BOS {
   background-image: url(../img/logos/BOS.svgz);
 }
 
-/* line 55, sass/app.scss */
+/* line 64, sass/app.scss */
 .logo-BUF {
   background-image: url(../img/logos/BUF.svgz);
 }
 
-/* line 56, sass/app.scss */
+/* line 65, sass/app.scss */
 .logo-CAR {
   background-image: url(../img/logos/CAR.svgz);
 }
 
-/* line 57, sass/app.scss */
+/* line 66, sass/app.scss */
 .logo-CGY {
   background-image: url(../img/logos/CGY.svgz);
 }
 
-/* line 58, sass/app.scss */
+/* line 67, sass/app.scss */
 .logo-CHI {
   background-image: url(../img/logos/CHI.svgz);
 }
 
-/* line 59, sass/app.scss */
-.logo-CLB {
-  background-image: url(../img/logos/CLB.svgz);
+/* line 68, sass/app.scss */
+.logo-CBJ {
+  background-image: url(../img/logos/CBJ.svgz);
 }
 
-/* line 60, sass/app.scss */
+/* line 69, sass/app.scss */
 .logo-COL {
   background-image: url(../img/logos/COL.svgz);
 }
 
-/* line 61, sass/app.scss */
+/* line 70, sass/app.scss */
 .logo-DAL {
   background-image: url(../img/logos/DAL.svgz);
 }
 
-/* line 62, sass/app.scss */
+/* line 71, sass/app.scss */
 .logo-DET {
   background-image: url(../img/logos/DET.svgz);
 }
 
-/* line 63, sass/app.scss */
+/* line 72, sass/app.scss */
 .logo-EDM {
   background-image: url(../img/logos/EDM.svgz);
 }
 
-/* line 64, sass/app.scss */
+/* line 73, sass/app.scss */
 .logo-FLA {
   background-image: url(../img/logos/FLA.svgz);
 }
 
-/* line 65, sass/app.scss */
+/* line 74, sass/app.scss */
 .logo-LAK {
   background-image: url(../img/logos/LAK.svgz);
 }
 
-/* line 66, sass/app.scss */
+/* line 75, sass/app.scss */
 .logo-MIN {
   background-image: url(../img/logos/MIN.svgz);
 }
 
-/* line 67, sass/app.scss */
+/* line 76, sass/app.scss */
 .logo-MTL {
   background-image: url(../img/logos/MTL.svgz);
 }
 
-/* line 68, sass/app.scss */
-.logo-NAS {
-  background-image: url(../img/logos/NAS.svgz);
+/* line 77, sass/app.scss */
+.logo-NSH {
+  background-image: url(../img/logos/NSH.svgz);
 }
 
-/* line 69, sass/app.scss */
+/* line 78, sass/app.scss */
 .logo-NJD {
   background-image: url(../img/logos/NJD.svgz);
 }
 
-/* line 70, sass/app.scss */
+/* line 79, sass/app.scss */
 .logo-NYI {
   background-image: url(../img/logos/NYI.svgz);
 }
 
-/* line 71, sass/app.scss */
+/* line 80, sass/app.scss */
 .logo-NYR {
   background-image: url(../img/logos/NYR.svgz);
 }
 
-/* line 72, sass/app.scss */
+/* line 81, sass/app.scss */
 .logo-OTT {
   background-image: url(../img/logos/OTT.svgz);
 }
 
-/* line 73, sass/app.scss */
+/* line 82, sass/app.scss */
 .logo-PHI {
   background-image: url(../img/logos/PHI.svgz);
 }
 
-/* line 74, sass/app.scss */
+/* line 83, sass/app.scss */
 .logo-PHX {
   background-image: url(../img/logos/PHX.svgz);
 }
 
-/* line 75, sass/app.scss */
+/* line 84, sass/app.scss */
 .logo-PIT {
   background-image: url(../img/logos/PIT.svgz);
 }
 
-/* line 76, sass/app.scss */
+/* line 85, sass/app.scss */
 .logo-SJS {
   background-image: url(../img/logos/SJS.svgz);
 }
 
-/* line 77, sass/app.scss */
+/* line 86, sass/app.scss */
 .logo-STL {
   background-image: url(../img/logos/STL.svgz);
 }
 
-/* line 78, sass/app.scss */
+/* line 87, sass/app.scss */
 .logo-TBL {
   background-image: url(../img/logos/TBL.svgz);
 }
 
-/* line 79, sass/app.scss */
+/* line 88, sass/app.scss */
 .logo-TOR {
   background-image: url(../img/logos/TOR.svgz);
 }
 
-/* line 80, sass/app.scss */
+/* line 89, sass/app.scss */
 .logo-VAN {
   background-image: url(../img/logos/VAN.svgz);
 }
 
-/* line 81, sass/app.scss */
-.logo-WAS {
-  background-image: url(../img/logos/WAS.svgz);
+/* line 90, sass/app.scss */
+.logo-WSH {
+  background-image: url(../img/logos/WSH.svgz);
 }
 
-/* line 82, sass/app.scss */
+/* line 91, sass/app.scss */
 .logo-WPG {
   background-image: url(../img/logos/WPG.svgz);
 }

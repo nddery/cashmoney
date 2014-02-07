@@ -7,12 +7,6 @@ angular.module('cm.controllers', [])
     $scope.toggleMenu = function() {
       $scope.$broadcast('toggleMenu');
     }
-
-    // $scope.$on('teamsUpdated', function() {
-      // $scope.$emit('teamsUpdated');
-      // Filter out inactive teams.
-      // console.log($filter('filter')(dataService.teams(),{active:true}));
-    // });
   })
 
   .controller('PullNavCtrl', function($scope) {
@@ -31,14 +25,28 @@ angular.module('cm.controllers', [])
         body.addClass('cbp-spmenu-push-toright');
       }
     });
+
+    $scope.update = function() {
+      $scope.$broadcast('teamsUpdated');
+    }
+
+    $scope.toggleAllTeams = function() {
+      $scope.$emit('toggleAllTeams');
+    }
   })
 
   .controller('TeamListCtrl', function($scope, dataService) {
     $scope.teams = dataService.getTeams();
 
-    $scope.update = function() {
-      $scope.$broadcast('teamsUpdated');
-    }
+    $scope.$on('toggleAllTeams', function() {
+      $scope.teams.forEach(function(team) {
+        team.active = team.active ? false : true;
+      });
+    });
+
+    // $scope.update = function() {
+    //   $scope.$broadcast('teamsUpdated');
+    // }
   })
 
   .controller('CircularVisualisationCtrl', function($scope, $http, $filter, dataService) {
