@@ -2,7 +2,7 @@
 /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
 .cbp-spmenu {
   background: #47a3da;
-  @include box-shadow(darken(#47a3da, 10%) -40px 0 50px 0 inset);
+  @include box-shadow(darken(#47a3da, 10%) -40px 0 60px 0 inset);
   position: fixed;
   overflow-x: scroll;
   z-index: 0;
@@ -38,7 +38,7 @@
 }
 
 .cbp-spmenu-vertical {
-  width: 90%;
+  width: 60%;
   height: 100%;
   top: 0;
   z-index: 1000;
@@ -50,7 +50,7 @@
 }
 
 .cbp-spmenu-left {
-  left: -90%;
+  left: -60%;
 
   &.cbp-spmenu-open {
     left: 0px;
@@ -63,9 +63,24 @@
   left: 0;
 }
 
+#settings {
+  z-index: 2;
+}
+
+#visualisation {
+  position: relative;
+  left: 0%;
+  z-index: 1;
+  @include transition(all 0.3s ease);
+}
+
 .cbp-spmenu-push-toright {
-  left: 90%;
+  left: 60%;
   overflow: hidden;
+
+  #visualisation {
+    left: -28%;
+  }
 }
 
 .cbp-spmenu,
@@ -73,18 +88,18 @@
   @include transition(all 0.3s ease);
 }
 
-@media screen and (max-width: 55.1875em){
+@media screen and (max-width: 55.1860em){
 }
 
-@media screen and (max-height: 26.375em){
+@media screen and (max-height: 26.360em){
 
   // .cbp-spmenu-vertical {
-  //   font-size: 90%;
-  //   width: 190px;
+  //   font-size: 60%;
+  //   width: 160px;
   // }
 
   // .cbp-spmenu-left,
   // .cbp-spmenu-push-toleft {
-  //   left: -190px;
+  //   left: -160px;
   // }
 }

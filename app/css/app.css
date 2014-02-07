@@ -437,9 +437,9 @@ th {
 /* line 3, sass/_menu.scss */
 .cbp-spmenu {
   background: #47a3da;
-  -webkit-box-shadow: #288bc6 -40px 0 50px 0 inset;
-  -moz-box-shadow: #288bc6 -40px 0 50px 0 inset;
-  box-shadow: #288bc6 -40px 0 50px 0 inset;
+  -webkit-box-shadow: #288bc6 -40px 0 60px 0 inset;
+  -moz-box-shadow: #288bc6 -40px 0 60px 0 inset;
+  box-shadow: #288bc6 -40px 0 60px 0 inset;
   position: fixed;
   overflow-x: scroll;
   z-index: 0;
@@ -476,7 +476,7 @@ th {
 
 /* line 40, sass/_menu.scss */
 .cbp-spmenu-vertical {
-  width: 90%;
+  width: 60%;
   height: 100%;
   top: 0;
   z-index: 1000;
@@ -489,7 +489,7 @@ th {
 
 /* line 52, sass/_menu.scss */
 .cbp-spmenu-left {
-  left: -90%;
+  left: -60%;
 }
 /* line 55, sass/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
@@ -504,12 +504,32 @@ th {
 }
 
 /* line 66, sass/_menu.scss */
-.cbp-spmenu-push-toright {
-  left: 90%;
-  overflow: hidden;
+#settings {
+  z-index: 2;
 }
 
-/* line 72, sass/_menu.scss */
+/* line 70, sass/_menu.scss */
+#visualisation {
+  position: relative;
+  left: 0%;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 77, sass/_menu.scss */
+.cbp-spmenu-push-toright {
+  left: 60%;
+  overflow: hidden;
+}
+/* line 81, sass/_menu.scss */
+.cbp-spmenu-push-toright #visualisation {
+  left: -28%;
+}
+
+/* line 87, sass/_menu.scss */
 .cbp-spmenu,
 .cbp-spmenu-push {
   -webkit-transition: all 0.3s ease;

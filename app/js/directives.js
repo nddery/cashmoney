@@ -78,11 +78,11 @@ angular.module('cm.directives', ['d3'])
           });
 
           scope.render = function(data) {
-            // If we didn't pass any data, run.
-            if (!data) return;
+            // If we didn't pass any data, or no team have been selected, run.
+            if (!data || !data.length) return;
 
             // Remove all previous items before rendering.
-            svg.selectAll('*').remove();
+            svg.selectAll('path').remove();
 
             // Find the minimum and maximum plus/minus & salary
             var pm = 0, salary = 0;
@@ -110,13 +110,33 @@ angular.module('cm.directives', ['d3'])
 
             var currentInnerRadius = .0
                 ,currentOuterRadius = .0;
-            var arc = d3.svg.arc()
-                        .startAngle(function(d) {
-                          return d.x;
+            // We will animate from startArc to endArc.
+            // startArc has an "height" of zero for players while endArc is
+            // the calculated "height"
+            var startArc = d3.svg.arc()
+                        .startAngle(function(d) { return d.x; })
+                        .endAngle(function(d) { return d.x + d.dx; })
+                        .innerRadius(function(d) {
+                          if (d.hasOwnProperty('plusminus'))
+                            currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
+                          else
+                            currentInnerRadius = Math.sqrt(d.y - (d.y / 4));
+
+                          return currentInnerRadius;
                         })
-                        .endAngle(function(d) {
-                          return d.x + d.dx;
-                        })
+                        .outerRadius(function(d) {
+                          // For players, use same calculation as innerRadius
+                          if (d.hasOwnProperty('plusminus'))
+                            currentOuterRadius = Math.sqrt(d.y - (d.y / 2));
+                          else
+                            currentOuterRadius = Math.sqrt(d.y);
+
+                          return currentOuterRadius;
+                        });
+
+            var endArc = d3.svg.arc()
+                        .startAngle(function(d) { return d.x; })
+                        .endAngle(function(d) { return d.x + d.dx; })
                         .innerRadius(function(d) {
                           if (d.hasOwnProperty('plusminus'))
                             currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
@@ -142,30 +162,38 @@ angular.module('cm.directives', ['d3'])
             var dataWithRoot = { root: "root", children: data };
             var odd = 0;
             var path = svg.datum(dataWithRoot).selectAll('path')
-                          .data(partition.nodes)
-                          .enter().append('path')
-                            .attr('display', function(d) {
-                              // hide inner ring
-                              return d.depth ? null : "none";
-                            })
-                            .attr('d', arc)
-                            .attr('id', function(d) {
-                              if (d.hasOwnProperty('name'))
-                                return 'team-' + d.name;
-                              else
-                                return 'player-' + d.player;
-                            })
-                            .style('stroke-width', '0')
-                            .style('fill', function(d) {
-                              if (d.hasOwnProperty('plusminus')) {
-                                return baseColor.brighter(color(d.salary));
-                              }
-                              else {
-                                odd = odd === 0 ? 1 : 0;
-                                return odd ? '#e9e9e9' : '#e1e1e1';
-                              }
-                            })
-                            .each(stash);
+                          .data(partition.nodes);
+            path.enter().append('path')
+              .attr('display', function(d) {
+                // hide inner ring
+                return d.depth ? null : "none";
+              })
+              .attr('d', startArc)
+              .attr('id', function(d) {
+                if (d.hasOwnProperty('name'))
+                  return 'team-' + d.name;
+                else
+                  return 'player-' + d.player;
+              })
+              .style('stroke-width', '0')
+              .style('fill', function(d) {
+                if (d.hasOwnProperty('plusminus')) {
+                  return baseColor.brighter(color(d.salary));
+                }
+                else {
+                  odd = odd === 0 ? 1 : 0;
+                  return odd ? '#e9e9e9' : '#e1e1e1';
+                }
+              })
+              .transition()
+                .duration(1000)
+                .attr('d', endArc);
+
+            path.exit()
+              .transition()
+                .duration(1000)
+                .attr('d', startArc);
+                // .remove();
 
             // Add text to paths
             // Can't rely on ANA to be there, user may have unselected it.
@@ -173,19 +201,21 @@ angular.module('cm.directives', ['d3'])
             var pathDimension = d3.select('path[id^="team-"]')[0][0]
                                   .getBoundingClientRect();
             data.forEach(function(team) {
+              var dyOffset = height / 21.25;
               var text = svg.append('text')
-                            // .style('font-family', 'Verdana')
                             .style('font-size', function() {
                               return radius / 42;
                             })
+                            .style('font-weight', 'bold')
                             .style('fill', '#000')
                             .attr('text-anchor', 'middle')
                             .attr('dx', function() {
+                              // var w = pathDimension.width > 60 ? 60 : pathDimension.width;
+                              // return w / 2;
+                              // return pathDimension.width * 1.75;
                               return pathDimension.width / 2;
                             })
-                            .attr('dy', function() {
-                              return pathDimension.height / 2;
-                            })
+                            .attr('dy', function() { return dyOffset / 2; })
                             .append('textPath')
                               .attr('xlink:href', function() {
                                 return '#team-' + team.name;
@@ -194,14 +224,7 @@ angular.module('cm.directives', ['d3'])
                                 return team.name;
                               });
             });
-
           } // end scope.render();
-
-          // Stash the old values for transition.
-          function stash(d) {
-            d.x0 = d.x;
-            d.dx0 = d.dx;
-          }
         });
       }
     }

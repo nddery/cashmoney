@@ -42,11 +42,8 @@ angular.module('cm.controllers', [])
       $scope.teams.forEach(function(team) {
         team.active = team.active ? false : true;
       });
+      $scope.$broadcast('teamsUpdated');
     });
-
-    // $scope.update = function() {
-    //   $scope.$broadcast('teamsUpdated');
-    // }
   })
 
   .controller('CircularVisualisationCtrl', function($scope, $http, $filter, dataService) {
@@ -67,8 +64,6 @@ angular.module('cm.controllers', [])
         // We filter on the copy instead of scope.data.
         d = data;
         $scope.data = data;
-
-        console.log(d);
       });
 
     $scope.$on('teamsUpdated', function() {
