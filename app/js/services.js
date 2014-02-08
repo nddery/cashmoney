@@ -71,6 +71,9 @@ angular.module('cm.services', [])
                     , {name: 'plusminus', title: 'Plus/Minus'}
                     , {name: 'salary', title: 'Salary'} ])
 
-  .value('layouts', [ {name: 'circular', active: true}
+  .value('layouts', [ {name: 'sunburst', active: true}
                       ,{name: 'bar-chart', active: false} ])
+
+  .value('colors', [ "#074C75", "#A80C06", "#690582", "#0C7514"
+                    ,"#BD3D00", "#A89A00", "#DBADFF", "#454341" ])
 ;

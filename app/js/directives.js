@@ -25,7 +25,7 @@ angular.module('cm.directives', ['d3'])
       restrict: 'E'
       ,scope: {
         data: '=' // bi-directional data-binding
-        ,metrics: '=' // bi-directional data-binding
+        ,config: '='
         ,onClick: '&' // parent execution binding
       }
       ,link: function(scope, element, attrs) {
@@ -45,8 +45,6 @@ angular.module('cm.directives', ['d3'])
 
         // D3 is ready for us!
         d3Service.d3().then(function(d3) {
-          // var baseColor = d3.hsl(202,0.88,0.21);
-          var baseColor = d3.rgb('#074C75');
           var svg = d3.select(element[0])
                       .append('svg')
                         .attr('width', width)
@@ -78,11 +76,6 @@ angular.module('cm.directives', ['d3'])
             return scope.render(newVals);
           });
 
-          // Monitor metrics.
-          scope.$watch('metrics', function(newVals, oldVals) {
-            return scope.render(newVals);
-          });
-
           scope.render = function(data) {
             // If we didn't pass any data, or no team have been selected, run.
             if (!data || !data.length) return;
@@ -90,17 +83,19 @@ angular.module('cm.directives', ['d3'])
             // Remove all previous items before rendering.
             svg.selectAll('path').remove();
 
+            var baseColor = d3.rgb(scope.config.baseColor);
+
             // Find the minimum and maximum values for bar height and color
             var heightMetric = 0, colorMetric = 0;
             data.forEach(function(team) {
               team.children.forEach(function(player) {
                 // bar height
-                heightMetric = parseInt(player[scope.metrics.barHeight]);
+                heightMetric = parseInt(player[scope.config.metrics.barHeight]);
                 if (heightMetric < minBarHeight) minBarHeight = heightMetric;
                 if (heightMetric > maxBarHeight) maxBarHeight = heightMetric;
 
                 // color
-                colorMetric = parseFloat(player[scope.metrics.color]);
+                colorMetric = parseFloat(player[scope.config.metrics.barColor]);
                 if (colorMetric < minColor) minColor = colorMetric;
                 if (colorMetric > maxColor) maxColor = colorMetric;
               });
@@ -155,7 +150,7 @@ angular.module('cm.directives', ['d3'])
                           // Prevent outer radius from being smaller than
                           // inner radius.
                           if (d.hasOwnProperty('player'))
-                            currentOuterRadius = Math.sqrt((d.y + d.dy) * barHeight(d[scope.metrics.barHeight]));
+                            currentOuterRadius = Math.sqrt((d.y + d.dy) * barHeight(d[scope.config.metrics.barHeight]));
                           else
                             currentOuterRadius = Math.sqrt(d.y);
 
@@ -185,7 +180,7 @@ angular.module('cm.directives', ['d3'])
               .style('stroke-width', '0')
               .style('fill', function(d) {
                 if (d.hasOwnProperty('player')) {
-                  return baseColor.brighter(color(d[scope.metrics.color]));
+                  return baseColor.brighter(color(d[scope.config.metrics.barColor]));
                 }
                 else {
                   odd = odd === 0 ? 1 : 0;

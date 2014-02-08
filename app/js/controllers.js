@@ -9,11 +9,14 @@ angular.module('cm.controllers', [])
     }
   })
 
-  .controller('PullNavCtrl', function($scope, metrics, layouts) {
+  .controller('PullNavCtrl', function($scope, metrics, colors, layouts) {
     var body = angular.element(document.getElementsByTagName('body')[0]);
         body.addClass('cbp-spmenu-push');
 
     $scope.layouts = layouts;
+
+    $scope.colors = colors;
+    $scope.color = {};
 
     $scope.metricsBarHeight = metrics;
     $scope.metricBarHeight = $scope.metricsBarHeight[3];
@@ -61,7 +64,7 @@ angular.module('cm.controllers', [])
     });
   })
 
-  .controller('CircularVisualisationCtrl', function($scope, $http, $filter, dataService) {
+  .controller('CircularVisualisationCtrl', function($scope, $http, $filter, dataService, colors) {
     var d = {};
     $scope.showDetailPane = function(item) {
       $scope.$apply(function() {
@@ -81,15 +84,23 @@ angular.module('cm.controllers', [])
         $scope.data = data;
       });
 
-    $scope.metrics = {
+    $scope.config = {
+      baseColor: colors[0]
+      ,metrics: {
       'barHeight': 'plusminus'
-      ,'color': 'salary'
-    }
-    $scope.$on('metricsUpdated', function(event, barHeight, color) {
-      $scope.metrics = {
-        'barHeight': barHeight.name
-        ,'color': color.name
+      ,'barColor': 'salary'
       }
+    }
+
+    $scope.$on('metricsUpdated', function(event, barHeight, barColor) {
+      $scope.config.metrics = {
+        'barHeight': barHeight.name
+        ,'barColor': barColor.name
+      }
+    });
+
+    $scope.$on('colorPickerUpdated', function(event, color) {
+      $scope.config.baseColor = color;
     });
 
     $scope.$on('teamsUpdated', function() {
