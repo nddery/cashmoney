@@ -25,6 +25,7 @@ angular.module('cm.directives', ['d3'])
       restrict: 'E'
       ,scope: {
         data: '=' // bi-directional data-binding
+        ,metrics: '=' // bi-directional data-binding
         ,onClick: '&' // parent execution binding
       }
       ,link: function(scope, element, attrs) {
@@ -34,10 +35,10 @@ angular.module('cm.directives', ['d3'])
             ,height       = angular.element(window)[0].innerHeight - margin
             ,radius       = Math.min(width, height) / 2
 
-            ,minPlusMinus =  Number.MAX_VALUE
-            ,maxPlusMinus = -Number.MAX_VALUE
-            ,minSalary    =  Number.MAX_VALUE
-            ,maxSalary    = -Number.MAX_VALUE
+            ,minBarHeight =  Number.MAX_VALUE
+            ,maxBarHeight = -Number.MAX_VALUE
+            ,minColor    =  Number.MAX_VALUE
+            ,maxColor    = -Number.MAX_VALUE
 
             ,currentTeam  = 'AAA'
             ,lastTeam     = 'ZZZ';
@@ -77,6 +78,11 @@ angular.module('cm.directives', ['d3'])
             return scope.render(newVals);
           });
 
+          // Monitor metrics.
+          scope.$watch('metrics', function(newVals, oldVals) {
+            return scope.render(newVals);
+          });
+
           scope.render = function(data) {
             // If we didn't pass any data, or no team have been selected, run.
             if (!data || !data.length) return;
@@ -84,28 +90,28 @@ angular.module('cm.directives', ['d3'])
             // Remove all previous items before rendering.
             svg.selectAll('path').remove();
 
-            // Find the minimum and maximum plus/minus & salary
-            var pm = 0, salary = 0;
+            // Find the minimum and maximum values for bar height and color
+            var heightMetric = 0, colorMetric = 0;
             data.forEach(function(team) {
               team.children.forEach(function(player) {
-                // plus/minus
-                pm = parseInt(player.plusminus);
-                if (pm < minPlusMinus) minPlusMinus = pm;
-                if (pm > maxPlusMinus) maxPlusMinus = pm;
+                // bar height
+                heightMetric = parseInt(player[scope.metrics.barHeight]);
+                if (heightMetric < minBarHeight) minBarHeight = heightMetric;
+                if (heightMetric > maxBarHeight) maxBarHeight = heightMetric;
 
-                // salary
-                salary = parseFloat(player.salary);
-                if (salary < minSalary) minSalary = salary;
-                if (salary > maxSalary) maxSalary = salary;
+                // color
+                colorMetric = parseFloat(player[scope.metrics.color]);
+                if (colorMetric < minColor) minColor = colorMetric;
+                if (colorMetric > maxColor) maxColor = colorMetric;
               });
             });
 
             var color = d3.scale.linear()
-                          .domain([minSalary,maxSalary])
+                          .domain([minColor,maxColor])
                           .range([0.25,2.5]);
 
             var barHeight = d3.scale.linear()
-                              .domain([minPlusMinus,maxPlusMinus])
+                              .domain([minBarHeight,maxBarHeight])
                               .range([0.1,1.25]);
 
             var currentInnerRadius = .0
@@ -117,7 +123,7 @@ angular.module('cm.directives', ['d3'])
                         .startAngle(function(d) { return d.x; })
                         .endAngle(function(d) { return d.x + d.dx; })
                         .innerRadius(function(d) {
-                          if (d.hasOwnProperty('plusminus'))
+                          if (d.hasOwnProperty('player'))
                             currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
                           else
                             currentInnerRadius = Math.sqrt(d.y - (d.y / 4));
@@ -126,7 +132,7 @@ angular.module('cm.directives', ['d3'])
                         })
                         .outerRadius(function(d) {
                           // For players, use same calculation as innerRadius
-                          if (d.hasOwnProperty('plusminus'))
+                          if (d.hasOwnProperty('player'))
                             currentOuterRadius = Math.sqrt(d.y - (d.y / 2));
                           else
                             currentOuterRadius = Math.sqrt(d.y);
@@ -138,7 +144,7 @@ angular.module('cm.directives', ['d3'])
                         .startAngle(function(d) { return d.x; })
                         .endAngle(function(d) { return d.x + d.dx; })
                         .innerRadius(function(d) {
-                          if (d.hasOwnProperty('plusminus'))
+                          if (d.hasOwnProperty('player'))
                             currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
                           else
                             currentInnerRadius = Math.sqrt(d.y - (d.y / 4));
@@ -148,8 +154,8 @@ angular.module('cm.directives', ['d3'])
                         .outerRadius(function(d) {
                           // Prevent outer radius from being smaller than
                           // inner radius.
-                          if (d.hasOwnProperty('plusminus'))
-                            currentOuterRadius = Math.sqrt((d.y + d.dy) * barHeight(d.plusminus));
+                          if (d.hasOwnProperty('player'))
+                            currentOuterRadius = Math.sqrt((d.y + d.dy) * barHeight(d[scope.metrics.barHeight]));
                           else
                             currentOuterRadius = Math.sqrt(d.y);
 
@@ -169,6 +175,7 @@ angular.module('cm.directives', ['d3'])
                 return d.depth ? null : "none";
               })
               .attr('d', startArc)
+              .on('click', function(d) { return scope.onClick({item: d});} )
               .attr('id', function(d) {
                 if (d.hasOwnProperty('name'))
                   return 'team-' + d.name;
@@ -177,8 +184,8 @@ angular.module('cm.directives', ['d3'])
               })
               .style('stroke-width', '0')
               .style('fill', function(d) {
-                if (d.hasOwnProperty('plusminus')) {
-                  return baseColor.brighter(color(d.salary));
+                if (d.hasOwnProperty('player')) {
+                  return baseColor.brighter(color(d[scope.metrics.color]));
                 }
                 else {
                   odd = odd === 0 ? 1 : 0;
@@ -188,12 +195,6 @@ angular.module('cm.directives', ['d3'])
               .transition()
                 .duration(1000)
                 .attr('d', endArc);
-
-            path.exit()
-              .transition()
-                .duration(1000)
-                .attr('d', startArc);
-                // .remove();
 
             // Add text to paths
             // Can't rely on ANA to be there, user may have unselected it.

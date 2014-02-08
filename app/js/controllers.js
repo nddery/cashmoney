@@ -9,9 +9,24 @@ angular.module('cm.controllers', [])
     }
   })
 
-  .controller('PullNavCtrl', function($scope) {
+  .controller('PullNavCtrl', function($scope, metrics, layouts) {
     var body = angular.element(document.getElementsByTagName('body')[0]);
         body.addClass('cbp-spmenu-push');
+
+    $scope.layouts = layouts;
+
+    $scope.metricsBarHeight = metrics;
+    $scope.metricBarHeight = $scope.metricsBarHeight[3];
+
+    $scope.metricsColor = metrics;
+    $scope.metricColor = $scope.metricsColor[4];
+
+    // Broadcast new metrics when they change
+    $scope.metricsChanged = function() {
+      $scope.$broadcast('metricsUpdated'
+                        ,$scope.metricBarHeight
+                        ,$scope.metricColor);
+    }
 
     $scope.displayMenu = false;
 
@@ -66,15 +81,19 @@ angular.module('cm.controllers', [])
         $scope.data = data;
       });
 
-    $scope.$on('teamsUpdated', function() {
-      // Filter out inactive teams.
-      var activeTeams = $filter('filter')(dataService.getTeams(),{active:true});
+    $scope.metrics = {
+      'barHeight': 'plusminus'
+      ,'color': 'salary'
+    }
+    $scope.$on('metricsUpdated', function(event, barHeight, color) {
+      $scope.metrics = {
+        'barHeight': barHeight.name
+        ,'color': color.name
+      }
+    });
 
-      // Get an array of names, not an array of objects.
-      var activeTeamsName = [];
-      activeTeams.forEach(function(team) {
-        activeTeamsName.push(team.name);
-      });
+    $scope.$on('teamsUpdated', function() {
+      var activeTeamsName = getActiveTeamsName();
 
       // Filter out all non-active teams.
       $scope.data = $filter('filter')(d, function(v) {
@@ -84,5 +103,21 @@ angular.module('cm.controllers', [])
           return false;
       });
     });
+
+    function getActiveTeamsName() {
+      // Filter out inactive teams.
+      var activeTeams = $filter('filter')(
+        dataService.getTeams()
+        ,{active:true}
+      );
+
+      // Get an array of names, not an array of objects.
+      var activeTeamsName = [];
+      activeTeams.forEach(function(team) {
+        activeTeamsName.push(team.name);
+      });
+
+      return activeTeamsName;
+    }
   })
 ;

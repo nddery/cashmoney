@@ -444,71 +444,112 @@ th {
   overflow-x: scroll;
   z-index: 0;
 }
-/* line 10, sass/_menu.scss */
+/* line 11, sass/_menu.scss */
 .cbp-spmenu ul {
   padding: 1em;
 }
-/* line 14, sass/_menu.scss */
-.cbp-spmenu h3 {
-  color: #afdefa;
-  font-size: 1.9em;
-  padding: 20px;
-  margin: 0;
-  font-weight: 300;
-  background: #0d77b6;
+/* line 15, sass/_menu.scss */
+.cbp-spmenu ul, .cbp-spmenu h3, .cbp-spmenu h4, .cbp-spmenu p, .cbp-spmenu form {
+  margin: 0 20px;
 }
-/* line 23, sass/_menu.scss */
+/* line 19, sass/_menu.scss */
+.cbp-spmenu h3 {
+  color: #fff;
+  font-size: 1.9em;
+  margin: 20px 20% 20px 20px;
+  border-bottom: 1px solid #fff;
+  padding: 0 0 5px;
+  font-weight: 300;
+}
+/* line 28, sass/_menu.scss */
+.cbp-spmenu h4 {
+  color: #fff;
+  margin: 20px;
+  font-weight: normal;
+}
+/* line 34, sass/_menu.scss */
+.cbp-spmenu .half h4, .cbp-spmenu .half form {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 39, sass/_menu.scss */
+.cbp-spmenu button {
+  border: 0;
+  color: #fff;
+  background: #288bc6;
+  padding: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 47, sass/_menu.scss */
+.cbp-spmenu button.team-toggle {
+  position: absolute;
+  right: 5.5%;
+  margin-top: -38px;
+}
+/* line 53, sass/_menu.scss */
+.cbp-spmenu button:hover {
+  background: #1b5e86;
+}
+/* line 58, sass/_menu.scss */
 .cbp-spmenu a {
   display: block;
   color: #fff;
   font-size: 1.1em;
   font-weight: 300;
 }
-/* line 29, sass/_menu.scss */
+/* line 64, sass/_menu.scss */
 .cbp-spmenu a:hover {
   background: #258ecd;
 }
-/* line 33, sass/_menu.scss */
+/* line 68, sass/_menu.scss */
 .cbp-spmenu a:active {
   background: #afdefa;
   color: #47a3da;
 }
 
-/* line 40, sass/_menu.scss */
+/* line 75, sass/_menu.scss */
 .cbp-spmenu-vertical {
   width: 60%;
   height: 100%;
   top: 0;
   z-index: 1000;
 }
-/* line 46, sass/_menu.scss */
+/* line 81, sass/_menu.scss */
 .cbp-spmenu-vertical a {
   border-bottom: 1px solid #258ecd;
   padding: 1em;
 }
 
-/* line 52, sass/_menu.scss */
+/* line 87, sass/_menu.scss */
 .cbp-spmenu-left {
   left: -60%;
 }
-/* line 55, sass/_menu.scss */
+/* line 90, sass/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0px;
 }
 
-/* line 60, sass/_menu.scss */
+/* line 95, sass/_menu.scss */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 66, sass/_menu.scss */
+/* line 101, sass/_menu.scss */
 #settings {
   z-index: 2;
 }
 
-/* line 70, sass/_menu.scss */
+/* line 105, sass/_menu.scss */
 #visualisation {
   position: relative;
   left: 0%;
@@ -519,17 +560,17 @@ th {
   transition: all 0.3s ease;
 }
 
-/* line 77, sass/_menu.scss */
+/* line 112, sass/_menu.scss */
 .cbp-spmenu-push-toright {
   left: 60%;
   overflow: hidden;
 }
-/* line 81, sass/_menu.scss */
+/* line 116, sass/_menu.scss */
 .cbp-spmenu-push-toright #visualisation {
   left: -28%;
 }
 
-/* line 87, sass/_menu.scss */
+/* line 122, sass/_menu.scss */
 .cbp-spmenu,
 .cbp-spmenu-push {
   -webkit-transition: all 0.3s ease;
@@ -538,13 +579,13 @@ th {
   transition: all 0.3s ease;
 }
 
-/* line 15, sass/app.scss */
+/* line 16, sass/app.scss */
 body {
   background: url(../img/background.jpg) repeat;
   font-family: 14px/21px Arial, Helvetica, sans-serif;
 }
 
-/* line 20, sass/app.scss */
+/* line 21, sass/app.scss */
 #settings {
   position: absolute;
   top: 50px;
@@ -566,13 +607,20 @@ body {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 28, sass/app.scss */
+/* line 29, sass/app.scss */
 #settings:hover {
   color: #e6e6e6;
 }
 
-/* Teams logo */
 /* line 44, sass/app.scss */
+.half {
+  width: 45%;
+  margin: 0 2.5%;
+  float: left;
+}
+
+/* Teams logo */
+/* line 51, sass/app.scss */
 .logo {
   display: inline-block;
   margin: 10px;
@@ -585,161 +633,161 @@ body {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 53, sass/app.scss */
+/* line 60, sass/app.scss */
 .logo:hover {
   cursor: pointer;
 }
-/* line 57, sass/app.scss */
+/* line 64, sass/app.scss */
 .logo.active {
   opacity: 1;
 }
 
-/* line 62, sass/app.scss */
+/* line 69, sass/app.scss */
 .logo-ANA {
   background-image: url(../img/logos/ANA.svgz);
 }
 
-/* line 63, sass/app.scss */
+/* line 70, sass/app.scss */
 .logo-BOS {
   background-image: url(../img/logos/BOS.svgz);
 }
 
-/* line 64, sass/app.scss */
+/* line 71, sass/app.scss */
 .logo-BUF {
   background-image: url(../img/logos/BUF.svgz);
 }
 
-/* line 65, sass/app.scss */
+/* line 72, sass/app.scss */
 .logo-CAR {
   background-image: url(../img/logos/CAR.svgz);
 }
 
-/* line 66, sass/app.scss */
+/* line 73, sass/app.scss */
 .logo-CGY {
   background-image: url(../img/logos/CGY.svgz);
 }
 
-/* line 67, sass/app.scss */
+/* line 74, sass/app.scss */
 .logo-CHI {
   background-image: url(../img/logos/CHI.svgz);
 }
 
-/* line 68, sass/app.scss */
+/* line 75, sass/app.scss */
 .logo-CBJ {
   background-image: url(../img/logos/CBJ.svgz);
 }
 
-/* line 69, sass/app.scss */
+/* line 76, sass/app.scss */
 .logo-COL {
   background-image: url(../img/logos/COL.svgz);
 }
 
-/* line 70, sass/app.scss */
+/* line 77, sass/app.scss */
 .logo-DAL {
   background-image: url(../img/logos/DAL.svgz);
 }
 
-/* line 71, sass/app.scss */
+/* line 78, sass/app.scss */
 .logo-DET {
   background-image: url(../img/logos/DET.svgz);
 }
 
-/* line 72, sass/app.scss */
+/* line 79, sass/app.scss */
 .logo-EDM {
   background-image: url(../img/logos/EDM.svgz);
 }
 
-/* line 73, sass/app.scss */
+/* line 80, sass/app.scss */
 .logo-FLA {
   background-image: url(../img/logos/FLA.svgz);
 }
 
-/* line 74, sass/app.scss */
+/* line 81, sass/app.scss */
 .logo-LAK {
   background-image: url(../img/logos/LAK.svgz);
 }
 
-/* line 75, sass/app.scss */
+/* line 82, sass/app.scss */
 .logo-MIN {
   background-image: url(../img/logos/MIN.svgz);
 }
 
-/* line 76, sass/app.scss */
+/* line 83, sass/app.scss */
 .logo-MTL {
   background-image: url(../img/logos/MTL.svgz);
 }
 
-/* line 77, sass/app.scss */
+/* line 84, sass/app.scss */
 .logo-NSH {
   background-image: url(../img/logos/NSH.svgz);
 }
 
-/* line 78, sass/app.scss */
+/* line 85, sass/app.scss */
 .logo-NJD {
   background-image: url(../img/logos/NJD.svgz);
 }
 
-/* line 79, sass/app.scss */
+/* line 86, sass/app.scss */
 .logo-NYI {
   background-image: url(../img/logos/NYI.svgz);
 }
 
-/* line 80, sass/app.scss */
+/* line 87, sass/app.scss */
 .logo-NYR {
   background-image: url(../img/logos/NYR.svgz);
 }
 
-/* line 81, sass/app.scss */
+/* line 88, sass/app.scss */
 .logo-OTT {
   background-image: url(../img/logos/OTT.svgz);
 }
 
-/* line 82, sass/app.scss */
+/* line 89, sass/app.scss */
 .logo-PHI {
   background-image: url(../img/logos/PHI.svgz);
 }
 
-/* line 83, sass/app.scss */
+/* line 90, sass/app.scss */
 .logo-PHX {
   background-image: url(../img/logos/PHX.svgz);
 }
 
-/* line 84, sass/app.scss */
+/* line 91, sass/app.scss */
 .logo-PIT {
   background-image: url(../img/logos/PIT.svgz);
 }
 
-/* line 85, sass/app.scss */
+/* line 92, sass/app.scss */
 .logo-SJS {
   background-image: url(../img/logos/SJS.svgz);
 }
 
-/* line 86, sass/app.scss */
+/* line 93, sass/app.scss */
 .logo-STL {
   background-image: url(../img/logos/STL.svgz);
 }
 
-/* line 87, sass/app.scss */
+/* line 94, sass/app.scss */
 .logo-TBL {
   background-image: url(../img/logos/TBL.svgz);
 }
 
-/* line 88, sass/app.scss */
+/* line 95, sass/app.scss */
 .logo-TOR {
   background-image: url(../img/logos/TOR.svgz);
 }
 
-/* line 89, sass/app.scss */
+/* line 96, sass/app.scss */
 .logo-VAN {
   background-image: url(../img/logos/VAN.svgz);
 }
 
-/* line 90, sass/app.scss */
+/* line 97, sass/app.scss */
 .logo-WSH {
   background-image: url(../img/logos/WSH.svgz);
 }
 
-/* line 91, sass/app.scss */
+/* line 98, sass/app.scss */
 .logo-WPG {
   background-image: url(../img/logos/WPG.svgz);
 }

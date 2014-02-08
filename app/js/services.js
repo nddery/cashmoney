@@ -65,7 +65,12 @@ angular.module('cm.services', [])
                     {name:"WPG", active:true},
                     {name:"WSH", active:true} ])
 
-  .value('metrics', [ "player", "team", "pos", "goal",
-                      "assists", "points", "plusminus",
-                      "salary"])
+  .value('metrics', [ {name: 'goal', title: 'Goals'}
+                    , {name: 'assists', title: 'Assists'}
+                    , {name: 'points', title: 'Points'}
+                    , {name: 'plusminus', title: 'Plus/Minus'}
+                    , {name: 'salary', title: 'Salary'} ])
+
+  .value('layouts', [ {name: 'circular', active: true}
+                      ,{name: 'bar-chart', active: false} ])
 ;

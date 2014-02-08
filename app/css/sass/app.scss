@@ -1,5 +1,6 @@
 @import "compass/css3/transition";
 @import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
 @import "normalize";
 @import "menu";
 
@@ -38,6 +39,12 @@ body {
   -moz-border-radius-bottomleft: 3px;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+}
+
+.half {
+  width: 45%;
+  margin: 0 2.5%;
+  float: left;
 }
 
 /* Teams logo */

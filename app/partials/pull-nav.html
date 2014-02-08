@@ -2,10 +2,59 @@
   <nav ng-class="{'cbp-spmenu-open': displayMenu}" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu">
       <h3>Settings</h3>
 
-      <ul class="actions inline">
-        <li><button ng-click="toggleAllTeams()">Toggle All</button></li>
-        <li><button ng-click="update()">UPDATE</button></li>
-      </ul>
+      <div class="half">
+        <h4>Layout type</h4>
+        <form class="form-inline" role="form">
+          <div class="radio" ng-repeat="layout in layouts">
+            <label>
+              <input  type="radio"
+                      ng-model="layout"
+                      id="layout-{{layout.name}}"
+                      value="{{layout.name}}" />
+              {{layout.name}}
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="half">
+        <h4>Color</h4>
+        <label>Base color <input type="color" /></label>
+      </div>
+      <div class="clearfix">&nbsp;</div>
+
+      <h4>Metrics</h4>
+      <div class="half">
+        <p><strong>Bar height</strong> represent a player's {{metricBarHeight.title | lowercase}}. The higher the bar, the higher the {{metricBarHeight.title | lowercase}}.</p>
+      </div>
+
+      <div class="half">
+        <p><strong>Bar color</strong> represent the player's {{metricColor.title | lowercase}}. The lighter the color, the higher the {{metricColor.title | lowercase}}.</p>
+      </div>
+      <div class="clearfix">&nbsp;</div>
+
+      <form class="form-inline" role="form">
+        <div class="half">
+          <select class="form-control"
+                  ng-model="metricBarHeight"
+                  ng-change="metricsChanged()"
+                  ng-options="m.title for m in metricsBarHeight">
+          </select>
+        </div>
+
+        <div class="half">
+          <select class="form-control"
+                  ng-model="metricColor"
+                  ng-change="metricsChanged()"
+                  ng-options="m.title for m in metricsColor">
+          </select>
+        </div>
+      </form>
+      <div class="clearfix">&nbsp;</div>
+
+      <h4>Which teams would you like to compare ?</h4>
+      <button class="team-toggle"
+              ng-click="toggleAllTeams()">Toggle All</button>
 
       <team-list></team-list>
   </nav>
