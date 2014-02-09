@@ -3,16 +3,30 @@
 /**
  * @Usage
  *
- * Define a value of 'colors' at the app level.
+ * Define a value of 'config' at the app level that contains an array of 'color'.
  *
  * angular.module('cm.services', [])
- *   .value('colors', ["#5484ED", "#A4BDFC", "#46D6DB", "#7AE7BF"]);
+ *   .value('config', {color:["#5484ED", "#A4BDFC", "#46D6DB", "#7AE7BF"]});
  *
  * The event 'colorPickerUpdated' is broadcasted when the color change.
  * The selected color is passed as the argument.
  *
  * Place the directive wherever you want.
  *  <ng-color-picker></ng-color-picker>
+ *
+ * Sample CSS (SASS)
+ *  .color-picker {
+ *    .color {
+ *      width: 15px;
+ *      height: 15px;
+ *      padding: 8px;
+ *      border: 1px solid #fff;
+ *
+ *      &:hover {
+ *        cursor: pointer;
+ *      }
+ *    }
+ *  }
  */
 
 angular.module('modules.colorPicker', [])
@@ -24,7 +38,7 @@ angular.module('modules.colorPicker', [])
       template: '<table class="color-picker">'
       +           '<tr>'
       +           '<td ng-repeat="color in colorList">'
-      +             '<div style="width: 15px; height: 15px; border: {{color.select}}px solid #fff; padding: 8px; background-color: {{color.color}}" ng-click="selectColor(color)">'
+      +             '<div class="color" style="border-width: {{color.select}}px; background-color: {{color.color}}" ng-click="selectColor(color)">'
       +             '</div>'
       +           '<td>'
       +           '</tr>'
@@ -42,8 +56,8 @@ angular.module('modules.colorPicker', [])
           }
         };
       },
-      controller: function($scope, colors) {
-        $scope.colors = colors;
+      controller: function($scope, config) {
+        $scope.colors = config.colors;
 
         $scope.selectColor = function(color) {
           for (var i = 0; i < $scope.colorList.length; i++) {

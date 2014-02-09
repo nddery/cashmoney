@@ -9,19 +9,16 @@ angular.module('cm.controllers', [])
     }
   })
 
-  .controller('PullNavCtrl', function($scope, metrics, colors, layouts) {
+  .controller('PullNavCtrl', function($scope, config) {
     var body = angular.element(document.getElementsByTagName('body')[0]);
         body.addClass('cbp-spmenu-push');
 
-    $scope.layouts = layouts;
+    $scope.layouts = config.layouts;
 
-    $scope.colors = colors;
-    $scope.color = {};
-
-    $scope.metricsBarHeight = metrics;
+    $scope.metricsBarHeight = config.metrics;
     $scope.metricBarHeight = $scope.metricsBarHeight[3];
 
-    $scope.metricsColor = metrics;
+    $scope.metricsColor = config.metrics;
     $scope.metricColor = $scope.metricsColor[4];
 
     // Broadcast new metrics when they change
@@ -64,7 +61,7 @@ angular.module('cm.controllers', [])
     });
   })
 
-  .controller('CircularVisualisationCtrl', function($scope, $http, $filter, dataService, colors) {
+  .controller('CircularVisualisationCtrl', function($scope, $http, $filter, dataService, config) {
     var d = {};
     $scope.showDetailPane = function(item) {
       $scope.$apply(function() {
@@ -85,10 +82,11 @@ angular.module('cm.controllers', [])
       });
 
     $scope.config = {
-      baseColor: colors[0]
+      baseColor: config.colors[0]
+      ,position: config.positions[0]
       ,metrics: {
-      'barHeight': 'plusminus'
-      ,'barColor': 'salary'
+        'barHeight': 'pm'
+        ,'barColor': 'salary'
       }
     }
 

@@ -58,23 +58,15 @@ angular.module('cm.directives', ['d3'])
                             .size([2 * Math.PI, radius * radius])
                             .value(function(d) { return 1; });
 
-          // Respond to browser onresize events.
-          // @TODO This should be throttled ?
-          window.onresize = function() {
-            scope.$apply();
-          };
-
-          // Watch for resize events.
-          scope.$watch(function() {
-            return angular.element(window)[0].innderWidth;
-          }, function() {
-            scope.render(scope.data);
-          });
-
           // Monitor the bound data.
           scope.$watch('data', function(newVals, oldVals) {
             return scope.render(newVals);
           });
+
+          // Monitor config object.
+          scope.$watch('config', function() {
+            return scope.render(scope.data);
+          }, true);
 
           scope.render = function(data) {
             // If we didn't pass any data, or no team have been selected, run.
@@ -87,8 +79,8 @@ angular.module('cm.directives', ['d3'])
 
             // Find the minimum and maximum values for bar height and color
             var heightMetric = 0, colorMetric = 0;
-            data.forEach(function(team) {
-              team.children.forEach(function(player) {
+            angular.forEach(data, function(team) {
+              angular.forEach(team.children, function(player) {
                 // bar height
                 heightMetric = parseInt(player[scope.config.metrics.barHeight]);
                 if (heightMetric < minBarHeight) minBarHeight = heightMetric;
@@ -196,7 +188,7 @@ angular.module('cm.directives', ['d3'])
             // Hence, select first that match pattern.
             var pathDimension = d3.select('path[id^="team-"]')[0][0]
                                   .getBoundingClientRect();
-            data.forEach(function(team) {
+            angular.forEach(data, function(team) {
               var dyOffset = height / 21.25;
               var text = svg.append('text')
                             .style('font-size', function() {
