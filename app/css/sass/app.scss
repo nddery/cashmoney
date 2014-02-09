@@ -2,6 +2,7 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/border-radius";
 // @import "normalize";
+@import "popover";
 @import "menu";
 
 @mixin rotate90() {
@@ -45,7 +46,18 @@ h1, h2, h3, h4 {
   border-bottom-left-radius: 3px;
 }
 
+.radio {
+  margin: 5px;
+  line-height: 2.5em;
+
+  label {
+    text-transform: capitalize;
+  }
+}
+
 .color-picker {
+  margin-top: 1.75em;
+
   .color {
     width: 15px;
     height: 15px;
@@ -60,6 +72,12 @@ h1, h2, h3, h4 {
 
 .half {
   width: 45%;
+  margin: 0 2.5%;
+  float: left;
+}
+
+.third {
+  width: 28.3%;
   margin: 0 2.5%;
   float: left;
 }

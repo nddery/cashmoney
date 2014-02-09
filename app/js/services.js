@@ -88,14 +88,14 @@ angular.module('cm.services', [])
     ]
     ,layouts: [
        {name: 'sunburst', active: true}
-      ,{name: 'bar-chart', active: false}
+      // ,{name: 'bar-chart', active: false}
     ]
     ,colors: [
       "#074C75", "#A80C06", "#690582", "#0C7514"
       ,"#BD3D00", "#A89A00", "#DBADFF", "#454341"
     ]
     ,positions: [
-       {name: 'All Skaters', value: 0}
+       {name: 'All Skaters', value: ['C', 'D', 'L', 'R']}
       ,{name: 'Center', value: ['C']}
       ,{name: 'Defensemen', value: ['D']}
       ,{name: 'Forwards', value: ['L', 'R', 'C']}

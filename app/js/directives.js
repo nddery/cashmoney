@@ -179,6 +179,25 @@ angular.module('cm.directives', ['d3'])
                   return odd ? '#e9e9e9' : '#e1e1e1';
                 }
               })
+              .tooltip(function(d, i) {
+                var r, svg;
+                // r = +d3.select(this).attr('r');
+                svg = d3.select(document.createElement("svg")).attr("height", 50);
+                g = svg.append("g");
+                // g.append("rect").attr("width", r * 10).attr("height", 10);
+                g.append("text").text("10 times the radius of the cirlce").attr("dy", "25");
+                return {
+                  type: "popover",
+                  title: "It's a me, Rectangle",
+                  content: svg,
+                  detection: "shape",
+                  placement: "fixed",
+                  gravity: "right",
+                  position: [d.x, d.y],
+                  displacement: [r + 2, -72],
+                  mousemove: false
+                };
+              })
               .transition()
                 .duration(1000)
                 .attr('d', endArc);

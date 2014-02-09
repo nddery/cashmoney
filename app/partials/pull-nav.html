@@ -2,14 +2,14 @@
   <nav ng-class="{'cbp-spmenu-open': displayMenu}" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu">
       <h3>Settings</h3>
 
-      <div class="half">
+      <div class="third">
         <h4>Layout Type</h4>
         <form class="form-inline" role="form">
           <div class="radio" ng-repeat="layout in layouts">
             <label>
               <input  type="radio"
-                      ng-model="layout"
-                      id="layout-{{layout.name}}"
+                      ng-model="$parent.layout"
+                      name="layout-{{layout.name}}"
                       value="{{layout.name}}" />
               {{layout.name}}
             </label>
@@ -17,7 +17,16 @@
         </form>
       </div>
 
-      <div class="half">
+      <div class="third">
+        <h4>Position</h4>
+        <select class="form-control"
+                ng-model="position"
+                ng-change="positionsChanged()"
+                ng-options="p.name for p in positions">
+        </select>
+      </div>
+
+      <div class="third">
         <h4>Base Color</h4>
         <ng-color-picker></ng-color-picker>
       </div>
@@ -33,23 +42,21 @@
       </div>
       <div class="clearfix">&nbsp;</div>
 
-      <form class="form-inline" role="form">
-        <div class="half">
-          <select class="form-control"
-                  ng-model="metricBarHeight"
-                  ng-change="metricsChanged()"
-                  ng-options="m.title for m in metricsBarHeight">
-          </select>
-        </div>
+      <div class="half">
+        <select class="form-control"
+                ng-model="metricBarHeight"
+                ng-change="metricsChanged()"
+                ng-options="m.title for m in metricsBarHeight">
+        </select>
+      </div>
 
-        <div class="half">
-          <select class="form-control"
-                  ng-model="metricColor"
-                  ng-change="metricsChanged()"
-                  ng-options="m.title for m in metricsColor">
-          </select>
-        </div>
-      </form>
+      <div class="half">
+        <select class="form-control"
+                ng-model="metricColor"
+                ng-change="metricsChanged()"
+                ng-options="m.title for m in metricsColor">
+        </select>
+      </div>
       <div class="clearfix">&nbsp;</div>
 
       <h4>Which teams would you like to compare ?</h4>
