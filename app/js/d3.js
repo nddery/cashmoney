@@ -8,8 +8,7 @@ angular.module('d3', [])
         ,body = $document[0].getElementsByTagName('body')[0];
 
     function onD3Loaded() {
-      // $rootScope.$apply(function() { d.resolve(window.d3); });
-      createScriptTag('lib/d3.tooltips.js', body, onAllLoaded);
+      createScriptTag('lib/d3.tip.js', body, onAllLoaded);
     }
 
     function onAllLoaded() {

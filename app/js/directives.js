@@ -45,6 +45,17 @@ angular.module('cm.directives', ['d3'])
 
         // D3 is ready for us!
         d3Service.d3().then(function(d3) {
+          var tip = d3.tip()
+                      .attr('class', 'd3-tip')
+                      .direction('e')
+                      .html(function(d) {
+                        return '<p<strong>' + d.player + '</strong></p>'
+                          + '<span>' + scope.config.metrics.barHeight + ': '
+                          + d[scope.config.metrics.barHeight] + '</span>'
+                          + '<span>' + scope.config.metrics.barColor + ': '
+                          + d[scope.config.metrics.barColor] + '</span>';
+                      })
+
           var svg = d3.select(element[0])
                       .append('svg')
                         .attr('width', width)
@@ -152,6 +163,8 @@ angular.module('cm.directives', ['d3'])
                           return currentOuterRadius;
                         });
 
+            svg.call(tip);
+
             var dataWithRoot = { root: "root", children: data };
             var odd = 0;
             var path = svg.datum(dataWithRoot).selectAll('path')
@@ -179,25 +192,8 @@ angular.module('cm.directives', ['d3'])
                   return odd ? '#e9e9e9' : '#e1e1e1';
                 }
               })
-              .tooltip(function(d, i) {
-                var g, svg;
-                svg = d3.select(document.createElement('svg'))
-                        .attr('height', 50);
-
-                g =  svg.append('g').append('text')
-                      .text('Player statistics goes here').attr('dy', '25');
-
-                return {
-                  type: 'popover'
-                  ,title: d.player
-                  ,content: svg
-                  ,placement: 'fixed'
-                  ,gravity: 'right'
-                  ,position: [width/2, height/2]
-                  ,displacement: [0,0]
-                  ,mousemove: false
-                };
-              })
+              .on('mouseover', tip.show)
+              .on('mouseout', tip.hide)
               .transition()
                 .duration(1000)
                 .attr('d', endArc);
