@@ -5,7 +5,7 @@
 angular.module('d3', [])
   .factory('d3Service', function($document, $q, $rootScope) {
     var  d = $q.defer()
-        ,s = $document[0].getElementsByTagName('body')[0];
+        ,body = $document[0].getElementsByTagName('body')[0];
 
     function onD3Loaded() {
       // $rootScope.$apply(function() { d.resolve(window.d3); });

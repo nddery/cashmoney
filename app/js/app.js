@@ -3,11 +3,11 @@
 // Declare app level module which depends on filters, and services
 angular.module('cm', [
   'ngRoute'
+  ,'d3'
   ,'cm.filters'
   ,'cm.services'
   ,'cm.directives'
   ,'cm.controllers'
-  ,'d3'
   ,'modules.colorPicker'
 ])
 

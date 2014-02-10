@@ -20,7 +20,7 @@ angular.module('cm.directives', ['d3'])
     }
   })
 
-  .directive('treeLayout', function() {
+  .directive('treeLayout', function(d3Service) {
     return {
       restrict: 'E'
       ,scope: {
@@ -180,22 +180,22 @@ angular.module('cm.directives', ['d3'])
                 }
               })
               .tooltip(function(d, i) {
-                var r, svg;
-                // r = +d3.select(this).attr('r');
-                svg = d3.select(document.createElement("svg")).attr("height", 50);
-                g = svg.append("g");
-                // g.append("rect").attr("width", r * 10).attr("height", 10);
-                g.append("text").text("10 times the radius of the cirlce").attr("dy", "25");
+                var g, svg;
+                svg = d3.select(document.createElement('svg'))
+                        .attr('height', 50);
+
+                g =  svg.append('g').append('text')
+                      .text('Player statistics goes here').attr('dy', '25');
+
                 return {
-                  type: "popover",
-                  title: "It's a me, Rectangle",
-                  content: svg,
-                  detection: "shape",
-                  placement: "fixed",
-                  gravity: "right",
-                  position: [d.x, d.y],
-                  displacement: [r + 2, -72],
-                  mousemove: false
+                  type: 'popover'
+                  ,title: d.player
+                  ,content: svg
+                  ,placement: 'fixed'
+                  ,gravity: 'right'
+                  ,position: [width/2, height/2]
+                  ,displacement: [0,0]
+                  ,mousemove: false
                 };
               })
               .transition()
