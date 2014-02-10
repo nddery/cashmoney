@@ -7,8 +7,7 @@ angular.module('cm', [
   ,'cm.services'
   ,'cm.directives'
   ,'cm.controllers'
-  // ,'d3'
-  // ,'d3.tooltips'
+  ,'d3'
   ,'modules.colorPicker'
 ])
 

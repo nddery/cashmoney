@@ -44,7 +44,7 @@ angular.module('cm.directives', ['d3'])
             ,lastTeam     = 'ZZZ';
 
         // D3 is ready for us!
-        // d3Service.d3().then(function(d3) {
+        d3Service.d3().then(function(d3) {
           var svg = d3.select(element[0])
                       .append('svg')
                         .attr('width', width)
@@ -232,7 +232,7 @@ angular.module('cm.directives', ['d3'])
                               });
             });
           } // end scope.render();
-        // });
+        }); // end d3.then
       }
     }
   })

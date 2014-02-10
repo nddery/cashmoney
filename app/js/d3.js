@@ -4,26 +4,35 @@
 // http://www.ng-newsletter.com/posts/d3-on-angular.html
 angular.module('d3', [])
   .factory('d3Service', function($document, $q, $rootScope) {
-    var d = $q.defer();
+    var  d = $q.defer()
+        ,s = $document[0].getElementsByTagName('body')[0];
 
-    function onScriptLoad() {
+    function onD3Loaded() {
+      // $rootScope.$apply(function() { d.resolve(window.d3); });
+      createScriptTag('lib/d3.tooltips.js', body, onAllLoaded);
+    }
+
+    function onAllLoaded() {
       $rootScope.$apply(function() { d.resolve(window.d3); });
     }
 
-    // Create a script tag with d3 as the source and call 'onscriptload'
-    // when it has been loaded.
-    var scriptTag = $document[0].createElement('script');
-    scriptTag.type = 'text/javascript';
-    scriptTag.async = true;
-    // scriptTag.src = 'http://d3js.org/d3.v3.min.js';
-    scriptTag.src = 'lib/d3.v3.min.js';
-    scriptTag.onreadystatechange = function() {
-      if (this.readyState === 'complete') onScriptLoad();
-    }
-    scriptTag.onload = onScriptLoad;
+    createScriptTag('lib/d3.v3.min.js', body, onD3Loaded);
 
-    var s = $document[0].getElementsByTagName('body')[0];
-    s.appendChild(scriptTag);
+    function createScriptTag(src, e, f) {
+      // Create a script tag with d3 as the source and call 'onscriptload'
+      // when it has been loaded.
+      var scriptTag = $document[0].createElement('script');
+      scriptTag.type = 'text/javascript';
+      scriptTag.async = true;
+      // scriptTag.src = 'http://d3js.org/d3.v3.min.js';
+      scriptTag.src = src;
+      scriptTag.onreadystatechange = function() {
+        if (this.readyState === 'complete') f();
+      }
+      scriptTag.onload = f;
+
+      e.appendChild(scriptTag);
+    }
 
     return {
       d3: function() { return d.promise; }
