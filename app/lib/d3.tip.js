@@ -5,6 +5,8 @@
 
 // Public - contructs a new tooltip
 //
+// https://github.com/caged/d3-tip
+//
 // Returns a tip
 d3.tip = function() {
   var direction = d3_tip_direction,

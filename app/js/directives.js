@@ -54,7 +54,7 @@ angular.module('cm.directives', ['d3'])
                           + d[scope.config.metrics.barHeight] + '</span>'
                           + '<span>' + scope.config.metrics.barColor + ': '
                           + d[scope.config.metrics.barColor] + '</span>';
-                      })
+                      });
 
           var svg = d3.select(element[0])
                       .append('svg')
@@ -192,7 +192,10 @@ angular.module('cm.directives', ['d3'])
                   return odd ? '#e9e9e9' : '#e1e1e1';
                 }
               })
-              .on('mouseover', tip.show)
+              .on('mouseover', function(d) {
+                if (d.hasOwnProperty('player'))
+                  tip.show(d)
+              })
               .on('mouseout', tip.hide)
               .transition()
                 .duration(1000)
