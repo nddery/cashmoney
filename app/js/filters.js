@@ -2,8 +2,8 @@
 
 /* Filters */
 
-angular.module('cm.filters', []).
-  filter('interpolate', ['version', function(version) {
+angular.module('cm.filters')
+  .filter('interpolate', ['version', function(version) {
     return function(text) {
       return String(text).replace(/\%VERSION\%/mg, version);
     }

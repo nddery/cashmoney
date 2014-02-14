@@ -1,5 +1,11 @@
 'use strict';
 
+// Modules & Dependencies
+angular.module('cm.filters', []);
+angular.module('cm.services', []);
+angular.module('cm.directives', ['d3']);
+angular.module('cm.controllers', []);
+
 // Declare app level module which depends on filters, and services
 angular.module('cm', [
   'ngRoute'

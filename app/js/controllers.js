@@ -2,8 +2,8 @@
 
 /* Controllers */
 
-angular.module('cm.controllers', [])
-  .controller('CashmoneyCtrl', function($scope, $filter, dataService) {
+angular.module('cm.controllers')
+  .controller('CashmoneyCtrl', function($scope, $filter, dataFactory) {
     $scope.toggleMenu = function() {
       $scope.$broadcast('toggleMenu');
     }
@@ -58,8 +58,8 @@ angular.module('cm.controllers', [])
     }
   })
 
-  .controller('TeamListCtrl', function($scope, dataService) {
-    $scope.teams = dataService.getTeams();
+  .controller('TeamListCtrl', function($scope, dataFactory, teams) {
+    $scope.teams = teams;
 
     $scope.$on('toggleAllTeams', function() {
       $scope.teams.forEach(function(team) {
@@ -69,7 +69,27 @@ angular.module('cm.controllers', [])
     });
   })
 
-  .controller('CircularVisualisationCtrl', function($scope, $http, $filter, dataService, config) {
+  .controller('ConsoleCtrl', function($scope, dataFactory) {
+    $scope.data = {};
+    var i = 0;
+
+    function refreshData() {
+      dataFactory.getAllData().then(function(data){
+        $scope.data = data;
+        if(i === 0) {
+          refreshData();
+          i++;
+        }
+      },
+      function(errorMessage){
+        $scope.error = errorMessage;
+      });
+    };
+
+    refreshData();
+  })
+
+  .controller('CircularVisualisationCtrl', function($scope, $http, $filter, dataFactory, config, teams) {
     var d = {};
     $scope.showDetailPane = function(item) {
       $scope.$apply(function() {
@@ -80,14 +100,11 @@ angular.module('cm.controllers', [])
       });
     };
 
-    $http.get('data/data.full.json')
-      .success(function(data) {
-        // We need a copy for now, until data service is fixed and we can
-        // call dataservice.getData();
-        // We filter on the copy instead of scope.data.
-        d = data;
-        $scope.data = data;
-      });
+    $scope.data = {};
+    dataFactory.getAllData().then(function(data){
+      d = data;
+      $scope.data = data;
+    });
 
     $scope.config = {
       baseColor: config.colors[0]
@@ -110,37 +127,11 @@ angular.module('cm.controllers', [])
     });
 
     $scope.$on('dataNeedUpdate', function(event, position) {
-      var activeTeamsName = getActiveTeamsName();
+      var filteredTeams = dataFactory.filterByTeams(getActiveTeamsName());
 
-      // Filter out all non-active teams.
-      var filteredTeams = $filter('filter')(d, function(team) {
-        if (activeTeamsName.indexOf(team.name) !== -1)
-          return true;
-        else
-          return false;
-      });
-
-      // @TODO: Find a way to not have to copy the original children array....
       // Filter out by position, if we have one.
-      if (typeof(position) !== 'undefined' && position.value.length !== 0) {
-        var filteredPlayers = [];
-        angular.forEach(filteredTeams, function(team, i) {
-          var has_copy = team.hasOwnProperty('children_copy') ? true :false
-              ,access_key = has_copy ? 'children_copy' : 'children';
-
-          filteredPlayers = $filter('filter')(team[access_key], function(p) {
-            if (position.value.indexOf(p.pos) !== -1)
-              return true;
-            else
-              return false;
-          });
-
-          if (!has_copy)
-            filteredTeams[i].children_copy = filteredTeams[i].children;
-
-          filteredTeams[i].children = filteredPlayers;
-        });
-      }
+      if (typeof(position) !== 'undefined' && position.value.length !== 0)
+        filteredTeams = dataFactory.filterByPosition(filteredTeams, position);
 
       $scope.data = filteredTeams;
     });
@@ -148,7 +139,7 @@ angular.module('cm.controllers', [])
     function getActiveTeamsName() {
       // Filter out inactive teams.
       var activeTeams = $filter('filter')(
-        dataService.getTeams()
+        teams
         ,{active:true}
       );
 

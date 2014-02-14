@@ -1,7 +1,7 @@
 'use strict';
 
 /* Directives */
-angular.module('cm.directives', ['d3'])
+angular.module('cm.directives')
   .directive('pullNav', function() {
     return {
       restrict: 'E'
@@ -20,7 +20,7 @@ angular.module('cm.directives', ['d3'])
     }
   })
 
-  .directive('treeLayout', function(d3Service) {
+  .directive('sunburst', function(d3Service) {
     return {
       restrict: 'E'
       ,scope: {
@@ -33,15 +33,7 @@ angular.module('cm.directives', ['d3'])
 
             ,width        = angular.element(window)[0].innerWidth - margin
             ,height       = angular.element(window)[0].innerHeight - margin
-            ,radius       = Math.min(width, height) / 2
-
-            ,minBarHeight =  Number.MAX_VALUE
-            ,maxBarHeight = -Number.MAX_VALUE
-            ,minColor    =  Number.MAX_VALUE
-            ,maxColor    = -Number.MAX_VALUE
-
-            ,currentTeam  = 'AAA'
-            ,lastTeam     = 'ZZZ';
+            ,radius       = Math.min(width, height) / 2;
 
         // D3 is ready for us!
         d3Service.d3().then(function(d3) {
@@ -85,6 +77,14 @@ angular.module('cm.directives', ['d3'])
 
             // Remove all previous items before rendering.
             svg.selectAll('path').remove();
+
+            var  minBarHeight = Number.MAX_VALUE
+                ,maxBarHeight = -Number.MAX_VALUE
+                ,minColor     = Number.MAX_VALUE
+                ,maxColor     = -Number.MAX_VALUE
+
+                ,currentTeam  = 'AAA'
+                ,lastTeam     = 'ZZZ';
 
             var baseColor = d3.rgb(scope.config.baseColor);
 
