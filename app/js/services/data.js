@@ -8,13 +8,13 @@ angular.module('cm.services')
     return $cacheFactory('data');
   })
 
-  .factory('dataFactory', function($http, $q, $filter) {
+  .factory('dataFactory', function($http, $q, $filter, cmCache) {
     var data = false;
 
     var getAllData = function() {
       var deferred = $q.defer();
 
-      $http.get('data/data.full.json', {cache: true})
+      $http.get('data/data.full.json', {cache: cmCache})
         .success(function(response) {
           data = response;
           deferred.resolve(data);
