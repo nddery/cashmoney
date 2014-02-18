@@ -59,6 +59,21 @@
       </div>
       <div class="clearfix">&nbsp;</div>
 
+      <h4>Search Players</h4>
+      <div class="half">
+        <angucomplete
+              id="ex1"
+              placeholder="Search Players"
+              pause="100"
+              selectedobject="selectedPlayer"
+              localdata="players"
+              searchfields="player"
+              titlefield="player"
+              minlength="2"
+              inputclass="form-control form-control-small" />
+      </div>
+      <div class="clearfix mtop">&nbsp;</div>
+
       <h4>Which teams would you like to compare ?</h4>
       <button class="team-toggle"
               ng-click="toggleAllTeams()">Toggle All</button>

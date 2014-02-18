@@ -9,9 +9,14 @@ angular.module('cm.controllers')
     }
   })
 
-  .controller('PullNavCtrl', function($scope, config) {
+  .controller('PullNavCtrl', function($scope, config, dataFactory) {
     var body = angular.element(document.getElementsByTagName('body')[0]);
         body.addClass('cbp-spmenu-push');
+
+    $scope.players = {};
+    dataFactory.getAllPlayers().then(function(players){
+      $scope.players = players;
+    });
 
     $scope.layouts = config.layouts;
     $scope.layout  = config.layouts[0].name
@@ -127,13 +132,13 @@ angular.module('cm.controllers')
     });
 
     $scope.$on('dataNeedUpdate', function(event, position) {
-      var filteredTeams = dataFactory.filterByTeams(getActiveTeamsName());
+      dataFactory.filterByTeams(getActiveTeamsName()).then(function(teams){
+        // Filter out by position, if we have one.
+        if (typeof(position) !== 'undefined' && position.value.length !== 0)
+          teams = dataFactory.filterByPosition(teams, position);
 
-      // Filter out by position, if we have one.
-      if (typeof(position) !== 'undefined' && position.value.length !== 0)
-        filteredTeams = dataFactory.filterByPosition(filteredTeams, position);
-
-      $scope.data = filteredTeams;
+        $scope.data = teams;
+      });
     });
 
     function getActiveTeamsName() {

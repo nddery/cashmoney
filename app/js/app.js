@@ -14,6 +14,7 @@ angular.module('cm', [
   ,'cm.services'
   ,'cm.directives'
   ,'cm.controllers'
+  ,'angucomplete'
   ,'modules.colorPicker'
 ])
 
