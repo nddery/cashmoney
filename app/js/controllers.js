@@ -18,6 +18,9 @@ angular.module('cm.controllers')
       $scope.players = players;
     });
 
+    $scope.divisions = config.divisions;
+    $scope.division  = config.divisions[0];
+
     $scope.layouts = config.layouts;
     $scope.layout  = config.layouts[0].name
 
@@ -38,7 +41,11 @@ angular.module('cm.controllers')
     }
 
     $scope.positionsChanged = function() {
-      $scope.$broadcast('dataNeedUpdate', $scope.position);
+      $scope.$broadcast('dataNeedUpdate', 'position', $scope.position);
+    }
+
+    $scope.divisionChanged = function() {
+      $scope.$broadcast('dataNeedUpdate', 'division', $scope.division);
     }
 
     $scope.displayMenu = false;
@@ -131,22 +138,46 @@ angular.module('cm.controllers')
       $scope.config.baseColor = color;
     });
 
-    $scope.$on('dataNeedUpdate', function(event, position) {
-      dataFactory.filterByTeams(getActiveTeamsName()).then(function(teams){
-        // Filter out by position, if we have one.
-        if (typeof(position) !== 'undefined' && position.value.length !== 0)
-          teams = dataFactory.filterByPosition(teams, position);
+    $scope.$on('dataNeedUpdate', function(event, type, pointer) {
+      var filteredTeams = getActiveTeamsName(teams);
+      dataFactory.filterByTeams(filteredTeams).then(function(teams){
+        // If we have a (second) type to filter by.
+        if ('division' === type) {
+          if (typeof(pointer) !== 'undefined' && pointer.length !== 0) {
+            var filteredTeamsByDivision = getActiveTeamsName(teams, 'division', pointer);
+            teams = dataFactory.filterByDivision(filteredTeamsByDivision, pointer);
+          }
+        }
+        else if ('position' === type) {
+          if (typeof(pointer) !== 'undefined' && pointer.value.length !== 0)
+            teams = dataFactory.filterByPosition(teams, pointer);
+        }
 
         $scope.data = teams;
       });
     });
 
-    function getActiveTeamsName() {
+    function getActiveTeamsName(obj, type, pointer) {
       // Filter out inactive teams.
-      var activeTeams = $filter('filter')(
-        teams
-        ,{active:true}
-      );
+      var activeTeams;
+      switch (type) {
+        case 'division' :
+          activeTeams = $filter('filter')(obj, function(o) {
+            console.log(teams);
+            if (teams.divison.indexOf(pointer) !== -1)
+              return true;
+            else
+              return false;
+          });
+          break
+
+        default :
+          activeTeams = $filter('filter')(
+            obj
+            ,{active: true}
+          );
+          break;
+      }
 
       // Get an array of names, not an array of objects.
       var activeTeamsName = [];

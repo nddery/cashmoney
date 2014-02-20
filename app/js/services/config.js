@@ -41,5 +41,7 @@ angular.module('cm.services')
       ,{name: 'Left Wing', value: ['L']}
       ,{name: 'Right Wing', value: ['R']}
     ]
+    ,divisions: ['All', 'Atlantic', 'Western', 'Atlantic',
+                 'Metropolitan', 'Central', 'Pacific']
   })
 ;
