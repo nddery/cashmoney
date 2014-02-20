@@ -41,8 +41,6 @@ angular.module('cm.services')
     }
 
     var filterByTeams = function(teams) {
-
-        console.log(teams);
       var deferred = $q.defer();
 
       getAllData().then(function(data) {
