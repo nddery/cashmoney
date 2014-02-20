@@ -101,7 +101,7 @@ angular.module('cm.controllers')
     refreshData();
   })
 
-  .controller('CircularVisualisationCtrl', function($scope, $filter, dataFactory, config, teams) {
+  .controller('VisualisationCtrl', function($scope, $filter, dataFactory, config, teams) {
     var d = {};
     $scope.showDetailPane = function(item) {
       $scope.$apply(function() {
