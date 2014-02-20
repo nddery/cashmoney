@@ -22,6 +22,24 @@ angular.module('cm.services')
       return deferred.promise;
     }
 
+    var filterByDivision = function(teams, division) {
+      var deferred = $q.defer();
+
+      getAllData().then(function(data) {
+        var filteredTeams = $filter('filter')(teams, function(team) {
+          if (teams.indexOf(team.name) !== -1)
+            return true;
+          else
+            return false;
+        });
+
+        // Filter out data
+        deferred.resolve(filteredTeams);
+      });
+
+      return deferred.promise;
+    }
+
     var filterByTeams = function(teams) {
       var deferred = $q.defer();
 
@@ -99,10 +117,11 @@ angular.module('cm.services')
 
     return{
        getAllData: getAllData
+      ,filterByDivision: filterByDivision
+      ,filterByPosition: filterByPosition
+      ,filterByTeams: filterByTeams
       ,getAllPlayers: getAllPlayers
       ,getPlayer: getPlayer
-      ,filterByTeams: filterByTeams
-      ,filterByPosition: filterByPosition
     }
   })
 ;

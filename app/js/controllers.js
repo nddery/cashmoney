@@ -3,7 +3,7 @@
 /* Controllers */
 
 angular.module('cm.controllers')
-  .controller('CashmoneyCtrl', function($scope, $filter, dataFactory) {
+  .controller('CashmoneyCtrl', function($scope) {
     $scope.toggleMenu = function() {
       $scope.$broadcast('toggleMenu');
     }
@@ -17,6 +17,9 @@ angular.module('cm.controllers')
     dataFactory.getAllPlayers().then(function(players){
       $scope.players = players;
     });
+
+    $scope.divisions = config.divisions;
+    $scope.division  = config.divisions[0];
 
     $scope.layouts = config.layouts;
     $scope.layout  = config.layouts[0].name
@@ -38,7 +41,11 @@ angular.module('cm.controllers')
     }
 
     $scope.positionsChanged = function() {
-      $scope.$broadcast('dataNeedUpdate', $scope.position);
+      $scope.$broadcast('dataNeedUpdate', 'position', $scope.position);
+    }
+
+    $scope.divisionChanged = function() {
+      $scope.$broadcast('dataNeedUpdate', 'division', $scope.division);
     }
 
     $scope.displayMenu = false;
@@ -63,7 +70,7 @@ angular.module('cm.controllers')
     }
   })
 
-  .controller('TeamListCtrl', function($scope, dataFactory, teams) {
+  .controller('TeamListCtrl', function($scope, teams) {
     $scope.teams = teams;
 
     $scope.$on('toggleAllTeams', function() {
@@ -94,7 +101,7 @@ angular.module('cm.controllers')
     refreshData();
   })
 
-  .controller('CircularVisualisationCtrl', function($scope, $http, $filter, dataFactory, config, teams) {
+  .controller('CircularVisualisationCtrl', function($scope, $filter, dataFactory, config, teams) {
     var d = {};
     $scope.showDetailPane = function(item) {
       $scope.$apply(function() {
@@ -131,22 +138,56 @@ angular.module('cm.controllers')
       $scope.config.baseColor = color;
     });
 
-    $scope.$on('dataNeedUpdate', function(event, position) {
-      dataFactory.filterByTeams(getActiveTeamsName()).then(function(teams){
-        // Filter out by position, if we have one.
-        if (typeof(position) !== 'undefined' && position.value.length !== 0)
-          teams = dataFactory.filterByPosition(teams, position);
+    $scope.$on('dataNeedUpdate', function(event, type, pointer) {
+      var filteredTeams = getActiveTeamsName('active', true);
+      dataFactory.filterByTeams(filteredTeams).then(function(teams){
+        // If we have a (second) type to filter by.
+        if ('division' === type) {
+          if (typeof(pointer) !== 'undefined' && pointer.length !== 0) {
+            var filteredTeamsByDivision = getActiveTeamsName('division', pointer);
+            // teams = dataFactory.filterByDivision(filteredTeamsByDivision);
+          }
+        }
+        else if ('position' === type) {
+          if (typeof(pointer) !== 'undefined' && pointer.value.length !== 0)
+            teams = dataFactory.filterByPosition(teams, pointer);
+        }
 
         $scope.data = teams;
       });
     });
 
-    function getActiveTeamsName() {
+    function getActiveTeamsName(property, value) {
       // Filter out inactive teams.
       var activeTeams = $filter('filter')(
         teams
-        ,{active:true}
+        ,{active: true}
       );
+      // var activeTeams = $filter('dynamicTeamsFilter')(
+      //   teams
+      //   ,[property, value]
+      // );
+
+      // switch (property) {
+      //   case ''
+      // }
+//       // If an additional type was passed, filter again.
+//       if (type !== 'undefined') {
+//         switch (type) {
+//           case 'division' :
+//             activeTeams = $filter('filter')(activeTeams, function(team) {
+//               console.log(team);
+//               if (team.divison.indexOf(pointer) !== -1)
+//                 return true;
+//               else
+//                 return false;
+//             });
+//             break
+//
+//           default :
+//             break;
+//         }
+//       }
 
       // Get an array of names, not an array of objects.
       var activeTeamsName = [];
