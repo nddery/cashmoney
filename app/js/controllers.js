@@ -81,26 +81,6 @@ angular.module('cm.controllers')
     });
   })
 
-  .controller('ConsoleCtrl', function($scope, dataFactory) {
-    $scope.data = {};
-    var i = 0;
-
-    function refreshData() {
-      dataFactory.getAllData().then(function(data){
-        $scope.data = data;
-        if(i === 0) {
-          refreshData();
-          i++;
-        }
-      },
-      function(errorMessage){
-        $scope.error = errorMessage;
-      });
-    };
-
-    refreshData();
-  })
-
   .controller('VisualisationCtrl', function($scope, $filter, dataFactory, config, teams) {
     var d = {};
     $scope.showDetailPane = function(item) {
