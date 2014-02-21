@@ -34,56 +34,112 @@ angular.module('cm.controllers').controller('VisualisationCtrl', function($scope
     $scope.config.baseColor = color;
   });
 
+  // Triggered when Position, Division and (active) Teams change.
+  // @TODO: dataNeedUpdate should filter on all active filter.
+  //        Currently, if you set a division, then a position - it works.
+  //        However, setting a position, then a division, position is ignored.
+  //        Instead of passing a type with pointer, we should pass a global
+  //        active config of some sort, so instead of filtering a single event,
+  //        we filter on all active settings.
   $scope.$on('dataNeedUpdate', function(event, type, pointer) {
-    var filteredTeams = getActiveTeamsName('active', true);
-    dataFactory.filterByTeams(filteredTeams).then(function(teams){
-      // If we have a (second) type to filter by.
-      if ('division' === type) {
-        if (typeof(pointer) !== 'undefined' && pointer.length !== 0) {
-          var filteredTeamsByDivision = getActiveTeamsName('division', pointer);
-          // teams = dataFactory.filterByDivision(filteredTeamsByDivision);
-        }
-      }
-      else if ('position' === type) {
-        if (typeof(pointer) !== 'undefined' && pointer.value.length !== 0)
-          teams = dataFactory.filterByPosition(teams, pointer);
-      }
+    // var activeTeams = getActiveTeamsName();
 
-      $scope.data = teams;
-    });
+    // We'll retrieve data to this variables in the switch.
+    // var activeTeams;
+    var filtering;
+
+    switch (type) {
+      case 'division' :
+        if (typeof(pointer) !== 'undefined' && pointer.length !== 0)
+          teamsFilter(getActiveTeamsName('division', pointer));
+        break;
+
+      // case 'position' :
+        // if (typeof(pointer) !== 'undefined' && pointer.value.length !== 0) {
+          // readyToFilter(dataFactory.filterByPosition());
+          // dataFactory.filterByPosition(teams, pointer).then(function(data) {
+          //   readyToFilter(data);
+          // });
+        // }
+        // teamsFitler(getActiveTeamsName());
+        // break;
+
+      default :
+        teamsFilter(getActiveTeamsName());
+        break;
+    }
+
+    function teamsFilter(active) {
+      dataFactory.filterByTeams(active).then(function(activeData){
+        // Position filtering needs filteredData to work.
+        if (typeof(type) !== 'undefined' && type === 'position')
+          if (typeof(pointer) !== 'undefined' && pointer.value.length !== 0)
+            activeData = dataFactory.filterByPosition(activeData, pointer);
+
+        $scope.data = activeData;
+      });
+    }
+
+
+
+    // Divison and teams need to work separetaly.
+    //
+    // If division is changed, team icons should highlight accordingly ?
+    //
+    //** Order of filtering.
+    // filter by active teams
+    // filter by division
+    // filter by position
+
+
+
+
+    // dataFactory.filterByTeams(activeTeams).then(function(teams){
+    //   // If we have a (second) type to filter by.
+    //   if ('division' === type) {
+    //     if (typeof(pointer) !== 'undefined' && pointer.length !== 0) {
+    //       var filteredTeamsByDivision = getActiveTeamsName('division', pointer);
+    //       console.log(filteredTeamsByDivision);
+    //       // dataFactory.filterByTeams(filteredTeamsByDivision);
+    //     }
+    //   }
+    //   else if ('position' === type) {
+    //     if (typeof(pointer) !== 'undefined' && pointer.value.length !== 0)
+    //       teams = dataFactory.filterByPosition(teams, pointer);
+    //   }
+
+    //   $scope.data = teams;
+    // });
   });
 
-  function getActiveTeamsName(property, value) {
+  // Returns an array of teams name that are active
+  // @TODO: Always run the filter for active: true
+  function getActiveTeamsName(type, pointer) {
     // Filter out inactive teams.
-    var activeTeams = $filter('filter')(
-      teams
-      ,{active: true}
-    );
-    // var activeTeams = $filter('dynamicTeamsFilter')(
-    //   teams
-    //   ,[property, value]
-    // );
+    var activeTeams;
 
-    // switch (property) {
-    //   case ''
-    // }
-//       // If an additional type was passed, filter again.
-//       if (type !== 'undefined') {
-//         switch (type) {
-//           case 'division' :
-//             activeTeams = $filter('filter')(activeTeams, function(team) {
-//               console.log(team);
-//               if (team.divison.indexOf(pointer) !== -1)
-//                 return true;
-//               else
-//                 return false;
-//             });
-//             break
-//
-//           default :
-//             break;
-//         }
-//       }
+    switch (type) {
+      case 'division' :
+        activeTeams = $filter('filter')(teams, function(o) {
+          if (o.division.indexOf(pointer) !== -1 || pointer === 'All') {
+            // Setting active state will update the team list.
+            o.active = true;
+            return true;
+          }
+          else {
+            o.active = false;
+            return false;
+          }
+        });
+        break
+
+      default :
+        activeTeams = $filter('filter')(
+          teams
+          ,{active: true}
+        );
+        break;
+    }
 
     // Get an array of names, not an array of objects.
     var activeTeamsName = [];
