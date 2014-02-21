@@ -1,6 +1,5 @@
 'use strict';
 angular.module('cm.controllers').controller('VisualisationCtrl', function($scope, $filter, dataFactory, config, teams) {
-  var d = {};
   $scope.showDetailPane = function(item) {
     $scope.$apply(function() {
       if (!$scope.showDetailPanel)
@@ -12,7 +11,6 @@ angular.module('cm.controllers').controller('VisualisationCtrl', function($scope
 
   $scope.data = {};
   dataFactory.getAllData().then(function(data){
-    d = data;
     $scope.data = data;
   });
 
