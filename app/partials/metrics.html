@@ -1,0 +1,26 @@
+<div ng-controller="MetricsCtrl">
+  <div class="half">
+    <p><strong>Bar height</strong> represent a player's {{metricBarHeight.title | lowercase}}. The higher the bar, the higher the {{metricBarHeight.title | lowercase}}.</p>
+  </div>
+
+  <div class="half">
+    <p><strong>Bar color</strong> represent the player's {{metricColor.title | lowercase}}. The lighter the color, the higher the {{metricColor.title | lowercase}}.</p>
+  </div>
+  <div class="clearfix">&nbsp;</div>
+
+  <div class="half">
+    <select class="form-control"
+            ng-model="metricBarHeight"
+            ng-change="metricsChanged()"
+            ng-options="m.title for m in metricsBarHeight">
+    </select>
+  </div>
+
+  <div class="half">
+    <select class="form-control"
+            ng-model="metricColor"
+            ng-change="metricsChanged()"
+            ng-options="m.title for m in metricsColor">
+    </select>
+  </div>
+</div>

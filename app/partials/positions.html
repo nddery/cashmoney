@@ -1,0 +1,7 @@
+<div ng-controller="PositionsCtrl">
+  <select class="form-control"
+          ng-model="position"
+          ng-change="positionsChanged()"
+          ng-options="p.name for p in positions">
+  </select>
+</div>

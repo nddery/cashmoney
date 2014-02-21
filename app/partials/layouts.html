@@ -1,0 +1,11 @@
+<form class="form-inline" role="form" ng-controller="LayoutsCtrl">
+  <div class="radio" ng-repeat="layout in layouts">
+    <label>
+      <input  type="radio"
+              ng-model="$parent.layout"
+              name="layout-{{layout.name}}"
+              value="{{layout.name}}" />
+      {{layout.name}}
+    </label>
+  </div>
+</form>

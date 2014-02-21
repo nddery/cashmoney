@@ -4,26 +4,12 @@
 
       <div class="third">
         <h4>Layout Type</h4>
-        <form class="form-inline" role="form">
-          <div class="radio" ng-repeat="layout in layouts">
-            <label>
-              <input  type="radio"
-                      ng-model="$parent.layout"
-                      name="layout-{{layout.name}}"
-                      value="{{layout.name}}" />
-              {{layout.name}}
-            </label>
-          </div>
-        </form>
+        <layouts></layouts>
       </div>
 
       <div class="third">
         <h4>Position</h4>
-        <select class="form-control"
-                ng-model="position"
-                ng-change="positionsChanged()"
-                ng-options="p.name for p in positions">
-        </select>
+        <positions></positions>
       </div>
 
       <div class="third">
@@ -33,53 +19,17 @@
       <div class="clearfix">&nbsp;</div>
 
       <h4>Metrics</h4>
-      <div class="half">
-        <p><strong>Bar height</strong> represent a player's {{metricBarHeight.title | lowercase}}. The higher the bar, the higher the {{metricBarHeight.title | lowercase}}.</p>
-      </div>
-
-      <div class="half">
-        <p><strong>Bar color</strong> represent the player's {{metricColor.title | lowercase}}. The lighter the color, the higher the {{metricColor.title | lowercase}}.</p>
-      </div>
-      <div class="clearfix">&nbsp;</div>
-
-      <div class="half">
-        <select class="form-control"
-                ng-model="metricBarHeight"
-                ng-change="metricsChanged()"
-                ng-options="m.title for m in metricsBarHeight">
-        </select>
-      </div>
-
-      <div class="half">
-        <select class="form-control"
-                ng-model="metricColor"
-                ng-change="metricsChanged()"
-                ng-options="m.title for m in metricsColor">
-        </select>
-      </div>
+      <metrics></metrics>
       <div class="clearfix">&nbsp;</div>
 
       <div class="half">
         <h4>Division</h4>
-        <select class="form-control"
-                ng-model="division"
-                ng-change="divisionChanged()"
-                ng-options="d for d in divisions">
-        </select>
+        <divisions></divisions>
       </div>
 
       <div class="half">
         <h4>Search Players</h4>
-        <angucomplete
-              id="ex1"
-              placeholder="Search Players"
-              pause="100"
-              selectedobject="selectedPlayer"
-              localdata="players"
-              searchfields="player"
-              titlefield="player"
-              minlength="2"
-              inputclass="form-control form-control-small" />
+        <autocomplete-players></autocomplete-players>
       </div>
       <div class="clearfix mtop">&nbsp;</div>
 
