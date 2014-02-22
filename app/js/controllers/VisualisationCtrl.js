@@ -37,20 +37,18 @@ angular.module('cm.controllers').controller('VisualisationCtrl', function($scope
 
   // Triggered when Position, Division and (active) Teams change.
   $scope.$on('dataNeedUpdate', function() {
-    teamsFilter(getActiveTeamsName());
-    function teamsFilter(active) {
-      dataFactory.filterByTeams(active).then(function(activeData){
-        var currentPosition = state.getCurrentState('position');
+    dataFactory.filterByTeams(getActiveTeamsName()).then(function(activeData){
+      var currentPosition = state.getCurrentState('position');
 
-        // We also need to filter by position.
-        // Position filtering needs filtered data to work.
-        if (currentPosition.name !== 'All Skaters') {
-          activeData = dataFactory.filterByPosition(activeData, currentPosition);
-        }
+      // We also need to filter by position.
+      // Position filtering needs filtered data to work.
+      if (currentPosition.name !== 'All Skaters') {
+        activeData = dataFactory.filterByPosition(activeData, currentPosition);
+      }
 
-        $scope.data = activeData;
-      });
-    }
+      $scope.data = activeData;
+    });
+  });
 
   // Returns an array of teams name that are active
   function getActiveTeamsName(type, pointer) {
