@@ -7,6 +7,7 @@ angular.module('cm.controllers').controller('DivisionsCtrl', function($scope, st
 
   $scope.divisionChanged = function() {
     state.setCurrentStateProp('division', $scope.division);
+    $scope.$broadcast('divisionUpdated');
     $scope.$broadcast('dataNeedUpdate');
   }
 });

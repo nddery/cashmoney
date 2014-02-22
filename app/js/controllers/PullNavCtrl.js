@@ -15,12 +15,4 @@ angular.module('cm.controllers').controller('PullNavCtrl', function($scope, conf
       body.addClass('cbp-spmenu-push-toright');
     }
   });
-
-  $scope.update = function() {
-    $scope.$broadcast('dataNeedUpdate');
-  }
-
-  $scope.toggleAllTeams = function() {
-    $scope.$emit('toggleAllTeams');
-  }
 });

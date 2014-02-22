@@ -108,6 +108,15 @@ angucomplete { display: block; }
   }
 }
 
+.disabled {
+  .team-toggle:hover {
+    background: #288bc6;
+  }
+  .logo:hover {
+    cursor: default;
+  }
+}
+
 .logo-ANA { background-image: url(../img/logos/ANA.svgz); }
 .logo-BOS { background-image: url(../img/logos/BOS.svgz); }
 .logo-BUF { background-image: url(../img/logos/BUF.svgz); }
