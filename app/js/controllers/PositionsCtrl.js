@@ -1,9 +1,11 @@
 'use strict';
-angular.module('cm.controllers').controller('PositionsCtrl', function($scope, config) {
+angular.module('cm.controllers').controller('PositionsCtrl', function($scope, config, state) {
   $scope.positions = config.positions;
   $scope.position  = config.positions[0];
+  state.setCurrentStateProp('position', $scope.position);
 
   $scope.positionsChanged = function() {
-    $scope.$broadcast('dataNeedUpdate', 'position', $scope.position);
+    state.setCurrentStateProp('position', $scope.position);
+    $scope.$broadcast('dataNeedUpdate');
   }
 });

@@ -1,8 +1,4 @@
 'use strict';
-
-/* Services */
-
-// Register simple values.
 angular.module('cm.services')
   .value('config', {
     metrics: [
@@ -41,7 +37,10 @@ angular.module('cm.services')
       ,{name: 'Left Wing', value: ['L']}
       ,{name: 'Right Wing', value: ['R']}
     ]
-    ,divisions: ['All', 'Atlantic', 'Western', 'Eastern',
-                 'Metropolitan', 'Central', 'Pacific']
+    ,divisions: [
+      'All', 'Atlantic', 'Western', 'Eastern',
+      'Metropolitan', 'Central', 'Pacific'
+    ]
+    ,current: {}
   })
 ;

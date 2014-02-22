@@ -1,5 +1,7 @@
 'use strict';
-angular.module('cm.controllers').controller('VisualisationCtrl', function($scope, $filter, dataFactory, config, teams) {
+angular.module('cm.controllers').controller('VisualisationCtrl', function($scope, $filter, dataFactory, config, state, teams) {
+  $scope.config = 0;
+
   $scope.showDetailPane = function(item) {
     $scope.$apply(function() {
       if (!$scope.showDetailPanel)
@@ -14,24 +16,23 @@ angular.module('cm.controllers').controller('VisualisationCtrl', function($scope
     $scope.data = data;
   });
 
-  $scope.config = {
-    baseColor: config.colors[0]
-    ,position: config.positions[0]
-    ,metrics: {
-      'barHeight': 'pm'
-      ,'barColor': 'salary'
-    }
-  }
-
-  $scope.$on('metricsUpdated', function(event, barHeight, barColor) {
-    $scope.config.metrics = {
-      'barHeight': barHeight.name
-      ,'barColor': barColor.name
-    }
+  state.setCurrentStateProp('baseColor', config.colors[0]);
+  state.setCurrentStateProp('position', config.positions[0]);
+  state.setCurrentStateProp('metrics', {
+    'barHeight': 'pm'
+    ,'barColor': 'salary'
   });
 
   $scope.$on('colorPickerUpdated', function(event, color) {
-    $scope.config.baseColor = color;
+    state.setCurrentStateProp('baseColor', color);
+    $scope.config++;
+  });
+
+  $scope.$on('stateModified', function() {
+    // We use $scope.config like versioning, when state change,
+    // update config "version" so the directive know to look
+    // for new values in state.
+    $scope.config++;
   });
 
   // Triggered when Position, Division and (active) Teams change.
@@ -41,7 +42,7 @@ angular.module('cm.controllers').controller('VisualisationCtrl', function($scope
   //        Instead of passing a type with pointer, we should pass a global
   //        active config of some sort, so instead of filtering a single event,
   //        we filter on all active settings.
-  $scope.$on('dataNeedUpdate', function(event, type, pointer) {
+  $scope.$on('dataNeedUpdate', function() {
     // var activeTeams = getActiveTeamsName();
 
     // We'll retrieve data to this variables in the switch.

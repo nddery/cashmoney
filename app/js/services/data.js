@@ -1,8 +1,4 @@
 'use strict';
-
-/* Services */
-
-// Register simple values.
 angular.module('cm.services')
   .factory('cmCache', function($cacheFactory) {
     return $cacheFactory('data');
@@ -111,11 +107,7 @@ angular.module('cm.services')
       return deferred.promise;
     }
 
-    function dataNotYetAvailable() {
-      console.error('Data not available.');
-    }
-
-    return{
+    return {
        getAllData: getAllData
       ,filterByDivision: filterByDivision
       ,filterByPosition: filterByPosition
@@ -123,5 +115,4 @@ angular.module('cm.services')
       ,getAllPlayers: getAllPlayers
       ,getPlayer: getPlayer
     }
-  })
-;
+  });

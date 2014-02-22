@@ -1,8 +1,4 @@
 'use strict';
-
-/* Services */
-
-// Register simple values.
 angular.module('cm.services')
   .value('teams', [ {name:"ANA", division: ['Pacific', 'Western'], active:true},
                     {name:"BOS", division: ['Atlantic', 'Eastern'], active:true},
