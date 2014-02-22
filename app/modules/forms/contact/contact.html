@@ -1,0 +1,64 @@
+<div id="contactForm" ng-controller="ContactFormCtrl">
+  <form name="contactForm" class="form-horizontal" novalidate>
+    <div class="half">
+      <div class="controls">
+        <input  type="text"
+                class="form-control"
+                id="inputName"
+                ng-model="values.name"
+                placeholder="Name"
+                required />
+        <div class="input-help">
+          <h4>*</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="half">
+      <div class="controls">
+        <input  type="email"
+                class="form-control"
+                id="inputEmail"
+                ng-model="values.email"
+                placeholder="Email"
+                required />
+        <div class="input-help">
+          <h4>*</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="full">
+      <div class="controls">
+        <textarea rows="5"
+                  class="form-control"
+                  id="inputMessage"
+                  placeholder="Want to say something? Write it here!"
+                  ng-model="values.message"
+                  required>
+        </textarea>
+        <div class="input-help">
+          <h4>*</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="full alert alert-error" ng-show="httpError">
+      <!-- @TODO: ng-bind-html-unsafe ? is there a way around that ? -->
+      <strong>Oh-oh - it seems your message could not be sent, you can always email me at <span class="emailAddress" ng-bind-html="email('nicolas', 'nddery', 'ca')"></span></strong>
+    </div>
+
+    <div class="full alert alert-success" ng-show="success">
+      <strong>Your message is being attached to a carrier-pigeon as you read this, I should get back to you shortly.</strong>
+    </div>
+
+    <div class="full controls">
+      <button type="submit"
+              class="btn btn-primary btn-large"
+              ng-click="send()"
+              ng-disabled="contactForm.$invalid">
+              Send
+      </button>
+    </div>
+  </form>
+</div>

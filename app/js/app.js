@@ -16,6 +16,7 @@ angular.module('cm', [
   ,'cm.controllers'
   ,'angucomplete'
   ,'modules.colorPicker'
+  ,'modules.forms'
 ])
 
 .config(function($routeProvider) {

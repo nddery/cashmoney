@@ -1,0 +1,67 @@
+#contactForm .controls {
+  position: relative;
+}
+
+#contactForm .input-help {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 9px;
+  right: 10px;
+  width: 12px;
+  text-align: right;
+}
+
+#contactForm .input-help h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: red;
+}
+
+#contactForm .emailAddress a {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+#contactForm .emailAddress a:hover {
+  background: transparent;
+}
+
+#contactForm .ng-dirty.ng-invalid + .input-help {
+  display: block;
+}
+
+#contactForm .ng-dirty.ng-invalid:focus + .input-help {
+  display: none;
+}
+
+#contactForm .form-control {
+  width: 100%;
+}
+
+#contactForm textarea {
+  margin-top: 10px;
+}
+
+#contactForm button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#contactForm .alert {
+  margin-top: 10px;
+  color: #fff;
+  padding: 10px;
+}
+
+#contactForm .alert-error {
+  background: #A80C06;
+}
+
+#contactForm .alert-success {
+  background: #0C7514;
+}
