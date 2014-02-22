@@ -38,7 +38,7 @@ angular.module('cm.services')
       ,{name: 'Right Wing', value: ['R']}
     ]
     ,divisions: [
-      'All', 'Atlantic', 'Western', 'Eastern',
+      'Custom', 'All', 'Atlantic', 'Western', 'Eastern',
       'Metropolitan', 'Central', 'Pacific'
     ]
     ,current: {}
