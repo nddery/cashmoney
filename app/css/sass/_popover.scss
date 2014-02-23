@@ -8,27 +8,7 @@
   pointer-events: none;
   z-index: 1;
 
-  span {
-    margin-right: 10px;
-    display: inline-block;
-
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    padding-bottom: 0;
   }
-}
-
-/* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  content: "\25C0";
-  margin: -4px 0 0 0;
-  top: 50%;
-  left: -8px;
 }

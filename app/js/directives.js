@@ -74,7 +74,7 @@ angular.module('cm.directives')
     }
   })
 
-  .directive('sunburst', function(d3Service, state, $window) {
+  .directive('sunburst', function(d3Service, state, config, $filter, $window) {
     return {
       restrict: 'E'
       ,scope: {
@@ -91,17 +91,23 @@ angular.module('cm.directives')
 
         // D3 is ready for us!
         d3Service.d3().then(function(d3) {
-          var config = state.getCurrentState();
+          var cstate = state.getCurrentState();
 
           var tip = d3.tip()
                       .attr('class', 'd3-tip')
                       .direction('e')
                       .html(function(d) {
-                        return '<p<strong>' + d.player + '</strong></p>'
-                          + '<span>' + config.metrics.barHeight + ': '
-                          + d[config.metrics.barHeight] + '</span>'
-                          + '<span>' + config.metrics.barColor + ': '
-                          + d[config.metrics.barColor] + '</span>';
+                        // bar height object, bar color object
+                        // We get the object to get to the title instead of
+                        // displaying the abbreviation/column name.
+                        var bho, bco;
+                        bho = $filter('filter')(config.metrics,{name:cstate.metrics.barHeight});
+                        bco = $filter('filter')(config.metrics,{name:cstate.metrics.barColor});
+                        return '<p><strong>' + d.player + '</strong></p>'
+                          + '<p>' + bho[0].title + ': '
+                          + d[cstate.metrics.barHeight] + '</p>'
+                          + '<p>' + bco[0].title + ': '
+                          + d[cstate.metrics.barColor] + '</p>';
                       });
 
           var svgRoot = d3.select(element[0])
@@ -154,19 +160,19 @@ angular.module('cm.directives')
                 ,currentTeam  = 'AAA'
                 ,lastTeam     = 'ZZZ';
 
-            var baseColor = d3.rgb(config.baseColor);
+            var baseColor = d3.rgb(cstate.baseColor);
 
             // Find the minimum and maximum values for bar height and color
             var heightMetric = 0, colorMetric = 0;
             angular.forEach(data, function(team) {
               angular.forEach(team.children, function(player) {
                 // bar height
-                heightMetric = parseInt(player[config.metrics.barHeight]);
+                heightMetric = parseInt(player[cstate.metrics.barHeight]);
                 if (heightMetric < minBarHeight) minBarHeight = heightMetric;
                 if (heightMetric > maxBarHeight) maxBarHeight = heightMetric;
 
                 // color
-                colorMetric = parseFloat(player[config.metrics.barColor]);
+                colorMetric = parseFloat(player[cstate.metrics.barColor]);
                 if (colorMetric < minColor) minColor = colorMetric;
                 if (colorMetric > maxColor) maxColor = colorMetric;
               });
@@ -221,7 +227,7 @@ angular.module('cm.directives')
                           // Prevent outer radius from being smaller than
                           // inner radius.
                           if (d.hasOwnProperty('player'))
-                            currentOuterRadius = Math.sqrt((d.y + d.dy) * barHeight(d[config.metrics.barHeight]));
+                            currentOuterRadius = Math.sqrt((d.y + d.dy) * barHeight(d[cstate.metrics.barHeight]));
                           else
                             currentOuterRadius = Math.sqrt(d.y);
 
@@ -253,7 +259,7 @@ angular.module('cm.directives')
               .style('stroke-width', '0')
               .style('fill', function(d) {
                 if (d.hasOwnProperty('player')) {
-                  return baseColor.brighter(color(d[config.metrics.barColor]));
+                  return baseColor.brighter(color(d[cstate.metrics.barColor]));
                 }
                 else {
                   odd = odd === 0 ? 1 : 0;
