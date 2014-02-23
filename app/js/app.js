@@ -3,7 +3,7 @@
 // Modules & Dependencies
 angular.module('cm.services', []);
 angular.module('cm.directives', ['d3', 'cm.services', 'angucomplete', 'modules.colorPicker', 'modules.forms']);
-angular.module('cm.controllers', ['cm.services']);
+angular.module('cm.controllers', ['cm.services', 'ui.bootstrap']);
 
 // Declare app level module which depends on filters, and services
 angular.module('cm', [
@@ -15,6 +15,7 @@ angular.module('cm', [
   ,'angucomplete'
   ,'modules.colorPicker'
   ,'modules.forms'
+  ,'ui.bootstrap'
 ])
 
 .config(function($routeProvider) {
