@@ -2,6 +2,15 @@
 
 /* Directives */
 angular.module('cm.directives')
+  .directive('logo', function() {
+    return {
+      restrict: 'E'
+      ,replace: true
+      ,transclude: true
+      ,templateUrl: 'partials/logo.html'
+    }
+  })
+
   .directive('autocompletePlayers', function() {
     return {
       restrict: 'E'
@@ -65,7 +74,7 @@ angular.module('cm.directives')
     }
   })
 
-  .directive('sunburst', function(d3Service, state) {
+  .directive('sunburst', function(d3Service, state, $window) {
     return {
       restrict: 'E'
       ,scope: {
@@ -74,11 +83,11 @@ angular.module('cm.directives')
         ,onClick: '&' // parent execution binding
       }
       ,link: function(scope, element, attrs) {
-        var margin        = 20
-
-            ,width        = angular.element(window)[0].innerWidth - margin
-            ,height       = angular.element(window)[0].innerHeight - margin
-            ,radius       = Math.min(width, height) / 2;
+        var margin   = 20
+            ,aWindow = angular.element($window)
+            ,width   = aWindow[0].innerWidth - margin
+            ,height  = aWindow[0].innerHeight - margin
+            ,radius  = Math.min(width, height) / 2;
 
         // D3 is ready for us!
         d3Service.d3().then(function(d3) {
@@ -95,22 +104,26 @@ angular.module('cm.directives')
                           + d[config.metrics.barColor] + '</span>';
                       });
 
-          var svg = d3.select(element[0])
-                      .append('svg')
-                        .attr('width', width)
-                        .attr('height', height)
-                        .style('margin-top', margin / 2 + 'px')
-                      .append('g')
-                        .attr('transform', 'translate(' + width / 2 + ',' + height * .52 + ')');
+          var svgRoot = d3.select(element[0])
+                          .append('svg')
+                            .attr('width', width)
+                            .attr('height', height)
+                            .style('margin-top', margin / 2 + 'px');
+          var svg = svgRoot.append('g')
+                           .attr('transform', 'translate(' + width / 2 + ',' + height * .52 + ')');
 
           var partition = d3.layout.partition()
                             .sort(null)
                             .size([2 * Math.PI, radius * radius])
                             .value(function(d) { return 1; });
 
-          // Monitor the bound data.
-          scope.$watch('data', function(newVals, oldVals) {
-            return scope.render(newVals);
+          // On window resize, re-render d3 canvas.
+          // Only watching for width changes.
+          aWindow.bind('resize', function() { return scope.$apply(); });
+          scope.$watch(function(){
+            return aWindow[0].innerWidth;
+          }, function(){
+            return scope.render(scope.data);
           });
 
           // Monitor config object.
@@ -123,7 +136,15 @@ angular.module('cm.directives')
             if (!data || !data.length) return;
 
             // Remove all previous items before rendering.
-            svg.selectAll('path').remove();
+            svg.selectAll('*').remove();
+
+            // Recalculate width, height and radius, and apply.
+            width   = aWindow[0].innerWidth - margin;
+            height  = aWindow[0].innerHeight - margin;
+            radius  = Math.min(width, height) / 2;
+            svgRoot.attr('width', width)
+                   .attr('height', height);
+            svg.attr('transform', 'translate(' + width / 2 + ',' + height * .52 + ')');
 
             var  minBarHeight = Number.MAX_VALUE
                 ,maxBarHeight = -Number.MAX_VALUE

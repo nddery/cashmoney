@@ -14,6 +14,15 @@
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
+@mixin rotate45() {
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
 body {
   background: url(../img/background.jpg) repeat;
   font-family: 'Droid Sans', sans-serif;
@@ -21,6 +30,40 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
+}
+
+#logo {
+  position: absolute;
+  display: none;
+  width: 98%; /* Logo is not centered at 100% (or is it the vis that's not ?) */
+  height: 100%;
+  top: 0;
+  text-align: center;
+
+  .outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    .middle {
+      display: table-cell;
+      vertical-align: middle;
+
+      .content {
+        text-align: center;
+        // width will be set via JS
+
+        img {
+          -webkit-transform: rotate(-15deg);
+             -moz-transform: rotate(-15deg);
+              -ms-transform: rotate(-15deg);
+               -o-transform: rotate(-15deg);
+                  transform: rotate(-15deg);
+        }
+      }
+    }
+  }
 }
 
 #settings {
