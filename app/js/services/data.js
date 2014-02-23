@@ -81,14 +81,21 @@ angular.module('cm.services')
       var deferred = $q.defer();
 
       getAllData().then(function(data) {
-        // Filter out data
-        var players = [];
+        // If data is already in cache, use that, else, filter it.
+        var cached = cmCache.get('all_players')
+            ,players = [];
 
-        data.forEach(function(team) {
-          team['children'].forEach(function(player) {
-            players.push(player);
+        if (!cached) {
+          // Not cached, filter out data
+          data.forEach(function(team) {
+            team['children'].forEach(function(player) {
+              players.push(player);
+            });
           });
-        });
+        }
+        else {
+          players = cached;
+        }
 
         deferred.resolve(players);
       });
@@ -102,6 +109,32 @@ angular.module('cm.services')
       getAllData().then(function(data) {
         // Filter out data
         deferred.resolve(data);
+      });
+
+      return deferred.promise;
+    }
+
+    var getLeagueHighsLows = function() {
+      var deferred = $q.defer();
+
+      getAllData().then(function(data) {
+        // If data is already in cache, use that, else, filter it.
+        var cached     = cmCache.get('league_highs_lows')
+            ,highsLows = [];
+
+        if (!cached) {
+          // Not cached, filter out data
+          // data.forEach(function(team) {
+          //   team['children'].forEach(function(player) {
+          //     players.push(player);
+          //   });
+          // });
+        }
+        else {
+          highsLows = cached;
+        }
+
+        deferred.resolve(highsLows);
       });
 
       return deferred.promise;
