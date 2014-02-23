@@ -1,25 +1,10 @@
 'use strict';
-angular.module('cm.controllers').controller('VisualisationCtrl', function($scope, $filter, $modal, dataFactory, config, state, teams) {
+angular.module('cm.controllers').controller('VisualisationCtrl', function($scope, $filter, dataFactory, config, state, teams) {
   $scope.config = 0;
 
-  $scope.showDetailPane = function(item) {
-    $scope.$apply(function() {
-      if (!$scope.showDetailPanel)
-        $scope.showDetailPanel = true;
-
-      $scope.detailItem = item;
-      console.log(item);
-
-      var modalInstance = $modal.open({
-        templateUrl: 'partials/modal-player.html',
-        controller: 'PlayerModalCtrl',
-        resolve: {
-          player: function () {
-            return item;
-          }
-        }
-      });
-    });
+  $scope.playerSelected = function(player) {
+    if (player !== null && typeof player !== 'undefined')
+      $scope.$emit('shouldDisplayPlayerModal', player);
   };
 
   $scope.data = {};

@@ -1,16 +1,20 @@
-<div>
+<div id="modal-container">
   <div class="modal-header">
-      <h3>I'm a modal!</h3>
+    <h3>{{ player.player }}</h3>
+
+    <table>
+      <tr ng-repeat="d in data">
+        <td>{{d.value}}</td>
+        <th scope="row">{{d.name}}</th>
+      </tr>
+    </table>
+
+    <button class="btn btn-primary" ng-click="close()">Close</button>
   </div>
-  <div class="modal-body">
-      <ul>
-          <li ng-repeat="item in items">
-              <a ng-click="selected.item = item">{{ item }}</a>
-          </li>
-      </ul>
-      Selected: <b>{{ player }}</b>
+
+  <div id="modal-graph" class="modal-body">
+    <bar-chart data="data"></bar-chart>
   </div>
-  <div class="modal-footer">
-      <button class="btn btn-primary" ng-click="close()">Close</button>
-  </div>
+
+  <div class="clearfix">&nbsp;</div>
 </div>

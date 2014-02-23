@@ -158,18 +158,18 @@
   transition: all 0.3s ease;
 }
 
-/* line 26, sass/app.scss */
+/* line 17, sass/app.scss */
 body {
   background: url(../img/background.jpg) repeat;
   font-family: 'Droid Sans', sans-serif;
 }
 
-/* line 31, sass/app.scss */
+/* line 22, sass/app.scss */
 h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 35, sass/app.scss */
+/* line 26, sass/app.scss */
 #logo {
   position: absolute;
   display: none;
@@ -179,32 +179,32 @@ h1, h2, h3, h4 {
   top: 0;
   text-align: center;
 }
-/* line 43, sass/app.scss */
+/* line 34, sass/app.scss */
 #logo .outer {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 49, sass/app.scss */
+/* line 40, sass/app.scss */
 #logo .outer .middle {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 53, sass/app.scss */
+/* line 44, sass/app.scss */
 #logo .outer .middle .content {
   text-align: center;
 }
-/* line 57, sass/app.scss */
+/* line 48, sass/app.scss */
 #logo .outer .middle .content img {
-  -webkit-transform: rotate(-15deg);
-  -moz-transform: rotate(-15deg);
-  -ms-transform: rotate(-15deg);
-  -o-transform: rotate(-15deg);
-  transform: rotate(-15deg);
+  -webkit-transform: rotate(-12deg);
+  -moz-transform: rotate(-12deg);
+  -ms-transform: rotate(-12deg);
+  -o-transform: rotate(-12deg);
+  transform: rotate(-12deg);
 }
 
-/* line 69, sass/app.scss */
+/* line 60, sass/app.scss */
 #settings {
   position: absolute;
   top: 50px;
@@ -228,70 +228,164 @@ h1, h2, h3, h4 {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 79, sass/app.scss */
+/* line 70, sass/app.scss */
 #settings:hover {
   color: #e6e6e6;
 }
 
-/* line 94, sass/app.scss */
+/* line 85, sass/app.scss */
 angucomplete {
   display: block;
 }
+/* line 89, sass/app.scss */
+angucomplete .angucomplete-row .angucomplete-description {
+  font-size: 10px;
+  color: grey;
+}
+/* line 94, sass/app.scss */
+angucomplete .angucomplete-row:hover {
+  background: #47A3DA;
+}
+/* line 97, sass/app.scss */
+angucomplete .angucomplete-row:hover .angucomplete-description {
+  color: #fff;
+}
 
-/* line 95, sass/app.scss */
+/* line 104, sass/app.scss */
 .mtop {
   margin-top: 55px;
 }
 
-/* line 99, sass/app.scss */
+/* line 108, sass/app.scss */
 .radio {
   margin: 5px;
   line-height: 2.5em;
 }
-/* line 103, sass/app.scss */
+/* line 112, sass/app.scss */
 .radio label {
   text-transform: capitalize;
 }
 
-/* line 108, sass/app.scss */
+/* line 117, sass/app.scss */
 .color-picker {
   margin-top: 1.75em;
 }
-/* line 111, sass/app.scss */
+/* line 120, sass/app.scss */
 .color-picker .color {
   width: 15px;
   height: 15px;
   padding: 8px;
   border: 1px solid #fff;
 }
-/* line 117, sass/app.scss */
+/* line 126, sass/app.scss */
 .color-picker .color:hover {
   cursor: pointer;
 }
 
-/* line 123, sass/app.scss */
+/* line 132, sass/app.scss */
 .full {
   width: 95%;
   margin: 0 2.5%;
   float: left;
 }
 
-/* line 129, sass/app.scss */
+/* line 138, sass/app.scss */
 .half {
   width: 45%;
   margin: 0 2.5%;
   float: left;
 }
 
-/* line 135, sass/app.scss */
+/* line 144, sass/app.scss */
 .third {
   width: 28.3%;
   margin: 0 2.5%;
   float: left;
 }
 
+/* Modal */
+/* line 151, sass/app.scss */
+#modal-container {
+  height: 100%;
+}
+
+/* line 156, sass/app.scss */
+.modal .modal-dialog {
+  width: 95%;
+  height: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+/* line 163, sass/app.scss */
+.modal .modal-content {
+  height: 100%;
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 169, sass/app.scss */
+.modal .modal-content table td {
+  text-align: right;
+  padding-right: 10px;
+  font-weight: 700;
+}
+/* line 175, sass/app.scss */
+.modal .modal-content table th {
+  font-weight: 400;
+  text-align: left;
+}
+/* line 182, sass/app.scss */
+.modal .modal-header {
+  width: 25%;
+  height: 100%;
+  overflow-y: scroll;
+  float: left;
+  border-bottom: 0;
+}
+/* line 189, sass/app.scss */
+.modal .modal-header h3 {
+  margin-top: 0;
+}
+/* line 194, sass/app.scss */
+.modal .modal-body {
+  width: 75%;
+  float: left;
+}
+
+/* Bar chart */
+/* line 201, sass/app.scss */
+.bar {
+  fill: steelblue;
+}
+
+/* line 205, sass/app.scss */
+.bar:hover {
+  fill: brown;
+}
+
+/* line 209, sass/app.scss */
+.axis {
+  font: 10px sans-serif;
+}
+
+/* line 214, sass/app.scss */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+/* line 220, sass/app.scss */
+.x.axis path {
+  display: none;
+}
+
 /* Teams logo */
-/* line 142, sass/app.scss */
+/* line 226, sass/app.scss */
 .logo {
   display: inline-block;
   margin: 10px;
@@ -304,170 +398,170 @@ angucomplete {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 151, sass/app.scss */
+/* line 235, sass/app.scss */
 .logo:hover {
   cursor: pointer;
 }
-/* line 155, sass/app.scss */
+/* line 239, sass/app.scss */
 .logo.active {
   opacity: 1;
 }
 
-/* line 161, sass/app.scss */
+/* line 245, sass/app.scss */
 .disabled .team-toggle:hover {
   background: #288bc6;
 }
-/* line 164, sass/app.scss */
+/* line 248, sass/app.scss */
 .disabled .logo:hover {
   cursor: default;
 }
 
-/* line 169, sass/app.scss */
+/* line 253, sass/app.scss */
 .logo-ANA {
   background-image: url(../img/logos/ANA.svgz);
 }
 
-/* line 170, sass/app.scss */
+/* line 254, sass/app.scss */
 .logo-BOS {
   background-image: url(../img/logos/BOS.svgz);
 }
 
-/* line 171, sass/app.scss */
+/* line 255, sass/app.scss */
 .logo-BUF {
   background-image: url(../img/logos/BUF.svgz);
 }
 
-/* line 172, sass/app.scss */
+/* line 256, sass/app.scss */
 .logo-CAR {
   background-image: url(../img/logos/CAR.svgz);
 }
 
-/* line 173, sass/app.scss */
+/* line 257, sass/app.scss */
 .logo-CGY {
   background-image: url(../img/logos/CGY.svgz);
 }
 
-/* line 174, sass/app.scss */
+/* line 258, sass/app.scss */
 .logo-CHI {
   background-image: url(../img/logos/CHI.svgz);
 }
 
-/* line 175, sass/app.scss */
+/* line 259, sass/app.scss */
 .logo-CBJ {
   background-image: url(../img/logos/CBJ.svgz);
 }
 
-/* line 176, sass/app.scss */
+/* line 260, sass/app.scss */
 .logo-COL {
   background-image: url(../img/logos/COL.svgz);
 }
 
-/* line 177, sass/app.scss */
+/* line 261, sass/app.scss */
 .logo-DAL {
   background-image: url(../img/logos/DAL.svgz);
 }
 
-/* line 178, sass/app.scss */
+/* line 262, sass/app.scss */
 .logo-DET {
   background-image: url(../img/logos/DET.svgz);
 }
 
-/* line 179, sass/app.scss */
+/* line 263, sass/app.scss */
 .logo-EDM {
   background-image: url(../img/logos/EDM.svgz);
 }
 
-/* line 180, sass/app.scss */
+/* line 264, sass/app.scss */
 .logo-FLA {
   background-image: url(../img/logos/FLA.svgz);
 }
 
-/* line 181, sass/app.scss */
+/* line 265, sass/app.scss */
 .logo-LAK {
   background-image: url(../img/logos/LAK.svgz);
 }
 
-/* line 182, sass/app.scss */
+/* line 266, sass/app.scss */
 .logo-MIN {
   background-image: url(../img/logos/MIN.svgz);
 }
 
-/* line 183, sass/app.scss */
+/* line 267, sass/app.scss */
 .logo-MTL {
   background-image: url(../img/logos/MTL.svgz);
 }
 
-/* line 184, sass/app.scss */
+/* line 268, sass/app.scss */
 .logo-NSH {
   background-image: url(../img/logos/NSH.svgz);
 }
 
-/* line 185, sass/app.scss */
+/* line 269, sass/app.scss */
 .logo-NJD {
   background-image: url(../img/logos/NJD.svgz);
 }
 
-/* line 186, sass/app.scss */
+/* line 270, sass/app.scss */
 .logo-NYI {
   background-image: url(../img/logos/NYI.svgz);
 }
 
-/* line 187, sass/app.scss */
+/* line 271, sass/app.scss */
 .logo-NYR {
   background-image: url(../img/logos/NYR.svgz);
 }
 
-/* line 188, sass/app.scss */
+/* line 272, sass/app.scss */
 .logo-OTT {
   background-image: url(../img/logos/OTT.svgz);
 }
 
-/* line 189, sass/app.scss */
+/* line 273, sass/app.scss */
 .logo-PHI {
   background-image: url(../img/logos/PHI.svgz);
 }
 
-/* line 190, sass/app.scss */
+/* line 274, sass/app.scss */
 .logo-PHX {
   background-image: url(../img/logos/PHX.svgz);
 }
 
-/* line 191, sass/app.scss */
+/* line 275, sass/app.scss */
 .logo-PIT {
   background-image: url(../img/logos/PIT.svgz);
 }
 
-/* line 192, sass/app.scss */
+/* line 276, sass/app.scss */
 .logo-SJS {
   background-image: url(../img/logos/SJS.svgz);
 }
 
-/* line 193, sass/app.scss */
+/* line 277, sass/app.scss */
 .logo-STL {
   background-image: url(../img/logos/STL.svgz);
 }
 
-/* line 194, sass/app.scss */
+/* line 278, sass/app.scss */
 .logo-TBL {
   background-image: url(../img/logos/TBL.svgz);
 }
 
-/* line 195, sass/app.scss */
+/* line 279, sass/app.scss */
 .logo-TOR {
   background-image: url(../img/logos/TOR.svgz);
 }
 
-/* line 196, sass/app.scss */
+/* line 280, sass/app.scss */
 .logo-VAN {
   background-image: url(../img/logos/VAN.svgz);
 }
 
-/* line 197, sass/app.scss */
+/* line 281, sass/app.scss */
 .logo-WSH {
   background-image: url(../img/logos/WSH.svgz);
 }
 
-/* line 198, sass/app.scss */
+/* line 282, sass/app.scss */
 .logo-WPG {
   background-image: url(../img/logos/WPG.svgz);
 }
