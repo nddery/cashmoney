@@ -42,5 +42,4 @@ angular.module('cm.services')
       'Metropolitan', 'Central', 'Pacific'
     ]
     ,current: {}
-  })
-;
+  });

@@ -29,5 +29,4 @@ angular.module('cm.services')
                     {name:"TOR", title: "Toronto Maple Leafs", division: ['Atlantic', 'Eastern'], active:true},
                     {name:"VAN", title: "Vancouver Canucks", division: ['Pacific', 'Western'], active:true},
                     {name:"WPG", title: "Winnipeg Jets", division: ['Central', 'Western'], active:true},
-                    {name:"WSH", title: "Washington Capitals", division: ['Metropolitan', 'Eastern'], active:true} ])
-;
+                    {name:"WSH", title: "Washington Capitals", division: ['Metropolitan', 'Eastern'], active:true} ]);

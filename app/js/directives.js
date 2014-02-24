@@ -70,5 +70,4 @@ angular.module('cm.directives')
       ,transclude: true
       ,templateUrl: 'partials/team-list.html'
     }
-  })
-;
+  });
