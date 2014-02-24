@@ -9,13 +9,13 @@ angular.module('cm.controllers', ['cm.services', 'ui.bootstrap']);
 angular.module('cm', [
   'ngRoute'
   ,'d3'
-  ,'cm.services'
-  ,'cm.directives'
-  ,'cm.controllers'
   ,'angucomplete'
   ,'modules.colorPicker'
   ,'modules.forms'
   ,'ui.bootstrap'
+  ,'cm.services'
+  ,'cm.directives'
+  ,'cm.controllers'
 ])
 
 .config(function($routeProvider) {

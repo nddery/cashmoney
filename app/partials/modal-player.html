@@ -1,20 +1,10 @@
 <div id="modal-container">
   <div class="modal-header">
-    <h3>{{ player.player }}</h3>
-
-    <table>
-      <tr ng-repeat="d in data">
-        <td>{{d.value}}</td>
-        <th scope="row">{{d.name}}</th>
-      </tr>
-    </table>
-
-    <button class="btn btn-primary" ng-click="close()">Close</button>
+    <h3>{{player.player}} <br /><small>{{position}} - {{team}}</small></h3>
+    <button class="btn btn-warning" ng-click="close()">Close</button>
   </div>
 
   <div id="modal-graph" class="modal-body">
-    <bar-chart data="data"></bar-chart>
+    <bullet-chart data="data"></bullet-chart>
   </div>
-
-  <div class="clearfix">&nbsp;</div>
 </div>

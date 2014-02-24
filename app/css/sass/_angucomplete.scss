@@ -1,0 +1,18 @@
+angucomplete {
+  display: block;
+
+  .angucomplete-row {
+    .angucomplete-description {
+      font-size: 10px;
+      color: grey;
+    }
+
+    &:hover {
+      background: #47A3DA;
+
+      .angucomplete-description {
+        color: #fff;
+      }
+    }
+  }
+}

@@ -8,7 +8,11 @@ angular.module('d3', [])
         ,body = $document[0].getElementsByTagName('body')[0];
 
     function onD3Loaded() {
-      createScriptTag('lib/d3.tip.js', body, onAllLoaded);
+      createScriptTag('lib/d3.tip.js', body, onTipLoaded);
+    }
+
+    function onTipLoaded() {
+      createScriptTag('lib/d3.bullets.js', body, onAllLoaded);
     }
 
     function onAllLoaded() {

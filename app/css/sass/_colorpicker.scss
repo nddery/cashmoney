@@ -1,0 +1,14 @@
+.color-picker {
+  margin-top: 1.75em;
+
+  .color {
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    border: 1px solid #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

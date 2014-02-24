@@ -86,7 +86,6 @@ angular.module('cm.services')
             ,players = [];
 
         if (!cached) {
-          // Not cached, filter out data
           data.forEach(function(team) {
             team['children'].forEach(function(player) {
               players.push(player);
@@ -114,21 +113,42 @@ angular.module('cm.services')
       return deferred.promise;
     }
 
-    var getLeagueHighsLows = function() {
+    var getLeagueHighsLows = function(metrics) {
       var deferred = $q.defer();
 
       getAllData().then(function(data) {
         // If data is already in cache, use that, else, filter it.
         var cached     = cmCache.get('league_highs_lows')
-            ,highsLows = [];
+            ,highsLows = {};
 
         if (!cached) {
-          // Not cached, filter out data
-          // data.forEach(function(team) {
-          //   team['children'].forEach(function(player) {
-          //     players.push(player);
-          //   });
-          // });
+          if (typeof metrics === 'undefined')
+            deferred.reject('\'getLeagueHighsLows\' needs to be passed a metrics argument.');
+
+          var val = .0;
+          angular.forEach(metrics, function(metric, m) {
+            highsLows[metric.name] = {
+              title: metric.title
+              ,high: -Number.MAX_VALUE
+              ,low: Number.MAX_VALUE
+            };
+
+            angular.forEach(data, function(team, t) {
+              angular.forEach(team.children, function(player, p) {
+                val = parseInt(player[metric.name]);
+
+                if (val < highsLows[metric.name].low) {
+                  highsLows[metric.name].low = val;
+                }
+
+                if (val > highsLows[metric.name].high) {
+                  highsLows[metric.name].high = val;
+                }
+              });
+            });
+          });
+
+          cmCache.put('league_highs_lows', highsLows);
         }
         else {
           highsLows = cached;
@@ -147,5 +167,6 @@ angular.module('cm.services')
       ,filterByTeams: filterByTeams
       ,getAllPlayers: getAllPlayers
       ,getPlayer: getPlayer
+      ,getLeagueHighsLows: getLeagueHighsLows
     }
   });

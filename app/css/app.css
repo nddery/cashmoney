@@ -158,18 +158,314 @@
   transition: all 0.3s ease;
 }
 
-/* line 17, sass/app.scss */
+/* line 1, sass/_angucomplete.scss */
+angucomplete {
+  display: block;
+}
+/* line 5, sass/_angucomplete.scss */
+angucomplete .angucomplete-row .angucomplete-description {
+  font-size: 10px;
+  color: grey;
+}
+/* line 10, sass/_angucomplete.scss */
+angucomplete .angucomplete-row:hover {
+  background: #47A3DA;
+}
+/* line 13, sass/_angucomplete.scss */
+angucomplete .angucomplete-row:hover .angucomplete-description {
+  color: #fff;
+}
+
+/* line 1, sass/_bulletChart.scss */
+.bullet {
+  font: 10px sans-serif;
+}
+
+/* line 2, sass/_bulletChart.scss */
+.bullet .marker {
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+/* line 3, sass/_bulletChart.scss */
+.bullet .tick line {
+  stroke: #666;
+  stroke-width: .5px;
+}
+
+/* line 7, sass/_bulletChart.scss */
+.bullet .range.s0 {
+  fill: #eee;
+}
+
+/* line 8, sass/_bulletChart.scss */
+.bullet .range.s1 {
+  fill: #eee;
+}
+
+/* line 9, sass/_bulletChart.scss */
+.bullet .range.s2 {
+  fill: #eee;
+}
+
+/* line 10, sass/_bulletChart.scss */
+.bullet .measure.s0 {
+  fill: lightsteelblue;
+}
+
+/* line 11, sass/_bulletChart.scss */
+.bullet .measure.s1 {
+  fill: steelblue;
+}
+
+/* line 12, sass/_bulletChart.scss */
+.bullet .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 13, sass/_bulletChart.scss */
+.bullet .subtitle {
+  fill: #999;
+}
+
+/* line 1, sass/_colorpicker.scss */
+.color-picker {
+  margin-top: 1.75em;
+}
+/* line 4, sass/_colorpicker.scss */
+.color-picker .color {
+  width: 15px;
+  height: 15px;
+  padding: 8px;
+  border: 1px solid #fff;
+}
+/* line 10, sass/_colorpicker.scss */
+.color-picker .color:hover {
+  cursor: pointer;
+}
+
+/* line 1, sass/_logos.scss */
+.logo {
+  display: inline-block;
+  margin: 10px;
+  width: 84px;
+  height: 56px;
+  background-size: 84px 56px;
+  opacity: 0.25;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 10, sass/_logos.scss */
+.logo:hover {
+  cursor: pointer;
+}
+/* line 14, sass/_logos.scss */
+.logo.active {
+  opacity: 1;
+}
+
+/* line 20, sass/_logos.scss */
+.disabled .team-toggle:hover {
+  background: #288bc6;
+}
+/* line 23, sass/_logos.scss */
+.disabled .logo:hover {
+  cursor: default;
+}
+
+/* line 28, sass/_logos.scss */
+.logo-ANA {
+  background-image: url(../img/logos/ANA.svgz);
+}
+
+/* line 29, sass/_logos.scss */
+.logo-BOS {
+  background-image: url(../img/logos/BOS.svgz);
+}
+
+/* line 30, sass/_logos.scss */
+.logo-BUF {
+  background-image: url(../img/logos/BUF.svgz);
+}
+
+/* line 31, sass/_logos.scss */
+.logo-CAR {
+  background-image: url(../img/logos/CAR.svgz);
+}
+
+/* line 32, sass/_logos.scss */
+.logo-CGY {
+  background-image: url(../img/logos/CGY.svgz);
+}
+
+/* line 33, sass/_logos.scss */
+.logo-CHI {
+  background-image: url(../img/logos/CHI.svgz);
+}
+
+/* line 34, sass/_logos.scss */
+.logo-CBJ {
+  background-image: url(../img/logos/CBJ.svgz);
+}
+
+/* line 35, sass/_logos.scss */
+.logo-COL {
+  background-image: url(../img/logos/COL.svgz);
+}
+
+/* line 36, sass/_logos.scss */
+.logo-DAL {
+  background-image: url(../img/logos/DAL.svgz);
+}
+
+/* line 37, sass/_logos.scss */
+.logo-DET {
+  background-image: url(../img/logos/DET.svgz);
+}
+
+/* line 38, sass/_logos.scss */
+.logo-EDM {
+  background-image: url(../img/logos/EDM.svgz);
+}
+
+/* line 39, sass/_logos.scss */
+.logo-FLA {
+  background-image: url(../img/logos/FLA.svgz);
+}
+
+/* line 40, sass/_logos.scss */
+.logo-LAK {
+  background-image: url(../img/logos/LAK.svgz);
+}
+
+/* line 41, sass/_logos.scss */
+.logo-MIN {
+  background-image: url(../img/logos/MIN.svgz);
+}
+
+/* line 42, sass/_logos.scss */
+.logo-MTL {
+  background-image: url(../img/logos/MTL.svgz);
+}
+
+/* line 43, sass/_logos.scss */
+.logo-NSH {
+  background-image: url(../img/logos/NSH.svgz);
+}
+
+/* line 44, sass/_logos.scss */
+.logo-NJD {
+  background-image: url(../img/logos/NJD.svgz);
+}
+
+/* line 45, sass/_logos.scss */
+.logo-NYI {
+  background-image: url(../img/logos/NYI.svgz);
+}
+
+/* line 46, sass/_logos.scss */
+.logo-NYR {
+  background-image: url(../img/logos/NYR.svgz);
+}
+
+/* line 47, sass/_logos.scss */
+.logo-OTT {
+  background-image: url(../img/logos/OTT.svgz);
+}
+
+/* line 48, sass/_logos.scss */
+.logo-PHI {
+  background-image: url(../img/logos/PHI.svgz);
+}
+
+/* line 49, sass/_logos.scss */
+.logo-PHX {
+  background-image: url(../img/logos/PHX.svgz);
+}
+
+/* line 50, sass/_logos.scss */
+.logo-PIT {
+  background-image: url(../img/logos/PIT.svgz);
+}
+
+/* line 51, sass/_logos.scss */
+.logo-SJS {
+  background-image: url(../img/logos/SJS.svgz);
+}
+
+/* line 52, sass/_logos.scss */
+.logo-STL {
+  background-image: url(../img/logos/STL.svgz);
+}
+
+/* line 53, sass/_logos.scss */
+.logo-TBL {
+  background-image: url(../img/logos/TBL.svgz);
+}
+
+/* line 54, sass/_logos.scss */
+.logo-TOR {
+  background-image: url(../img/logos/TOR.svgz);
+}
+
+/* line 55, sass/_logos.scss */
+.logo-VAN {
+  background-image: url(../img/logos/VAN.svgz);
+}
+
+/* line 56, sass/_logos.scss */
+.logo-WSH {
+  background-image: url(../img/logos/WSH.svgz);
+}
+
+/* line 57, sass/_logos.scss */
+.logo-WPG {
+  background-image: url(../img/logos/WPG.svgz);
+}
+
+/* line 2, sass/_modal.scss */
+.modal .modal-body {
+  overflow: hidden;
+}
+/* line 6, sass/_modal.scss */
+.modal .modal-content {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 10, sass/_modal.scss */
+.modal button {
+  color: #fff;
+  background-color: #288bc6;
+  padding: 5px 10px;
+  font-weight: 400;
+  border: 0;
+  float: right;
+  position: relative;
+  top: -60px;
+}
+/* line 20, sass/_modal.scss */
+.modal button:hover {
+  color: #e6e6e6;
+}
+
+/* line 24, sass/app.scss */
 body {
   background: url(../img/background.jpg) repeat;
   font-family: 'Droid Sans', sans-serif;
 }
 
-/* line 22, sass/app.scss */
+/* line 29, sass/app.scss */
 h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 26, sass/app.scss */
+/* line 33, sass/app.scss */
 #logo {
   position: absolute;
   display: none;
@@ -179,23 +475,23 @@ h1, h2, h3, h4 {
   top: 0;
   text-align: center;
 }
-/* line 34, sass/app.scss */
+/* line 41, sass/app.scss */
 #logo .outer {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 40, sass/app.scss */
+/* line 47, sass/app.scss */
 #logo .outer .middle {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 44, sass/app.scss */
+/* line 51, sass/app.scss */
 #logo .outer .middle .content {
   text-align: center;
 }
-/* line 48, sass/app.scss */
+/* line 55, sass/app.scss */
 #logo .outer .middle .content img {
   -webkit-transform: rotate(-12deg);
   -moz-transform: rotate(-12deg);
@@ -204,7 +500,7 @@ h1, h2, h3, h4 {
   transform: rotate(-12deg);
 }
 
-/* line 60, sass/app.scss */
+/* line 67, sass/app.scss */
 #settings {
   position: absolute;
   top: 50px;
@@ -228,340 +524,43 @@ h1, h2, h3, h4 {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 70, sass/app.scss */
+/* line 77, sass/app.scss */
 #settings:hover {
   color: #e6e6e6;
 }
 
-/* line 85, sass/app.scss */
-angucomplete {
-  display: block;
-}
-/* line 89, sass/app.scss */
-angucomplete .angucomplete-row .angucomplete-description {
-  font-size: 10px;
-  color: grey;
-}
-/* line 94, sass/app.scss */
-angucomplete .angucomplete-row:hover {
-  background: #47A3DA;
-}
-/* line 97, sass/app.scss */
-angucomplete .angucomplete-row:hover .angucomplete-description {
-  color: #fff;
-}
-
-/* line 104, sass/app.scss */
+/* line 92, sass/app.scss */
 .mtop {
   margin-top: 55px;
 }
 
-/* line 108, sass/app.scss */
+/* line 96, sass/app.scss */
 .radio {
   margin: 5px;
   line-height: 2.5em;
 }
-/* line 112, sass/app.scss */
+/* line 100, sass/app.scss */
 .radio label {
   text-transform: capitalize;
 }
 
-/* line 117, sass/app.scss */
-.color-picker {
-  margin-top: 1.75em;
-}
-/* line 120, sass/app.scss */
-.color-picker .color {
-  width: 15px;
-  height: 15px;
-  padding: 8px;
-  border: 1px solid #fff;
-}
-/* line 126, sass/app.scss */
-.color-picker .color:hover {
-  cursor: pointer;
-}
-
-/* line 132, sass/app.scss */
+/* line 105, sass/app.scss */
 .full {
   width: 95%;
   margin: 0 2.5%;
   float: left;
 }
 
-/* line 138, sass/app.scss */
+/* line 111, sass/app.scss */
 .half {
   width: 45%;
   margin: 0 2.5%;
   float: left;
 }
 
-/* line 144, sass/app.scss */
+/* line 117, sass/app.scss */
 .third {
   width: 28.3%;
   margin: 0 2.5%;
   float: left;
-}
-
-/* Modal */
-/* line 151, sass/app.scss */
-#modal-container {
-  height: 100%;
-}
-
-/* line 156, sass/app.scss */
-.modal .modal-dialog {
-  width: 95%;
-  height: 100%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-}
-/* line 163, sass/app.scss */
-.modal .modal-content {
-  height: 100%;
-  overflow: hidden;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-/* line 169, sass/app.scss */
-.modal .modal-content table td {
-  text-align: right;
-  padding-right: 10px;
-  font-weight: 700;
-}
-/* line 175, sass/app.scss */
-.modal .modal-content table th {
-  font-weight: 400;
-  text-align: left;
-}
-/* line 182, sass/app.scss */
-.modal .modal-header {
-  width: 25%;
-  height: 100%;
-  overflow-y: scroll;
-  float: left;
-  border-bottom: 0;
-}
-/* line 189, sass/app.scss */
-.modal .modal-header h3 {
-  margin-top: 0;
-}
-/* line 194, sass/app.scss */
-.modal .modal-body {
-  width: 75%;
-  float: left;
-}
-
-/* Bar chart */
-/* line 201, sass/app.scss */
-.bar {
-  fill: steelblue;
-}
-
-/* line 205, sass/app.scss */
-.bar:hover {
-  fill: brown;
-}
-
-/* line 209, sass/app.scss */
-.axis {
-  font: 10px sans-serif;
-}
-
-/* line 214, sass/app.scss */
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-/* line 220, sass/app.scss */
-.x.axis path {
-  display: none;
-}
-
-/* Teams logo */
-/* line 226, sass/app.scss */
-.logo {
-  display: inline-block;
-  margin: 10px;
-  width: 84px;
-  height: 56px;
-  background-size: 84px 56px;
-  opacity: 0.25;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 235, sass/app.scss */
-.logo:hover {
-  cursor: pointer;
-}
-/* line 239, sass/app.scss */
-.logo.active {
-  opacity: 1;
-}
-
-/* line 245, sass/app.scss */
-.disabled .team-toggle:hover {
-  background: #288bc6;
-}
-/* line 248, sass/app.scss */
-.disabled .logo:hover {
-  cursor: default;
-}
-
-/* line 253, sass/app.scss */
-.logo-ANA {
-  background-image: url(../img/logos/ANA.svgz);
-}
-
-/* line 254, sass/app.scss */
-.logo-BOS {
-  background-image: url(../img/logos/BOS.svgz);
-}
-
-/* line 255, sass/app.scss */
-.logo-BUF {
-  background-image: url(../img/logos/BUF.svgz);
-}
-
-/* line 256, sass/app.scss */
-.logo-CAR {
-  background-image: url(../img/logos/CAR.svgz);
-}
-
-/* line 257, sass/app.scss */
-.logo-CGY {
-  background-image: url(../img/logos/CGY.svgz);
-}
-
-/* line 258, sass/app.scss */
-.logo-CHI {
-  background-image: url(../img/logos/CHI.svgz);
-}
-
-/* line 259, sass/app.scss */
-.logo-CBJ {
-  background-image: url(../img/logos/CBJ.svgz);
-}
-
-/* line 260, sass/app.scss */
-.logo-COL {
-  background-image: url(../img/logos/COL.svgz);
-}
-
-/* line 261, sass/app.scss */
-.logo-DAL {
-  background-image: url(../img/logos/DAL.svgz);
-}
-
-/* line 262, sass/app.scss */
-.logo-DET {
-  background-image: url(../img/logos/DET.svgz);
-}
-
-/* line 263, sass/app.scss */
-.logo-EDM {
-  background-image: url(../img/logos/EDM.svgz);
-}
-
-/* line 264, sass/app.scss */
-.logo-FLA {
-  background-image: url(../img/logos/FLA.svgz);
-}
-
-/* line 265, sass/app.scss */
-.logo-LAK {
-  background-image: url(../img/logos/LAK.svgz);
-}
-
-/* line 266, sass/app.scss */
-.logo-MIN {
-  background-image: url(../img/logos/MIN.svgz);
-}
-
-/* line 267, sass/app.scss */
-.logo-MTL {
-  background-image: url(../img/logos/MTL.svgz);
-}
-
-/* line 268, sass/app.scss */
-.logo-NSH {
-  background-image: url(../img/logos/NSH.svgz);
-}
-
-/* line 269, sass/app.scss */
-.logo-NJD {
-  background-image: url(../img/logos/NJD.svgz);
-}
-
-/* line 270, sass/app.scss */
-.logo-NYI {
-  background-image: url(../img/logos/NYI.svgz);
-}
-
-/* line 271, sass/app.scss */
-.logo-NYR {
-  background-image: url(../img/logos/NYR.svgz);
-}
-
-/* line 272, sass/app.scss */
-.logo-OTT {
-  background-image: url(../img/logos/OTT.svgz);
-}
-
-/* line 273, sass/app.scss */
-.logo-PHI {
-  background-image: url(../img/logos/PHI.svgz);
-}
-
-/* line 274, sass/app.scss */
-.logo-PHX {
-  background-image: url(../img/logos/PHX.svgz);
-}
-
-/* line 275, sass/app.scss */
-.logo-PIT {
-  background-image: url(../img/logos/PIT.svgz);
-}
-
-/* line 276, sass/app.scss */
-.logo-SJS {
-  background-image: url(../img/logos/SJS.svgz);
-}
-
-/* line 277, sass/app.scss */
-.logo-STL {
-  background-image: url(../img/logos/STL.svgz);
-}
-
-/* line 278, sass/app.scss */
-.logo-TBL {
-  background-image: url(../img/logos/TBL.svgz);
-}
-
-/* line 279, sass/app.scss */
-.logo-TOR {
-  background-image: url(../img/logos/TOR.svgz);
-}
-
-/* line 280, sass/app.scss */
-.logo-VAN {
-  background-image: url(../img/logos/VAN.svgz);
-}
-
-/* line 281, sass/app.scss */
-.logo-WSH {
-  background-image: url(../img/logos/WSH.svgz);
-}
-
-/* line 282, sass/app.scss */
-.logo-WPG {
-  background-image: url(../img/logos/WPG.svgz);
 }
