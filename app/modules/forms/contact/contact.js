@@ -14,7 +14,7 @@ angular.module('modules.forms', [])
     $scope.httpError = false;
 
     $scope.send = function(){
-      $http.post('http://proj.nddery.ca/cashmoney/v2/modules/forms/contact/sendmail.php', angular.toJson($scope.values))
+      $http.post('http://proj.nddery.ca/cashmoney/modules/forms/contact/sendmail.php', angular.toJson($scope.values))
         .success(function(data){
           console.log(data);
           if(data.form_ok){
