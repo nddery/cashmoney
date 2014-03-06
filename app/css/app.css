@@ -545,20 +545,28 @@ h1, h2, h3, h4 {
 }
 
 /* line 105, sass/app.scss */
+#data-updated {
+  color: #FFF;
+  font-size: 1.1em;
+  margin: 2.5%;
+  text-align: right;
+}
+
+/* line 112, sass/app.scss */
 .full {
   width: 95%;
   margin: 0 2.5%;
   float: left;
 }
 
-/* line 111, sass/app.scss */
+/* line 118, sass/app.scss */
 .half {
   width: 45%;
   margin: 0 2.5%;
   float: left;
 }
 
-/* line 117, sass/app.scss */
+/* line 124, sass/app.scss */
 .third {
   width: 28.3%;
   margin: 0 2.5%;
