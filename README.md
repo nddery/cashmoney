@@ -1,4 +1,4 @@
-# cashmoney - visualizing the national hockey league
+# [cashmoney - visualizing the national hockey league](http://proj.nddery.ca/cashmoney)
 
 [cashmoney](http://proj.nddery.ca/cashmoney) is a data visualization of the
 National Hockey League players' statistics.
