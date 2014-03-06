@@ -1,9 +1,17 @@
 .logo {
   display: inline-block;
   margin: 10px;
-  width: 84px;
-  height: 56px;
-  background-size: 84px 56px;
+
+  // SVG logos
+  // width: 72px;
+  // height: 44px;
+  // background-size: 72px 44px;
+
+  // PNG logos
+  width: 73px;
+  height: 38px;
+  background-size: 73px 38px;
+
   opacity: 0.25;
   @include transition(all 0.3s);
 
@@ -25,33 +33,66 @@
   }
 }
 
-.logo-ANA { background-image: url(../img/logos/ANA.svgz); }
-.logo-BOS { background-image: url(../img/logos/BOS.svgz); }
-.logo-BUF { background-image: url(../img/logos/BUF.svgz); }
-.logo-CAR { background-image: url(../img/logos/CAR.svgz); }
-.logo-CGY { background-image: url(../img/logos/CGY.svgz); }
-.logo-CHI { background-image: url(../img/logos/CHI.svgz); }
-.logo-CBJ { background-image: url(../img/logos/CBJ.svgz); }
-.logo-COL { background-image: url(../img/logos/COL.svgz); }
-.logo-DAL { background-image: url(../img/logos/DAL.svgz); }
-.logo-DET { background-image: url(../img/logos/DET.svgz); }
-.logo-EDM { background-image: url(../img/logos/EDM.svgz); }
-.logo-FLA { background-image: url(../img/logos/FLA.svgz); }
-.logo-LAK { background-image: url(../img/logos/LAK.svgz); }
-.logo-MIN { background-image: url(../img/logos/MIN.svgz); }
-.logo-MTL { background-image: url(../img/logos/MTL.svgz); }
-.logo-NSH { background-image: url(../img/logos/NSH.svgz); }
-.logo-NJD { background-image: url(../img/logos/NJD.svgz); }
-.logo-NYI { background-image: url(../img/logos/NYI.svgz); }
-.logo-NYR { background-image: url(../img/logos/NYR.svgz); }
-.logo-OTT { background-image: url(../img/logos/OTT.svgz); }
-.logo-PHI { background-image: url(../img/logos/PHI.svgz); }
-.logo-PHX { background-image: url(../img/logos/PHX.svgz); }
-.logo-PIT { background-image: url(../img/logos/PIT.svgz); }
-.logo-SJS { background-image: url(../img/logos/SJS.svgz); }
-.logo-STL { background-image: url(../img/logos/STL.svgz); }
-.logo-TBL { background-image: url(../img/logos/TBL.svgz); }
-.logo-TOR { background-image: url(../img/logos/TOR.svgz); }
-.logo-VAN { background-image: url(../img/logos/VAN.svgz); }
-.logo-WSH { background-image: url(../img/logos/WSH.svgz); }
-.logo-WPG { background-image: url(../img/logos/WPG.svgz); }
+// SVG logos
+// .logo-ANA { background-image: url(../img/logos/ANA.svgz); }
+// .logo-BOS { background-image: url(../img/logos/BOS.svgz); }
+// .logo-BUF { background-image: url(../img/logos/BUF.svgz); }
+// .logo-CAR { background-image: url(../img/logos/CAR.svgz); }
+// .logo-CGY { background-image: url(../img/logos/CGY.svgz); }
+// .logo-CHI { background-image: url(../img/logos/CHI.svgz); }
+// .logo-CBJ { background-image: url(../img/logos/CBJ.svgz); }
+// .logo-COL { background-image: url(../img/logos/COL.svgz); }
+// .logo-DAL { background-image: url(../img/logos/DAL.svgz); }
+// .logo-DET { background-image: url(../img/logos/DET.svgz); }
+// .logo-EDM { background-image: url(../img/logos/EDM.svgz); }
+// .logo-FLA { background-image: url(../img/logos/FLA.svgz); }
+// .logo-LAK { background-image: url(../img/logos/LAK.svgz); }
+// .logo-MIN { background-image: url(../img/logos/MIN.svgz); }
+// .logo-MTL { background-image: url(../img/logos/MTL.svgz); }
+// .logo-NSH { background-image: url(../img/logos/NSH.svgz); }
+// .logo-NJD { background-image: url(../img/logos/NJD.svgz); }
+// .logo-NYI { background-image: url(../img/logos/NYI.svgz); }
+// .logo-NYR { background-image: url(../img/logos/NYR.svgz); }
+// .logo-OTT { background-image: url(../img/logos/OTT.svgz); }
+// .logo-PHI { background-image: url(../img/logos/PHI.svgz); }
+// .logo-PHX { background-image: url(../img/logos/PHX.svgz); }
+// .logo-PIT { background-image: url(../img/logos/PIT.svgz); }
+// .logo-SJS { background-image: url(../img/logos/SJS.svgz); }
+// .logo-STL { background-image: url(../img/logos/STL.svgz); }
+// .logo-TBL { background-image: url(../img/logos/TBL.svgz); }
+// .logo-TOR { background-image: url(../img/logos/TOR.svgz); }
+// .logo-VAN { background-image: url(../img/logos/VAN.svgz); }
+// .logo-WSH { background-image: url(../img/logos/WSH.svgz); }
+// .logo-WPG { background-image: url(../img/logos/WPG.svgz); }
+
+// PNG logos
+.logo-ANA { background-image: url(../img/logos_png/ANA.png); }
+.logo-BOS { background-image: url(../img/logos_png/BOS.png); }
+.logo-BUF { background-image: url(../img/logos_png/BUF.png); }
+.logo-CAR { background-image: url(../img/logos_png/CAR.png); }
+.logo-CGY { background-image: url(../img/logos_png/CGY.png); }
+.logo-CHI { background-image: url(../img/logos_png/CHI.png); }
+.logo-CBJ { background-image: url(../img/logos_png/CBJ.png); }
+.logo-COL { background-image: url(../img/logos_png/COL.png); }
+.logo-DAL { background-image: url(../img/logos_png/DAL.png); }
+.logo-DET { background-image: url(../img/logos_png/DET.png); }
+.logo-EDM { background-image: url(../img/logos_png/EDM.png); }
+.logo-FLA { background-image: url(../img/logos_png/FLA.png); }
+.logo-LAK { background-image: url(../img/logos_png/LAK.png); }
+.logo-MIN { background-image: url(../img/logos_png/MIN.png); }
+.logo-MTL { background-image: url(../img/logos_png/MTL.png); }
+.logo-NSH { background-image: url(../img/logos_png/NSH.png); }
+.logo-NJD { background-image: url(../img/logos_png/NJD.png); }
+.logo-NYI { background-image: url(../img/logos_png/NYI.png); }
+.logo-NYR { background-image: url(../img/logos_png/NYR.png); }
+.logo-OTT { background-image: url(../img/logos_png/OTT.png); }
+.logo-PHI { background-image: url(../img/logos_png/PHI.png); }
+.logo-PHX { background-image: url(../img/logos_png/PHX.png); }
+.logo-PIT { background-image: url(../img/logos_png/PIT.png); }
+.logo-SJS { background-image: url(../img/logos_png/SJS.png); }
+.logo-STL { background-image: url(../img/logos_png/STL.png); }
+.logo-TBL { background-image: url(../img/logos_png/TBL.png); }
+.logo-TOR { background-image: url(../img/logos_png/TOR.png); }
+.logo-VAN { background-image: url(../img/logos_png/VAN.png); }
+.logo-WSH { background-image: url(../img/logos_png/WSH.png); }
+.logo-WPG { background-image: url(../img/logos_png/WPG.png); }
