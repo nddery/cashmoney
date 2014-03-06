@@ -1,0 +1,44 @@
+@media (max-width: 1000px ) {
+//   .full {
+//     width: 95%;
+//     margin: 0 2.5%;
+//     float: left;
+//   }
+//
+//   .half {
+//     width: 45%;
+//     margin: 0 2.5%;
+//     float: left;
+//   }
+
+  .third {
+    width: 45%;
+    margin: 0 2.5%;
+    float: left;
+  }
+
+  .full-mq1 {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+}
+
+@media (max-width: 600px ) {
+  .half {
+    width: 95%;
+    margin: 0 2.5%;
+    float: left;
+  }
+
+  .third {
+    width: 95%;
+    margin: 0 2.5%;
+    float: left;
+  }
+
+  .cbp-spmenu button.team-toggle {
+    display: block;
+    position: relative;
+    margin: 10px auto 0;
+  }
+}

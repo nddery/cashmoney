@@ -42,7 +42,7 @@
 /* line 28, sass/_menu.scss */
 .cbp-spmenu h4 {
   color: #fff;
-  margin: 20px;
+  margin: 20px 2.5%;
   font-weight: 400;
 }
 /* line 35, sass/_menu.scss */
@@ -563,4 +563,41 @@ h1, h2, h3, h4 {
   width: 28.3%;
   margin: 0 2.5%;
   float: left;
+}
+
+@media (max-width: 1000px) {
+  /* line 14, sass/_media-queries.scss */
+  .third {
+    width: 45%;
+    margin: 0 2.5%;
+    float: left;
+  }
+
+  /* line 20, sass/_media-queries.scss */
+  .full-mq1 {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 27, sass/_media-queries.scss */
+  .half {
+    width: 95%;
+    margin: 0 2.5%;
+    float: left;
+  }
+
+  /* line 33, sass/_media-queries.scss */
+  .third {
+    width: 95%;
+    margin: 0 2.5%;
+    float: left;
+  }
+
+  /* line 39, sass/_media-queries.scss */
+  .cbp-spmenu button.team-toggle {
+    display: block;
+    position: relative;
+    margin: 10px auto 0;
+  }
 }
