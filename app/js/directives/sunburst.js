@@ -26,8 +26,9 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
                       // We get the object to get to the title instead of
                       // displaying the abbreviation/column name.
                       var bho, bco;
-                      bho = $filter('filter')(config.metrics,{name:cstate.metrics.barHeight});
-                      bco = $filter('filter')(config.metrics,{name:cstate.metrics.barColor});
+                      bho = $filter('filter')(config.metrics,{name:cstate.metrics.barHeight},true);
+                      bco = $filter('filter')(config.metrics,{name:cstate.metrics.barColor},true);
+                      console.log(bco);
                       return '<p><strong>' + d.player + '</strong></p>'
                         + '<p>' + bho[0].title + ': '
                         + d[cstate.metrics.barHeight] + '</p>'
