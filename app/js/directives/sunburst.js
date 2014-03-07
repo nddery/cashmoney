@@ -214,7 +214,7 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
             var dyOffset = height / 21.25;
             var text = svg.append('text')
                           .style('font-size', function() {
-                            return radius / 42;
+                            return radius / 42 + 'px';
                           })
                           .style('font-weight', 'bold')
                           .style('fill', '#000')

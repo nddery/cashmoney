@@ -88,6 +88,10 @@ module.exports = function(grunt) {
          src: 'app/data/data.full.json'
         ,dest: 'dist/data/data.full.json'
       }
+      ,sendmail: {
+         src: 'app/modules/forms/contact/sendmail.php'
+        ,src: 'dist/modules/forms/contact/sendmail.php'
+      }
       ,lib: {
         files: [{
           expand: true
