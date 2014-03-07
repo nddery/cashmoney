@@ -23,14 +23,15 @@
   -moz-box-shadow: #288bc6 -40px 0 60px 0 inset;
   box-shadow: #288bc6 -40px 0 60px 0 inset;
   position: fixed;
-  overflow-x: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
   z-index: 0;
 }
-/* line 11, sass/_menu.scss */
+/* line 12, sass/_menu.scss */
 .cbp-spmenu ul {
   padding: 1em;
 }
-/* line 19, sass/_menu.scss */
+/* line 20, sass/_menu.scss */
 .cbp-spmenu h3 {
   color: #fff;
   font-size: 1.9em;
@@ -39,19 +40,19 @@
   padding: 0 0 5px;
   font-weight: 400;
 }
-/* line 28, sass/_menu.scss */
+/* line 29, sass/_menu.scss */
 .cbp-spmenu h4 {
   color: #fff;
   margin: 20px 2.5%;
   font-weight: 400;
 }
-/* line 35, sass/_menu.scss */
+/* line 36, sass/_menu.scss */
 .cbp-spmenu .half h4, .cbp-spmenu .half form,
 .cbp-spmenu .third h4, .cbp-spmenu .third form {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 40, sass/_menu.scss */
+/* line 41, sass/_menu.scss */
 .cbp-spmenu button {
   border: 0;
   color: #fff;
@@ -67,68 +68,69 @@
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 48, sass/_menu.scss */
+/* line 49, sass/_menu.scss */
 .cbp-spmenu button.team-toggle {
   position: absolute;
   right: 5.5%;
   margin-top: -38px;
 }
-/* line 54, sass/_menu.scss */
+/* line 55, sass/_menu.scss */
 .cbp-spmenu button:hover {
   background: #1b5e86;
 }
-/* line 59, sass/_menu.scss */
+/* line 60, sass/_menu.scss */
 .cbp-spmenu a {
   display: block;
   color: #fff;
   font-size: 1.1em;
   font-weight: 300;
 }
-/* line 65, sass/_menu.scss */
+/* line 66, sass/_menu.scss */
 .cbp-spmenu a:hover {
   background: #258ecd;
 }
-/* line 69, sass/_menu.scss */
+/* line 70, sass/_menu.scss */
 .cbp-spmenu a:active {
   background: #afdefa;
   color: #47a3da;
 }
 
-/* line 76, sass/_menu.scss */
+/* line 77, sass/_menu.scss */
 .cbp-spmenu-vertical {
   width: 60%;
   height: 100%;
   top: 0;
   z-index: 1000;
 }
-/* line 82, sass/_menu.scss */
+/* line 83, sass/_menu.scss */
 .cbp-spmenu-vertical a {
   border-bottom: 1px solid #258ecd;
   padding: 1em;
 }
 
-/* line 88, sass/_menu.scss */
+/* line 89, sass/_menu.scss */
 .cbp-spmenu-left {
   left: -59%;
 }
-/* line 91, sass/_menu.scss */
+/* line 92, sass/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0px;
+  overflow-y: scroll;
 }
 
-/* line 96, sass/_menu.scss */
+/* line 98, sass/_menu.scss */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 102, sass/_menu.scss */
+/* line 104, sass/_menu.scss */
 #settings {
   z-index: 2;
 }
 
-/* line 106, sass/_menu.scss */
+/* line 108, sass/_menu.scss */
 #visualisation {
   position: relative;
   left: 0%;
@@ -139,17 +141,17 @@
   transition: all 0.3s ease;
 }
 
-/* line 113, sass/_menu.scss */
+/* line 115, sass/_menu.scss */
 .cbp-spmenu-push-toright {
   left: 60%;
   overflow: hidden;
 }
-/* line 117, sass/_menu.scss */
+/* line 119, sass/_menu.scss */
 .cbp-spmenu-push-toright #visualisation, .cbp-spmenu-push-toright #logo {
   left: -28%;
 }
 
-/* line 123, sass/_menu.scss */
+/* line 125, sass/_menu.scss */
 .cbp-spmenu,
 .cbp-spmenu-push {
   -webkit-transition: all 0.3s ease;

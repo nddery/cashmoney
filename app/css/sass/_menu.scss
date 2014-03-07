@@ -5,7 +5,8 @@
   // background: #45a8f1;
   @include box-shadow(darken(#47a3da, 10%) -40px 0 60px 0 inset);
   position: fixed;
-  overflow-x: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
   z-index: 0;
 
   ul {
@@ -90,6 +91,7 @@
 
   &.cbp-spmenu-open {
     left: 0px;
+    overflow-y: scroll;
   }
 }
 
