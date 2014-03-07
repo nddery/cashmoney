@@ -1,4 +1,0 @@
-angucomplete
-============
-
-AngularJS Autocomplete Directive

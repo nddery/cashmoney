@@ -15,10 +15,9 @@ allow you to visualize the player against the rest of the league.
 * [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/)
 
 ## Building
-Build process is still not complete. It currently run `ngmin` on all JS files,
-concatenate all Controllers, Directives and Services into their own respective
-file, minify Javascript and minify CSS. The output can be found in the `build/`
-directory. Note that you will need to modify the `index.html` file manually.
+Build process is still incomplete. The only manual step is to copy
+`dist/index-good.html` to `dist/index.html` (overwrite the existing one).
+Everything else should be concatenated and minified.
 
 ```
 $ grunt build
