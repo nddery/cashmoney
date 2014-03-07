@@ -3,4 +3,5 @@ db_config.php
 data/.ropeproject
 app/.sass-cache
 build
+dist
 node_modules

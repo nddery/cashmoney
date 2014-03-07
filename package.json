@@ -5,11 +5,18 @@
   "repository": "https://github.com/nddery/cashmoney",
   "devDependencies": {
     "phantomjs": "~1.9",
+
     "karma": "~0.10",
     "karma-junit-reporter": "~0.1",
     "karma-jasmine": "~0.1",
     "karma-ng-scenario": "~0.1",
+
     "grunt": "~0.4",
-    "grunt-ngmin": "0.0.3"
+    "grunt-ngmin": "0.0.3",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-cssc": "*"
   }
 }

@@ -28,7 +28,6 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
                       var bho, bco;
                       bho = $filter('filter')(config.metrics,{name:cstate.metrics.barHeight},true);
                       bco = $filter('filter')(config.metrics,{name:cstate.metrics.barColor},true);
-                      console.log(bco);
                       return '<p><strong>' + d.player + '</strong></p>'
                         + '<p>' + bho[0].title + ': '
                         + d[cstate.metrics.barHeight] + '</p>'

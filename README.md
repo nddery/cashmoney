@@ -13,3 +13,13 @@ allow you to visualize the player against the rest of the league.
 * [Justin Palmer - d3.tip](https://github.com/caged/d3-tip)
 * [Daryl Rowland  - Angucomplete](https://github.com/darylrowland/angucomplete)
 * [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/)
+
+## Building
+Build process is still not complete. It currently run `ngmin` on all JS files,
+concatenate all Controllers, Directives and Services into their own respective
+file, minify Javascript and minify CSS. The output can be found in the `build/`
+directory. Note that you will need to modify the `index.html` file manually.
+
+```
+$ grunt build
+```
