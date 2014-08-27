@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:media="http://search.yahoo.com/mrss/">
+
+<channel>
+	<title>evalue analytics</title>
+	<atom:link href="http://www.evalueanalytics.com/wpapi/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.evalueanalytics.com/wpapi</link>
+	<description>Social Media Marketing Blog &#38; News</description>
+	<lastBuildDate>Tue, 26 Aug 2014 13:08:25 +0000</lastBuildDate>
+	<language>en-US</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.9.2</generator>
+	<item>
+		<title>How to Optimize Content with Social Analytics</title>
+		<link>http://www.evalueanalytics.com/wpapi/post/optimize-content-with-social-analytics/</link>
+		<comments>http://www.evalueanalytics.com/wpapi/post/optimize-content-with-social-analytics/#comments</comments>
+		<pubDate>Tue, 26 Aug 2014 13:00:02 +0000</pubDate>
+		<dc:creator><![CDATA[Jordan Stotland]]></dc:creator>
+				<category><![CDATA[Social Media Analytics]]></category>
+		<category><![CDATA[Social Media Marketing]]></category>
+		<category><![CDATA[Social Media Marketing Tips]]></category>
+		<category><![CDATA[Content Marketing]]></category>
+		<category><![CDATA[KPI]]></category>
+		<category><![CDATA[social analytics]]></category>
+		<category><![CDATA[Social Media]]></category>
+		<category><![CDATA[social media marketing]]></category>
+
+		<guid isPermaLink="false">http://www.evalueanalytics.com/wpapi/?p=2370</guid>
+		<description><![CDATA[In order to engage your audience with content marketing, it requires crafting quality and targeted content, coupled with a strong supporting online community. Find out why social media analytics is perhaps the most powerful tool to use when trying to accomplish this.]]></description>
+				<content:encoded><![CDATA[<p><em>This article by Engagement Labs, originally appeared on the <a href="http://www.hausmanmarketingletter.com/optimize-content-social-analytics/">Hausman Marketing Letter</a> website on Aug 20th, 2014.</em></p>
+<p><img class="aligncenter size-full wp-image-2375" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_SMBlogs.jpg" alt="blog_pic_SMBlogs" width="800" height="450" /></p>
+<p>Whether your goal as a marketer is to engage your community, drive leads to your online store or increase brand notoriety, content marketing is paramount. For each goal, you’ll need to define specific content strategies and monitor specific social media Key Performance Indicators (KPIs). Content marketing and social media are becoming increasingly intertwined as search engine algorithms now not only favor fresh content, but are also indexing social media content more and more <a href="http://blog.sumall.com/journal/8-ways-social-media-affects-seo.html">in their results</a>. Not to mention, it is more cost effective; <em>content marketing costs 62% less than traditional marketing and generates about <a href="http://www.demandmetric.com/content/content-marketing-infographic">3 times as many leads</a>. </em></p>
+<h2><strong>What does this mean for marketers?</strong></h2>
+<p>The essence of content marketing is providing value to get value. In order to maintain an engaging content strategy, it requires analyzing the social media behavior of your audience and that of your competitor’s audience. In order to engage this audience, it requires crafting quality and targeted content, coupled with a strong supporting online community. Social media analytics is perhaps the most powerful tool to use when trying to accomplish this. It allows a brand to understand the attitudes, behavior and preferences of customers across a multitude of different online sources in order to make smarter business decisions and influence purchase decisions. In other words, to find the needle in the haystack of big data.</p>
+<p>The results of content marketing with social media are often spread out over time, and therefore tracking and measuring ROI can be quite difficult.  The reality is that most online marketing techniques cannot be measured on a case-by-case basis, and are better calculated as a whole, which includes metrics over <a href="http://www.forbes.com/sites/jaysondemers/2013/10/08/the-top-7-content-marketing-trends-that-will-dominate-2014/">longer periods of time</a>. By measuring engagement metrics all together, you will be able to spot which content marketing strategy is working &#8211; versus that which is not &#8211; for your brand and even that of your competitors.</p>
+<p><em>So how can social analytics really help you optimize your content engagement strategy</em>? There are several social media analytics tools available that streamline the process of measuring activities, behaviors and associations based around your actions on social. The greatest advantage from these tools is that an organization can translate large of amounts of raw data (likes, tweets, mentions, posts, comments etc.) into measurable trends and actionable information.</p>
+<h2><strong>Which Social Analytics KPI’s are most important to look at? </strong></h2>
+<p>To benefit from social analytics, the first steps are knowing the Key Performance Indicators (KPIs) you need, how best to track them, and then actually using your data to keep improving. If you do that, you’ll generate a far more effective content marketing strategy, improve your SEO, and ultimately get more traffic to your site.</p>
+<p><strong>Site Visits:</strong>  Obviously, your site analytics are important and should be analyzed as an extension of your social presence. Using metrics such as sessions, visits, time on site, frequency of visits, bounce rates and CTR, suggest whether your content is effectively driving visitors to your site and how they behave once on it. There is no better tool for this than <a href="http://www.google.ca/analytics/">Google Analytics</a>.</p>
+<p><strong>Engagement</strong>: Measures the level of interaction with your content on social networks. Examples include: comments, likes, shares, favorites, views, retweets or a breakdown that normalizes for fan size such as retweets/1000 fans, likes/1000 fans, etc.</p>
+<p><strong>Impact</strong>: Here you look at the total number of people exposed to any piece of content that you&#8217;ve posted through organic and viral reach. Examples include: number of followers/fans, the number of followers you’re your followers have, shares, retweets, to name a few.</p>
+<p><strong>Responsiveness</strong>: Measures the rate of response and the qualitative results of those. Examples include response rate, speed, quality and resolution.</p>
+<h2><strong>Using Social Analytics to determine what type of content works </strong></h2>
+<p>These KPIs can go a long way towards helping you determine what your brand should be doing with their social media campaigns and help build a strong online community to set the stage for success. Essentially, it’s by measuring the analytics of your online communities (your Facebook page, Twitter page, LinkedIn, YouTube) that will enable you to optimize your content and community management strategies to foster an environment that can act as a gateway to viral content.</p>
+<h2><strong>What are my competitors doing, how successful are they?</strong></h2>
+<p>Like in all areas of business, the goal is to be better than your competitors. It’s generally easier to understand the success of your social media property than it is to understand the success of others. This is due in part to the built-in analytics most platforms provide. For example, Facebook Insights does a sufficient job of explaining what is successful on your page but offers little detail about competitors. However, using new sophisticated social analytics tools, you can compare your effectiveness against your biggest competitors, or acquire an overview of an entire industry.</p>
+<h2><strong>Case Study: Social Analytics Tools In Action</strong></h2>
+<p>Below is an <a href="http://www.evalueanalytics.com/post/ice-cream-brands">analysis of Facebook activity</a> of some of the top ice cream brands during the final two weeks of National Ice Cream Month in the U.S. (July 14 – 28, 2014) using <a href="http://www.evalueanalytics.com">evalue analytics Pro.</a> Using the tool, we are able to benchmark an entire competitive set in one shot, based on their <a href="http://www.evalueanalytics.com/page/our-scores">evalue scores</a> or raw metrics. This particular score is an aggregated index with subscores of engagement, impact and responsiveness, based on a unique algorithm giving higher weighting to stronger engagements. After all, user engagement is the backbone of all <a href="http://www.evalueanalytics.com/post/keys-to-social-media-strategy-for-small-business/">social media strategies</a>. After a quick setup, we see a mixture of top line metrics and the rate of engagement giving us a precise measure of each brands properties. By looking at the example in the study, <a href="http://www.evalueanalytics.com/2720153/social-pages/H%C3%A4agen-Dazs">Haagen-Dazs</a> came out on top with a staggering 98.56 evalue score.<br />
+<img class="aligncenter size-full wp-image-2376" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/Image1.png" alt="Image1" width="800" /></p>
+<p>By highlighting the top posts, a user can understand the type, tone and timing of content that is the most or least effective for a given brand.</p>
+<p><img class="aligncenter size-full wp-image-2040" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/haagen.png" alt="haagen" width="800" /><img class="aligncenter size-full wp-image-2038" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/blue.png" alt="blue" width="800" /></p>
+<p>Going to each individual page would allow a user to understand the content that a page is posting. By using an analytics tool you see a lot more, including trends and cumulative results that are invisible to the naked eye. You also save yourself from having to constantly check in. All the information is gathered automatically and can even be set up to alert you when something out of the ordinary occurs. </p>
+<p>Social media analytics are essential tools to help you drill down from the massive amounts of unfiltered data to uncover key marketing insights. Do you agree with this post? Let us know by leaving a comment or drop us a line on Twitter <a href="http://www.twitter.com/engagementlabs">@engagementlabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.evalueanalytics.com/wpapi/post/optimize-content-with-social-analytics/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_SMBlogs.jpg" type="image/jpeg" medium="image">
+				<media:description type="plain"><![CDATA[blog_pic_SMBlogs]]></media:description>
+		</media:content>	</item>
+		<item>
+		<title>Taking a Vacation as a Social Media Manager</title>
+		<link>http://www.evalueanalytics.com/wpapi/post/social-media-manager-vacation/</link>
+		<comments>http://www.evalueanalytics.com/wpapi/post/social-media-manager-vacation/#comments</comments>
+		<pubDate>Thu, 21 Aug 2014 13:00:58 +0000</pubDate>
+		<dc:creator><![CDATA[Maggie Durand]]></dc:creator>
+				<category><![CDATA[Social Media Marketing]]></category>
+		<category><![CDATA[Social Media Marketing Tips]]></category>
+		<category><![CDATA[Community Manager]]></category>
+		<category><![CDATA[Social Crisis]]></category>
+		<category><![CDATA[Social Media]]></category>
+		<category><![CDATA[Social Media Management]]></category>
+		<category><![CDATA[Social Media Manager]]></category>
+		<category><![CDATA[social media marketing]]></category>
+		<category><![CDATA[Social Media Tips]]></category>
+
+		<guid isPermaLink="false">http://www.evalueanalytics.com/wpapi/?p=2351</guid>
+		<description><![CDATA[Social media doesn't sleep, let alone take a vacation. But fortunately for Social Media Managers, there are a number of tricks you can use to prevent a meltdown in your absence.]]></description>
+				<content:encoded><![CDATA[<p><img class="aligncenter size-full wp-image-2356" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_Vacation.jpg" alt="blog_pic_Vacation" width="800" height="450" /></p>
+<p>We all know social media doesn&#8217;t sleep. It also doesn&#8217;t take a vacation. But fortunately for us Social Media Managers, we can still take one while keeping an eye and ear on our pages and preventing a meltdown in our absence. In order to take off for your summer vacation without fear, there are a <em>number of tricks</em> you can use to keep your mind at ease while unwinding at the beach or exploring a historic city.</p>
+<h2><strong>1. Schedule your content ahead of time</strong></h2>
+<p>Let’s be honest, no one wants to be looking for content in a busy airport or in a secluded hotel room with sketchy internet service. Use a social media management tool such as <em>Hootsuite</em> or <em>TweetDeck</em> to schedule your content before you leave the office. This will allow you to keep the page updated with fresh content and keep your community in the dark as to your absence!</p>
+<p>If you are vacationing during a time where most of your fans and followers are also off, you can even reduce the amount of content you post, thus making your job that much easier.</p>
+<h2><strong>2. Set up your e-mail alerts</strong></h2>
+<p>Although it would be nice, Social Media Managers can never truly be “OFF” work. The idea of shutting down the iPhone and logging out of our e-mail for two weeks is but a far off dream for us. Luckily, with tools like our <a href="http://www.evaluesuite.com">evalue analytics Pro</a>, you can configure your account to alert you of abnormal activity on the page. For example, you may want to receive an alert if activity jumps by 25% on the page, evalue analytics can send a message straight to your inbox to let you know something is up and you may need to take a look.</p>
+<h2><strong>3. Get someone at work to have your back</strong></h2>
+<p>While alerts are wonderful, nothing beats a good old fashioned set of eyes on your accounts. Ask someone on your team to be the point of reference for you while you are away. This means anything from issues with the page to client meltdowns during your absence. Make sure your colleague is briefed ahead of time and has a good understanding of your platforms and their respective audiences to make sure they don’t notice a change in tone or moderation practices.</p>
+<h2><strong>4. Create a template document for crisis situations</strong></h2>
+<p>Murphy’s Law states that “<em>Anything that can go wrong will go wrong</em>” and unfortunately, we all know this to be true. One way to get around this unpleasant fact is to prepare a file or document filled with templates and pre-approved messages for crisis situations. By crisis, I am referring to everything from the company going bankrupt, to a troll trying to extort free products or services from you. Once the document is created, upload it to a shared folder and make sure everyone on your team has access to it. You never know what might happen and in social media, it is <a href="http://www.evalueanalytics.com/post/how-to-diffuse-a-social-crisis/">better to be safe than sorry</a>.</p>
+<h2><strong>5. Prepare for your return</strong></h2>
+<p>While it’s easy to put off any kind of work while you are away, think of the amount of e-mails and notifications you receive every day. Now, multiply that by a week or two and the result is no fun. Plan some time each morning, maybe during your breakfast croissant overlooking the Eiffel tower, to have a quick browse in your emails and notifications sections to make sure nothing important has come up and delete the unnecessary messages. You will feel much less overwhelmed coming back to 25 e-mails than 600 unread messages in your inbox. If you are feeling really organized, schedule some posts for your first day back so you can settle in quietly and take care of any emergencies.</p>
+<p>Now that you are privy to a few tricks of the trade, you can safely turn off your electronic devices and prepare for takeoff! How do you prepare for your vacation at work? Let us know in the comment section or drop us a line on Twitter <a href="http://www.twitter.com/engagementlabs">@engagementlabs</a>!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.evalueanalytics.com/wpapi/post/social-media-manager-vacation/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_Vacation.jpg" type="image/jpeg" medium="image">
+				<media:description type="plain"><![CDATA[blog_pic_Vacation]]></media:description>
+		</media:content>	</item>
+		<item>
+		<title>Soft Drinks Invest Hard In Social</title>
+		<link>http://www.evalueanalytics.com/wpapi/post/soft-drinks-social-media/</link>
+		<comments>http://www.evalueanalytics.com/wpapi/post/soft-drinks-social-media/#comments</comments>
+		<pubDate>Tue, 19 Aug 2014 13:00:42 +0000</pubDate>
+		<dc:creator><![CDATA[Jordan Stotland]]></dc:creator>
+				<category><![CDATA[Industry Listings and Trends]]></category>
+		<category><![CDATA[Social Media Marketing]]></category>
+		<category><![CDATA[Twitter Marketing]]></category>
+		<category><![CDATA[analytics]]></category>
+		<category><![CDATA[Benchmark]]></category>
+		<category><![CDATA[Coca Cola]]></category>
+		<category><![CDATA[Content Marketing]]></category>
+		<category><![CDATA[Dr Pepper]]></category>
+		<category><![CDATA[Industry Listing]]></category>
+		<category><![CDATA[Monster Energy]]></category>
+		<category><![CDATA[Pepsi]]></category>
+		<category><![CDATA[Red Bull]]></category>
+		<category><![CDATA[social analytics]]></category>
+		<category><![CDATA[Social Media]]></category>
+		<category><![CDATA[social media marketing]]></category>
+		<category><![CDATA[Soft Drinks]]></category>
+
+		<guid isPermaLink="false">http://www.evalueanalytics.com/wpapi/?p=2329</guid>
+		<description><![CDATA[Soft drink brands have always pushed hard in attempts to align themselves with consumer lifestyle choices which has been amplified by the rise of content marketing. Find out how the top brands are faring on social in our latest industry listing.]]></description>
+				<content:encoded><![CDATA[<p><img class="aligncenter size-full wp-image-2330" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_Softdrinks.jpg" alt="blog_pic_Softdrinks" width="800" height="450" />Soft drink companies have always invested heavily in advertising. We’ve all seen the vintage Coca Cola ads from the 20’s, the Michael Jackson commercials from the 80’s or the countless slogans that come to mind. Soft drink brands pushed hard in attempts to align themselves with consumer lifestyle choices. They established a “what you drink is who you are” mentality, which has been amplified by social media’s encouraging of consumers to “brand” themselves. In addition, the rise of content marketing has changed the way they do things. The industry has become a battleground on social and an arms race for creating the most compelling content that grabs the audience’s attention. As a result, modern day soft drink marketing is specifically reliant upon viral and experiential marketing in order to get people engaged and talking in online social communities.</p>
+<h2><strong>Twitter</strong></h2>
+<p>According to a <a href="http://www.marketingmagazine.co.uk/article/1307727/why-brands-un-friending-facebook-follow-twitter">recent article</a> by Marketing Magazine, the big soft drinks brands are flocking to Twitter, looking for alternatives in the wake of Facebook’s recent changes to Edge-Rank that make it harder to reach fans on Facebook. So how are they faring on the network? Below is a breakdown from evalue analytics Pro, featuring the top brands in the category. Over the past month (July 15<sup>th</sup> to August 15<sup>th</sup>), we monitored the performance of <a href="http://www.evalueanalytics.com/2866/social-pages/Coca-Cola">Coca Cola</a>, <a href="http://www.evalueanalytics.com/2724109/social-pages/Diet+Coke">Diet Coke</a>, <a href="http://www.evalueanalytics.com/348/social-pages/Pepsi%E2%84%A2">Pepsi</a>, <a href="http://www.evalueanalytics.com/2724883/social-pages/Diet+Pepsi">Diet Pepsi</a>, <a href="http://www.evalueanalytics.com/246/social-pages/Red+Bull">Red Bull</a>, <a href="http://www.evalueanalytics.com/32265/social-pages/Monster+Energy">Monster Energy</a>, <a href="http://www.evalueanalytics.com/2724131/social-pages/Dr+Pepper">Dr. Pepper</a>, <a href="http://www.evalueanalytics.com/2679/social-pages/Sprite">Sprite</a>, <a href="http://www.evalueanalytics.com/2830/social-pages/Mountain+Dew%C2%AE">Mountain Dew</a> and <a href="http://www.evalueanalytics.com/2726991/social-pages/FantaFun">Fanta</a>. The results were quite interesting. Surprisingly, it wasn’t Coca Cola (2,604,477 followers) or Pepsi (2,638,487 followers) that has been engaging its fan base the most. The winner was Dr. Pepper, interacting directly with a total of 44,557 fans during the period, with a whopping 46.9 retweets per 1000 followers and 109.4 favorites per 1000 followers!</p>
+<p><img class="aligncenter size-full wp-image-2332" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/twiiter.png" alt="twiiter" width="800" /></p>
+<p>Another interesting point to look at is the follower growth rate. Monster Energy led the category during the timeframe, with a total follower growth of <em>183,909</em>, which made up a mind-boggling 51% of the total fan growth in the category! Clearly, they&#8217;re doing <a href="https://twitter.com/MonsterEnergy">something right</a>. The closest runner up was Coca Cola, growing by 50,857 followers.</p>
+<p>In terms of responsiveness, Coca Cola is winning on the platform, with a 98.51 score over the past month. This sub-score is based on the number of user posts and comments, the speed of brand response and the number of resulting interactions. Coca-Cola has done a great job of interacting directly with followers by responding to their queries on Twitter, maintaining a two-way conversation.</p>
+<p><img class="aligncenter size-full wp-image-2333" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/Screen-Shot-2014-08-17-at-5.14.05-PM.png" alt="Screen Shot 2014-08-17 at 5.14.05 PM" width="439" height="322" /></p>
+<h2><strong>YouTube</strong></h2>
+<p><a href="http://www.evalueanalytics.com/247/social-pages/Red+Bull">Red Bull</a> is by far the frontrunner on YouTube. It leads the pack with 3.62 million subscribers (closest being <a href="http://www.evalueanalytics.com/2867/social-pages/Coca-Cola">Coca Cola</a> with 720K) and led subscriber growth with 66, 568 users during the period (56% of the total category growth). Coca Cola led the scoring in views with 13,295,069 in the timeframe. In addition, <a href="http://www.evalueanalytics.com/2839/social-pages/Monster+Energy">Monster Energy</a> carried its strong growth over from Twitter -aside from having the third largest subscriber count; they had the second highest growth total in the period with 18,560 and 5th most views.</p>
+<p>Back to Red Bull, the Austrian energy drink company has to thank its endless string of adrenaline fueled stunt videos for its success on the platform. Fearless Felix Baumgartner’s legendary <a href="https://www.youtube.com/watch?v=FHtvDA0W34I">jump from the edge of space</a> is still the most-watched live video in YouTube&#8217;s history.</p>
+<p><img class="aligncenter size-full wp-image-2334" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/youtube.png" alt="youtube" width="800" /></p>
+<p>The top video released in the timeframe was “<a href="https://www.youtube.com/watch?v=7KPU7DWRe1Y">Danny MacAskill at the Playboy Mansion</a>” featured below, by Red Bull. Released on July 31<sup>st</sup>, it already has over a million views and 10K likes. It features the famous biker doing tricks in around the playboy mansion. They clearly understand their target market and the concept of “click-bait”. Can’t really get much better: extreme sports and Playboy models.</p>
+<figure class="video-container"><iframe width="500" height="281" src="https://www.youtube.com/embed/7KPU7DWRe1Y?feature=oembed" frameborder="0" allowfullscreen></iframe></figure>
+<p>As you can see from <a href="http://www.evaluesuite.com">evalue analytics Pro</a>, industries like this have a ton of competition and parity between the top brands on social. It’s important for brands to measure success by drilling down into the hard social stats and see which tactics are working and which aren’t.</p>
+<p>Enjoy the article? Leave us a comment below or drop us a line on Twitter <a href="http://www.twitter.com/engagementlabs">@engagementlabs.</a></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.evalueanalytics.com/wpapi/post/soft-drinks-social-media/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_Softdrinks.jpg" type="image/jpeg" medium="image">
+				<media:description type="plain"><![CDATA[blog_pic_Softdrinks]]></media:description>
+		</media:content>	</item>
+		<item>
+		<title>Fast Times of Fast-Food Marketing</title>
+		<link>http://www.evalueanalytics.com/wpapi/post/fast-food-twitter/</link>
+		<comments>http://www.evalueanalytics.com/wpapi/post/fast-food-twitter/#comments</comments>
+		<pubDate>Wed, 13 Aug 2014 13:41:57 +0000</pubDate>
+		<dc:creator><![CDATA[Brendon Chrus]]></dc:creator>
+				<category><![CDATA[Industry Listings and Trends]]></category>
+		<category><![CDATA[Social Media Marketing]]></category>
+		<category><![CDATA[Twitter Marketing]]></category>
+		<category><![CDATA[#evalue]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[analytics]]></category>
+		<category><![CDATA[Best]]></category>
+		<category><![CDATA[Best Twitter]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Brands]]></category>
+		<category><![CDATA[Burger King]]></category>
+		<category><![CDATA[Content Marketing]]></category>
+		<category><![CDATA[Fast Food]]></category>
+		<category><![CDATA[Food]]></category>
+		<category><![CDATA[local business]]></category>
+		<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[McDonalds]]></category>
+		<category><![CDATA[social analytics]]></category>
+		<category><![CDATA[Social Media]]></category>
+		<category><![CDATA[Tim Hortons]]></category>
+		<category><![CDATA[Tips]]></category>
+		<category><![CDATA[Twitter]]></category>
+
+		<guid isPermaLink="false">http://www.evalueanalytics.com/wpapi/?p=2302</guid>
+		<description><![CDATA[This week we looked at Canada's largest fast food brands on the speedy social network Twitter. We used our Evalue Analytics tool to monitor and compare the top accounts.]]></description>
+				<content:encoded><![CDATA[<p><img class="alignnone wp-image-2311 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_FastFood.jpg" alt="blog_pic_FastFood" width="800" height="450" /> As much as we&#8217;d all like to get on the &#8220;slow food&#8221; movement and only eat local, organic produce there are times when we stink at planning our meals or even finding the time to sit down and eat. For those moments/days/decades we often seek out fast food. What it lacks in nutritional value it makes up for in speed, consistency and satisfaction.</p>
+<p>How we decide between Pizza and Burgers often comes down to what’s top of mind. This week we looked at Canada&#8217;s largest fast food brands on the speedy social network Twitter to see who is spreading their message and engaging with fans.</p>
+<p>We used our Evalue analytics tool to monitor the top accounts for the past week. Evalue allows marketers to compare their own social media accounts with a benchmark of over 55,000 other brands and identify top posts, areas for improvement and how their competition is doing. <img class="alignnone wp-image-2310 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/1.png" alt="1" width="675" height="759" /><br />
+Just like in the Canadian fast-food industry, <a href="http://www.evalueanalytics.com/33299/social-pages/Tim+Hortons">Tim Hortons</a> is pretty dominant in our ranking. Tim’s original business is coffee but they continue to increase their food offerings. Their most recent addition, the spicy crispy sandwich goes full junk food.</p>
+<p><img class="aligncenter size-full wp-image-2309" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/2.png" alt="2" width="788" height="468" /> The majority of the most engaging tweets during our study were those that included pictures. Even sub-par photos get more real estate in the Twitter feed, which leads to greater interaction. Tim Hortons successfully integrated this technique along with frequent re-tweets and replies. People are thrilled when such a ubiquitous brand responds to their Tweets. Even more important is that the responses don’t reek of pre-canned jargon. </p>
+<p><img class="aligncenter size-full wp-image-2308" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/3.png" alt="3" width="600" height="835" /> Tim Horton’s success is not at the detriment of other fast-food restaurants. With the exception of Swiss Chalet (who was inactive during the period) all of the brands we tracked were replying to a proportion of tweets and doing so in an acceptable manner.</p>
+<p>Subway who posted the most during the period had the highest fan growth. While they didn’t use images as much as other brands by promoting a contest they were able to gain considerable interaction. <img class="alignnone wp-image-2307 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/4.png" alt="4" width="900" height="336" /> <a href="http://www.evalueanalytics.com/26009/social-pages/Taco+Bell+Canada">Taco Bell</a> hit a chord with their fans in a tweet that mystified the nerdy twenty-somethings working in our office. Seriously what does <a href="https://twitter.com/TacoBellCanada/status/497425558435676160">this mean</a>? #OldFolks </p>
+<p><img class="aligncenter size-full wp-image-2305" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/6.png" alt="6" width="713" height="624" /></p>
+<p>McDonald’s Canada was middle of the pack in our evalue ranking. Despite having the second largest following they were behind Tim Hortons, Subway and A&amp;W in total interactions and many others when broken down to per fan engagement. They did have some most <a href="https://twitter.com/mcd_canada/status/497496214569361408">creative posts</a> during the period.</p>
+<p><img class="aligncenter size-full wp-image-2306" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/5.png" alt="5" width="898" height="344" /></p>
+<p>The Top post of the month so far belongs to <a href="http://www.evalueanalytics.com/2725336/social-pages/A%26W+Canada">A&amp;W</a>. Their post in support of MS research had over 750 retweets. </p>
+<p><img class="aligncenter size-full wp-image-2304" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/7.png" alt="7" width="900" height="473" /></p>
+<p>Notably absent from the study is Burger King which currently is not maintaining a Canadian Twitter presence. </p>
+<p><img class="aligncenter size-full wp-image-2303" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/8.png" alt="8" width="750" height="377" /> To see how smaller fast food brands compare to these stalwarts go to the <a href="http://www.evalueanalytics.com/">free version</a> of evalue analytics tool. If you are looking for more in depth data sign up for a <a href="http://www.evaluesuite.com/">free pro trial</a> to see even more. Do the evalue rankings match up with your favorite fast food brand? Feel free to leave a comment below or drop us a line on twitter <a href="https://twitter.com/engagementlabs">@engagementlabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.evalueanalytics.com/wpapi/post/fast-food-twitter/feed/wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_FastFood.jpg" type="image/jpeg" medium="image">
+				<media:description type="plain"><![CDATA[blog_pic_FastFood]]></media:description>
+		</media:content>	</item>
+		<item>
+		<title>How the Sharing Economy Runs on Social Media</title>
+		<link>http://www.evalueanalytics.com/wpapi/post/sharing-economy-social-media/</link>
+		<comments>http://www.evalueanalytics.com/wpapi/post/sharing-economy-social-media/#comments</comments>
+		<pubDate>Thu, 07 Aug 2014 18:32:51 +0000</pubDate>
+		<dc:creator><![CDATA[Yohana Benattar and Jordan Stotland]]></dc:creator>
+				<category><![CDATA[Industry Listings and Trends]]></category>
+		<category><![CDATA[Social Media Marketing]]></category>
+		<category><![CDATA[Twitter Marketing]]></category>
+		<category><![CDATA[Airbnb]]></category>
+		<category><![CDATA[eBay]]></category>
+		<category><![CDATA[Kickstarter]]></category>
+		<category><![CDATA[Sharing Economy]]></category>
+		<category><![CDATA[social analytics]]></category>
+		<category><![CDATA[Social Media]]></category>
+		<category><![CDATA[social media marketing]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Uber]]></category>
+
+		<guid isPermaLink="false">http://www.evalueanalytics.com/wpapi/?p=2287</guid>
+		<description><![CDATA[Social Media is critical in allowing the Sharing Economy to run smoothly, as a result leading collaborative brands have committed to social media marketing unlike any other industry. ]]></description>
+				<content:encoded><![CDATA[<p><img class="aligncenter wp-image-2289 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/em.png" alt="em" width="800" height="450" /></p>
+<p>The Sharing Economy is a socio-economic system built around the sharing of human and physical resources. Be it a house, car, artwork, dress, or even a business, almost anything you can think of now has a sharing platform for it.</p>
+<p>The sharing-economy has been growing steadily for years, and has created a two-sided marketplace, with multi-billion dollar companies such as Uber and Airbnb leading the way. According to a study by <a href="http://www.visioncritical.com/">Vision Critical</a>, nearly 40% of Americans have participated directly in the sharing economy in the last year &#8211; buying or selling pre-owned goods online or using one of the recent generations of sharing sites. It’s astounding growth and shift in consumer behavior has been driven by many factors including the increasing global crises (financial, environmental and social) and the rise of smartphones. But most importantly, it was the emergence of social networks and the ability to create a real online identity that broke down trust barriers.</p>
+<h2>Building Trust with Social Media</h2>
+<p>Social Media is deeply integral to the Sharing Economy. The added layers of trust inherent to social media help people connect to the action of collaborative consumption on a more practical and personal level. Many of the sharing platforms are backed indirectly by social networks, the most commonly used being Facebook, unsurprisingly. For example, when users log in to Airbnb and interact on the sharing platforms via their Facebook credentials &#8211; adding this extra “layer of trust” – they are automatically allowed to see ratings and reviews from other guests (with their trusted Facebook credentials), as well as the properties where their “friends” have stayed. This can work for the “sellers” too, since they can connect their personal social accounts to their profiles to further add trust.</p>
+<h2>The Importance of Social Media Marketing</h2>
+<p>In addition to utilizing the “back-end” advantages of social networks, the sharing economy is committed to social media marketing &#8211; perhaps more than any other industry. This is due to the fact that the majority of people who share goods and services are savvy users of social media, both for personal and business use. As a result of the aptitudes and preferences of users in the sharing economy, social media is king in this industry.</p>
+<p>Brands attempt to maximize their users’ propensity for engaging with social networks to kick the tires on the cycle of high customer satisfaction leading to positive user generated content such as reviews, recommendations, photos and more. Companies which can successfully leverage social media marketing and other digital marketing channels have a large advantage in marketing their shared goods and services.</p>
+<h2>SMM Breakdown &#8211; What are they doing?</h2>
+<p>We used <a href="http://www.evaluesuite.com/">evalue analytics Pro</a> to generate the snapshot below derived from Twitter, over the period of July 31<sup>st</sup> to August 6<sup>th</sup>. It’s easy to see that these collaborative brands understand the importance of social media in their line of work. They are all scored very high with evalue (an aggregated score based on engagement, impact and responsiveness).<img class="aligncenter size-full wp-image-2292" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/a1.png" alt="a1" width="1207" height="454" />Positioned at the top end of the segment were 7 of the 9 brands (scores of 80 to 100), with only 2 in the “60 to 80” segment, still relatively impressive. The snapshot contains some of most prominent and unique sharing brands on Twitter, including: <a href="http://www.evalueanalytics.com/1061/social-pages/eBay">eBay</a>, <a href="http://www.evalueanalytics.com/2724561/social-pages/Uber?r=7">Uber</a>, <a href="http://www.evalueanalytics.com/1128/social-pages/Etsy">Etsy</a>, <a href="http://www.evalueanalytics.com/28454/social-pages/Airbnb">Airbnb</a>, <a href="http://www.evalueanalytics.com/2726444/social-pages/Zipcar">Zipcar</a>, <a href="http://www.evalueanalytics.com/2756836/social-pages/Breather">Breather</a>, <a href="http://www.evalueanalytics.com/9003/social-pages/oDesk">oDesk</a>, <a href="http://www.evalueanalytics.com/2726248/social-pages/Angie%27s+List">Angie’s List</a>, and <a href="http://www.evalueanalytics.com/2731025/social-pages/Kickstarter">Kickstarter</a>.</p>
+<p>Taking a deeper look at some of the stats from this past week, <a href="http://www.evalueanalytics.com">evalue analytics</a> allowed us to observe these companies’ twitter activity, identifying common trends and differences in how each employ it to their benefit.</p>
+<p><img class="aligncenter size-full wp-image-2293" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/a2.png" alt="a2" width="956" height="594" /></p>
+<p>eBay is arguably the leader with an engagement subscore of 95.67, interacting with 24,960 users. Typically, they used Twitter to showcase products. However, they also used it as a platform to run contests to promote fan engagement, as seen below.</p>
+<p><img class="aligncenter size-full wp-image-2294" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/a3.png" alt="a3" width="1178" height="139" /></p>
+<p>Another interesting aspect to look at here is the results of our responsiveness subscore, which is based on the number of user posts and comments, the speed of brand response and the number of resulting interactions. The importance of social media in service-related sectors is obvious, especially Twitter. Kickstarter and Airbnb, scoring highest at 96.58 and 93.46 respectively, avidly employ Twitter as a virtual concierge for customer support to great effectiveness.</p>
+<p>These brands are doing a super job of keeping growth and virality top-of-mind during their social media interactions. They’ve smartly maxed out their efforts on social networks and utilized tools like <a href="http://www.evalueanalytics.com">evalue analytics</a> to help fine-tune their actions to ignite growth.</p>
+<p>Do you agree with this post? Let us know by leaving a comment below or drop us a line on Twitter <a href="http://www.twitter.com/engagementlabs">@engagementlabs.</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.evalueanalytics.com/wpapi/post/sharing-economy-social-media/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/em.png" type="image/png" medium="image" width="100%" height="auto">
+				<media:description type="plain"><![CDATA[em]]></media:description>
+		</media:content>	</item>
+		<item>
+		<title>Auto brands cruising on social media</title>
+		<link>http://www.evalueanalytics.com/wpapi/post/auto-brands-social-media/</link>
+		<comments>http://www.evalueanalytics.com/wpapi/post/auto-brands-social-media/#comments</comments>
+		<pubDate>Tue, 05 Aug 2014 17:09:12 +0000</pubDate>
+		<dc:creator><![CDATA[Brendon Chrus]]></dc:creator>
+				<category><![CDATA[Facebook Marketing]]></category>
+		<category><![CDATA[Industry Listings and Trends]]></category>
+		<category><![CDATA[Social Media Marketing]]></category>
+		<category><![CDATA[advertising]]></category>
+		<category><![CDATA[Benchmark]]></category>
+		<category><![CDATA[Cars]]></category>
+		<category><![CDATA[Content Marketing]]></category>
+		<category><![CDATA[Listing]]></category>
+		<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[social analytics]]></category>
+		<category><![CDATA[Social Media]]></category>
+		<category><![CDATA[social media marketing]]></category>
+
+		<guid isPermaLink="false">http://www.evalueanalytics.com/wpapi/?p=2242</guid>
+		<description><![CDATA[We looked at the top selling Canadian car brands on Facebook to see if their social media accounts are the equivalent of the standard fare (interior shots and cars driving down twisty roads) or if they push the boundaries of the medium.]]></description>
+				<content:encoded><![CDATA[<p><img class=" wp-image-2103 aligncenter" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/blog_pic_Automotive.jpg" alt="blog_pic_Automotive" width="672" height="378" /></p>
+<p>With so many competitors and such enormous benefits for car companies that do well, it’s no wonder that automotive advertising plays such a critical role in both the agencies that promote cars as well as the mediums where they are advertised.</p>
+<p>While <a href="http://www.marketingcharts.com/traditional/b2b-print-ad-sales-continue-steady-decline-in-2013-36675/">print advertising</a> continues to see declines, online advertising and Facebook in particular has become an important avenue for brand awareness and keeping brand advocates engaged.</p>
+<p>We looked at the top selling Canadian car brands on Facebook to see if their social media accounts are the equivalent of the standard fare (interior shots and cars driving down twisty roads) or if they push the boundaries of the medium. In order to track these brands we used evalue social analytics to identify the top posts, engagement metrics and top-level social scores over the period of July 21<sup>st</sup> through to August 4<sup>th</sup>. Here’s what we found:</p>
+<p><img class=" wp-image-2114 aligncenter" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/1.png" alt="1" width="630" height="619" /></p>
+<h2>Bigger not always better.</h2>
+<p>While our evalue scores place the smallest brand in the group, <a href="http://www.evalueanalytics.com/2718208/social-pages/FIAT+500+Canada">Fiat 500</a> out in front, the winner of our ranking can be evaluated in a few ways. When a brand community is much larger in size than another, the behavior of the community will change.</p>
+<p>Fiat 500 had outstanding levels of engagement from their fan base. With only 10,900 fans and only being present in the Canadian market for a few years, they benefit from a small and specific fan base. They dominate the competition in <i>Active fan base</i> percentage and all engagement metrics.  When normalizing for fan size but are ranked much lower when accounting for total interactions and fan growth.</p>
+<p><img class=" wp-image-2113 aligncenter" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/2.png" alt="2" width="630" height="319" /></p>
+<h2>Power in Numbers</h2>
+<p>Rewarding Fiat for a small fan base is easy but doesn’t tell the whole story. For brands with wider appeal and a longer presence on Facebook, many automotive brands remain effective in eliciting strong engagement and a much higher total number of interactions.</p>
+<p>Another note in regards to the size of a community, is that if a promotion leads to new fans that are only interested in a prize, say a free trip, you are stuck with them regardless of their benefit to your community or brand.</p>
+<p><img class=" wp-image-2112 aligncenter" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/3.png" alt="3" width="629" height="291" /></p>
+<p><img class=" wp-image-2111 aligncenter" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/4.png" alt="4" width="629" height="293" /></p>
+<p>When looking at the total number of interactions, <a href="http://www.evalueanalytics.com/1257/social-pages/Toyota+Canada">Toyota </a> reigns supreme. A large community and posting in line with a proven formula created the most total interactions. People love sharing photos of their cars, and when brands repost these images, they are getting consistent interaction. Toyota took this one step further and created a contest asking for submissions. <a href="https://www.facebook.com/toyotacanada/posts/762095660510089">This</a> post saw the most activity of the period.</p>
+<p><img class=" wp-image-2110 aligncenter" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/5.png" alt="5" width="630" height="292" /></p>
+<p><img class=" wp-image-2109 aligncenter" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/6.png" alt="6" width="469" height="578" /></p>
+<p><strong>The K-Car of social media posting</strong></p>
+<p><img class=" wp-image-2115 aligncenter" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/85-89_Dodge_Aries_sedan.jpg" alt="85-89_Dodge_Aries_sedan" width="610" height="277" /></p>
+<p>When looking at the sum of all posts, we felt that mid-summer car postings were fairly boring. Like a K-Car, they worked but they certainly didn’t elicit excitement. Great looking pictures aside, most of the posts were devoid of feeling or even creating a lifestyle around the brand. Other trends for brands posts were related to road trips and summer time.</p>
+<p><img class="aligncenter wp-image-2108" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/7.png" alt="7" width="630" height="78" /> <img class="aligncenter wp-image-2107" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/8.png" alt="8" width="630" height="79" /> <img class="aligncenter wp-image-2106" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/9.png" alt="9" width="630" height="81" /> <img class="aligncenter wp-image-2105" src="http://www.engagementlabs.com/wp-content/uploads/2014/08/10.png" alt="10" width="630" height="78" /></p>
+<p>For more info on Automotive brands or the industry of your choosing, access the <a href="http://www.evalueanalytics.com/">free version</a> of our evalue analytics tool to get extensive analytics of top brands. If you are a professional user, you might want to sign up for a <a href="http://www.evaluesuite.com/">free pro trial</a> to access even more.</p>
+<p>Did you agree with our breakdown? Feel free to leave a comment below or drop us a line on twitter <a href="https://twitter.com/engagementlabs">@engagementlabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.evalueanalytics.com/wpapi/post/auto-brands-social-media/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_Automotive.jpg" type="image/jpeg" medium="image" width="100%" height="auto">
+				<media:description type="plain"><![CDATA[blog_pic_Automotive]]></media:description>
+		</media:content>	</item>
+		<item>
+		<title>Socially Bearded</title>
+		<link>http://www.evalueanalytics.com/wpapi/post/socially-bearded/</link>
+		<comments>http://www.evalueanalytics.com/wpapi/post/socially-bearded/#comments</comments>
+		<pubDate>Fri, 01 Aug 2014 18:12:16 +0000</pubDate>
+		<dc:creator><![CDATA[Julie Bourbonniere]]></dc:creator>
+				<category><![CDATA[Social Media Marketing]]></category>
+		<category><![CDATA[Twitter Marketing]]></category>
+		<category><![CDATA[Beard]]></category>
+		<category><![CDATA[Epic Meal Time]]></category>
+		<category><![CDATA[Trends]]></category>
+
+		<guid isPermaLink="false">http://www.evalueanalytics.com/wpapi/?p=2208</guid>
+		<description><![CDATA[Scruffy beards and tattoos have been getting their fair share of media attention over the last few years, find out how this trend is translating on social networks. ]]></description>
+				<content:encoded><![CDATA[<p><img class="aligncenter wp-image-2097 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_Beards-1.jpg" alt="blog_pic_Beards" width="800" height="450" /></p>
+<p>Scruffy beards and tattoos have been getting their fair share of media attention over the last few years, driving young men to follow a new fashion and grooming trend that is far from the metrosexual look of the 1990s…</p>
+<p>The &#8220;effortless cool&#8221; urban bohemian “hipster” look is exemplified in <a href="https://twitter.com/UrbanOutfitters">Urban Outfitters</a> and <a href="https://twitter.com/americanapparel">American Apparel</a> ads which cater to this stylish demographic, men and women typically in their 20s and 30s, who value independent thinking, counter-culture, progressive politics, an appreciation of art and indie-rock, creativity, intelligence, and witty banter.</p>
+<p>Although the greatest concentrations of hipsters can be found living in the Williamsburg, Wicker Park, and Mission District neighborhoods of major cosmopolitan centers such as New York, Chicago, and San Francisco, you can spot dozens on the streets of the Mile-End in Montreal – where <a href="http://www.engagementlabs.com/">Engagement Labs HO</a> is located.</p>
+<p>So, seeing as all these young-bearded fellows running around, skating, cycling, walking their dogs and smoking on the sidewalks are part of my daily life at the office, I decided that I should show how this trend is translating on social networks, especially on Twitter. Using our social monitoring and listening tools, I embarked on a “beard quest” using the most popular hashtags: #BeardPower, #BeardedFriday #BeardGang, #BeardShowoff #BeardTilDestiny, #BeardPorn, #BeardSwag, #BeardLove, #BeardLife #YearOfTheBeard and #SummerBeard.</p>
+<p><img class="aligncenter wp-image-2086 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/beardsss.png" alt="beardsss" width="800" height="527" /></p>
+<p>The goal was to see how the “street” trend was transferring into the social sphere. We wanted to show who and how many were talking about beards and maybe understand why they are showing them off on Twitter and Instagram so much? Most of all, we wanted to see how people were conversing about their facial hair online.</p>
+<p>From July 7 to 31, 2014 our social listening tool <a href="https://elisten.engagementlabs.com/">elisten</a> found 349 mentions from 341 different authors. Thanks to <a href="http://www.cbc.ca/newsblogs/yourcommunity/2014/07/flower-beards-are-a-thing-now----thanks-hipsters.html?cmp=fbtl">CBC</a>’s blog post and Elite Daily’s series of tweets, we also discovered that “dressing up you beard” is the ultimate beard accessory. Having a beard isn’t enough anymore, apparently you need flowers, umbrellas, bows or toothpicks…</p>
+<p><img class="aligncenter wp-image-2089 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/beardtastic.png" alt="beardtastic" width="800" height="326" />But the actual beard is just the beginning, there are now t-shirts and beanies… yes, a beard beanie. Why you ask? Let me look into that cool knitting trend before I answer.</p>
+<p><img class="aligncenter wp-image-2090 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/beardmania.png" alt="beardmania" width="800" height="492" /></p>
+<p>Probably one of the most famous beard wearers on Twitter is <a href="https://twitter.com/HarleyPlays">Harley Morenstein</a>, the creator and host of <a href="https://twitter.com/EpicMealTime">EpicMealTime</a> and Producer/Co-Creator of EpicMealEmpire. This Montrealer enjoys beards, beers, bourbon and bacon with a strange amount of pleasure. He is also one of the most socially engaged bearded dudes out there thanks to his <a href="https://www.youtube.com/user/EpicMealTime">personal</a> YouTube channel and of course <a href="https://www.youtube.com/user/EpicMealTime">Epic Mealtime</a>’s.</p>
+<p>Harley has a Twitter <a href="http://www.evalueanalytics.com/2758097/social-pages/Harley+Morenstein">evalue score</a> of 64.96 and 388K followers, and EpicMealTime has an evalue score of 55 and 520K followers. Here is a snapshot comparing him to his bacon and booze show.</p>
+<p><img class="aligncenter wp-image-2091 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/beard81.png" alt="beard8" width="800" height="401" /></p>
+<p>If you are interested in learning how to measure you social engagement and benchmark yourself or your business against your competitors, just try <a href="http://www.evalueanalytics.com/">evalue analytics</a> today.</p>
+<p><a href="http://www.evalueanalytics.com/">evalue analytics</a> is a social engagement measurement platform that offers accurate information about the social presence of each brand on various networks (Facebook, Twitter, YouTube, and soon, LinkedIn). Based on the metrics of engagement, impact and reach, it enables PRO users to obtain their complete social media performance results in seconds, to showcase their good work or reposition their strategy.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.evalueanalytics.com/wpapi/post/socially-bearded/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://www.evalueanalytics.com/wpapi/content/uploads/2014/08/blog_pic_Beards-1.jpg" type="image/jpeg" medium="image" width="100%" height="auto">
+				<media:description type="plain"><![CDATA[blog_pic_Beards-1]]></media:description>
+		</media:content>	</item>
+		<item>
+		<title>Get the scoop: which ice cream brands are winning social</title>
+		<link>http://www.evalueanalytics.com/wpapi/post/ice-cream-brands/</link>
+		<comments>http://www.evalueanalytics.com/wpapi/post/ice-cream-brands/#comments</comments>
+		<pubDate>Tue, 29 Jul 2014 15:22:39 +0000</pubDate>
+		<dc:creator><![CDATA[Jordan Stotland]]></dc:creator>
+				<category><![CDATA[Facebook Marketing]]></category>
+		<category><![CDATA[Industry Listings and Trends]]></category>
+		<category><![CDATA[Social Media Marketing]]></category>
+		<category><![CDATA[Benchmark]]></category>
+		<category><![CDATA[Brands]]></category>
+		<category><![CDATA[Haagen Dazs]]></category>
+		<category><![CDATA[Ice Cream]]></category>
+		<category><![CDATA[social analytics]]></category>
+
+		<guid isPermaLink="false">http://www.evalueanalytics.com/wpapi/?p=2026</guid>
+		<description><![CDATA[July is National Ice Cream Month in the US. At this point, it’s safe to say that all ice cream brands embrace the idea that social media needs to be a core component of their marketing initiatives, and even more so during this annual “social holiday”. ]]></description>
+				<content:encoded><![CDATA[<p><img class="aligncenter wp-image-2037 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/blog_pic_IceCream.jpg" alt="" width="800" height="450" /></p>
+<p>July is <a href="http://en.wikipedia.org/wiki/National_Ice_Cream_Month">National Ice Cream</a> Month in the US. At this point, it’s safe to say that all ice cream brands embrace the idea that social media needs to be a core component of their marketing initiatives, and even more so during this annual “social holiday”.</p>
+<p>With the growing trend of omni-channel marketing, consumer packaged goods’ campaigns are proving to be even more challenging or marketers. <em>The average consumer attention span is now between 2.8-8 seconds, so a trend of curating “snackable” pieces of content into a visual story has emerged.</em> The ice cream industry is a perfect example of this. Dessert pics are particularly “snackable”: scrumptiously, they entice and tantalize, presenting great opportunity for highly sharable social posts.</p>
+<p>We’ve looked at the favorite ice cream brands in the U.S. over the past month to see who’s been capitalizing on this important annual industry event. Everyone’s been talking about the Big 3 (<a href="http://www.evalueanalytics.com/2913/social-pages/Dairy+Queen">DQ</a>, <a href="http://www.evalueanalytics.com/2732765/social-pages/Ben+%26+Jerry%27s">Ben &amp; Jerry’s</a>, <a href="http://www.evalueanalytics.com/2720154/social-pages/Baskin-Robbins">Baskin &amp; Robbins</a>), so we decided that some of the brands with smaller, yet still massive followings deserved more attention – in other words, we wanted to compare apples with apples. Included in the eValue snapshot below, the Facebook pages of <a href="http://www.evalueanalytics.com/2720153/social-pages/H%C3%A4agen-Dazs">Haagen Dazs</a>, <a href="http://www.evalueanalytics.com/2733368/social-pages/Blue+Bunny+Ice+Cream">Blue Bunny</a>, <a href="http://www.evalueanalytics.com/2720156/social-pages/Cold+Stone+Creamery">Coldstone Creamery</a>, <a href="http://www.evalueanalytics.com/2757948/social-pages/Friendly%27s">Friendly’s</a>, <a href="http://www.evalueanalytics.com/2757888/social-pages/Blue+Bell+Ice+Cream">Blue Bell</a>, <a href="http://www.evalueanalytics.com/30711/social-pages/Edy%27s">Edy’s</a>, <a href="http://www.evalueanalytics.com/27189/social-pages/Klondike">Klondike</a>, <a href="http://www.evalueanalytics.com/2738763/social-pages/Dippin%27+Dots">Dippin’ Dots</a>, and <a href="http://www.evalueanalytics.com/27190/social-pages/Breyers">Breyers</a> (most used platform for ice cream brands).</p>
+<p><img class="aligncenter wp-image-2042 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/creamy.png" alt="creamy" width="800" height="456" /></p>
+<h2>Top Brand According to Evalue: Haagen-Dazs</h2>
+<p>Looking at the last two weeks (July 14 to 28th), Haagen-Dazs came out on top with a staggering 98.52 evalue score, aggregated on a 92.8 engagement score, 92.11 impact score and 95.96 responsiveness score. Opportunistically, the brand seized every occasion during “Ice Cream Month”, by posting a regular stream of successful images throughout July. The one below was above and beyond the most engaging of any other monitored brands, with a whopping 80K Likes and 2.4 K Shares.</p>
+<p><img class="aligncenter wp-image-2044 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/haagen.png" alt="haagen" width="800" height="140" /></p>
+<p><em>(image courtesy <a href="http://www.evalueanalytics.com">evalue anayltics</a>, click image for actual post)</em><br />
+<img class="aligncenter wp-image-2049 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/yoyo2.png" alt="yoyo2" width="800" height="853" /></p>
+<p>Another incredibly impressive stat from Haagen-Dazs is their rate of Likes per 1000 fans. According to <a href="http://www.evaluesuite.com">evalue analytics PRO</a>, an average of 16% of all of Haagen Dazs’ 1.2 Million facebook fans will like <strong>every single post</strong>. <em>That’s mind boggling</em>. While the notion of ‘gourmet’ may now be engrained in the minds of consumers, there’s little question that it is further enhanced by the brand’s creation an excellent online relationship with fans. It’s a pretty simple formula, aesthetically delicious visuals with engaging calls to action, at the right time.</p>
+<p>They also actively encourage their fans to share their love of their product. Of the chosen brands, Haagen-Dazs’ page interacted most with their fans by commenting on pictures and responding to questions &#8211; one of the primary factors that gave them the highest responsiveness score during our reporting period (speed and quality of response to content directed at the brand page or profile).</p>
+<p><img class="aligncenter wp-image-2050 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/hag.png" alt="hag" width="382" height="520" /></p>
+<h2>Blue Bunny Ice cream was another stand-out performer among the brands.</h2>
+<p><img class="aligncenter wp-image-2046 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/blue.png" alt="blue" width="800" height="138" />(<em>image courtesy <a href="http://www.evalueanalytics.com">evalue analytics</a>, click image for actual post</em>)</p>
+<p>Eventhough though they didn’t have the highest number of Fans, their impact score was among the highest (87.63). Impact is a calculation of the efforts made by the admin, and both the organic and viral reach that is achieved by each of these efforts.</p>
+<p>To find out how your favorite ice cream brand measures up to these top sellers, or to view any two competing brands of a specific industry, just access the <a href="http://www.evalueanalytics.com">free version</a> of our evalue analytics tool to get extensive analytics for top brands. If you are a professional user, you might want to sign up for a <a href="http://www.evaluesuite.com">free pro trial</a> to access even more. Happy Ice Cream Month!</p>
+<p>What do you think of our listing? Drop us a line on twitter <a href="http://www.twitter.com/engagementlabs">@engagementlabs</a> or leave a comment below, we would be more than happy to chat about it.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.evalueanalytics.com/wpapi/post/ice-cream-brands/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/blog_pic_IceCream.jpg" type="image/jpeg" medium="image" width="100%" height="auto">
+				<media:description type="plain"><![CDATA[blog_pic_IceCream]]></media:description>
+		</media:content>	</item>
+		<item>
+		<title>5 skills all social media managers must master</title>
+		<link>http://www.evalueanalytics.com/wpapi/post/5-skills-all-social-media-managers-must-master/</link>
+		<comments>http://www.evalueanalytics.com/wpapi/post/5-skills-all-social-media-managers-must-master/#comments</comments>
+		<pubDate>Thu, 24 Jul 2014 09:00:57 +0000</pubDate>
+		<dc:creator><![CDATA[Maggie Durand]]></dc:creator>
+				<category><![CDATA[Social Media Marketing]]></category>
+		<category><![CDATA[Social Media Marketing Tips]]></category>
+		<category><![CDATA[Community Manager]]></category>
+		<category><![CDATA[Lessons]]></category>
+		<category><![CDATA[Social Media]]></category>
+		<category><![CDATA[Social Media Managers]]></category>
+		<category><![CDATA[Tips]]></category>
+		<category><![CDATA[Tricks]]></category>
+
+		<guid isPermaLink="false">http://www.evalueanalytics.com/wpapi/?p=2024</guid>
+		<description><![CDATA[In order to get the conversation going with your fans and potential clients, there are a few skills every Community Manager must master. Find out what they are here.]]></description>
+				<content:encoded><![CDATA[<p><img class="aligncenter wp-image-2000 size-full" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/blog_pic_5thingsCMbig.jpg" alt="blog_pic_5thingsCMbig" width="800" height="450" /><br />
+While the idea of spending the day on Facebook and Twitter sounds like a dream job to many, it actually requires a number of specific skills to ensure your company or brand is getting the most out of its social media presence. Since I’ve been managing a forum and a community for a few years now, I’ve dealt with all kinds of situations and “weird” people &#8211; which allowed me to acquire first-hand experience! In order to get the conversation going with your fans and potential clients, <strong>there are a few skills every Community Manager must master:</strong></p>
+<h2>1. The Art of listening</h2>
+<p>Community managers need to go above and beyond moderation on their pages. A key skill all social media managers need is the ability to practice “active listening”. By active listening I am referring to the deliberate act of reading and engaging in conversations on your social platforms. The posts on your page offer an array of insights into the hearts and minds of your current and future clients. Perhaps they have an idea on how to improve a certain product or service? Better yet, they might even assist you in the development of new and innovative products. Social platforms are like a focus group in real time, make sure your CMs are capitalizing on the priceless information they provide.</p>
+<h2>2. Keeping up with the latest news and trends</h2>
+<p>Social media, like the news, is constantly evolving and updating. As a Community Manager, your job is to stay on top of the latest trends and news in a variety of industries as you may be required to issue statements, intervene or develop a crisis plan based on new developments in both social media, communications, and current events. So, in order to make your life easier, sign up for alerts from companies like Google or Talkwalker to make sure you have all the latest news filtered straight to your inbox!</p>
+<h2>3. Being a good conversation starter</h2>
+<p>Brands and companies flock to social media to engage in a two way conversation with their fans and customers. As a Social Media Manager, you are responsible for getting the conversation started, and keeping it going! This is where a Community Manager’s creativity and analytical skills come together. Test different types of content on the page and see what gets your fans talking by tracking and analyzing the responses you get. If you are getting more likes and comments on certain types of photos or infographics, it will help you create your editorial calendar later on. Don’t forget, that while getting the conversation started is one thing, you also need to maintain the conversation. This may mean stepping in to correct inaccuracies, liking or commenting user posts and even kicking out the trolls!</p>
+<h2>4. Being an analytical mastermind</h2>
+<p>As mentioned above, while some social media pages may look like effortless chat between a brand and its fanbase, it is an illusion. The content being posted has been carefully selected through months of analysis, trial and error. In today’s sophisticated world of social media marketing, you can’t be without a social listening tool to keep up with the latest trends and data coming from your page. There are a number of tools out there that not only measure performance but monitor trends and tone of conversation. Social media monitoring is vital to the success of your brand’s social media presence and marketing campaigns, so go ahead and try <a href="http://www.evaluesuite.com">evalue analytics PRO</a>!</p>
+<h2>5. Keeping cool, calm and collected</h2>
+<p>As a CM, you will inevitably come across trolls, angry customers, spammers and just plain annoying users. As the manager of the page and voice of the brand, it is your job to maintain “grace under pressure”. Brainstorm a number of messages in case you come across these kinds of users. You are the company’s first line of communication and don’t forget that whatever you post, can be screen capped in a matter of seconds. SO keep away from the expletives and stick to your usual chirpy or diplomatic tone, better to kill them kindness than to engage in an all-out Facebook battle!</p>
+<p>Can you think of any other skills or attributes that benefit social media managers? Reach out to us and let us know! Drop us a line on twitter <a href="www.twitter.com/engagementlabs">@engagementlabs</a> or leave a comment below, we would be more than happy to chat about it.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.evalueanalytics.com/wpapi/post/5-skills-all-social-media-managers-must-master/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/blog_pic_5thingsCMbig.jpg" type="image/jpeg" medium="image" width="100%" height="auto">
+				<media:description type="plain"><![CDATA[blog_pic_5thingsCMbig]]></media:description>
+		</media:content>	</item>
+		<item>
+		<title>10 Canadian beers are making it BIG on Facebook.</title>
+		<link>http://www.evalueanalytics.com/wpapi/post/canadianbeer/</link>
+		<comments>http://www.evalueanalytics.com/wpapi/post/canadianbeer/#comments</comments>
+		<pubDate>Wed, 23 Jul 2014 08:04:25 +0000</pubDate>
+		<dc:creator><![CDATA[Brendon Chrus]]></dc:creator>
+				<category><![CDATA[Facebook Marketing]]></category>
+		<category><![CDATA[Industry Listings and Trends]]></category>
+		<category><![CDATA[Social Media Marketing]]></category>
+		<category><![CDATA[Beer]]></category>
+		<category><![CDATA[Benchmarking]]></category>
+		<category><![CDATA[Brands]]></category>
+		<category><![CDATA[Listing]]></category>
+		<category><![CDATA[social analytics]]></category>
+		<category><![CDATA[Social Media]]></category>
+		<category><![CDATA[Summer]]></category>
+		<category><![CDATA[Top 10]]></category>
+
+		<guid isPermaLink="false">http://www.evalueanalytics.com/wpapi/?p=2021</guid>
+		<description><![CDATA[We’ve looked at the top 10 brands from the Beer Store to see which of these brands are most successful at marketing their sweet, sweet libations on Facebook.]]></description>
+				<content:encoded><![CDATA[<p><img class="aligncenter wp-image-2012" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/blog_pic_BestBeers.jpg" alt="blog_pic_BestBeers" width="800" height="450" /></p>
+<p>The scent of grilled meat wafting through neighborhoods, long days at the beach and patio season in full bloom, it’s enough to drive a person to drink. Besides Christmas eggnog, crisp fall cocktails, après ski mulled wine and Easter toddies; summer beers are one of the best boozy companions. It doesn’t take much to convince people to buy beer in the summer time but getting them to buy a specific brand can be another story. We’ve looked at the <a href="http://www.thebeerstore.ca/beers/big-10-brands">top 10 brands</a> from the Beer Store to see which of these brands are most successful at marketing their sweet, sweet libations on Facebook.</p>
+<h2>Here’s how they fared:</h2>
+<p><img class="aligncenter wp-image-2007" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/Flags.png" alt="Flags" width="800" height="321" /></p>
+<h2>Top <a href="http://www.evalueanalytics.com/page/our-scores">Evalue Score</a>:</h2>
+<p><img class="alignright wp-image-2005" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/Busch.png" alt="Busch" width="352" height="407" /> The top brand in the two weeks from July 8<sup>th</sup> to July 22<sup>nd</sup> is Busch Beer.  They were successful in consistent posting and a theme of “earning” their reasonably priced nectar.  They were also the page that interacted most with their fans by commenting on pictures and responding to questions. This gave them the highest responsiveness (speed and quality of response to content directed at the brand page or profile) over the time measured.</p>
+<h2>Most Impactful:</h2>
+<p><img class="alignright wp-image-2008" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/Heini.png" alt="Heini" width="370" height="382" /> Despite having a low overall evalue score, <a href="http://www.evalueanalytics.com/1155/social-pages/Heineken">Heineken</a> achieved high impact (Impact is calculated by looking at the efforts by the admin and both the organic and viral reach that is achieved by each effort) over the two-week with a small number of high quality posts. They include <a href="https://www.facebook.com/photo.php?v=10154857852652355">this </a>stylish/catchy video that was shared, liked and often commented on by tens of thousands. Facebook videos are a tool that many brands have been very successful with recently. The auto play feature grabs users attention much more than a text or image in a users newsfeed.</p>
+<p><img class="aligncenter wp-image-2010" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/Metric-over-time.png" alt="Metric over time" width="800" height="528" /></p>
+<h2>Most Engaged:</h2>
+<p><img class="alignright wp-image-2006" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/Canada.png" alt="Canada" width="342" height="465" /> Molson Canadian achieved the highest engagement score (engagement takes into account the number of Facebook fans, efforts by the admin and the interaction that takes place on that account) with posts that not only promoted beer but also aided in the consumption of said product. THANKS MOLSON! The sole brand that is MIA during this period is Labatt Blue. Their latest post from April does not feel as timely at this moment. Posts for beer brands tend to be easy to come up with and get interaction from. It seems odd that a brand as large as Labatt would let this slide. To find out how your favorite beer brand compares to these top sellers, check out the <a href="http://www.evalueanalytics.com/">free evalue analytics</a> tool or sign up for a free <a href="http://www.evaluesuite.com/">pro trial</a>. Now while the sun is still out, get away from your desk and have a pint! M&#8217;kay?</p>
+<p><img class="alignleft wp-image-2011" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/snow-.jpg" alt="snow" width="181" height="241" /><img class="alignright wp-image-2009" src="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/Labatt.png" alt="Labatt" width="428" height="125" /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.evalueanalytics.com/wpapi/post/canadianbeer/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	
+		<media:content url="http://www.evalueanalytics.com/wpapi/content/uploads/2014/07/blog_pic_BestBeers.jpg" type="image/jpeg" medium="image" width="100%" height="auto">
+				<media:description type="plain"><![CDATA[blog_pic_BestBeers]]></media:description>
+		</media:content>	</item>
+	</channel>
+</rss>
