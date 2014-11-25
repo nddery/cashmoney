@@ -91,7 +91,6 @@ angular.module('cm.services')
 
         if (!cached) {
           data.forEach(function(team) {
-            console.log(team);
             team['children'].forEach(function(player) {
               players.push(player);
             });
