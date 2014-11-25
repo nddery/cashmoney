@@ -1,0 +1,2021 @@
+
+
+
+Corey Perry	8.625	ANA
+Ryan Getzlaf	8.250	ANA
+Saku Koivu	3.500	ANA
+Andrew Cogliano	2.390	ANA
+Teemu Selanne	2.000	ANA
+Daniel Winnik	1.800	ANA
+Kyle Palmieri	1.467	ANA
+Matt Beleskey	1.350	ANA
+Mathieu Perreault	1.050	ANA
+Silfverberg, Jakob	0.900	ANA
+Nick Bonino	0.700	ANA
+Patrick Maroon	0.575	ANA
+Tim Jackman	0.452	ANA
+Rickard Rakell	0.225	ANA
+Devante Smith-Pelly	0.210	ANA
+
+Cam Fowler	4.000	ANA
+Sheldon Souray	3.667	ANA
+Francois Beauchemin	3.500	ANA
+Bryan Allen	3.500	ANA
+Luca Sbisa	2.175	ANA
+Hampus Lindholm	1.744	ANA
+Ben Lovejoy	1.100	ANA
+Mark Fistric	0.900	ANA
+Stephane Robidas	0.694	ANA
+Sami Vatanen	0.683	ANA
+
+Jonas Hiller	4.500	ANA
+Frederik Andersen	1.484	ANA
+John Gibson	0.085	ANA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mike Ribeiro	5.500	ARI
+Shane Doan	5.300	ARI
+Antoine Vermette	3.750	ARI
+Martin Hanzal	3.100	ARI
+Radim Vrbata	3.000	ARI
+Mikkel Boedker	2.550	ARI
+Lauri Korpikoski	2.500	ARI
+David Moss	2.100	ARI
+Martin Erat	0.946	ARI
+Kyle Chipchura	0.875	ARI
+Paul Bissonnette	0.738	ARI
+Rob Klinkhammer	0.625	ARI
+Jeff Halpern	0.566	ARI
+Brandon McMillan	0.178	ARI
+Tyler Gaudet	0.009	ARI
+
+Oliver Ekman-Larsson	5.500	ARI
+Keith Yandle	5.250	ARI
+Zbynek Michalek	4.000	ARI
+Derek Morris	2.750	ARI
+David Schlemko	1.188	ARI
+Michael Stone	1.150	ARI
+Connor Murphy	0.436	ARI
+Brandon Gormley	0.310	ARI
+Chris Summers	0.178	ARI
+
+Mike Smith	5.667	ARI
+Thomas Greiss	0.750	ARI
+Mark Visentin	0.089	ARI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Milan Lucic	6.000	BOS
+Jarome Iginla	6.000	BOS
+David Krejci	5.250	BOS
+Patrice Bergeron	5.000	BOS
+Brad Marchand	4.500	BOS
+Loui Eriksson	4.250	BOS
+Marc Savard	4.007	BOS
+Chris Kelly	3.000	BOS
+Gregory Campbell	1.600	BOS
+Dan Paille	1.300	BOS
+Shawn Thornton	1.100	BOS
+Carl Soderberg	1.008	BOS
+Reilly Smith	0.900	BOS
+Jordan Caron	0.640	BOS
+Ryan Spooner	0.277	BOS
+Matt Lindblad	0.019	BOS
+
+Zdeno Chara	6.917	BOS
+Johnny Boychuk	3.367	BOS
+Dennis Seidenberg	3.250	BOS
+Torey Krug	1.704	BOS
+Adam McQuaid	1.567	BOS
+Dougie Hamilton	1.494	BOS
+Matt Bartkowski	0.650	BOS
+Andrej Meszaros	0.410	BOS
+Kevan Miller	0.364	BOS
+Corey Potter	0.159	BOS
+
+Tuukka Rask	7.000	BOS
+Chad Johnson	0.600	BOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ville Leino	4.500	BUF
+Cody Hodgson	4.250	BUF
+Drew Stafford	4.000	BUF
+Tyler Ennis	2.812	BUF
+Zemgus Girgensons	1.369	BUF
+Chris Stewart	0.958	BUF
+Marcus Foligno	0.900	BUF
+John Scott	0.750	BUF
+Flynn, Brian	0.637	BUF
+Zenon Konopka	0.479	BUF
+Torrey Mitchell	0.390	BUF
+Matt D'Agostini	0.389	BUF
+Matt Ellis	0.330	BUF
+Cory Conacher	0.190	BUF
+
+Tyler Myers	5.500	BUF
+Christian Ehrhoff	4.000	BUF
+Henrik Tallinder	3.375	BUF
+Jamie McBain	1.800	BUF
+Mike Weber	1.667	BUF
+Rasmus Ristolainen	0.674	BUF
+Alexander Sulzer	0.561	BUF
+Pysyk, Mark	0.500	BUF
+Chad Ruhwedel	0.285	BUF
+Nicolas Deslauriers	0.125	BUF
+Jake McCabe	0.057	BUF
+
+Jhonas Enroth	1.250	BUF
+Michal Neuvirth	0.513	BUF
+Matt Hackett	0.110	BUF
+Lieuwen, Nathan	0.087	BUF
+Andrey Makarov	0.012	BUF
+Knapp, Connor	0.011	BUF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Eric Staal	8.250	CAR
+Alexander Semin	7.000	CAR
+Jordan Staal	6.000	CAR
+Jeff Skinner	5.725	CAR
+Jiri Tlusty	1.600	CAR
+Elias Lindholm	1.475	CAR
+Patrick Dwyer	0.900	CAR
+Drayson Bowman	0.600	CAR
+Radek Dvorak	0.597	CAR
+Riley Nash	0.575	CAR
+Nathan Gerbe	0.550	CAR
+Manny Malhotra	0.508	CAR
+Andrei Loktionov	0.149	CAR
+
+Joni Pitkanen	4.500	CAR
+Andrej Sekera	2.750	CAR
+John-Michael Liles	2.047	CAR
+Ron Hainsey	2.000	CAR
+Jay Harrison	1.500	CAR
+Justin Faulk	0.900	CAR
+Mike Komisarek	0.700	CAR
+Brett Bellemore	0.600	CAR
+
+Cam Ward	6.300	CAR
+Anton Khudobin	0.800	CAR
+Justin Peters	0.502	CAR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nathan Horton	5.300	CBJ
+R.J. Umberger	4.600	CBJ
+Brandon Dubinsky	4.200	CBJ
+Artem Anisimov	3.283	CBJ
+Nick Foligno	3.083	CBJ
+Ryan Johansen	1.945	CBJ
+Mark Letestu	1.250	CBJ
+Cam Atkinson	1.150	CBJ
+Jared Boll	1.050	CBJ
+Derek MacKenzie	1.000	CBJ
+Blake Comeau	1.000	CBJ
+Matt Calvert	0.988	CBJ
+Boone Jenner	0.894	CBJ
+Oliver Gabriel	0.675	CBJ
+Corey Tropp	0.406	CBJ
+Jack Skille	0.249	CBJ
+Matt Frattin	0.100	CBJ
+
+James Wisniewski	5.500	CBJ
+Fedor Tyutin	4.500	CBJ
+Jack Johnson	4.357	CBJ
+Ryan Murray	3.494	CBJ
+Nikita Nikitin	2.150	CBJ
+Nick Schultz	0.718	CBJ
+David Savard	0.709	CBJ
+Dalton Prout	0.550	CBJ
+
+Sergei Bobrovsky	5.625	CBJ
+Curtis McElhinney	0.600	CBJ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mike Cammalleri	6.000	CGY
+Jiri Hudler	4.000	CGY
+David Jones	4.000	CGY
+Matt Stajan	3.500	CGY
+Curtis Glencross	2.550	CGY
+Sean Monahan	1.775	CGY
+Mikael Backlund	1.500	CGY
+T.J. Galiardi	1.250	CGY
+Brian McGrattan	0.750	CGY
+Joe Colborne	0.600	CGY
+Lance Bouma	0.578	CGY
+Paul Byron	0.452	CGY
+Kevin Westgarth	0.390	CGY
+Markus Granlund	0.242	CGY
+Kenny Agostino	0.111	CGY
+Johnny Gaudreau	0.028	CGY
+Bill Arnold	0.014	CGY
+
+Dennis Wideman	5.250	CGY
+Mark Giordano	4.020	CGY
+Ladislav Smid	2.818	CGY
+T.J. Brodie	2.125	CGY
+Chris Butler	1.700	CGY
+Kris Russell	1.500	CGY
+Christopher Breen	0.349	CGY
+Tyler Wotherspoon	0.185	CGY
+Chad Billins	0.119	CGY
+Mark Cundari	0.037	CGY
+
+Karri Ramo	2.750	CGY
+Joey MacDonald	0.346	CGY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Patrick Kane	6.300	CHI
+Jonathan Toews	6.300	CHI
+Patrick Sharp	5.900	CHI
+Marian Hossa	5.233	CHI
+Bryan Bickell	4.000	CHI
+Kris Versteeg	1.704	CHI
+Marcus Kruger	1.325	CHI
+Michal Handzus	1.000	CHI
+Brandon Saad	0.894	CHI
+Brandon Bollig	0.575	CHI
+Andrew Shaw	0.565	CHI
+Ben Smith	0.562	CHI
+Jeremy Morin	0.282	CHI
+Peter Regin	0.254	CHI
+Joakim Nordstrom	0.131	CHI
+
+Brent Seabrook	5.800	CHI
+Duncan Keith	5.551	CHI
+Niklas Hjalmarsson	3.500	CHI
+Johnny Oduya	3.383	CHI
+Nick Leddy	2.700	CHI
+Michal Rozsival	2.200	CHI
+Sheldon Brookbank	1.250	CHI
+David Rundblad	0.165	CHI
+
+Corey Crawford	2.667	CHI
+Nikolai Khabibulin	2.000	CHI
+Antti Raanta	1.063	CHI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Paul Stastny	6.600	COL
+Ryan O'Reilly	5.000	COL
+P.A. Parenteau	4.000	COL
+Nathan MacKinnon	3.775	COL
+Gabriel Landeskog	3.575	COL
+Matt Duchene	3.500	COL
+Alex Tanguay	3.500	COL
+Jamie McGinn	1.750	COL
+Maxime Talbot	1.481	COL
+Cody McLeod	1.150	COL
+John Mitchell	1.100	COL
+Patrick Bordeleau	1.000	COL
+Marc-Andre Cliche	0.525	COL
+Brad Malone	0.373	COL
+Paul Carey	0.144	COL
+
+Erik Johnson	3.750	COL
+Jan Hejda	3.250	COL
+Ryan Wilson	2.250	COL
+Cory Sarich	2.000	COL
+Andre Benoit	0.900	COL
+Tyson Barrie	0.840	COL
+Nick Holden	0.600	COL
+Nate Guenin	0.600	COL
+Stefan Elliott	0.005	COL
+
+Semyon Varlamov	2.833	COL
+Jean-Sebastien Giguere	1.500	COL
+Reto Berra	0.283	COL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tyler Seguin	5.750	DAL
+Shawn Horcoff	5.500	DAL
+Jamie Benn	5.250	DAL
+Ray Whitney	4.500	DAL
+Erik Cole	4.500	DAL
+Rich Peverley	3.250	DAL
+Valeri Nichushkin	2.125	DAL
+Vernon Fiddler	1.800	DAL
+Alex Chiasson	0.900	DAL
+Cody Eakin	0.637	DAL
+Antoine Roussel	0.613	DAL
+Ryan Garbutt	0.575	DAL
+Dustin Jeffrey	0.311	DAL
+Colton Sceviour	0.166	DAL
+Chris Mueller	0.095	DAL
+
+Sergei Gonchar	5.000	DAL
+Alex Goligoski	4.600	DAL
+Trevor Daley	3.300	DAL
+Aaron Rome	1.385	DAL
+Brenden Dillon	0.900	DAL
+Jordie Benn	0.700	DAL
+Kevin Connauton	0.683	DAL
+Patrik Nemeth	0.062	DAL
+
+Kari Lehtonen	5.900	DAL
+Tim Thomas	0.769	DAL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pavel Datsyuk	6.700	DET
+Henrik Zetterberg	6.083	DET
+Daniel Alfredsson	5.500	DET
+Stephen Weiss	4.900	DET
+Johan Franzen	3.955	DET
+Mikael Samuelsson	2.785	DET
+Darren Helm	2.125	DET
+Todd Bertuzzi	2.075	DET
+Justin Abdelkader	1.800	DET
+Daniel Cleary	1.750	DET
+Drew Miller	1.350	DET
+David Legwand	0.923	DET
+Tomas Tatar	0.840	DET
+Joakim Andersson	0.733	DET
+Gustav Nyquist	0.702	DET
+Willie Coetzee	0.538	DET
+Tomas Jurco	0.436	DET
+Riley Sheahan	0.425	DET
+Luke Glendening	0.416	DET
+
+Niklas Kronwall	4.750	DET
+Kyle Quincey	3.775	DET
+Jonathan Ericsson	3.250	DET
+Jakub Kindl	2.400	DET
+Danny DeKeyser	1.350	DET
+Brendan Smith	1.262	DET
+Brian Lashoff	0.725	DET
+Xavier Ouellet	0.050	DET
+Ryan Sproul	0.014	DET
+
+Jimmy Howard	5.292	DET
+Jonas Gustavsson	1.500	DET
+Petr Mrazek	0.308	DET
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Taylor Hall	6.000	EDM
+Jordan Eberle	6.000	EDM
+Sam Gagner	4.800	EDM
+David Perron	3.812	EDM
+Ryan Nugent-Hopkins	3.775	EDM
+Nail Yakupov	3.775	EDM
+Boyd Gordon	3.000	EDM
+Ryan Smyth	2.250	EDM
+Ryan Jones	1.392	EDM
+Jesse Joensuu	0.950	EDM
+Matt Hendricks	0.844	EDM
+Luke Gazdic	0.635	EDM
+
+Justin Schultz	3.775	EDM
+Andrew Ference	3.250	EDM
+Jeff Petry	1.750	EDM
+Anton Belov	1.517	EDM
+Philip Larsen	0.873	EDM
+Martin Marincin	0.522	EDM
+Mark Fraser	0.477	EDM
+
+Viktor Fasth	0.610	EDM
+Ben Scrivens	0.251	EDM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tomas Fleischmann	4.500	FLA
+Aleksander Barkov	3.575	FLA
+Scottie Upshall	3.500	FLA
+Jonathan Huberdeau	3.194	FLA
+Tomas Kopecky	3.000	FLA
+Sean Bergenheim	2.750	FLA
+Nick Bjugstad	1.100	FLA
+Brad Boyes	1.000	FLA
+Scott Gomez	0.900	FLA
+Krystofer Barch	0.750	FLA
+Jimmy Hayes	0.671	FLA
+Jesse Winchester	0.600	FLA
+Brandon Pirri	0.187	FLA
+
+Brian Campbell	7.140	FLA
+Ed Jovanovski	4.125	FLA
+Erik Gudbranson	3.200	FLA
+Dmitry Kulikov	2.500	FLA
+Tom Gilbert	0.900	FLA
+Dylan Olsen	0.589	FLA
+Alex Petrovic	0.286	FLA
+Colby Robak	0.107	FLA
+
+Roberto Luongo	0.953	FLA
+Dan Ellis	0.185	FLA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Anze Kopitar	6.800	LAK
+Mike Richards	5.750	LAK
+Jeff Carter	5.273	LAK
+Justin Williams	3.650	LAK
+Jarret Stoll	3.250	LAK
+Dustin Brown	3.175	LAK
+Trevor Lewis	1.325	LAK
+Kyle Clifford	1.075	LAK
+Marian Gaborik	0.769	LAK
+Dwight King	0.750	LAK
+Jordan Nolan	0.700	LAK
+Tyler Toffoli	0.638	LAK
+Tanner Pearson	0.422	LAK
+
+Drew Doughty	7.000	LAK
+Slava Voynov	4.167	LAK
+Willie Mitchell	3.500	LAK
+Robyn Regehr	3.000	LAK
+Matt Greene	2.950	LAK
+Alec Martinez	1.100	LAK
+Jake Muzzin	1.000	LAK
+
+Jonathan Quick	5.800	LAK
+Martin Jones	0.353	LAK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Zach Parise	7.538	MIN
+Dany Heatley	7.500	MIN
+Mikko Koivu	6.750	MIN
+Jason Pominville	4.505	MIN
+Kyle Brodziak	2.833	MIN
+Nino Niederreiter	2.795	MIN
+Matt Cooke	2.500	MIN
+Mikael Granlund	2.100	MIN
+Michael Rupp	1.500	MIN
+Charlie Coyle	0.975	MIN
+Erik Haula	0.897	MIN
+Matt Moulson	0.643	MIN
+Justin Fontaine	0.600	MIN
+Jason Zucker	0.509	MIN
+Stephane Veilleux	0.277	MIN
+Cody McCormick	0.246	MIN
+Jake Dowell	0.050	MIN
+
+Ryan Suter	7.538	MIN
+Jared Spurgeon	2.667	MIN
+Keith Ballard	1.500	MIN
+Jonas Brodin	1.444	MIN
+Clayton Stoner	1.050	MIN
+Marco Scandella	1.025	MIN
+Nate Prosser	0.825	MIN
+Jonathon Blum	0.137	MIN
+Christian Folin	0.100	MIN
+
+Niklas Backstrom	3.417	MIN
+Josh Harding	1.900	MIN
+Darcy Kuemper	0.535	MIN
+Ilya Bryzgalov	0.421	MIN
+John Curry	0.048	MIN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tomas Plekanec	5.000	MTL
+Brian Gionta	5.000	MTL
+Max Pacioretty	4.500	MTL
+Daniel Briere	4.000	MTL
+David Desharnais	3.500	MTL
+Rene Bourque	3.333	MTL
+Alex Galchenyuk	3.225	MTL
+Brandon Prust	2.500	MTL
+Travis Moen	1.850	MTL
+Lars Eller	1.325	MTL
+Thomas Vanek	1.179	MTL
+George Parros	0.938	MTL
+Brendan Gallagher	0.870	MTL
+Michael Bournival	0.870	MTL
+Ryan White	0.700	MTL
+Dale Weise	0.269	MTL
+Michael Blunden	0.045	MTL
+
+Andrei Markov	5.750	MTL
+Josh Gorges	3.900	MTL
+P.K. Subban	2.875	MTL
+Alexei Emelin	2.000	MTL
+Jarred Tinordi	1.543	MTL
+Francis Bouillon	1.500	MTL
+Douglas Murray	1.500	MTL
+Mike Weaver	0.231	MTL
+
+Carey Price	6.500	MTL
+Peter Budaj	1.400	MTL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Travis Zajac	5.750	NJD
+Patrik Elias	5.500	NJD
+Ryane Clowe	4.850	NJD
+Adam Henrique	4.000	NJD
+Jaromir Jagr	4.000	NJD
+Michael Ryder	3.500	NJD
+Dainius Zubrus	3.100	NJD
+Damien Brunner	2.500	NJD
+Tuomo Ruutu	0.779	NJD
+Ryan Carter	0.775	NJD
+Steve Bernier	0.775	NJD
+Jacob Josefson	0.725	NJD
+Stephen Gionta	0.562	NJD
+Tim Sestito	0.156	NJD
+Mike Sislo	0.076	NJD
+
+Anton Volchenkov	4.250	NJD
+Marek Zidlicky	4.000	NJD
+Bryce Salvador	3.167	NJD
+Andy Greene	3.000	NJD
+Mark Fayne	1.300	NJD
+Peter Harrold	0.800	NJD
+Jon Merrill	0.669	NJD
+Adam Larsson	0.541	NJD
+
+Martin Brodeur	4.500	NJD
+Cory Schneider	4.000	NJD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Patric Hornqvist	4.250	NSH
+Mike Fisher	4.200	NSH
+Matt Cullen	3.500	NSH
+Paul Gaustad	3.250	NSH
+Viktor Stalberg	3.000	NSH
+Eric Nystrom	2.500	NSH
+Colin Wilson	2.000	NSH
+Craig Smith	2.000	NSH
+Nick Spaling	1.500	NSH
+Gabriel Bourque	0.775	NSH
+Rich Clune	0.525	NSH
+Patrick Eaves	0.246	NSH
+Calle Jarnkrok	0.115	NSH
+
+Shea Weber	7.857	NSH
+Roman Josi	4.000	NSH
+Seth Jones	3.225	NSH
+Ryan Ellis	1.440	NSH
+Del Michael Zotto	1.072	NSH
+Mattias Ekholm	1.025	NSH
+Victor Bartley	0.667	NSH
+
+Pekka Rinne	7.000	NSH
+Carter Hutton	0.550	NSH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+John Tavares	5.500	NYI
+Josh Bailey	3.300	NYI
+Michael Grabner	3.000	NYI
+Kyle Okposo	2.800	NYI
+Brock Nelson	2.796	NYI
+Frans Nielsen	2.750	NYI
+Cal Clutterbuck	2.750	NYI
+Matt Martin	1.000	NYI
+Casey Cizikas	0.900	NYI
+Ryan Strome	0.738	NYI
+Colin McDonald	0.637	NYI
+Eric Boulton	0.550	NYI
+Anders Lee	0.440	NYI
+Mike Halmo	0.419	NYI
+Johan Sundstrom	0.138	NYI
+John Persson	0.058	NYI
+Brett Gallant	0.020	NYI
+Justin Johnson	0.009	NYI
+
+Lubomir Visnovsky	4.750	NYI
+Travis Hamonic	3.857	NYI
+Matt Carkner	1.500	NYI
+de Calvin Haan	1.033	NYI
+Brian Strait	0.775	NYI
+Thomas Hickey	0.675	NYI
+Matt Donovan	0.601	NYI
+Radek Martinek	0.532	NYI
+Scott Mayfield	0.082	NYI
+
+Evgeni Nabokov	3.250	NYI
+Anders Nilsson	0.790	NYI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rick Nash	7.800	NYR
+Brad Richards	6.667	NYR
+Derick Brassard	3.200	NYR
+Derek Stepan	3.075	NYR
+Carl Hagelin	2.250	NYR
+Brian Boyle	1.700	NYR
+Derek Dorsett	1.633	NYR
+Benoit Pouliot	1.300	NYR
+Chris Kreider	1.196	NYR
+St. Martin Louis	1.154	NYR
+Mats Zuccarello	1.150	NYR
+Dominic Moore	1.000	NYR
+Daniel Carcillo	0.423	NYR
+Jesper Fast	0.162	NYR
+
+Ryan McDonagh	4.700	NYR
+Marc Staal	3.975	NYR
+Daniel Girardi	3.325	NYR
+Anton Stralman	1.700	NYR
+Kevin Klein	1.219	NYR
+Justin Falk	0.975	NYR
+John Moore	0.965	NYR
+Raphael Diaz	0.251	NYR
+
+Henrik Lundqvist	6.875	NYR
+Cam Talbot	0.513	NYR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jason Spezza	7.000	OTT
+Bobby Ryan	5.100	OTT
+Milan Michalek	4.333	OTT
+Kyle Turris	3.500	OTT
+Clarke MacArthur	3.250	OTT
+Chris Neil	1.900	OTT
+Zack Smith	1.887	OTT
+Mika Zibanejad	1.556	OTT
+Erik Condra	1.250	OTT
+Colin Greening	0.817	OTT
+Matt Kassian	0.575	OTT
+Ales Hemsky	0.513	OTT
+Mark Stone	0.264	OTT
+Jean-Gabriel Pageau	0.245	OTT
+Mike Hoffman	0.196	OTT
+
+Erik Karlsson	6.500	OTT
+Jared Cowen	3.100	OTT
+Chris Phillips	3.083	OTT
+Marc Methot	3.000	OTT
+Patrick Wiercioch	2.000	OTT
+Cody Ceci	0.871	OTT
+Eric Gryba	0.562	OTT
+
+Craig Anderson	3.188	OTT
+Robin Lehner	0.870	OTT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Scott Hartnell	4.750	PHI
+Vincent Lecavalier	4.500	PHI
+Jakub Voracek	4.250	PHI
+Wayne Simmonds	3.975	PHI
+Claude Giroux	3.750	PHI
+Brayden Schenn	3.110	PHI
+Steve Downie	2.242	PHI
+Sean Couturier	1.375	PHI
+Matt Read	0.900	PHI
+Michael Raffl	0.868	PHI
+Zac Rinaldo	0.750	PHI
+Jay Rosehill	0.675	PHI
+Adam Hall	0.600	PHI
+Tye McGinn	0.175	PHI
+Jason Akeson	0.009	PHI
+
+Kimmo Timonen	6.000	PHI
+Mark Streit	5.250	PHI
+Chris Pronger	4.921	PHI
+Braydon Coburn	4.500	PHI
+Luke Schenn	3.600	PHI
+Nicklas Grossmann	3.500	PHI
+Erik Gustafsson	1.000	PHI
+Hal Gill	0.696	PHI
+Andrew MacDonald	0.116	PHI
+
+Ray Emery	1.650	PHI
+Steve Mason	1.500	PHI
+Calvin Heeter	0.063	PHI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sidney Crosby	8.700	PIT
+Evgeni Malkin	8.700	PIT
+James Neal	5.000	PIT
+Pascal Dupuis	3.750	PIT
+Chris Kunitz	3.725	PIT
+Jussi Jokinen	2.100	PIT
+Brandon Sutter	2.067	PIT
+Tanner Glass	1.100	PIT
+Beau Bennett	0.868	PIT
+Taylor Pyatt	0.811	PIT
+Craig Adams	0.700	PIT
+Jayson Megna	0.560	PIT
+Joe Vitale	0.550	PIT
+Lee Stempniak	0.513	PIT
+Chuck Kobasew	0.437	PIT
+Chris Conner	0.403	PIT
+Marcel Goc	0.349	PIT
+Brian Gibbons	0.310	PIT
+Harry Zolnierczyk	0.082	PIT
+
+Paul Martin	5.000	PIT
+Brooks Orpik	3.750	PIT
+Kris Letang	3.500	PIT
+Rob Scuderi	3.375	PIT
+Matt Niskanen	2.300	PIT
+Olli Maatta	0.894	PIT
+Robert Bortuzzo	0.600	PIT
+Deryk Engelland	0.567	PIT
+Simon Despres	0.426	PIT
+
+Marc-Andre Fleury	5.000	PIT
+Tomas Vokoun	2.000	PIT
+Jeff Zatkoff	0.525	PIT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Joe Thornton	7.000	SJS
+Patrick Marleau	6.900	SJS
+Martin Havlat	5.000	SJS
+Joe Pavelski	4.000	SJS
+Logan Couture	2.875	SJS
+Tyler Kennedy	2.350	SJS
+Raffi Torres	2.000	SJS
+Adam Burish	1.850	SJS
+Tomas Hertl	1.350	SJS
+Matthew Nieto	0.859	SJS
+James Sheppard	0.830	SJS
+Tommy Wingels	0.775	SJS
+Andrew Desjardins	0.750	SJS
+Mike Brown	0.661	SJS
+Bracken Kearns	0.186	SJS
+
+Dan Boyle	6.667	SJS
+Brent Burns	5.760	SJS
+Marc-Edouard Vlasic	4.250	SJS
+Brad Stuart	3.600	SJS
+Jason Demers	1.500	SJS
+Justin Braun	1.250	SJS
+Scott Hannan	1.000	SJS
+Matt Irwin	1.000	SJS
+Nick Petrecki	0.121	SJS
+
+Antti Niemi	3.800	SJS
+Alex Stalock	0.625	SJS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+David Backes	4.500	STL
+T.J. Oshie	4.175	STL
+Derek Roy	4.000	STL
+Alexander Steen	3.362	STL
+Patrik Berglund	3.250	STL
+Vladimir Tarasenko	1.750	STL
+Brenden Morrow	1.500	STL
+Vladimir Sobotka	1.300	STL
+Magnus Paajarvi	1.200	STL
+Jaden Schwartz	1.167	STL
+Maxim Lapierre	1.100	STL
+Steve Ott	0.681	STL
+Ryan Reaves	0.600	STL
+Adam Cracknell	0.360	STL
+Chris Porter	0.242	STL
+Dmitrij Jaskin	0.234	STL
+Keith Aucoin	0.010	STL
+
+Jay Bouwmeester	6.680	STL
+Alex Pietrangelo	6.500	STL
+Kevin Shattenkirk	4.250	STL
+Barret Jackman	3.167	STL
+Roman Polak	2.750	STL
+Jordan Leopold	2.250	STL
+Ian Cole	0.825	STL
+Carlo Colaiacovo	0.588	STL
+
+Brian Elliott	1.800	STL
+Ryan Miller	1.154	STL
+Niklas Lundstrom	0.039	STL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steven Stamkos	7.500	TBL
+Valtteri Filppula	5.000	TBL
+Teddy Purcell	4.500	TBL
+Ryan Malone	4.500	TBL
+Nate Thompson	1.600	TBL
+B.J. Crombeen	1.150	TBL
+Tyler Johnson	0.900	TBL
+Richard Panik	0.900	TBL
+Ryan Callahan	0.880	TBL
+Alex Killorn	0.875	TBL
+J.T. Brown	0.686	TBL
+Nikita Kucherov	0.647	TBL
+Tom Pyatt	0.600	TBL
+Ondrej Palat	0.564	TBL
+Cedric Paquette	0.014	TBL
+
+Matthew Carle	5.500	TBL
+Victor Hedman	4.000	TBL
+Eric Brewer	3.875	TBL
+Sami Salo	3.750	TBL
+Mattias Ohlund	3.607	TBL
+Brian Lee	1.150	TBL
+Radko Gudas	0.992	TBL
+Keith Aulie	0.975	TBL
+Andrej Sustr	0.810	TBL
+Mark Barberio	0.605	TBL
+Michael Kostka	0.141	TBL
+
+Ben Bishop	2.300	TBL
+Anders Lindback	1.800	TBL
+Kristers Gudlevskis	0.087	TBL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phil Kessel	5.400	TOR
+Joffrey Lupul	5.250	TOR
+David Clarkson	5.250	TOR
+Van James Riemsdyk	4.250	TOR
+Tyler Bozak	4.200	TOR
+Dave Bolland	3.375	TOR
+Nazem Kadri	2.900	TOR
+Nikolai Kulemin	2.800	TOR
+Jay McClement	1.500	TOR
+Mason Raymond	1.000	TOR
+Colton Orr	0.925	TOR
+Peter Holland	0.750	TOR
+Carter Ashton	0.720	TOR
+Troy Bodie	0.434	TOR
+Trevor Smith	0.384	TOR
+Jerry D'Amigo	0.305	TOR
+
+Dion Phaneuf	6.500	TOR
+Carl Gunnarsson	3.150	TOR
+Tim Gleason	2.113	TOR
+Cody Franson	2.000	TOR
+Morgan Rielly	1.744	TOR
+Jake Gardiner	1.117	TOR
+Paul Ranger	1.000	TOR
+Petter Granberg	0.018	TOR
+
+Jonathan Bernier	2.900	TOR
+James Reimer	1.800	TOR
+Drew MacIntyre	0.052	TOR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Daniel Sedin	6.100	VAN
+Henrik Sedin	6.100	VAN
+Ryan Kesler	5.000	VAN
+Alexandre Burrows	4.500	VAN
+David Booth	4.250	VAN
+Chris Higgins	2.500	VAN
+Jannik Hansen	1.350	VAN
+Brad Richardson	1.150	VAN
+Zack Kassian	0.870	VAN
+Tom Sestito	0.750	VAN
+Jordan Schroeder	0.600	VAN
+Zac Dalpe	0.550	VAN
+Mike Santorelli	0.550	VAN
+Shawn Matthias	0.368	VAN
+Nicklas Jensen	0.297	VAN
+
+Alexander Edler	5.000	VAN
+Jason Garrison	4.600	VAN
+Kevin Bieksa	4.600	VAN
+Dan Hamhuis	4.500	VAN
+Christopher Tanev	1.500	VAN
+Andrew Alberts	0.600	VAN
+Yannick Weber	0.587	VAN
+Ryan Stanton	0.550	VAN
+Frank Corrado	0.108	VAN
+
+Eddie Lack	0.750	VAN
+Jacob Markstrom	0.252	VAN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blake Wheeler	5.600	WPG
+Evander Kane	5.250	WPG
+Bryan Little	4.700	WPG
+Olli Jokinen	4.500	WPG
+Andrew Ladd	4.400	WPG
+Devin Setoguchi	3.000	WPG
+Michael Frolik	2.333	WPG
+Jim Slater	1.600	WPG
+Mark Scheifele	1.563	WPG
+Chris Thorburn	0.867	WPG
+Eric Tangradi	0.675	WPG
+Matt Halischuk	0.650	WPG
+James Wright	0.650	WPG
+Anthony Peluso	0.562	WPG
+
+Tobias Enstrom	5.750	WPG
+Dustin Byfuglien	5.200	WPG
+Zach Bogosian	5.143	WPG
+Grant Clitsome	2.067	WPG
+Jacob Trouba	1.827	WPG
+Mark Stuart	1.700	WPG
+Paul Postma	0.713	WPG
+Keaton Ellerby	0.614	WPG
+Adam Pardy	0.560	WPG
+
+Ondrej Pavelec	3.900	WPG
+Al Montoya	0.601	WPG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Alex Ovechkin	9.538	WAS
+Nicklas Backstrom	6.700	WAS
+Brooks Laich	4.500	WAS
+Troy Brouwer	3.667	WAS
+Joel Ward	3.000	WAS
+Mikhail Grabovski	3.000	WAS
+Marcus Johansson	2.000	WAS
+Jason Chimera	1.750	WAS
+Eric Fehr	1.500	WAS
+Tom Wilson	1.294	WAS
+Jay Beagle	0.900	WAS
+Aaron Volpatti	0.575	WAS
+Evgeny Kuznetsov	0.536	WAS
+Dustin Penner	0.421	WAS
+Ryan Stoa	0.124	WAS
+Peter LeBlanc	0.006	WAS
+
+Mike Green	6.083	WAS
+John Carlson	3.967	WAS
+Karl Alzner	2.800	WAS
+John Erskine	1.962	WAS
+Dmitry Orlov	0.715	WAS
+Connor Carrick	0.426	WAS
+Patrick Wey	0.180	WAS
+Tyson Strachan	0.093	WAS
+Julien Brouillette	0.056	WAS
+
+Braden Holtby	1.850	WAS
+Jaroslav Halak	0.769	WAS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

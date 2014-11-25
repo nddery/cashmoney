@@ -34,7 +34,7 @@ print ""
 # CBJ = CLB
 # NSH = NAS
 teams = [
-    "ANA", "BOS", "BUF", "CAR",
+    "ANA", "ARI", "BOS", "BUF", "CAR",
     "CLB", "CGY", "CHI", "COL",
     "DAL", "DET", "EDM", "FLA",
     "LAK", "MIN", "MTL", "NJD",

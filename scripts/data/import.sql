@@ -1,11 +1,3 @@
--- Export 
-SELECT    statistics.*, salaries.salary 
-FROM      statistics,   salaries 
-WHERE     statistics.player = salaries.player 
-GROUP BY  statistics.player 
-ORDER BY  statistics.team
-
--- Create tables
 CREATE TABLE `salaries` (
   `player` varchar(255) NOT NULL DEFAULT '',
   `salary` float DEFAULT NULL,
@@ -36,3 +28,19 @@ CREATE TABLE `statistics` (
   `fop` float NOT NULL,
   PRIMARY KEY (`player`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOAD DATA LOCAL INFILE 'acquisition/salaries.txt'
+INTO TABLE salaries
+FIELDS TERMINATED BY '\t'
+ENCLOSED BY '"'
+ESCAPED BY '\\'
+LINES TERMINATED BY '\r\n'
+(player,salary,team);
+
+LOAD DATA LOCAL INFILE 'acquisition/statistics.txt'
+INTO TABLE statistics
+FIELDS TERMINATED BY '\t'
+ENCLOSED BY '"'
+ESCAPED BY '\\'
+LINES TERMINATED BY '\r\n'
+(player,team,pos,gp,g,a,p,pm,pim,ppg,ppp,shg,shp,gw,ot,s,sp,toi,sft,fop)
