@@ -85,8 +85,12 @@ module.exports = function(grunt) {
 
     ,copy: {
       data: {
-         src: 'app/data/data.full.json'
-        ,dest: 'dist/data/data.full.json'
+        files: [{
+          expand: true
+          ,cwd: 'app/data/'
+          ,src: ['**/*.json']
+          ,dest: 'dist/data/'
+        }]
       }
       ,sendmail: {
          src: 'app/modules/forms/contact/sendmail.php'
