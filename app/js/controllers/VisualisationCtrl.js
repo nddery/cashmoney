@@ -31,6 +31,14 @@ angular.module('cm.controllers').controller('VisualisationCtrl', function($scope
     $scope.config++;
   });
 
+  // Triggered when Season changes.
+  $scope.$on('dataNeedReload', function() {
+    dataFactory.getAllData().then(function(data){
+      $scope.data = data
+      $scope.$broadcast('dataNeedUpdate');
+    });
+  });
+
   // Triggered when Position, Division and (active) Teams change.
   $scope.$on('dataNeedUpdate', function() {
     dataFactory.filterByTeams(getActiveTeamsName()).then(function(activeData){

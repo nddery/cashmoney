@@ -27,6 +27,15 @@ angular.module('cm.directives')
     }
   })
 
+  .directive('seasons', function() {
+    return {
+      restrict: 'E'
+      ,replace: true
+      ,transclude: true
+      ,templateUrl: 'partials/seasons.html'
+    }
+  })
+
   .directive('positions', function() {
     return {
       restrict: 'E'

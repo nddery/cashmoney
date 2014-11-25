@@ -1,0 +1,7 @@
+<div ng-controller="SeasonsCtrl">
+  <select class="form-control"
+          ng-model="season"
+          ng-change="seasonChanged()"
+          ng-options="s.name for s in seasons">
+  </select>
+</div>

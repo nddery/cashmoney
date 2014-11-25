@@ -1,7 +1,11 @@
 'use strict';
 angular.module('cm.services')
   .value('config', {
-    metrics: [
+    seasons: [
+       {name: 'Regular Season: 2013-2014', id: '2013-2014'}
+      ,{name: 'Regular Season: 2014-2015', id: '2014-2015'}
+    ]
+    ,metrics: [
        {name: 'gp', title: 'Game Played'}
       ,{name: 'g', title: 'Goals'}
       ,{name: 'a', title: 'Assists'}

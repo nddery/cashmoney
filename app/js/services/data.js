@@ -4,11 +4,15 @@ angular.module('cm.services')
     return $cacheFactory('data');
   })
 
-  .factory('dataFactory', function($http, $q, $filter, cmCache) {
+  .factory('dataFactory', function($http, $q, $filter, cmCache, state, config) {
     var getAllData = function() {
-      var deferred = $q.defer();
+      var deferred       = $q.defer()
+          ,currentSeason = state.getCurrentState('season');
 
-      $http.get('data/data.full.json', {cache: cmCache})
+      if (typeof currentSeason !== 'string')
+        currentSeason = config.seasons[0].id;
+
+      $http.get('data/data.' + currentSeason + '.json', {cache: cmCache})
         .success(function(data) {
           deferred.resolve(data);
         }).error(function(){
