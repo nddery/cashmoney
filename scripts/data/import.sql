@@ -29,7 +29,7 @@ CREATE TABLE `statistics` (
   PRIMARY KEY (`player`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOAD DATA LOCAL INFILE 'acquisition/salaries.txt'
+LOAD DATA LOCAL INFILE 'salaries.txt'
 INTO TABLE salaries
 FIELDS TERMINATED BY '\t'
 ENCLOSED BY '"'
@@ -37,7 +37,7 @@ ESCAPED BY '\\'
 LINES TERMINATED BY '\r\n'
 (player,salary,team);
 
-LOAD DATA LOCAL INFILE 'acquisition/statistics.txt'
+LOAD DATA LOCAL INFILE 'statistics.txt'
 INTO TABLE statistics
 FIELDS TERMINATED BY '\t'
 ENCLOSED BY '"'

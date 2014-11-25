@@ -10,7 +10,7 @@ angular.module('cm.services')
           ,currentSeason = state.getCurrentState('season');
 
       if (typeof currentSeason !== 'string')
-        currentSeason = config.seasons[0].id;
+        currentSeason = config.seasons[config.seasons.length - 1].id;
 
       $http.get('data/data.' + currentSeason + '.json', {cache: cmCache})
         .success(function(data) {
@@ -91,6 +91,7 @@ angular.module('cm.services')
 
         if (!cached) {
           data.forEach(function(team) {
+            console.log(team);
             team['children'].forEach(function(player) {
               players.push(player);
             });

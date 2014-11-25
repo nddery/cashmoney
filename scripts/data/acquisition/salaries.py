@@ -120,13 +120,15 @@ for i in range(0, len(teams)):
             col += 1
 
         if valid:
-            # if team name is one of the two
+            # if team name is one of the three
             # nhlnumbers.com / nhl.com difference,
             # apply nhl.com style
             if teams[i] == 'CLB':
                 fileContent += 'CBJ'
             elif teams[i] == 'NAS':
                 fileContent += 'NSH'
+            elif teams[i] == 'WAS':
+                fileContent += 'WSH'
             else:
                 # add the team to the current row
                 fileContent += teams[i]

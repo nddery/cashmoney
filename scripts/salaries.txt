@@ -1958,35 +1958,35 @@ Al Montoya	0.601	WPG
 
 
 
-Alex Ovechkin	9.538	WAS
-Nicklas Backstrom	6.700	WAS
-Brooks Laich	4.500	WAS
-Troy Brouwer	3.667	WAS
-Joel Ward	3.000	WAS
-Mikhail Grabovski	3.000	WAS
-Marcus Johansson	2.000	WAS
-Jason Chimera	1.750	WAS
-Eric Fehr	1.500	WAS
-Tom Wilson	1.294	WAS
-Jay Beagle	0.900	WAS
-Aaron Volpatti	0.575	WAS
-Evgeny Kuznetsov	0.536	WAS
-Dustin Penner	0.421	WAS
-Ryan Stoa	0.124	WAS
-Peter LeBlanc	0.006	WAS
+Alex Ovechkin	9.538	WSH
+Nicklas Backstrom	6.700	WSH
+Brooks Laich	4.500	WSH
+Troy Brouwer	3.667	WSH
+Joel Ward	3.000	WSH
+Mikhail Grabovski	3.000	WSH
+Marcus Johansson	2.000	WSH
+Jason Chimera	1.750	WSH
+Eric Fehr	1.500	WSH
+Tom Wilson	1.294	WSH
+Jay Beagle	0.900	WSH
+Aaron Volpatti	0.575	WSH
+Evgeny Kuznetsov	0.536	WSH
+Dustin Penner	0.421	WSH
+Ryan Stoa	0.124	WSH
+Peter LeBlanc	0.006	WSH
 
-Mike Green	6.083	WAS
-John Carlson	3.967	WAS
-Karl Alzner	2.800	WAS
-John Erskine	1.962	WAS
-Dmitry Orlov	0.715	WAS
-Connor Carrick	0.426	WAS
-Patrick Wey	0.180	WAS
-Tyson Strachan	0.093	WAS
-Julien Brouillette	0.056	WAS
+Mike Green	6.083	WSH
+John Carlson	3.967	WSH
+Karl Alzner	2.800	WSH
+John Erskine	1.962	WSH
+Dmitry Orlov	0.715	WSH
+Connor Carrick	0.426	WSH
+Patrick Wey	0.180	WSH
+Tyson Strachan	0.093	WSH
+Julien Brouillette	0.056	WSH
 
-Braden Holtby	1.850	WAS
-Jaroslav Halak	0.769	WAS
+Braden Holtby	1.850	WSH
+Jaroslav Halak	0.769	WSH
 
 
 

@@ -36,21 +36,25 @@ $teams = $db->get_results("
 ");
 
 foreach ($teams as $team) :
-  $players = $db->get_results("
-    SELECT    statistics.*,
-              salaries.salary
-    FROM      statistics
-    LEFT JOIN salaries
-      ON        statistics.player = salaries.player
-    WHERE     statistics.team = '$team->team'
-    ORDER BY  statistics.team
-  ");
+  if (!is_null($team->team)) :
+    $players = $db->get_results("
+      SELECT    statistics.*,
+                salaries.salary
+      FROM      statistics
+      LEFT JOIN salaries
+        ON        statistics.player = salaries.player
+      WHERE     statistics.team = '$team->team'
+      ORDER BY  statistics.team
+    ");
 
-  $foo = new stdClass();
-  $foo->name = $team->team;
-  $foo->children = $players;
+    if (!is_null($players)) :
+      $foo = new stdClass();
+      $foo->name = $team->team;
+      $foo->children = $players;
 
-  $output[] = $foo;
+      $output[] = $foo;
+    endif;
+  endif;
 endforeach;
 
 $filename = "data.$argv[1]-$argv[2].json";
