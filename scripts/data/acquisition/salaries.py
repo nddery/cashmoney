@@ -11,7 +11,6 @@
 
 from bs4 import BeautifulSoup, SoupStrainer
 import urllib
-import time
 import sys
 import re
 
@@ -57,7 +56,7 @@ for i in range(0, len(teams)):
     sys.stdout.write(" (" + str(i + 1) + " of " + str(len(teams)) + ")")
     print ""
 
-    url = base + teams[i] + "?year=" + time.strftime('%Y')
+    url = base + teams[i] + "?year=" + sys.argv[1]
 
     f = urllib.urlopen(url)
 

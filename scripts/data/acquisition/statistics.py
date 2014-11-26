@@ -25,7 +25,7 @@ tsv = open("statistics.txt", "w")
 
 # summary, sorted by players last name
 url = "http://www.nhl.com/ice/playerstats.htm"
-url += "?season=20142015"
+url += "?season=" + sys.argv[1] + sys.argv[2]
 url += "&gameType=2"
 url += "&sort=player.bioFirstNameLastName"
 url += "&viewName=summary&pg="

@@ -25,8 +25,8 @@ fi
 cd $BASEDIR
 
 # Acquire
-/usr/bin/python acquisition/salaries.py
-/usr/bin/python acquisition/statistics.py
+/usr/bin/python acquisition/salaries.py $SEASON_END
+/usr/bin/python acquisition/statistics.py $SEASON_START $SEASON_END
 
 # Create the DB
 mysql -u root -proot -e "CREATE DATABASE $DB_NAME"
