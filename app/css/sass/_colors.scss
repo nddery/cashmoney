@@ -1,0 +1,91 @@
+@each $body-class, $color in (color-blue: #47A3DA,
+                              color-red: #FF4343,
+                              color-purple: #A24DBE,
+                              color-green: #42C442,
+                              color-orange: #E6510C,
+                              color-yellow: #DCC900,
+                              color-pink: #E3BAF8,
+                              color-grey: #6C6967) {
+  body.#{$body-class} {
+    .bullet .measure.s0 {
+      fill: desaturate(lighten($color, 20%), 20%);
+    }
+
+    #settings {
+      background-color: darken($color, 10%);
+    }
+
+    .disabled {
+      .team-toggle:hover {
+        background: darken($color, 10%);
+      }
+    }
+
+    .modal {
+      button {
+        @include transition(all 0.3s ease);
+        background-color: darken($color, 10%);
+
+        &:hover {
+          background-color: darken($color, 20%);
+        }
+      }
+    }
+
+    angucomplete {
+      .angucomplete-row {
+        &:hover {
+          background: $color;
+
+          .angucomplete-description {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    /* General styles for all menus */
+    /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+    .cbp-spmenu {
+      background: $color;
+      @include box-shadow(darken($color, 10%) -40px 0 60px 0 inset);
+
+      h3 {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+      }
+
+      h4 {
+        color: #fff;
+      }
+
+      button {
+        color: #fff;
+        background:darken($color, 10%);
+
+        &:hover {
+          background: darken($color, 20%);
+        }
+      }
+
+      a {
+        color: #fff;
+
+        &:hover {
+          background: ligthen($color, 10%);
+        }
+
+        &:active {
+          background: #afdefa;
+          color: $color;
+        }
+      }
+    }
+
+    .cbp-spmenu-vertical {
+      a {
+        border-bottom-color: ligthen($color, 10%);
+      }
+    }
+  } // end #{$body-class}
+} // end @each

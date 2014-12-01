@@ -18,10 +18,6 @@
 /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
 /* line 3, sass/_menu.scss */
 .cbp-spmenu {
-  background: #47a3da;
-  -webkit-box-shadow: #288bc6 -40px 0 60px 0 inset;
-  -moz-box-shadow: #288bc6 -40px 0 60px 0 inset;
-  box-shadow: #288bc6 -40px 0 60px 0 inset;
   position: fixed;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -46,7 +42,7 @@
   margin: 20px 2.5%;
   font-weight: 400;
 }
-/* line 36, sass/_menu.scss */
+/* line 35, sass/_menu.scss */
 .cbp-spmenu .half h4, .cbp-spmenu .half form,
 .cbp-spmenu .third h4, .cbp-spmenu .third form {
   margin-left: 0;
@@ -56,107 +52,91 @@
 .cbp-spmenu button {
   border: 0;
   color: #fff;
-  background: #288bc6;
   padding: 10px;
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
-  -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 49, sass/_menu.scss */
+/* line 48, sass/_menu.scss */
 .cbp-spmenu button.team-toggle {
   position: absolute;
   right: 5.5%;
   margin-top: -38px;
 }
 /* line 55, sass/_menu.scss */
-.cbp-spmenu button:hover {
-  background: #1b5e86;
-}
-/* line 60, sass/_menu.scss */
 .cbp-spmenu a {
   display: block;
   color: #fff;
   font-size: 1.1em;
   font-weight: 300;
 }
-/* line 66, sass/_menu.scss */
-.cbp-spmenu a:hover {
-  background: #258ecd;
-}
-/* line 70, sass/_menu.scss */
-.cbp-spmenu a:active {
-  background: #afdefa;
-  color: #47a3da;
-}
 
-/* line 77, sass/_menu.scss */
+/* line 72, sass/_menu.scss */
 .cbp-spmenu-vertical {
   width: 60%;
   height: 100%;
   top: 0;
   z-index: 1000;
 }
-/* line 83, sass/_menu.scss */
+/* line 78, sass/_menu.scss */
 .cbp-spmenu-vertical a {
-  border-bottom: 1px solid #258ecd;
+  border-bottom: 1px solid transparent;
   padding: 1em;
 }
 
-/* line 89, sass/_menu.scss */
+/* line 84, sass/_menu.scss */
 .cbp-spmenu-left {
   left: -59%;
 }
-/* line 92, sass/_menu.scss */
+/* line 87, sass/_menu.scss */
 .cbp-spmenu-left.cbp-spmenu-open {
   left: 0px;
   overflow-y: scroll;
 }
 
-/* line 98, sass/_menu.scss */
+/* line 93, sass/_menu.scss */
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 104, sass/_menu.scss */
+/* line 99, sass/_menu.scss */
 #settings {
   z-index: 2;
 }
 
-/* line 108, sass/_menu.scss */
+/* line 103, sass/_menu.scss */
 #visualisation {
   position: relative;
   left: 0%;
   z-index: 1;
-  -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-/* line 115, sass/_menu.scss */
+/* line 110, sass/_menu.scss */
 .cbp-spmenu-push-toright {
   left: 60%;
   overflow: hidden;
 }
-/* line 119, sass/_menu.scss */
+/* line 114, sass/_menu.scss */
 .cbp-spmenu-push-toright #visualisation, .cbp-spmenu-push-toright #logo {
   left: -28%;
 }
 
-/* line 125, sass/_menu.scss */
+/* line 119, sass/_menu.scss */
 .cbp-spmenu,
 .cbp-spmenu-push {
-  -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -195,38 +175,38 @@ angucomplete .angucomplete-row:hover .angucomplete-description {
   stroke-width: .5px;
 }
 
-/* line 7, sass/_bulletChart.scss */
+/* line 4, sass/_bulletChart.scss */
 .bullet .range.s0 {
   fill: #eee;
 }
 
-/* line 8, sass/_bulletChart.scss */
+/* line 5, sass/_bulletChart.scss */
 .bullet .range.s1 {
   fill: #eee;
 }
 
-/* line 9, sass/_bulletChart.scss */
+/* line 6, sass/_bulletChart.scss */
 .bullet .range.s2 {
   fill: #eee;
 }
 
-/* line 10, sass/_bulletChart.scss */
+/* line 7, sass/_bulletChart.scss */
 .bullet .measure.s0 {
   fill: lightsteelblue;
 }
 
-/* line 11, sass/_bulletChart.scss */
+/* line 8, sass/_bulletChart.scss */
 .bullet .measure.s1 {
   fill: steelblue;
 }
 
-/* line 12, sass/_bulletChart.scss */
+/* line 9, sass/_bulletChart.scss */
 .bullet .title {
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 13, sass/_bulletChart.scss */
+/* line 10, sass/_bulletChart.scss */
 .bullet .subtitle {
   fill: #999;
 }
@@ -255,9 +235,9 @@ angucomplete .angucomplete-row:hover .angucomplete-description {
   height: 38px;
   background-size: 73px 38px;
   opacity: 0.25;
-  -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 /* line 18, sass/_logos.scss */
@@ -270,160 +250,156 @@ angucomplete .angucomplete-row:hover .angucomplete-description {
 }
 
 /* line 28, sass/_logos.scss */
-.disabled .team-toggle:hover {
-  background: #288bc6;
-}
-/* line 31, sass/_logos.scss */
 .disabled .logo:hover {
   cursor: default;
 }
 
-/* line 69, sass/_logos.scss */
+/* line 66, sass/_logos.scss */
 .logo-ANA {
   background-image: url(../img/logos_png/ANA.png);
 }
 
-/* line 70, sass/_logos.scss */
+/* line 67, sass/_logos.scss */
 .logo-BOS {
   background-image: url(../img/logos_png/BOS.png);
 }
 
-/* line 71, sass/_logos.scss */
+/* line 68, sass/_logos.scss */
 .logo-BUF {
   background-image: url(../img/logos_png/BUF.png);
 }
 
-/* line 72, sass/_logos.scss */
+/* line 69, sass/_logos.scss */
 .logo-CAR {
   background-image: url(../img/logos_png/CAR.png);
 }
 
-/* line 73, sass/_logos.scss */
+/* line 70, sass/_logos.scss */
 .logo-CGY {
   background-image: url(../img/logos_png/CGY.png);
 }
 
-/* line 74, sass/_logos.scss */
+/* line 71, sass/_logos.scss */
 .logo-CHI {
   background-image: url(../img/logos_png/CHI.png);
 }
 
-/* line 75, sass/_logos.scss */
+/* line 72, sass/_logos.scss */
 .logo-CBJ {
   background-image: url(../img/logos_png/CBJ.png);
 }
 
-/* line 76, sass/_logos.scss */
+/* line 73, sass/_logos.scss */
 .logo-COL {
   background-image: url(../img/logos_png/COL.png);
 }
 
-/* line 77, sass/_logos.scss */
+/* line 74, sass/_logos.scss */
 .logo-DAL {
   background-image: url(../img/logos_png/DAL.png);
 }
 
-/* line 78, sass/_logos.scss */
+/* line 75, sass/_logos.scss */
 .logo-DET {
   background-image: url(../img/logos_png/DET.png);
 }
 
-/* line 79, sass/_logos.scss */
+/* line 76, sass/_logos.scss */
 .logo-EDM {
   background-image: url(../img/logos_png/EDM.png);
 }
 
-/* line 80, sass/_logos.scss */
+/* line 77, sass/_logos.scss */
 .logo-FLA {
   background-image: url(../img/logos_png/FLA.png);
 }
 
-/* line 81, sass/_logos.scss */
+/* line 78, sass/_logos.scss */
 .logo-LAK {
   background-image: url(../img/logos_png/LAK.png);
 }
 
-/* line 82, sass/_logos.scss */
+/* line 79, sass/_logos.scss */
 .logo-MIN {
   background-image: url(../img/logos_png/MIN.png);
 }
 
-/* line 83, sass/_logos.scss */
+/* line 80, sass/_logos.scss */
 .logo-MTL {
   background-image: url(../img/logos_png/MTL.png);
 }
 
-/* line 84, sass/_logos.scss */
+/* line 81, sass/_logos.scss */
 .logo-NSH {
   background-image: url(../img/logos_png/NSH.png);
 }
 
-/* line 85, sass/_logos.scss */
+/* line 82, sass/_logos.scss */
 .logo-NJD {
   background-image: url(../img/logos_png/NJD.png);
 }
 
-/* line 86, sass/_logos.scss */
+/* line 83, sass/_logos.scss */
 .logo-NYI {
   background-image: url(../img/logos_png/NYI.png);
 }
 
-/* line 87, sass/_logos.scss */
+/* line 84, sass/_logos.scss */
 .logo-NYR {
   background-image: url(../img/logos_png/NYR.png);
 }
 
-/* line 88, sass/_logos.scss */
+/* line 85, sass/_logos.scss */
 .logo-OTT {
   background-image: url(../img/logos_png/OTT.png);
 }
 
-/* line 89, sass/_logos.scss */
+/* line 86, sass/_logos.scss */
 .logo-PHI {
   background-image: url(../img/logos_png/PHI.png);
 }
 
-/* line 90, sass/_logos.scss */
+/* line 87, sass/_logos.scss */
 .logo-PHX {
   background-image: url(../img/logos_png/PHX.png);
 }
 
-/* line 91, sass/_logos.scss */
+/* line 88, sass/_logos.scss */
 .logo-PIT {
   background-image: url(../img/logos_png/PIT.png);
 }
 
-/* line 92, sass/_logos.scss */
+/* line 89, sass/_logos.scss */
 .logo-SJS {
   background-image: url(../img/logos_png/SJS.png);
 }
 
-/* line 93, sass/_logos.scss */
+/* line 90, sass/_logos.scss */
 .logo-STL {
   background-image: url(../img/logos_png/STL.png);
 }
 
-/* line 94, sass/_logos.scss */
+/* line 91, sass/_logos.scss */
 .logo-TBL {
   background-image: url(../img/logos_png/TBL.png);
 }
 
-/* line 95, sass/_logos.scss */
+/* line 92, sass/_logos.scss */
 .logo-TOR {
   background-image: url(../img/logos_png/TOR.png);
 }
 
-/* line 96, sass/_logos.scss */
+/* line 93, sass/_logos.scss */
 .logo-VAN {
   background-image: url(../img/logos_png/VAN.png);
 }
 
-/* line 97, sass/_logos.scss */
+/* line 94, sass/_logos.scss */
 .logo-WSH {
   background-image: url(../img/logos_png/WSH.png);
 }
 
-/* line 98, sass/_logos.scss */
+/* line 95, sass/_logos.scss */
 .logo-WPG {
   background-image: url(../img/logos_png/WPG.png);
 }
@@ -434,26 +410,22 @@ angucomplete .angucomplete-row:hover .angucomplete-description {
 }
 /* line 6, sass/_modal.scss */
 .modal .modal-content {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 /* line 10, sass/_modal.scss */
 .modal button {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   color: #fff;
-  background-color: #288bc6;
   padding: 5px 10px;
   font-weight: 400;
   border: 0;
   float: right;
   position: relative;
   top: -60px;
-}
-/* line 20, sass/_modal.scss */
-.modal button:hover {
-  color: #e6e6e6;
 }
 
 /* line 24, sass/app.scss */
@@ -508,7 +480,6 @@ h1, h2, h3, h4 {
   top: 50px;
   left: -25px;
   color: #fff;
-  background-color: #288bc6;
   padding: 10px 15px;
   font-weight: 400;
   font-size: 18px;
@@ -526,27 +497,27 @@ h1, h2, h3, h4 {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 77, sass/app.scss */
+/* line 76, sass/app.scss */
 #settings:hover {
   color: #e6e6e6;
 }
 
-/* line 92, sass/app.scss */
+/* line 91, sass/app.scss */
 .mtop {
   margin-top: 55px;
 }
 
-/* line 96, sass/app.scss */
+/* line 95, sass/app.scss */
 .radio {
   margin: 5px;
   line-height: 2.5em;
 }
-/* line 100, sass/app.scss */
+/* line 99, sass/app.scss */
 .radio label {
   text-transform: capitalize;
 }
 
-/* line 105, sass/app.scss */
+/* line 104, sass/app.scss */
 #data-updated {
   color: #FFF;
   font-size: 1.1em;
@@ -554,21 +525,21 @@ h1, h2, h3, h4 {
   text-align: right;
 }
 
-/* line 112, sass/app.scss */
+/* line 111, sass/app.scss */
 .full {
   width: 95%;
   margin: 0 2.5%;
   float: left;
 }
 
-/* line 118, sass/app.scss */
+/* line 117, sass/app.scss */
 .half {
   width: 45%;
   margin: 0 2.5%;
   float: left;
 }
 
-/* line 124, sass/app.scss */
+/* line 123, sass/app.scss */
 .third {
   width: 28.3%;
   margin: 0 2.5%;
@@ -610,4 +581,643 @@ h1, h2, h3, h4 {
     position: relative;
     margin: 10px auto 0;
   }
+}
+/* line 9, sass/_colors.scss */
+body.color-blue {
+  /* General styles for all menus */
+  /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+}
+/* line 10, sass/_colors.scss */
+body.color-blue .bullet .measure.s0 {
+  fill: #a8cadf;
+}
+/* line 14, sass/_colors.scss */
+body.color-blue #settings {
+  background-color: #288bc6;
+}
+/* line 19, sass/_colors.scss */
+body.color-blue .disabled .team-toggle:hover {
+  background: #288bc6;
+}
+/* line 25, sass/_colors.scss */
+body.color-blue .modal button {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #288bc6;
+}
+/* line 29, sass/_colors.scss */
+body.color-blue .modal button:hover {
+  background-color: #1f6d9c;
+}
+/* line 37, sass/_colors.scss */
+body.color-blue angucomplete .angucomplete-row:hover {
+  background: #47A3DA;
+}
+/* line 40, sass/_colors.scss */
+body.color-blue angucomplete .angucomplete-row:hover .angucomplete-description {
+  color: #fff;
+}
+/* line 49, sass/_colors.scss */
+body.color-blue .cbp-spmenu {
+  background: #47A3DA;
+  -moz-box-shadow: #288bc6 -40px 0 60px 0 inset;
+  -webkit-box-shadow: #288bc6 -40px 0 60px 0 inset;
+  box-shadow: #288bc6 -40px 0 60px 0 inset;
+}
+/* line 53, sass/_colors.scss */
+body.color-blue .cbp-spmenu h3 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/* line 58, sass/_colors.scss */
+body.color-blue .cbp-spmenu h4 {
+  color: #fff;
+}
+/* line 62, sass/_colors.scss */
+body.color-blue .cbp-spmenu button {
+  color: #fff;
+  background: #288bc6;
+}
+/* line 66, sass/_colors.scss */
+body.color-blue .cbp-spmenu button:hover {
+  background: #1f6d9c;
+}
+/* line 71, sass/_colors.scss */
+body.color-blue .cbp-spmenu a {
+  color: #fff;
+}
+/* line 74, sass/_colors.scss */
+body.color-blue .cbp-spmenu a:hover {
+  background: ligthen(#47A3DA, 10%);
+}
+/* line 78, sass/_colors.scss */
+body.color-blue .cbp-spmenu a:active {
+  background: #afdefa;
+  color: #47A3DA;
+}
+/* line 86, sass/_colors.scss */
+body.color-blue .cbp-spmenu-vertical a {
+  border-bottom-color: ligthen(#47A3DA, 10%);
+}
+
+/* line 9, sass/_colors.scss */
+body.color-red {
+  /* General styles for all menus */
+  /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+}
+/* line 10, sass/_colors.scss */
+body.color-red .bullet .measure.s0 {
+  fill: #f6b2b2;
+}
+/* line 14, sass/_colors.scss */
+body.color-red #settings {
+  background-color: #ff1010;
+}
+/* line 19, sass/_colors.scss */
+body.color-red .disabled .team-toggle:hover {
+  background: #ff1010;
+}
+/* line 25, sass/_colors.scss */
+body.color-red .modal button {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #ff1010;
+}
+/* line 29, sass/_colors.scss */
+body.color-red .modal button:hover {
+  background-color: #dc0000;
+}
+/* line 37, sass/_colors.scss */
+body.color-red angucomplete .angucomplete-row:hover {
+  background: #FF4343;
+}
+/* line 40, sass/_colors.scss */
+body.color-red angucomplete .angucomplete-row:hover .angucomplete-description {
+  color: #fff;
+}
+/* line 49, sass/_colors.scss */
+body.color-red .cbp-spmenu {
+  background: #FF4343;
+  -moz-box-shadow: #ff1010 -40px 0 60px 0 inset;
+  -webkit-box-shadow: #ff1010 -40px 0 60px 0 inset;
+  box-shadow: #ff1010 -40px 0 60px 0 inset;
+}
+/* line 53, sass/_colors.scss */
+body.color-red .cbp-spmenu h3 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/* line 58, sass/_colors.scss */
+body.color-red .cbp-spmenu h4 {
+  color: #fff;
+}
+/* line 62, sass/_colors.scss */
+body.color-red .cbp-spmenu button {
+  color: #fff;
+  background: #ff1010;
+}
+/* line 66, sass/_colors.scss */
+body.color-red .cbp-spmenu button:hover {
+  background: #dc0000;
+}
+/* line 71, sass/_colors.scss */
+body.color-red .cbp-spmenu a {
+  color: #fff;
+}
+/* line 74, sass/_colors.scss */
+body.color-red .cbp-spmenu a:hover {
+  background: ligthen(#FF4343, 10%);
+}
+/* line 78, sass/_colors.scss */
+body.color-red .cbp-spmenu a:active {
+  background: #afdefa;
+  color: #FF4343;
+}
+/* line 86, sass/_colors.scss */
+body.color-red .cbp-spmenu-vertical a {
+  border-bottom-color: ligthen(#FF4343, 10%);
+}
+
+/* line 9, sass/_colors.scss */
+body.color-purple {
+  /* General styles for all menus */
+  /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+}
+/* line 10, sass/_colors.scss */
+body.color-purple .bullet .measure.s0 {
+  fill: #c2a6cb;
+}
+/* line 14, sass/_colors.scss */
+body.color-purple #settings {
+  background-color: #853a9e;
+}
+/* line 19, sass/_colors.scss */
+body.color-purple .disabled .team-toggle:hover {
+  background: #853a9e;
+}
+/* line 25, sass/_colors.scss */
+body.color-purple .modal button {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #853a9e;
+}
+/* line 29, sass/_colors.scss */
+body.color-purple .modal button:hover {
+  background-color: #662c79;
+}
+/* line 37, sass/_colors.scss */
+body.color-purple angucomplete .angucomplete-row:hover {
+  background: #A24DBE;
+}
+/* line 40, sass/_colors.scss */
+body.color-purple angucomplete .angucomplete-row:hover .angucomplete-description {
+  color: #fff;
+}
+/* line 49, sass/_colors.scss */
+body.color-purple .cbp-spmenu {
+  background: #A24DBE;
+  -moz-box-shadow: #853a9e -40px 0 60px 0 inset;
+  -webkit-box-shadow: #853a9e -40px 0 60px 0 inset;
+  box-shadow: #853a9e -40px 0 60px 0 inset;
+}
+/* line 53, sass/_colors.scss */
+body.color-purple .cbp-spmenu h3 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/* line 58, sass/_colors.scss */
+body.color-purple .cbp-spmenu h4 {
+  color: #fff;
+}
+/* line 62, sass/_colors.scss */
+body.color-purple .cbp-spmenu button {
+  color: #fff;
+  background: #853a9e;
+}
+/* line 66, sass/_colors.scss */
+body.color-purple .cbp-spmenu button:hover {
+  background: #662c79;
+}
+/* line 71, sass/_colors.scss */
+body.color-purple .cbp-spmenu a {
+  color: #fff;
+}
+/* line 74, sass/_colors.scss */
+body.color-purple .cbp-spmenu a:hover {
+  background: ligthen(#A24DBE, 10%);
+}
+/* line 78, sass/_colors.scss */
+body.color-purple .cbp-spmenu a:active {
+  background: #afdefa;
+  color: #A24DBE;
+}
+/* line 86, sass/_colors.scss */
+body.color-purple .cbp-spmenu-vertical a {
+  border-bottom-color: ligthen(#A24DBE, 10%);
+}
+
+/* line 9, sass/_colors.scss */
+body.color-green {
+  /* General styles for all menus */
+  /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+}
+/* line 10, sass/_colors.scss */
+body.color-green .bullet .measure.s0 {
+  fill: #9ece9e;
+}
+/* line 14, sass/_colors.scss */
+body.color-green #settings {
+  background-color: #32a132;
+}
+/* line 19, sass/_colors.scss */
+body.color-green .disabled .team-toggle:hover {
+  background: #32a132;
+}
+/* line 25, sass/_colors.scss */
+body.color-green .modal button {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #32a132;
+}
+/* line 29, sass/_colors.scss */
+body.color-green .modal button:hover {
+  background-color: #267a26;
+}
+/* line 37, sass/_colors.scss */
+body.color-green angucomplete .angucomplete-row:hover {
+  background: #42C442;
+}
+/* line 40, sass/_colors.scss */
+body.color-green angucomplete .angucomplete-row:hover .angucomplete-description {
+  color: #fff;
+}
+/* line 49, sass/_colors.scss */
+body.color-green .cbp-spmenu {
+  background: #42C442;
+  -moz-box-shadow: #32a132 -40px 0 60px 0 inset;
+  -webkit-box-shadow: #32a132 -40px 0 60px 0 inset;
+  box-shadow: #32a132 -40px 0 60px 0 inset;
+}
+/* line 53, sass/_colors.scss */
+body.color-green .cbp-spmenu h3 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/* line 58, sass/_colors.scss */
+body.color-green .cbp-spmenu h4 {
+  color: #fff;
+}
+/* line 62, sass/_colors.scss */
+body.color-green .cbp-spmenu button {
+  color: #fff;
+  background: #32a132;
+}
+/* line 66, sass/_colors.scss */
+body.color-green .cbp-spmenu button:hover {
+  background: #267a26;
+}
+/* line 71, sass/_colors.scss */
+body.color-green .cbp-spmenu a {
+  color: #fff;
+}
+/* line 74, sass/_colors.scss */
+body.color-green .cbp-spmenu a:hover {
+  background: ligthen(#42C442, 10%);
+}
+/* line 78, sass/_colors.scss */
+body.color-green .cbp-spmenu a:active {
+  background: #afdefa;
+  color: #42C442;
+}
+/* line 86, sass/_colors.scss */
+body.color-green .cbp-spmenu-vertical a {
+  border-bottom-color: ligthen(#42C442, 10%);
+}
+
+/* line 9, sass/_colors.scss */
+body.color-orange {
+  /* General styles for all menus */
+  /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+}
+/* line 10, sass/_colors.scss */
+body.color-orange .bullet .measure.s0 {
+  fill: #e69772;
+}
+/* line 14, sass/_colors.scss */
+body.color-orange #settings {
+  background-color: #b64009;
+}
+/* line 19, sass/_colors.scss */
+body.color-orange .disabled .team-toggle:hover {
+  background: #b64009;
+}
+/* line 25, sass/_colors.scss */
+body.color-orange .modal button {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #b64009;
+}
+/* line 29, sass/_colors.scss */
+body.color-orange .modal button:hover {
+  background-color: #852f07;
+}
+/* line 37, sass/_colors.scss */
+body.color-orange angucomplete .angucomplete-row:hover {
+  background: #E6510C;
+}
+/* line 40, sass/_colors.scss */
+body.color-orange angucomplete .angucomplete-row:hover .angucomplete-description {
+  color: #fff;
+}
+/* line 49, sass/_colors.scss */
+body.color-orange .cbp-spmenu {
+  background: #E6510C;
+  -moz-box-shadow: #b64009 -40px 0 60px 0 inset;
+  -webkit-box-shadow: #b64009 -40px 0 60px 0 inset;
+  box-shadow: #b64009 -40px 0 60px 0 inset;
+}
+/* line 53, sass/_colors.scss */
+body.color-orange .cbp-spmenu h3 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/* line 58, sass/_colors.scss */
+body.color-orange .cbp-spmenu h4 {
+  color: #fff;
+}
+/* line 62, sass/_colors.scss */
+body.color-orange .cbp-spmenu button {
+  color: #fff;
+  background: #b64009;
+}
+/* line 66, sass/_colors.scss */
+body.color-orange .cbp-spmenu button:hover {
+  background: #852f07;
+}
+/* line 71, sass/_colors.scss */
+body.color-orange .cbp-spmenu a {
+  color: #fff;
+}
+/* line 74, sass/_colors.scss */
+body.color-orange .cbp-spmenu a:hover {
+  background: ligthen(#E6510C, 10%);
+}
+/* line 78, sass/_colors.scss */
+body.color-orange .cbp-spmenu a:active {
+  background: #afdefa;
+  color: #E6510C;
+}
+/* line 86, sass/_colors.scss */
+body.color-orange .cbp-spmenu-vertical a {
+  border-bottom-color: ligthen(#E6510C, 10%);
+}
+
+/* line 9, sass/_colors.scss */
+body.color-yellow {
+  /* General styles for all menus */
+  /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+}
+/* line 10, sass/_colors.scss */
+body.color-yellow .bullet .measure.s0 {
+  fill: #ecdf56;
+}
+/* line 14, sass/_colors.scss */
+body.color-yellow #settings {
+  background-color: #a99a00;
+}
+/* line 19, sass/_colors.scss */
+body.color-yellow .disabled .team-toggle:hover {
+  background: #a99a00;
+}
+/* line 25, sass/_colors.scss */
+body.color-yellow .modal button {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #a99a00;
+}
+/* line 29, sass/_colors.scss */
+body.color-yellow .modal button:hover {
+  background-color: #766c00;
+}
+/* line 37, sass/_colors.scss */
+body.color-yellow angucomplete .angucomplete-row:hover {
+  background: #DCC900;
+}
+/* line 40, sass/_colors.scss */
+body.color-yellow angucomplete .angucomplete-row:hover .angucomplete-description {
+  color: #fff;
+}
+/* line 49, sass/_colors.scss */
+body.color-yellow .cbp-spmenu {
+  background: #DCC900;
+  -moz-box-shadow: #a99a00 -40px 0 60px 0 inset;
+  -webkit-box-shadow: #a99a00 -40px 0 60px 0 inset;
+  box-shadow: #a99a00 -40px 0 60px 0 inset;
+}
+/* line 53, sass/_colors.scss */
+body.color-yellow .cbp-spmenu h3 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/* line 58, sass/_colors.scss */
+body.color-yellow .cbp-spmenu h4 {
+  color: #fff;
+}
+/* line 62, sass/_colors.scss */
+body.color-yellow .cbp-spmenu button {
+  color: #fff;
+  background: #a99a00;
+}
+/* line 66, sass/_colors.scss */
+body.color-yellow .cbp-spmenu button:hover {
+  background: #766c00;
+}
+/* line 71, sass/_colors.scss */
+body.color-yellow .cbp-spmenu a {
+  color: #fff;
+}
+/* line 74, sass/_colors.scss */
+body.color-yellow .cbp-spmenu a:hover {
+  background: ligthen(#DCC900, 10%);
+}
+/* line 78, sass/_colors.scss */
+body.color-yellow .cbp-spmenu a:active {
+  background: #afdefa;
+  color: #DCC900;
+}
+/* line 86, sass/_colors.scss */
+body.color-yellow .cbp-spmenu-vertical a {
+  border-bottom-color: ligthen(#DCC900, 10%);
+}
+
+/* line 9, sass/_colors.scss */
+body.color-pink {
+  /* General styles for all menus */
+  /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+}
+/* line 10, sass/_colors.scss */
+body.color-pink .bullet .measure.s0 {
+  fill: white;
+}
+/* line 14, sass/_colors.scss */
+body.color-pink #settings {
+  background-color: #d08cf3;
+}
+/* line 19, sass/_colors.scss */
+body.color-pink .disabled .team-toggle:hover {
+  background: #d08cf3;
+}
+/* line 25, sass/_colors.scss */
+body.color-pink .modal button {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #d08cf3;
+}
+/* line 29, sass/_colors.scss */
+body.color-pink .modal button:hover {
+  background-color: #bd5def;
+}
+/* line 37, sass/_colors.scss */
+body.color-pink angucomplete .angucomplete-row:hover {
+  background: #E3BAF8;
+}
+/* line 40, sass/_colors.scss */
+body.color-pink angucomplete .angucomplete-row:hover .angucomplete-description {
+  color: #fff;
+}
+/* line 49, sass/_colors.scss */
+body.color-pink .cbp-spmenu {
+  background: #E3BAF8;
+  -moz-box-shadow: #d08cf3 -40px 0 60px 0 inset;
+  -webkit-box-shadow: #d08cf3 -40px 0 60px 0 inset;
+  box-shadow: #d08cf3 -40px 0 60px 0 inset;
+}
+/* line 53, sass/_colors.scss */
+body.color-pink .cbp-spmenu h3 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/* line 58, sass/_colors.scss */
+body.color-pink .cbp-spmenu h4 {
+  color: #fff;
+}
+/* line 62, sass/_colors.scss */
+body.color-pink .cbp-spmenu button {
+  color: #fff;
+  background: #d08cf3;
+}
+/* line 66, sass/_colors.scss */
+body.color-pink .cbp-spmenu button:hover {
+  background: #bd5def;
+}
+/* line 71, sass/_colors.scss */
+body.color-pink .cbp-spmenu a {
+  color: #fff;
+}
+/* line 74, sass/_colors.scss */
+body.color-pink .cbp-spmenu a:hover {
+  background: ligthen(#E3BAF8, 10%);
+}
+/* line 78, sass/_colors.scss */
+body.color-pink .cbp-spmenu a:active {
+  background: #afdefa;
+  color: #E3BAF8;
+}
+/* line 86, sass/_colors.scss */
+body.color-pink .cbp-spmenu-vertical a {
+  border-bottom-color: ligthen(#E3BAF8, 10%);
+}
+
+/* line 9, sass/_colors.scss */
+body.color-grey {
+  /* General styles for all menus */
+  /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+}
+/* line 10, sass/_colors.scss */
+body.color-grey .bullet .measure.s0 {
+  fill: #9c9c9c;
+}
+/* line 14, sass/_colors.scss */
+body.color-grey #settings {
+  background-color: #52504e;
+}
+/* line 19, sass/_colors.scss */
+body.color-grey .disabled .team-toggle:hover {
+  background: #52504e;
+}
+/* line 25, sass/_colors.scss */
+body.color-grey .modal button {
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #52504e;
+}
+/* line 29, sass/_colors.scss */
+body.color-grey .modal button:hover {
+  background-color: #383635;
+}
+/* line 37, sass/_colors.scss */
+body.color-grey angucomplete .angucomplete-row:hover {
+  background: #6C6967;
+}
+/* line 40, sass/_colors.scss */
+body.color-grey angucomplete .angucomplete-row:hover .angucomplete-description {
+  color: #fff;
+}
+/* line 49, sass/_colors.scss */
+body.color-grey .cbp-spmenu {
+  background: #6C6967;
+  -moz-box-shadow: #52504e -40px 0 60px 0 inset;
+  -webkit-box-shadow: #52504e -40px 0 60px 0 inset;
+  box-shadow: #52504e -40px 0 60px 0 inset;
+}
+/* line 53, sass/_colors.scss */
+body.color-grey .cbp-spmenu h3 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/* line 58, sass/_colors.scss */
+body.color-grey .cbp-spmenu h4 {
+  color: #fff;
+}
+/* line 62, sass/_colors.scss */
+body.color-grey .cbp-spmenu button {
+  color: #fff;
+  background: #52504e;
+}
+/* line 66, sass/_colors.scss */
+body.color-grey .cbp-spmenu button:hover {
+  background: #383635;
+}
+/* line 71, sass/_colors.scss */
+body.color-grey .cbp-spmenu a {
+  color: #fff;
+}
+/* line 74, sass/_colors.scss */
+body.color-grey .cbp-spmenu a:hover {
+  background: ligthen(#6C6967, 10%);
+}
+/* line 78, sass/_colors.scss */
+body.color-grey .cbp-spmenu a:active {
+  background: #afdefa;
+  color: #6C6967;
+}
+/* line 86, sass/_colors.scss */
+body.color-grey .cbp-spmenu-vertical a {
+  border-bottom-color: ligthen(#6C6967, 10%);
 }

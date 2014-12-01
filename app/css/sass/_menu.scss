@@ -1,9 +1,9 @@
 /* General styles for all menus */
 /* Based on http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
 .cbp-spmenu {
-  background: #47a3da;
+  // background: #47a3da;
   // background: #45a8f1;
-  @include box-shadow(darken(#47a3da, 10%) -40px 0 60px 0 inset);
+  // @include box-shadow(darken(#47a3da, 10%) -40px 0 60px 0 inset);
   position: fixed;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -41,7 +41,6 @@
   button {
     border: 0;
     color: #fff;
-    background: #288bc6;
     padding: 10px;
     @include border-radius(3px);
     @include transition(all 0.3s);
@@ -51,10 +50,6 @@
       right: 5.5%;
       margin-top: -38px;
     }
-
-    &:hover {
-      background: darken(#288bc6, 15%);
-    }
   }
 
   a {
@@ -63,14 +58,14 @@
     font-size: 1.1em;
     font-weight: 300;
 
-    &:hover {
-      background: #258ecd;
-    }
-
-    &:active {
-      background: #afdefa;
-      color: #47a3da;
-    }
+    // &:hover {
+    //   background: #258ecd;
+    // }
+    //
+    // &:active {
+    //   background: #afdefa;
+    //   color: #47a3da;
+    // }
   }
 }
 
@@ -81,7 +76,7 @@
   z-index: 1000;
 
   a {
-    border-bottom: 1px solid #258ecd;
+    border-bottom: 1px solid transparent;
     padding: 1em;
   }
 }

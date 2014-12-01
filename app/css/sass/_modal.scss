@@ -4,70 +4,17 @@
   }
 
   .modal-content {
-    @include border-radius(4px);
+    @include border-radius(3px);
   }
 
   button {
+    @include border-radius(3px);
     color: #fff;
-    background-color: #288bc6;
     padding: 5px 10px;
     font-weight: 400;
     border: 0;
     float: right;
     position: relative;
     top: -60px;
-
-    &:hover {
-      color: darken(#fff, 10%);
-    }
   }
 }
-
-// #modal-container {
-//   height: 100%;
-// }
-// 
-// .modal {
-//   .modal-dialog {
-//     width: 95%;
-//     height: 100%;
-//     padding-top: 2.5%;
-//     padding-bottom: 2.5%;    
-//   }
-// 
-//   .modal-content {
-//     height: 100%;
-//     overflow: hidden;
-//     @include border-radius(4px);
-// 
-//     table {
-//       td {
-//         text-align: right;
-//         padding-right: 10px;
-//         font-weight: 700;
-//       }
-// 
-//       th {
-//         font-weight: 400;
-//         text-align: left;
-//       }
-//     }
-//   }
-// 
-//   .modal-header {
-//     width: 25%;
-//     height: 100%;
-//     overflow-y: scroll;
-//     float: left;
-//     border-bottom: 0;
-// 
-//     h3 {
-//       margin-top: 0;
-//     }
-//   }
-// 
-//   .modal-body {
-//     width: 75%;
-//     float: left;
-//   }
-// }

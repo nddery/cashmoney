@@ -1,5 +1,5 @@
 'use strict';
-angular.module('cm.controllers').controller('VisualisationCtrl', function($scope, $filter, dataFactory, config, state, teams) {
+angular.module('cm.controllers').controller('VisualisationCtrl', function($scope, $filter, dataFactory, config, state, teams, dom) {
   $scope.config = 0;
 
   $scope.playerSelected = function(player) {
@@ -12,7 +12,13 @@ angular.module('cm.controllers').controller('VisualisationCtrl', function($scope
     $scope.data = data;
   });
 
-  state.setCurrentStateProp('baseColor', config.colors[0]);
+  // config.colors is a dictionary
+  for (var prop in config.colors) {
+    if (config.colors.hasOwnProperty(prop)) {
+      state.setCurrentStateProp('baseColor', config.colors[prop]);
+      break;
+    }
+  }
   state.setCurrentStateProp('position', config.positions[0]);
   state.setCurrentStateProp('metrics', {
     'barHeight': 'pm'
@@ -20,7 +26,8 @@ angular.module('cm.controllers').controller('VisualisationCtrl', function($scope
   });
 
   $scope.$on('colorPickerUpdated', function(event, color) {
-    state.setCurrentStateProp('baseColor', color);
+    state.setCurrentStateProp('baseColor', color.color);
+    dom.setUniqueClass('body', 'color', color.name);
     $scope.config++;
   });
 

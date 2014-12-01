@@ -3,10 +3,10 @@
 /**
  * @Usage
  *
- * Define a value of 'config' at the app level that contains an array of 'color'.
+ * Define a value of 'config' at the app level that contains an hashmap of 'color'.
  *
  * angular.module('cm.services', [])
- *   .value('config', {color:["#5484ED", "#A4BDFC", "#46D6DB", "#7AE7BF"]});
+ *   .value('config', {colors:{blue: '#5484ED', red: '#A4BDFC', purple: '#46D6DB'}});
  *
  * The event 'colorPickerUpdated' is broadcasted when the color change.
  * The selected color is passed as the argument.
@@ -47,11 +47,14 @@ angular.module('modules.colorPicker', [])
         return {
           post: function postLink(scope, iElement, iAttrs, controller) {
             scope.colorList = [];
-            angular.forEach(scope.colors, function(color, i) {
+            var i = 0;
+            angular.forEach(scope.colors, function(hex, name) {
               scope.colorList.push({
-                color : color,
+                color : hex,
+                name : name,
                 select : i === 0 ? 2 : 1
               });
+              i++;
             });
           }
         };
@@ -64,7 +67,7 @@ angular.module('modules.colorPicker', [])
             $scope.colorList[i].select = 1;
             if ($scope.colorList[i] === color) {
               $scope.colorList[i].select = 2;
-              $scope.$broadcast('colorPickerUpdated', color.color);
+              $scope.$broadcast('colorPickerUpdated', color);
             }
           }
         };
