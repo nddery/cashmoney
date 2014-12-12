@@ -29,15 +29,15 @@ cd $BASEDIR
 /usr/bin/python acquisition/statistics.py $SEASON_START $SEASON_END
 
 # Create the DB
-mysql -u root -proot -e "CREATE DATABASE $DB_NAME"
+mysql -u root -proot -e "CREATE DATABASE tmp_$DB_NAME"
 
 # Import the DB scheme / data
-mysql -u root -proot --local-infile $DB_NAME < import.sql
+mysql -u root -proot --local-infile tmp_$DB_NAME < import.sql
 
 # Export
-/usr/bin/php export.php $SEASON_START $SEASON_END $DB_NAME
+/usr/bin/php export.php $SEASON_START $SEASON_END tmp_$DB_NAME
 
 # Clean up
 rm salaries.txt
 rm statistics.txt
-mysql -u root -proot -e "DROP DATABASE $DB_NAME"
+mysql -u root -proot -e "DROP DATABASE tmp_$DB_NAME"
