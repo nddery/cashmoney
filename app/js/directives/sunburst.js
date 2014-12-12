@@ -48,14 +48,40 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
                           .size([2 * Math.PI, radius * radius])
                           .value(function(d) { return 1; });
 
+          var currentInnerRadius = .0
+              ,currentOuterRadius = .0;
+          // We will animate from startArc to endArc.
+          // startArc has an "height" of zero for players while endArc is
+          // the calculated "height"
+          var startArc = d3.svg.arc()
+                      .startAngle(function(d) { return d.x; })
+                      .endAngle(function(d) { return d.x + d.dx; })
+                      .innerRadius(function(d) {
+                        if (d.hasOwnProperty('player'))
+                          currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
+                        else
+                          currentInnerRadius = Math.sqrt(d.y - (d.y / 4));
+
+                        return currentInnerRadius;
+                      })
+                      .outerRadius(function(d) {
+                        // For players, use same calculation as innerRadius
+                        if (d.hasOwnProperty('player'))
+                          currentOuterRadius = Math.sqrt(d.y - (d.y / 2));
+                        else
+                          currentOuterRadius = Math.sqrt(d.y);
+
+                        return currentOuterRadius;
+                      });
+
         // Monitor the bound data.
         scope.$watch('data', function(newVals, oldVals) {
-          return scope.render(newVals);
+          return scope.exit(newVals, oldVals);
         });
 
         // Monitor config object.
         scope.$watch('config', function() {
-          return scope.render(scope.data);
+          return scope.exit(scope.data);
         }, true);
 
         // On window resize, re-render d3 canvas.
@@ -64,13 +90,55 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
         scope.$watch(function(){
           return aWindow[0].innerWidth;
         }, function(){
-          return scope.render(scope.data);
+          return scope.exit(scope.data);
         });
 
-        scope.render = function(data) {
-          // If we didn't pass any data, or no team have been selected, run.
-          if (!data || !data.length) return;
+        // Exit all player's path.
+        // Callback when everything is done:
+        // https://groups.google.com/d/msg/d3-js/WC_7Xi6VV50/j1HK0vIWI-EJ
+        scope.exit = function(newVals, oldVals) {
+          // Ensure we also have new values
+          if (!newVals || !newVals.length) return;
 
+          if (!oldVals || !oldVals.length) {
+            console.log('first or config')
+            // No old values provided, either the data hasn't changed or this is
+            // the first time we are rendering the visualisation.
+            if (typeof scope.data === 'undefined') {
+              oldVals = newVals;
+            }
+            else {
+              return scope.render(newVals);
+            }
+          }
+
+          var dataWithRoot = { root: "root", children: oldVals };
+          var path = svg.datum(dataWithRoot).selectAll('path')
+                        .data(partition.nodes);
+
+          var sel = svg.selectAll('path[id^="player-"]'),
+              selLength = sel[0].length;
+          sel.transition()
+            .duration(function(d,i) {
+              return (((selLength - i - 1) * 1.15) + 200);
+            })
+            .attr('d',startArc)
+            .remove()
+            .call(scope.exitAll, function() {
+              scope.render(newVals);
+            });
+        }
+
+        scope.exitAll = function(transition, callback) {
+          var n = 0;
+          transition
+            .each(function() { ++n; })
+            .each('end', function() {
+              if (!--n) callback.apply(this, arguments);
+            });
+        }
+
+        scope.render = function(data) {
           // Remove all previous items before rendering.
           svg.selectAll('*').remove();
 
@@ -113,32 +181,6 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
                             .domain([minBarHeight,maxBarHeight])
                             .range([0.1,1.25]);
 
-          var currentInnerRadius = .0
-              ,currentOuterRadius = .0;
-          // We will animate from startArc to endArc.
-          // startArc has an "height" of zero for players while endArc is
-          // the calculated "height"
-          var startArc = d3.svg.arc()
-                      .startAngle(function(d) { return d.x; })
-                      .endAngle(function(d) { return d.x + d.dx; })
-                      .innerRadius(function(d) {
-                        if (d.hasOwnProperty('player'))
-                          currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
-                        else
-                          currentInnerRadius = Math.sqrt(d.y - (d.y / 4));
-
-                        return currentInnerRadius;
-                      })
-                      .outerRadius(function(d) {
-                        // For players, use same calculation as innerRadius
-                        if (d.hasOwnProperty('player'))
-                          currentOuterRadius = Math.sqrt(d.y - (d.y / 2));
-                        else
-                          currentOuterRadius = Math.sqrt(d.y);
-
-                        return currentOuterRadius;
-                      });
-
           var endArc = d3.svg.arc()
                       .startAngle(function(d) { return d.x; })
                       .endAngle(function(d) { return d.x + d.dx; })
@@ -170,6 +212,7 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
           var odd = 0;
           var path = svg.datum(dataWithRoot).selectAll('path')
                         .data(partition.nodes);
+
           path.enter().append('path')
             .attr('display', function(d) {
               // hide inner ring
@@ -202,7 +245,7 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
             })
             .on('mouseout', tip.hide)
             .transition()
-              .duration(1000)
+              .duration(function(d,i) { return i * 1 + 500; })
               .attr('d', endArc);
 
           // Add text to paths
