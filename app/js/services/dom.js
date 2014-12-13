@@ -6,8 +6,9 @@ angular.module('cm.services')
     }
 
     var setUniqueClass = function(tag, pattern, c) {
-      var regex = new RegExp('(^|\s)' + tag + '-\S+', 'g');
-      var strippedClass = document.body.className.replace(regex, '');
+      var regex, strippedClass;
+      regex = new RegExp('(^|\\s)' + pattern + '-\\S+', 'g');
+      strippedClass = document.body.className.replace(regex, '');
       document.body.className = strippedClass + ' ' + pattern + '-' + c;
       return true;
     }
