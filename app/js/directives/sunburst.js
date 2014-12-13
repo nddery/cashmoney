@@ -48,31 +48,31 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
                           .size([2 * Math.PI, radius * radius])
                           .value(function(d) { return 1; });
 
-          var currentInnerRadius = .0
-              ,currentOuterRadius = .0;
-          // We will animate from startArc to endArc.
-          // startArc has an "height" of zero for players while endArc is
-          // the calculated "height"
-          var startArc = d3.svg.arc()
-                      .startAngle(function(d) { return d.x; })
-                      .endAngle(function(d) { return d.x + d.dx; })
-                      .innerRadius(function(d) {
-                        if (d.hasOwnProperty('player'))
-                          currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
-                        else
-                          currentInnerRadius = Math.sqrt(d.y - (d.y / 4));
+        var currentInnerRadius = .0
+            ,currentOuterRadius = .0;
+        // We will animate from startArc to endArc.
+        // startArc has an "height" of zero for players while endArc is
+        // the calculated "height"
+        var startArc = d3.svg.arc()
+                          .startAngle(function(d) { return d.x; })
+                          .endAngle(function(d) { return d.x + d.dx; })
+                          .innerRadius(function(d) {
+                            if (d.hasOwnProperty('player'))
+                              currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
+                            else
+                              currentInnerRadius = Math.sqrt(d.y - (d.y / 4));
 
-                        return currentInnerRadius;
-                      })
-                      .outerRadius(function(d) {
-                        // For players, use same calculation as innerRadius
-                        if (d.hasOwnProperty('player'))
-                          currentOuterRadius = Math.sqrt(d.y - (d.y / 2));
-                        else
-                          currentOuterRadius = Math.sqrt(d.y);
+                            return currentInnerRadius;
+                          })
+                          .outerRadius(function(d) {
+                            // For players, use same calculation as innerRadius
+                            if (d.hasOwnProperty('player'))
+                              currentOuterRadius = Math.sqrt(d.y - (d.y / 2));
+                            else
+                              currentOuterRadius = Math.sqrt(d.y);
 
-                        return currentOuterRadius;
-                      });
+                            return currentOuterRadius;
+                          });
 
         // Monitor the bound data.
         scope.$watch('data', function(newVals, oldVals) {
@@ -100,24 +100,19 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
           // Ensure we also have new values
           if (!newVals || !newVals.length) return;
 
+          // If the data didn't change, then use the 'new values' as the old.
           if (!oldVals || !oldVals.length) {
-            console.log('first or config')
-            // No old values provided, either the data hasn't changed or this is
-            // the first time we are rendering the visualisation.
-            if (typeof scope.data === 'undefined') {
-              oldVals = newVals;
-            }
-            else {
-              return scope.render(newVals);
-            }
+            oldVals = newVals;
           }
-
-          var dataWithRoot = { root: "root", children: oldVals };
-          var path = svg.datum(dataWithRoot).selectAll('path')
-                        .data(partition.nodes);
 
           var sel = svg.selectAll('path[id^="player-"]'),
               selLength = sel[0].length;
+
+          // Selection is empty, this is the first run, don't animate out!
+          if (!selLength) {
+            return scope.render(newVals);
+          }
+
           sel.transition()
             .duration(function(d,i) {
               return (((selLength - i - 1) * 1.15) + 200);
@@ -182,33 +177,33 @@ angular.module('cm.directives').directive('sunburst', function(d3Service, state,
                             .range([0.1,1.25]);
 
           var endArc = d3.svg.arc()
-                      .startAngle(function(d) { return d.x; })
-                      .endAngle(function(d) { return d.x + d.dx; })
-                      .innerRadius(function(d) {
-                        if (d.hasOwnProperty('player'))
-                          currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
-                        else
-                          currentInnerRadius = Math.sqrt(d.y - (d.y / 4));
+                          .startAngle(function(d) { return d.x; })
+                          .endAngle(function(d) { return d.x + d.dx; })
+                          .innerRadius(function(d) {
+                            if (d.hasOwnProperty('player'))
+                              currentInnerRadius = Math.sqrt(d.y - (d.y / 2));
+                            else
+                              currentInnerRadius = Math.sqrt(d.y - (d.y / 4));
 
-                        return currentInnerRadius;
-                      })
-                      .outerRadius(function(d) {
-                        // Prevent outer radius from being smaller than
-                        // inner radius.
-                        if (d.hasOwnProperty('player'))
-                          currentOuterRadius = Math.sqrt((d.y + d.dy) * barHeight(d[cstate.metrics.barHeight]));
-                        else
-                          currentOuterRadius = Math.sqrt(d.y);
+                            return currentInnerRadius;
+                          })
+                          .outerRadius(function(d) {
+                            // Prevent outer radius from being smaller than
+                            // inner radius.
+                            if (d.hasOwnProperty('player'))
+                              currentOuterRadius = Math.sqrt((d.y + d.dy) * barHeight(d[cstate.metrics.barHeight]));
+                            else
+                              currentOuterRadius = Math.sqrt(d.y);
 
-                        if (currentInnerRadius > currentOuterRadius)
-                          currentOuterRadius = currentInnerRadius + 5;
+                            if (currentInnerRadius > currentOuterRadius)
+                              currentOuterRadius = currentInnerRadius + 5;
 
-                        return currentOuterRadius;
-                      });
+                            return currentOuterRadius;
+                          });
 
           svg.call(tip);
 
-          var dataWithRoot = { root: "root", children: data };
+          var dataWithRoot = { root: 'root', children: data };
           var odd = 0;
           var path = svg.datum(dataWithRoot).selectAll('path')
                         .data(partition.nodes);
