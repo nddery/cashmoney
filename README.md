@@ -1,6 +1,6 @@
-# [cashmoney - visualizing the national hockey league](http://proj.nddery.ca/cashmoney)
+# [cashmoney - visualizing the national hockey league](http://cashmoney.nddery.ca)
 
-[cashmoney](http://proj.nddery.ca/cashmoney) is a data visualization of the
+[cashmoney](http://cashmoney.nddery.ca) is a data visualization of the
 National Hockey League players' statistics.
 
 The information is presented as a radial bar graph. Clicking on a player will
